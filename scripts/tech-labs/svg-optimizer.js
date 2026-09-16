@@ -1,60 +1,60 @@
 /**
- * Neutral Technical Foundation - SVG Optimizer & Sanitizer Proof-of-Concept
+ * Neutral Technical Foundation — SVG inspection proof of concept.
  *
- * Demonstrates the required pipeline for SVGs before production adoption:
- * 1. Validation (checking for malicious tags like <script>)
- * 2. Sanitization (removing inline event handlers like onclick)
- * 3. Optimization (conceptual wrapper for SVGO)
+ * SECURITY BOUNDARY:
+ * This script is intentionally NOT a production sanitizer. Regex-based removal
+ * cannot make arbitrary SVG/XML safe. It only demonstrates detection/removal of
+ * the specific lab fixtures below so the future pipeline can be reasoned about.
+ *
+ * Production requirement:
+ * untrusted SVG -> vetted parser/sanitizer + explicit allowlist/policy ->
+ * adversarial tests/security review -> optimization -> component conversion.
  */
 
 const fs = require('fs');
 const path = require('path');
 
-function validateAndSanitizeSVG(svgContent) {
-    console.log('--- Starting SVG Validation & Sanitization ---');
-    let sanitizedContent = svgContent;
-    let isValid = true;
+function inspectFixture(svgContent) {
+    console.log('--- SVG lab fixture inspection ---');
+    let processedContent = svgContent;
+    const findings = [];
 
-    // 1. Validation: Check for script tags
-    if (sanitizedContent.includes('<script')) {
-        console.warn('⚠️ WARNING: <script> tag detected. Rejecting or stripping...');
-        sanitizedContent = sanitizedContent.replace(/<script\b[^<]*(?:(?!<\/script>)<[^<]*)*<\/script>/gi, '');
-        isValid = false;
+    // Demonstration fixture 1: <script> blocks.
+    const scriptRegex = /<script\b[^<]*(?:(?!<\/script>)<[^<]*)*<\/script>/gi;
+    if (scriptRegex.test(processedContent)) {
+        findings.push('script-tag');
+        processedContent = processedContent.replace(scriptRegex, '');
     }
 
-    // 2. Sanitization: Remove inline event handlers (e.g., onclick, onmouseover)
+    // Demonstration fixture 2: double-quoted inline event handlers.
+    // This intentionally does NOT claim coverage of every SVG/XML event syntax.
     const onEventRegex = /\s(on[a-z]+)="[^"]*"/gi;
-    if (onEventRegex.test(sanitizedContent)) {
-        console.warn('⚠️ WARNING: Inline event handlers detected. Stripping...');
-        sanitizedContent = sanitizedContent.replace(onEventRegex, '');
-        isValid = false;
+    if (onEventRegex.test(processedContent)) {
+        findings.push('inline-event-handler');
+        processedContent = processedContent.replace(onEventRegex, '');
     }
 
-    // 3. Optimization (Conceptual - would use svgo in real implementation)
-    // Here we just strip basic comments for the POC
-    console.log('--- Optimizing SVG (Stripping comments) ---');
-    sanitizedContent = sanitizedContent.replace(/<!--[\s\S]*?-->/g, '');
+    // Demonstration-only cleanup, not real optimization.
+    processedContent = processedContent.replace(/<!--[\s\S]*?-->/g, '');
 
     return {
-        isValidOriginal: isValid,
-        content: sanitizedContent.trim()
+        findings,
+        demoOutput: processedContent.trim()
     };
 }
 
-// Run the test
 const samplePath = path.join(__dirname, '../../labs/svg/sample-unoptimized.svg');
-if (fs.existsSync(samplePath)) {
-    const originalContent = fs.readFileSync(samplePath, 'utf8');
-    console.log('Original SVG:\n', originalContent, '\n');
 
-    const result = validateAndSanitizeSVG(originalContent);
-    console.log('\nProcessed SVG:\n', result.content);
-
-    if (!result.isValidOriginal) {
-        console.log('\n❌ Original SVG was invalid/unsafe. Sanitized version generated.');
-    } else {
-        console.log('\n✅ SVG passed validation.');
-    }
-} else {
+if (!fs.existsSync(samplePath)) {
     console.error('Sample SVG not found at:', samplePath);
+    process.exitCode = 1;
+} else {
+    const originalContent = fs.readFileSync(samplePath, 'utf8');
+    const result = inspectFixture(originalContent);
+
+    console.log('Findings:', result.findings.length ? result.findings.join(', ') : 'none in demo rules');
+    console.log('\nDemo output:\n', result.demoOutput);
+    console.log(
+        '\nNOTE: This output is NOT production-safe merely because the known demo fixtures were removed.'
+    );
 }
