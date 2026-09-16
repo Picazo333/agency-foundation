@@ -1,5 +1,5 @@
-version: 1
-updated: 2026-09-15
+version: 2
+updated: 2026-09-16
 policy: docs/00-meta/capability-governance.md
 
 skills:
@@ -109,3 +109,249 @@ skills:
       - automatic hooks that rewrite or scan beyond approved scope
     notes: >-
       Upstream supports executable launcher/hooks. Those are intentionally disabled in project reference mode until separately approved.
+
+  - id: creative-direction
+    display_name: Creative Direction
+    status: approved
+    intake_tier: 1
+    authority: strategy_and_discovery_advisory
+    execution_mode: reference_only
+    source:
+      repository: rampstackco/claude-skills
+      commit: 3d4510a94a76ead80122c691b5c480f92f3fbe40
+      path: skills/creative-direction/SKILL.md
+      license: MIT
+    purpose: >-
+      Codify project-wide aesthetic intent into a persistent brief before downstream visual work.
+    allowed_phases:
+      - creative-direction-contract
+      - direction-recalibration
+    prohibited:
+      - overriding brand canon or naming
+      - selecting final identity artifacts
+      - loosening frozen plan gates without human approval
+
+  - id: moodboard-builder
+    display_name: Moodboard Builder
+    status: approved
+    intake_tier: 1
+    authority: reference_curation
+    execution_mode: reference_only
+    source:
+      repository: SkillMedev/skills
+      commit: a28c4ce9366b5a8540577bed8f70b6a60f8fde27
+      path: skills/moodboard-builder/SKILL.md
+      license: MIT
+    purpose: >-
+      Build tightly argued reference boards from a defined emotional target, with inspiration/execution labels and anti-boards.
+    allowed_phases:
+      - expanded-reference-research
+      - reference-atlas
+    prohibited:
+      - auto-promoting references to canon
+      - using unapproved generated experiments as source references
+      - inferring rights clearance
+
+  - id: visual-asset-curation
+    display_name: Visual Asset Curation
+    status: approved
+    intake_tier: 1
+    authority: curation_and_consistency
+    execution_mode: reference_only
+    source:
+      repository: SkillMedev/skills
+      commit: a28c4ce9366b5a8540577bed8f70b6a60f8fde27
+      path: skills/visual-asset-curation/SKILL.md
+      license: MIT
+    purpose: >-
+      Evaluate reference and generated imagery as coherent sets; maintain final picks, cut lists and treatment rules.
+    allowed_phases:
+      - reference-atlas
+      - asset-proof-kit
+      - image-illustration-language
+    prohibited:
+      - licensing assets by itself
+      - overriding route grammar
+      - promoting staging assets to approved production
+
+  - id: image-license-rights
+    display_name: Image License & Usage Rights
+    status: approved
+    intake_tier: 1
+    authority: rights_hygiene
+    execution_mode: reference_only
+    source:
+      repository: SkillMedev/skills
+      commit: a28c4ce9366b5a8540577bed8f70b6a60f8fde27
+      path: skills/image-license-rights/SKILL.md
+      license: MIT
+    purpose: >-
+      Record source, intended use, license obligations, release constraints and conservative per-asset rights states.
+    allowed_phases:
+      - reference-research
+      - reference-atlas
+      - asset-proof-kit
+      - application-production
+      - asset-factory-handoff
+    prohibited:
+      - making legal guarantees
+      - inferring license from reposts or memory
+      - overriding Asset Factory provenance gates
+
+  - id: brand-identity
+    display_name: Brand Identity
+    status: approved
+    intake_tier: 1
+    authority: identity_system_methodology
+    execution_mode: reference_only
+    source:
+      repository: rampstackco/claude-skills
+      commit: 3d4510a94a76ead80122c691b5c480f92f3fbe40
+      path: skills/brand-identity/SKILL.md
+      license: MIT
+    purpose: >-
+      Construct and stress-test logo, color, typography, imagery/iconography and motion after visual direction is approved.
+    allowed_phases:
+      - signature-system
+      - foundations
+      - image-illustration-language
+      - temporal-identity
+      - application-system
+      - brand-system-v1
+    prohibited:
+      - reopening naming
+      - replacing creative direction
+      - promoting Brand V0 or V1 without human approval
+
+  - id: typography-system
+    display_name: Typography System
+    status: approved
+    intake_tier: 1
+    authority: typography_system_methodology
+    execution_mode: reference_only
+    source:
+      repository: SkillMedev/skills
+      commit: a28c4ce9366b5a8540577bed8f70b6a60f8fde27
+      path: skills/typography-system/SKILL.md
+      license: MIT
+    purpose: >-
+      Define typographic roles, functional font criteria, licensing, scale, measure and responsive values.
+    allowed_phases:
+      - foundations
+      - digital-brand-specimen
+      - brand-system-v1
+    prohibited:
+      - mood-first font selection without role/functional checks
+      - ignoring licensing or target-language coverage
+      - overriding custom wordmark construction
+
+  - id: color-palette-builder
+    display_name: Color Palette Builder
+    status: approved
+    intake_tier: 1
+    authority: color_system_methodology
+    execution_mode: reference_only
+    source:
+      repository: SkillMedev/skills
+      commit: a28c4ce9366b5a8540577bed8f70b6a60f8fde27
+      path: skills/color-palette-builder/SKILL.md
+      license: MIT
+    purpose: >-
+      Convert approved color territory into roles, tonal scales, semantic tokens, usage rules and mode mappings.
+    allowed_phases:
+      - foundations
+      - digital-brand-specimen
+      - brand-system-v1
+    prohibited:
+      - freezing colors before visual testing
+      - forcing generic SaaS color distribution over approved art direction
+      - claiming accessibility without measured pairing checks
+
+  - id: color-accessibility
+    display_name: Color Accessibility
+    status: approved
+    intake_tier: 1
+    authority: accessibility_validation
+    execution_mode: reference_only
+    source:
+      repository: SkillMedev/skills
+      commit: a28c4ce9366b5a8540577bed8f70b6a60f8fde27
+      path: skills/color-accessibility/SKILL.md
+      license: MIT
+    purpose: >-
+      Verify real foreground/background pairings, color-only meaning and accessible token-level corrections.
+    allowed_phases:
+      - foundations-review
+      - digital-brand-specimen
+      - stress-test
+      - brand-system-v1
+    prohibited:
+      - redesigning the palette from scratch
+      - making formal legal conformance claims
+      - weakening visual identity when role-specific accessible variants suffice
+
+  - id: art-direction
+    display_name: Art Direction
+    status: approved
+    intake_tier: 1
+    authority: creative_production_briefing
+    execution_mode: reference_only
+    source:
+      repository: rampstackco/claude-skills
+      commit: 3d4510a94a76ead80122c691b5c480f92f3fbe40
+      path: skills/art-direction/SKILL.md
+      license: MIT
+    purpose: >-
+      Extend approved identity into specific photography, illustration, video, motion, campaign and application briefs.
+    allowed_phases:
+      - application-system
+      - production-briefing
+      - brand-system-v1
+    prohibited:
+      - defining project-wide aesthetic from scratch
+      - reopening naming or route selection
+      - skipping licensing and usage-rights planning
+
+  - id: brand-guidelines
+    display_name: Brand Guidelines
+    status: approved
+    intake_tier: 1
+    authority: documentation
+    execution_mode: reference_only
+    source:
+      repository: SkillMedev/skills
+      commit: a28c4ce9366b5a8540577bed8f70b6a60f8fde27
+      path: skills/brand-guidelines/SKILL.md
+      license: MIT
+    purpose: >-
+      Turn selected and tested Brand V1 decisions into specific operational rules and do/don't examples.
+    allowed_phases:
+      - brand-system-v1
+      - post-freeze-documentation
+    prohibited:
+      - inventing missing Brand decisions
+      - promoting provisional work to Brand V1
+      - replacing specialist identity/accessibility/rights specs
+
+  - id: design-md
+    display_name: DESIGN.md
+    status: approved
+    intake_tier: 1
+    authority: implementation_documentation
+    execution_mode: reference_only
+    source:
+      repository: nolly-studio/agent-skills
+      commit: 2008e7f671eb9f55989b73f9e33cbe06e74c428a
+      path: skills/design-md/SKILL.md
+      license: MIT
+    purpose: >-
+      Create an agent-readable design-language implementation contract from approved Brand V1 and real implementation evidence.
+    allowed_phases:
+      - brand-system-v1
+      - implementation-handoff
+    prohibited:
+      - inventing a design language before route selection
+      - restyling implementation merely to match documentation
+      - overriding Brand canon or specialist guidelines
+    notes: >-
+      Upstream installation/file-write instructions are not authorized by reference mode; project writes require the active task scope and normal repo governance.
