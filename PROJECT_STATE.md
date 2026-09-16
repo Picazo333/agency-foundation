@@ -5,6 +5,7 @@ updated: 2026-09-16
 authority: canon
 depends_on:
   - docs/08-plans/workstreams/DIVINIVID_VISUAL_IDENTITY_MASTER_PLAN.md
+  - docs/03-brand/workbench/divinivid/CREATIVE_DIRECTION_BRIEF.md
 ---
 # Project State
 
@@ -12,7 +13,7 @@ depends_on:
 Build a serious agency from research -> decisions -> brand -> strategy -> validation -> asset production -> implementation -> launch, while keeping every important decision traceable and reversible.
 
 ## Current active work
-1. **Brand Direction Lab (Human + ChatGPT):** `DIVINIVID` is the working selected Brand name for identity exploration. The visual process has been reset and the execution method is frozen in `docs/08-plans/workstreams/DIVINIVID_VISUAL_IDENTITY_MASTER_PLAN.md`. Current gate: **Phase 1 — Creative Direction Contract**, followed by real-source Reference Research/Atlas before new identity generation.
+1. **Brand Direction Lab (Human + ChatGPT):** `DIVINIVID` is the working selected Brand name for identity exploration. **Phase 1 — Creative Direction Contract is CLOSED / PASS.** Current gate: **Phase 2 — Expanded Reference Research**, followed by the source-only Reference Atlas before any new route/identity generation.
 2. **Field Validation:** the Agency Master Plan has a ready-to-run execution kit under `docs/06-validation/field-kit/`. Strategy remains evidence-limited until real buyer work occurs; the kit does not itself count as validation evidence.
 3. **Agency Master Plan:** first full planning architecture is integrated. Five strategic ADRs (`ADR-0006`…`ADR-0010`) remain `PROPOSED`; do not treat them as canon without the required human decision/evidence.
 4. **Asset Factory:** the reviewed generator-agnostic architecture is integrated. It remains inactive for production until Brand V1 provides a validated Brand Pack.
@@ -22,6 +23,7 @@ Build a serious agency from research -> decisions -> brand -> strategy -> valida
 - Working selected name: **DIVINIVID**.
 - Route 01 internal codename: **KIROGRAF**.
 - Route 01 descriptor: **Sacred Anatomy**.
+- Creative Direction Contract: **APPROVED / Phase 1 PASS**.
 - Brand V0 has **not** been selected/frozen.
 - Full Brand System V1 has **not** been created.
 - Naming still requires final appropriate legal/trademark/domain diligence before commercial freeze.
@@ -30,7 +32,7 @@ Build a serious agency from research -> decisions -> brand -> strategy -> valida
 Recent generated multi-round moodboards/applications did not meet the required identity-system quality. They are classified as non-canonical negative evidence and may not seed future generations by default.
 
 The current process order is:
-`Creative Direction → Reference Research → Reference Atlas → Tension Grammar → Route Production → Identity System → Applications → Stress Test → Cross-route Review → Brand/Business Fit → Brand V1`.
+`Creative Direction [PASS] → Reference Research [CURRENT] → Reference Atlas → Tension Grammar → Route Production → Identity System → Applications → Stress Test → Cross-route Review → Brand/Business Fit → Brand V1`.
 
 ## Executor simplification decision
 Workstreams are defined by capability and contract, not by the originally proposed tool. Gemini and Antigravity are not required dependencies for the current foundation/Brand phase.
@@ -49,6 +51,7 @@ Gemini or other generators may later act as asset-generation engines only inside
 - Build maturity: Visual -> Interactive -> Mock Data -> Backend Wired -> optional AI/MCP.
 - External capabilities are governed, pinned and reference-only by default unless execution is explicitly approved.
 - The DIVINIVID visual-identity method is frozen; material deviations require a documented `PLAN_DEVIATION` and human approval.
+- No new generated identity/moodboard round is authorized during Phase 2. Real-source research must precede the Reference Atlas and later route production.
 
 ## Open decisions
 - Final legal/commercial clearance of the `DIVINIVID` name.
@@ -66,6 +69,6 @@ Gemini or other generators may later act as asset-generation engines only inside
 The repository now contains the Field Validation Execution Kit. Do not confuse the existence of instruments/templates with buyer evidence. Actual interviews, sales attempts and experiment records remain the source of validation.
 
 ## Next convergence gates
-1. **Brand:** Phase 1 Creative Direction Contract → Reference Atlas → route/identity gates under the frozen DIVINIVID plan.
+1. **Brand:** Phase 2 Expanded Reference Research → Phase 3 Reference Atlas → tension/route/identity gates under the frozen DIVINIVID plan.
 2. **Business:** execute field validation rather than create another strategy layer.
 3. **Program:** Brand/Business Fit Review after Brand Direction V0 and sufficient commercial evidence are available.
