@@ -46,4 +46,6 @@ Return:
 6. `KILL_OR_KEEP` — when comparing alternatives, what should be removed or retained and why.
 
 ## Current Brand-route use
-For KIROGRAF / Sacred Anatomy, use Taste to challenge generic dark-luxury, AI-tech, default editorial, over-carded, over-ornamented, or templated solutions. The approved brief wins even when it intentionally uses historical serif/editorial language.
+`DIVINIVID` is the Brand under exploration. `KIROGRAF / Sacred Anatomy` is only an internal route name/descriptor.
+
+Use Taste to challenge generic dark-luxury, AI-tech, default editorial, over-carded, over-ornamented, templated, statue-plus-serif, pseudo-occult or historical-cosplay solutions. The approved DIVINIVID creative-direction brief and active route grammar always win, including when they intentionally use historical serif/editorial language.
