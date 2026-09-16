@@ -4,18 +4,47 @@ Work only in repository `Picazo333/agency-foundation` and only on branch `asset/
 
 Your governing task is GitHub Issue #3: `asset: Gemini Asset Factory architecture`.
 
-## REPO SAFETY — NON-NEGOTIABLE
+## 0. PRE-FLIGHT
 
-1. NEVER work directly on `main`.
-2. Do not force-push, rewrite history, delete unrelated files or overwrite another workstream.
-3. Do not alter/freeze Brand naming or visual canon.
-4. Do not commit secrets, credentials or real environment values.
-5. Do not mass-produce final brand assets in this task.
-6. If Brand V1 does not yet define a value, create a schema/interface/placeholder; do not invent the final value.
-7. Keep all work on `asset/gemini-foundry-architecture` and deliver through a PR to `main`.
-8. Before finishing, inspect changed files and confirm nothing outside the allowed scope was modified unintentionally.
+Before writing:
+1. Verify repository = `Picazo333/agency-foundation`.
+2. Verify branch = `asset/gemini-foundry-architecture`.
+3. Inspect current changed files/status.
+4. Read repo governance + Issue #3 before editing.
+5. If behind `main`, update only non-destructively and only if branch work is safe. Never discard existing changes just to sync.
+6. If direct writes to `main` are the only available mode, stop.
 
-## READ FIRST
+## 1. REPO SAFETY — NON-NEGOTIABLE
+
+- NEVER work directly on `main`.
+- Never force-push, rewrite history, destructively reset/clean, bulk-delete unrelated files or overwrite another workstream.
+- Do not alter/freeze Brand naming or visual canon.
+- Do not commit secrets, credentials, private keys or real environment values.
+- Do not mass-produce final assets in this task.
+- Do not ingest or redistribute third-party reference files as production assets merely because they are present in research.
+- Do not silently copy protected/reference-only material into approved outputs.
+- If Brand V1 does not define a value, create a schema/interface/placeholder rather than inventing the final value.
+- Finish only through PR to `main`; do not merge your own PR.
+
+## 2. WRITE BOUNDARIES / COLLISION CONTROL
+
+Primary writable areas:
+- `asset-factory/`
+- `docs/09-handoffs/gemini/`
+- tightly related Asset Factory documentation under existing planning/spec locations.
+
+Read-only unless a tiny direct correction is unavoidable and disclosed:
+- `docs/03-brand/`
+- `docs/02-strategy/`
+- `docs/04-operations/`
+- `labs/`
+- `packages/`
+- `.github/`
+- Antigravity/Jules handoff folders.
+
+Do not edit files owned by active Claude, Antigravity or Jules branches. If you need a change from another workstream, log a dependency instead.
+
+## 3. READ FIRST
 
 1. `AGENTS.md`
 2. `PROJECT_STATE.md`
@@ -26,23 +55,20 @@ Your governing task is GitHub Issue #3: `asset: Gemini Asset Factory architectur
 7. GitHub Issue #3 in full
 8. Brand workbench and visual research only as PROVISIONAL context.
 
-Remember at all times:
-`brand workbench != brand canon`.
+Always remember: `brand workbench != brand canon`.
 
-## MISSION
+## 4. MISSION
 
-Design the complete reusable architecture of a future Gemini Gem / Asset Factory that can receive an approved Brand System V1 and reliably produce coherent, reusable, traceable production assets at scale.
+Design the complete reusable architecture of a future Gemini Gem / Asset Factory that can receive an approved Brand System V1 and reliably produce coherent, traceable, reusable production assets at scale.
 
-This task is about building the FACTORY, not producing the final inventory.
+This task builds the FACTORY, not the final asset inventory.
 
-The system must be designed so that Brand V1 can later be inserted without architectural rework.
+The architecture must accept Brand V1 later without fundamental redesign.
 
-## REQUIRED DESIGN
+## 5. REQUIRED SYSTEM DESIGN
 
-Define at minimum:
-
-### 1. Brand Pack input contract
-Specify exactly what the factory requires from Brand V1:
+### A. Brand Pack input contract
+Specify exact required/optional fields for:
 - brand thesis/personality;
 - approved name/wordmark rules;
 - typography;
@@ -55,16 +81,16 @@ Specify exactly what the factory requires from Brand V1:
 - accessibility constraints;
 - responsive behavior;
 - anti-patterns;
-- licensing/provenance rules.
+- provenance/licensing rules.
 
-### 2. Asset taxonomy
-Design a scalable taxonomy covering at least:
+### B. Asset taxonomy
+Cover at minimum:
 - SVG ornaments;
 - borders/frames/dividers;
 - patterns/textures;
 - illustration families;
 - anatomical plates;
-- bestiary/figurative assets if Brand V1 allows them;
+- bestiary/figurative assets if Brand V1 permits;
 - celestial/diagrammatic systems;
 - icons;
 - backgrounds;
@@ -76,28 +102,26 @@ Design a scalable taxonomy covering at least:
 - motion frames/sequences;
 - responsive variants.
 
-### 3. Prompt architecture
-Create reusable prompt templates and parameter contracts rather than one-off prompts.
+### C. Prompt architecture
+Create reusable prompt templates and parameter contracts, not one-off prompts.
 Define:
-- global brand context;
+- global Brand context;
 - asset-specific fields;
 - format/dimensions;
-- variants;
+- variant controls;
 - negative constraints;
-- source/reference handling;
+- reference/source handling;
 - originality requirements;
 - safe fallback behavior;
-- deterministic naming/versioning conventions.
+- naming/version conventions.
 
-### 4. Metadata/provenance schema
-Every asset should be able to record:
+### D. Metadata / provenance schema
+Every asset must be representable with:
 - asset ID;
-- category;
-- purpose;
-- status;
-- version;
+- category/purpose;
+- status/version;
 - format/dimensions;
-- palette/tokens used;
+- palette/tokens;
 - source/reference lineage;
 - original/generated/licensed/reference-only state;
 - license/usage notes;
@@ -106,74 +130,114 @@ Every asset should be able to record:
 - QA state;
 - approval/rejection history.
 
-### 5. Lifecycle
-Design the promotion flow:
-`generated -> staging -> reviewed -> approved` or `rejected/deprecated`.
-No generated file becomes canonical merely because it exists.
+### E. Lifecycle / state machine
+Define explicit promotion flow:
+`requested -> generated -> staging -> reviewed -> approved` or `rejected/deprecated`.
 
-### 6. QA gates
+No generated output is canonical merely because it exists.
+
+### F. QA gates
 Design checks for:
-- brand consistency;
-- line weights/style consistency;
+- Brand consistency;
+- line-weight/style consistency;
 - palette/token conformity;
-- SVG validity and optimization;
+- SVG validity/optimization;
 - legibility/accessibility relevance;
 - responsive suitability;
 - performance implications;
 - originality/reference-distance concerns;
 - license/provenance completeness;
-- duplicate asset detection;
+- duplicate detection;
 - naming/version discipline;
 - visual-family cohesion.
 
-### 7. Invent-vs-ask rules
-Specify when the factory may generate a variation autonomously and when it must stop because the Brand Pack lacks authority.
+### G. Invent-vs-ask authority rules
+Specify exactly what may be varied autonomously and what requires Brand authority.
 
-### 8. Failure/rejection handling
-Define how to handle:
+### H. Failure / rejection handling
+Cover:
 - visually attractive but off-brand outputs;
 - invalid/bloated SVG;
 - missing provenance;
 - inaccessible output;
 - inconsistent variants;
-- copyright/licensing uncertainty;
-- duplicate or uncontrolled asset sprawl;
-- prompt drift.
+- licensing uncertainty;
+- duplicate/uncontrolled sprawl;
+- prompt drift;
+- missing Brand Pack fields.
 
-### 9. Handoff contract
-Specify how approved assets move into web/design/implementation workstreams without requiring another agent to reverse-engineer them.
+### I. Handoff contract
+Define how approved assets move into implementation without reverse-engineering.
 
-### 10. Factory operating guide
-Define how a human or future agent requests an asset batch, reviews it, promotes/rejects it, and regenerates only the necessary variants.
+### J. Operating guide
+Define request, generation, batch review, approval/rejection, regeneration, deprecation and version upgrade workflows.
 
-## OUTPUT STANDARD
+## 6. DEPTH / EXECUTABILITY CONTRACT
 
-Create a modular specification under the existing `asset-factory/` and Gemini handoff structure. Prefer schemas, templates, checklists and examples over vague prose.
+Do not stop at prose. Produce concrete machine/human-usable artifacts where appropriate:
+- field definitions;
+- JSON/YAML schema examples or equivalent structured examples;
+- status/state definitions;
+- folder/layout proposal;
+- naming conventions;
+- QA matrix;
+- approval checklist;
+- batch request template;
+- rejection/regeneration template;
+- handoff manifest example.
 
-Do not hard-code the current Chirograph-adjacent exploration as final Brand truth. Use examples only when explicitly labeled as examples.
+Create at least 3 illustrative asset-request examples using placeholder Brand values only. Do NOT generate final brand assets.
 
-## AUTONOMY
+## 7. PROVENANCE / RIGHTS SAFETY
 
-Continue without routine checkpoints. If a final Brand decision is missing, represent it as an interface/placeholder and continue.
+The factory must distinguish:
+- original;
+- generated;
+- open-license;
+- commercial-license;
+- reference-only;
+- unknown/blocked.
 
-## FINAL AUDITS
+No asset with unknown or reference-only rights may silently enter `approved`.
+Define what information a human must supply when rights cannot be determined automatically.
 
-Before delivery run:
+## 8. AUTONOMY
 
-1. Creative Director audit — would the system generate a coherent family rather than isolated pretty assets?
-2. Design Systems audit — are schemas, naming, versioning and reuse robust?
-3. Production audit — could hundreds of assets be managed without chaos?
-4. Web/Performance audit — could outputs actually be integrated responsibly?
-5. Licensing/Provenance audit — can every approved asset be traced and legally evaluated?
-6. Red Team audit — how could this factory cause brand drift, unusable outputs or uncontrolled asset sprawl?
+Continue without routine checkpoints.
+If Brand data is missing, model the interface/placeholder and continue.
+Only stop on a true fatal blocker.
 
-Then consolidate fixes.
+## 9. FINAL AUDITS
 
-## DELIVERY
+Run and integrate fixes from:
+1. Creative Director audit.
+2. Design Systems audit.
+3. Production-scale audit.
+4. Web/Performance audit.
+5. Licensing/Provenance audit.
+6. Accessibility audit.
+7. Red Team audit for brand drift, unusable outputs, rights failures and asset sprawl.
+8. Multi-agent collision audit confirming no files from other active workstreams were modified.
 
-1. Commit only to `asset/gemini-foundry-architecture`.
-2. Validate docs/schemas/examples.
-3. Inspect changed files for unrelated edits or secrets.
-4. Open a PR to `main` referencing Issue #3.
-5. Do NOT merge your own PR.
-6. PR summary must explain architecture, schemas, QA gates, unresolved Brand V1 dependencies, files changed and exactly what becomes executable after Brand V1 freezes.
+## 10. EXIT / PR CHECKLIST
+
+Before PR:
+1. Inspect complete changed-file list.
+2. Confirm every change is inside allowed scope or explicitly justified.
+3. Confirm no final Brand values were invented.
+4. Confirm no reference-only/licensing-uncertain material was promoted as production-ready.
+5. Confirm no secrets or unrelated changes.
+6. Validate docs/schemas/examples.
+7. Commit only to `asset/gemini-foundry-architecture`.
+8. Open PR to `main` referencing Issue #3.
+9. Do NOT merge your own PR.
+
+PR must explain:
+- architecture;
+- schemas/state machine;
+- QA/provenance gates;
+- Brand V1 dependencies;
+- files changed;
+- validation performed;
+- cross-branch dependencies/collision risks;
+- exactly what becomes executable after Brand V1 freezes.
