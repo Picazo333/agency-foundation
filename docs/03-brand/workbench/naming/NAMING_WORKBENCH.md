@@ -4,7 +4,7 @@ owner: brand
 updated: 2026-09-16
 authority: workbench
 depends_on:
-  - ../../../../08-plans/workstreams/DIVINIVID_VISUAL_IDENTITY_MASTER_PLAN.md
+  - ../../../08-plans/workstreams/DIVINIVID_VISUAL_IDENTITY_MASTER_PLAN.md
 ---
 # Naming Workbench
 
