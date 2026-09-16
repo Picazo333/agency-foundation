@@ -13,9 +13,11 @@ Before making changes:
 1. Confirm the repository is exactly `Picazo333/agency-foundation`.
 2. Confirm you are NOT on `main`.
 3. Prefer the prepared branch `asset/jules-asset-factory-architecture`. If Jules provisions an isolated task branch, it must start from this branch or an equivalent up-to-date base.
-4. Confirm the working tree is clean before substantive edits.
-5. Read `AGENTS.md`, `PROJECT_STATE.md`, `docs/00-meta/source-of-truth.md`, `docs/08-plans/master/META_PLAN.md`, `docs/08-plans/workstreams/GEMINI_ASSET_FACTORY_WORKSTREAM.md`, `asset-factory/spec/README.md`, relevant Brand workbench material as provisional context only, and Issue #3 in full.
-6. Treat the branch name/file names that still mention Gemini as historical. The capability contract is generator-agnostic and the current executor is Jules.
+4. Confirm the governance change from PR #10 (`meta: simplify executors and consolidate foundation work on Jules`) is present in the base you are using. If PR #10 has not been merged to `main`, do not start substantive work; report that dependency instead.
+5. Sync from the latest `main` using a normal non-destructive merge/update path before substantive edits. If synchronization causes conflicts, stop and report them rather than force-resolving or rewriting history.
+6. Confirm the working tree is clean before substantive edits.
+7. Read `AGENTS.md`, `PROJECT_STATE.md`, `docs/00-meta/source-of-truth.md`, `docs/08-plans/master/META_PLAN.md`, `docs/08-plans/workstreams/GEMINI_ASSET_FACTORY_WORKSTREAM.md`, `asset-factory/spec/README.md`, relevant Brand workbench material as provisional context only, and Issue #3 in full.
+8. Treat the branch name/file names that still mention Gemini as historical. The capability contract is generator-agnostic and the current executor is Jules.
 
 ## Safety and scope
 
