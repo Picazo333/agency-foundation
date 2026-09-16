@@ -1,0 +1,47 @@
+{
+  "batch_request_id": "req-batch-5541",
+  "brand_pack_version": "v1.0.0",
+  "requests": [
+    {
+      "request_id": "req-001",
+      "category": "icon",
+      "description": "A magnifying glass icon for the search bar.",
+      "dimensions": {
+        "width": 24,
+        "height": 24,
+        "aspect_ratio": "1:1"
+      },
+      "variants_requested": ["base"],
+      "reference_materials": []
+    },
+    {
+      "request_id": "req-002",
+      "category": "illustration_family",
+      "description": "An abstract, geometric hero illustration representing data flow.",
+      "dimensions": {
+        "width": 1920,
+        "height": 1080,
+        "aspect_ratio": "16:9"
+      },
+      "variants_requested": ["desktop", "mobile"],
+      "reference_materials": [
+        {
+          "url": "https://example.com/moodboard/ref1.jpg",
+          "handling": "stylistic_reference_only"
+        }
+      ]
+    },
+    {
+      "request_id": "req-003",
+      "category": "svg_ornament",
+      "description": "A simple 4-point star to be used as a bullet point or text divider.",
+      "dimensions": {
+        "width": 16,
+        "height": 16,
+        "aspect_ratio": "1:1"
+      },
+      "variants_requested": ["base"],
+      "reference_materials": []
+    }
+  ]
+}
