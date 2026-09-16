@@ -4,20 +4,51 @@ Work only in repository `Picazo333/agency-foundation` and only on branch `tech/a
 
 Your governing task is GitHub Issue #4: `tech: Antigravity neutral technical foundation + labs`.
 
-## REPO SAFETY — NON-NEGOTIABLE
+## 0. PRE-FLIGHT
 
-1. NEVER work directly on `main`.
-2. Do not force-push, rewrite history, delete unrelated files or overwrite another workstream.
-3. Do not commit secrets, credentials, private keys or real environment values.
-4. Do not freeze provisional Brand values into permanent technical architecture.
-5. Do not select business strategy, ICP, pricing, naming or visual identity.
-6. Do not build the final production website in this task.
-7. Keep experiments isolated and reversible.
-8. Any new dependency must have a documented reason, expected benefit and rollback/removal path.
-9. Use worktrees/subagents only in isolated scopes; do not let parallel agents edit the same files concurrently.
-10. All work stays on `tech/antigravity-foundation` and ends in a PR to `main`; do not merge your own PR.
+Before writing:
+1. Verify repository = `Picazo333/agency-foundation`.
+2. Verify branch = `tech/antigravity-foundation`.
+3. Inspect changed files/status before editing.
+4. Read repo governance + Issue #4 completely.
+5. If the branch is behind `main`, sync only non-destructively and only if branch work is safe. Never discard work merely to sync.
+6. If direct writes to `main` are unavoidable, stop.
 
-## READ FIRST
+## 1. REPO SAFETY — NON-NEGOTIABLE
+
+- NEVER work directly on `main`.
+- Never force-push, rewrite history, destructively reset/clean, bulk-delete unrelated files or overwrite another workstream.
+- Never commit secrets, credentials, private keys or real environment values.
+- Do not freeze provisional Brand values into permanent technical architecture.
+- Do not choose business strategy, ICP, pricing, naming or visual identity.
+- Do not build the final production website.
+- Keep experiments isolated, reversible and explicitly provisional.
+- Any new dependency must have a documented rationale, expected benefit, security/maintenance consideration and rollback/removal path.
+- Do not execute arbitrary scripts/binaries from research/assets without inspection and a concrete need.
+- Do not weaken existing repo security/validation gates.
+- Finish only by PR to `main`; do not merge your own PR.
+
+## 2. WRITE BOUNDARIES / COLLISION CONTROL
+
+Primary writable areas:
+- `labs/`
+- neutral technical packages under `packages/` when justified
+- technical experiment utilities under a dedicated Antigravity-owned path such as `scripts/tech-labs/`
+- `infra/` only for neutral/prototype infrastructure requirements
+- `docs/09-handoffs/antigravity/`
+- narrowly scoped technical decision docs tied to the experiments.
+
+Read-only unless a tiny integration correction is unavoidable and disclosed:
+- `.github/` (Jules-owned)
+- `scripts/repo-health/` or Jules-owned validation utilities
+- `docs/02-strategy/`
+- `docs/03-brand/`
+- `asset-factory/`
+- Claude/Gemini/Jules handoff folders.
+
+If a needed change belongs to another branch, record a dependency instead of editing its owned files.
+
+## 3. READ FIRST
 
 1. `AGENTS.md`
 2. `PROJECT_STATE.md`
@@ -28,143 +59,173 @@ Your governing task is GitHub Issue #4: `tech: Antigravity neutral technical fou
 7. GitHub Issue #4 in full
 8. technical/research summaries relevant to Aesthetic / Functional / System spines and S0–S4 maturity.
 
-## MISSION
+## 4. MISSION
 
-Build a neutral, experimental technical foundation that can later receive an approved Brand System V1, business requirements and final website/system specifications without major architectural rework.
+Build a neutral, experimental technical foundation that can later receive approved Brand System V1, business requirements and final web/system specifications without major architectural rework.
 
-This is not the production site. Treat this branch as a technical lab and foundation package.
+This branch is a LAB + FOUNDATION package, not production.
 
-Antigravity is the experimental/prototyping lead. Jules has a separate repo-hardening/CI scope. Avoid duplicating Jules's work unless a technical experiment requires a minimal repo-level integration.
+Antigravity owns experimental/prototyping technical work. Jules separately owns repo hardening/CI/document validation. Avoid overlap.
 
-## REQUIRED WORK
+## 5. REQUIRED WORK
 
-### 1. Neutral design-token architecture
-Create/propose a token schema with brand values intentionally TBD:
-- color roles;
+### A. Neutral design-token architecture
+Create/propose a schema with values intentionally TBD for:
+- semantic color roles;
 - typography roles;
-- spacing;
-- sizing;
-- borders;
-- radius;
+- spacing/sizing;
+- borders/radius;
 - shadow/elevation;
 - motion durations/easing;
 - breakpoints;
 - z-index/layers;
 - component/semantic aliases.
-Do not invent final colors/fonts.
+Do not invent final brand colors/fonts.
 
-### 2. Isolated technical labs
+### B. Isolated technical labs
 Prepare clearly separated labs for:
-- visual rendering experiments;
+- visual rendering;
 - SVG;
 - motion;
-- scroll interaction;
+- scroll behavior;
 - responsive behavior;
-- advanced interaction only when justified.
-Everything experimental must be clearly marked disposable/provisional.
+- advanced interaction only where justified.
 
-### 3. SVG pipeline proof-of-concept
-Prototype or specify:
+Mark each experiment as `STABLE CANDIDATE / EXPERIMENTAL / REJECTED / BLOCKED`.
+
+### C. SVG pipeline proof-of-concept
+Prototype/specify:
 - validation;
 - optimization;
-- sanitization/security concerns;
+- sanitization/security;
 - naming;
-- metadata/provenance;
+- metadata/provenance hooks;
 - componentization;
 - responsive behavior;
 - accessibility handling;
 - before/after checks.
 
-### 4. Motion experiments
-Test or document viable approaches for:
-- CSS transitions/animations;
+### D. Motion experiments
+Test/document viable approaches for:
+- CSS animation;
 - SVG animation;
-- GSAP where justified;
+- GSAP only when justified;
 - scroll-linked behavior;
 - reduced-motion fallback;
 - mobile constraints;
 - performance cost.
-Avoid animation for spectacle alone.
 
-### 5. Performance baseline
-Define a lightweight performance budget and measurement approach for later Brand/Web implementation. Measure prototypes where possible. Do not claim production benchmarks from toy examples.
+Avoid spectacle-only animation.
 
-### 6. Accessibility baseline
+### E. Performance baseline
+Define a lightweight future-facing performance budget and measurement method. Measure prototypes when possible, but never present toy benchmarks as production guarantees.
+
+### F. Accessibility baseline
 Define/prototype:
 - reduced motion;
 - keyboard/focus expectations for interactive experiments;
-- semantic/fallback expectations;
-- contrast evaluation hooks once Brand tokens exist;
-- non-essential decorative asset handling.
+- semantic/fallback behavior;
+- contrast hooks once Brand tokens exist;
+- treatment of decorative/non-essential assets.
 
-### 7. Visual-regression / screenshot strategy
-Propose or prototype the simplest reliable system for later visual regression and responsive snapshots.
+### G. Visual-regression / screenshot strategy
+Propose or prototype the simplest reliable path for later visual regression and responsive snapshots.
 
-### 8. Asset provenance integration
-Define how technical consumption of assets will preserve metadata from the Gemini Asset Factory: asset ID, version, license/provenance state, approved status and responsive variants.
+### H. Asset provenance integration
+Define how implementation can preserve Gemini Asset Factory metadata later: asset ID, version, approved status, rights/provenance, responsive variants.
+Do not modify Gemini-owned schemas; design a consumer interface and note dependencies.
 
-### 9. Security/secrets baseline
-Document/prototype safe handling for future environment variables, API keys and third-party integrations. Never add real secrets.
+### I. Security / secrets baseline
+Document/prototype safe handling for future environment variables, APIs and third-party integrations. Never add real credentials.
 
-### 10. S0–S4 maturity contract
-Operationalize the stages:
+### J. S0–S4 maturity contract
+Operationalize:
 - S0 Visual
 - S1 Interactive
 - S2 Mock Data
 - S3 Backend Wired
 - S4 AI/MCP
-Define explicit entry/exit criteria so a visually complete prototype cannot masquerade as a connected production system.
 
-### 11. Technical decision records
-For decisions that may constrain later implementation, record:
-- hypothesis;
+Define entry/exit criteria so S0/S1 work cannot masquerade as production-connected S3/S4.
+
+### K. Technical decision records
+For any decision that might constrain later implementation record:
+- question/hypothesis;
 - options;
 - experiment;
 - result;
 - recommendation;
 - reversibility;
-- what still requires Brand/Strategy input.
+- Brand/Strategy dependencies.
 
-### 12. Handoff package
-Clearly distinguish:
+### L. Handoff package
+Separate:
 - stable neutral foundations;
 - experiments worth keeping;
-- experiments rejected;
+- rejected experiments;
 - dependencies added;
 - future decisions blocked on Brand V1/Strategy;
-- tasks suitable for Jules/Codex later.
+- later tasks suitable for Codex/Jules.
 
-## PARALLELISM / SUBAGENTS
+## 6. PARALLELISM / SUBAGENTS
 
-Antigravity may use isolated worktrees/subagents for genuinely independent experiments, for example one agent on SVG validation and another on motion performance. Do not parallelize work that edits the same files or shares mutable state.
+Use subagents/worktrees only for truly independent work with non-overlapping write sets.
 
-Before integrating subagent output, review it in the parent task. The parent agent remains responsible for consistency and repo safety.
+Before spawning subagents, define a mini ownership map, e.g.:
+- subagent A -> SVG proof-of-concept only;
+- subagent B -> motion/performance only;
+- subagent C -> screenshot/visual-regression only.
 
-## QUALITY STANDARD
+Two subagents must never edit the same file concurrently.
+The parent agent reviews and integrates all subagent output and remains accountable for security and consistency.
 
-Prefer small, demonstrable, reversible foundations over speculative large frameworks.
+## 7. DEPTH / EVIDENCE CONTRACT
 
-Any prototype should answer a concrete question and include enough evidence to justify keep/discard/undecided.
+Every experiment must answer a concrete technical question and document:
+- hypothesis;
+- setup;
+- files touched;
+- dependency cost;
+- result/evidence;
+- performance/accessibility/security observations;
+- keep/reject/undecided recommendation;
+- reversibility/removal path.
 
-Do not install fashionable tooling merely because it exists.
+Prefer a few well-evidenced experiments over a large speculative framework.
+Do not install trendy tooling without a demonstrated need.
 
-## FINAL AUDITS
+## 8. FINAL AUDITS
 
-Before delivery run:
+Run and integrate fixes from:
 1. Principal Frontend/Platform Engineer audit.
 2. Performance audit.
 3. Accessibility audit.
 4. Security/secrets audit.
 5. Maintainability/reversibility audit.
-6. Red Team audit for unnecessary complexity, vendor lock-in and premature architecture.
+6. Dependency/supply-chain audit.
+7. Multi-agent collision audit.
+8. Red Team audit for overengineering, vendor lock-in, premature architecture and false confidence from toy prototypes.
 
-Then integrate fixes.
+## 9. EXIT / PR CHECKLIST
 
-## DELIVERY
+Before PR:
+1. Inspect the complete changed-file list.
+2. Confirm all edits are inside Antigravity-owned scope or explicitly justify exceptions.
+3. Confirm `.github/` and Jules-owned repo-health files were not modified.
+4. Confirm no secrets, unrelated formatting churn or destructive changes.
+5. Record relevant checks/benchmarks and caveats.
+6. Document dependencies added and removal paths.
+7. Commit only to `tech/antigravity-foundation`.
+8. Open PR to `main` referencing Issue #4.
+9. Do NOT merge your own PR.
 
-1. Commit only to `tech/antigravity-foundation`.
-2. Run and record relevant checks/benchmarks.
-3. Inspect all changed files for accidental cross-workstream edits or secrets.
-4. Open a PR to `main` referencing Issue #4.
-5. Do NOT merge your own PR.
-6. PR must separate stable foundations from disposable experiments and include files changed, dependencies, checks run, benchmark caveats, unresolved risks and future decisions required.
+PR must clearly separate:
+- STABLE FOUNDATION;
+- EXPERIMENTAL;
+- REJECTED;
+- BLOCKED BY BRAND/STRATEGY;
+- files changed;
+- dependencies;
+- tests/benchmarks;
+- caveats/risks;
+- cross-branch dependencies/collision risks.
