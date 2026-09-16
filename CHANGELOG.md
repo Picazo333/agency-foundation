@@ -1,5 +1,15 @@
 # Changelog
 
+## v0.5-divinivid-reference-research — 2026-09-16
+- Closed **Phase 2 — Expanded Reference Research** with a PASS using real/source references only.
+- Researched all nine required lanes: cinema; painting/engraving; manuscripts/sacred image; grotesque/bestiary; anatomy/knowledge; cosmology/diagrammatics; architecture/material; editorial/typography/information design; narrative/motion/sensory structure.
+- Preserved the existing Clean Reference Canon rather than allowing new research to overwrite human-approved taste.
+- Added high-yield candidates including the Isenheim Altarpiece, William Blake's Book of Job, Martin Schongauer's Saint Anthony, Hours of Catherine of Cleves, Aberdeen Bestiary, Vesalius, Cellarius, Odilon Redon, The Night of the Hunter, Vampyr, The Color of Pomegranates, Andrei Rublev, Kwaidan, Bruder Klaus Field Chapel, Soulages/Outrenoir, Hypnerotomachia Poliphili and Bill Viola/The Crossing.
+- Explicitly limited or held Bosch, Goya, Häxan, Robert Fludd, Moreau and Kelmscott Chaucer where contamination, redundancy or excessive stylistic gravity could distort DIVINIVID.
+- Added a source/provenance registry prioritizing museum, archive, national-library and authoritative film sources; recorded public-domain/open-access opportunities and reference-only copyrighted material.
+- Confirmed that quantity is not the Phase 2 goal: redundant demonology, generic Gothic architecture, additional tenebrism and modern dark-editorial references were not expanded merely to fill a board.
+- Activated **Phase 3 — Reference Atlas**. No route/identity generation is authorized until five source-only boards plus the Anti-Atlas pass explicit human review.
+
 ## v0.4-divinivid-creative-direction — 2026-09-16
 - Closed **Phase 1 — Creative Direction Contract** with a PASS.
 - Operationally defined divine, grotesque, elegance, beauty, horror/uncanny, darkness, illumination, restraint, controlled maximalism, historical and contemporary.
