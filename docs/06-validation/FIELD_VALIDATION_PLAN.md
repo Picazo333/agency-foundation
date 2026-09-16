@@ -15,6 +15,16 @@ depends_on:
 >
 > `E-09` is a `FACT`: **zero buyer contact has occurred.** This plan exists to change that fact as
 > quickly and as informatively as possible.
+>
+> ## ▶ To execute this plan, open [`field-kit/00_README.md`](field-kit/00_README.md)
+>
+> The **Field Validation Execution Kit** turns everything below into ready-to-run instruments:
+> target ledger, research and teardown SOPs, outreach sequences, an interviewer-ready script,
+> evidence logs for H-01/H-04/H-10, an experiment runbook, a weekly review and operator checklists
+> for every gate. Start at [`field-kit/16_VALIDATION_LAUNCH_CHECKLIST.md`](field-kit/16_VALIDATION_LAUNCH_CHECKLIST.md).
+>
+> The kit **implements** this plan and changes no threshold, hypothesis or decision rule in it.
+> Coverage map: [`field-kit/17_TRACEABILITY_MATRIX.md`](field-kit/17_TRACEABILITY_MATRIX.md).
 
 ## 1. Method note — what this plan can and cannot establish
 

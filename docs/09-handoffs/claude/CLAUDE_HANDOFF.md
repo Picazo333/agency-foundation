@@ -226,6 +226,13 @@ Per `NO_SILENT_DOWNGRADE.md`, these are stated rather than concealed:
 5. **`E-02` — the raw research archives are still not in the repository.** This caps the evidence
    grade of everything downstream and is already tracked in `PENDING.md`.
 
+## Execution instrumentation (follow-up workstream)
+
+The Field Validation Execution Kit at
+[`docs/06-validation/field-kit/`](../../06-validation/field-kit/00_README.md) turns Module 18 into
+ready-to-run instruments. It changes no threshold, hypothesis or decision rule; it implements them.
+Entry point for the founder: `field-kit/16_VALIDATION_LAUNCH_CHECKLIST.md`.
+
 ## Recommended next action
 
 1. Read `EXECUTIVE_SYNTHESIS.md`, then `RED_TEAM_REVIEW.md`.
