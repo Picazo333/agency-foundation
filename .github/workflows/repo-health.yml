@@ -1,0 +1,29 @@
+name: Repository Health
+
+# Trigger: runs on pull request and push to main.
+# Expected runtime/cost: ~10 seconds, extremely low cost.
+# Failure conditions: fails if obvious secrets, broken internal links, or missing required doc frontmatter are found.
+# False-positive risk: low, except for occasional strings matching secret patterns (can be mitigated by ignoring in script if necessary).
+# Local reproduction: run `python3 scripts/repo-health/validate_repo.py` locally.
+# Rollback/removal path: delete this file.
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Run Repository Health Checks
+        run: python scripts/repo-health/validate_repo.py

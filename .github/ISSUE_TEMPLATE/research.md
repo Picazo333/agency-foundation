@@ -17,4 +17,8 @@ labels: research
 # Evidence labels
 VERIFIED FACT / OBSERVED SIGNAL / INFERENCE / HYPOTHESIS / UNKNOWN
 
+# Agent Safety Checks
+- Ensure research artifacts do not overwrite canonical `.md` decisions without an explicit review process.
+- Store outputs in the appropriate `workbench` or `draft` locations.
+
 # Stop condition
