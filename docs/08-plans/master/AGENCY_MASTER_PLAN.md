@@ -108,11 +108,11 @@ planning artifact may be created until ten qualified buyer conversations are log
 
 | If you are | Read |
 |---|---|
-| The human owner, deciding whether to approve | `EXECUTIVE_SYNTHESIS.md` → `RED_TEAM_REVIEW.md` → §7 below → `ADR-0005` |
+| The human owner, deciding whether to approve | `EXECUTIVE_SYNTHESIS.md` → `RED_TEAM_REVIEW.md` → §7 below → `ADR-0006` |
 | About to start executing | `30_60_90_180_365_ROADMAP.md` §11 → §3 → `FIELD_VALIDATION_PLAN.md` |
 | Checking the reasoning | Modules 1 → 2 → 3 → 4 in order |
 | The Brand workstream | `BRAND_BUSINESS_INTERFACE.md`, then `POSITIONING_ARCHITECTURE.md` §5, §11 |
-| The technical workstream | `WEB_BUSINESS_REQUIREMENTS.md`, then `TOOLING_AUTOMATION_REQUIREMENTS.md` |
+| The technical workstream (Issue #4) | `WEB_BUSINESS_REQUIREMENTS.md`, then `TOOLING_AUTOMATION_REQUIREMENTS.md` |
 | Sceptical | `RED_TEAM_REVIEW.md` first |
 
 ## 5. The gates
@@ -145,11 +145,11 @@ Per `STOP_RULE.md`, `OWNERSHIP_MATRIX.md` and `HUMAN_AUTHORITY.md`:
 
 | ADR | Decision | Consequence of approving |
 |---|---|---|
-| [`ADR-0005`](../../07-decisions/ADR-0005-diagnostic-led-vertical-thesis.md) | Adopt the diagnostic-led vertical productized studio as the **working thesis under validation** | Authorises 90 days of validation effort; activates the stop rule. Does **not** freeze the model |
-| [`ADR-0006`](../../07-decisions/ADR-0006-two-segment-validation-portfolio.md) | Validate two segments (75/25) rather than committing to one | Sets the outreach allocation and the D3 swap rule |
-| [`ADR-0007`](../../07-decisions/ADR-0007-paid-diagnostic-entry-offer.md) | Make a paid diagnostic the mandatory entry offer; no speculative proposals | Accepts a harder first sale in exchange for funded qualification and baseline-driven proof |
-| [`ADR-0008`](../../07-decisions/ADR-0008-defer-pricing-freeze.md) | Treat all prices as `INFERRED RANGE` until WTP evidence exists | No price may be published or frozen before H-04 |
-| [`ADR-0009`](../../07-decisions/ADR-0009-ai-as-mechanism-not-category.md) | AI is a delivery mechanism, never the category or the headline | Forfeits AI-budget and novelty-seeking demand deliberately |
+| [`ADR-0006`](../../07-decisions/ADR-0006-diagnostic-led-vertical-thesis.md) | Adopt the diagnostic-led vertical productized studio as the **working thesis under validation** | Authorises 90 days of validation effort; activates the stop rule. Does **not** freeze the model |
+| [`ADR-0007`](../../07-decisions/ADR-0007-two-segment-validation-portfolio.md) | Validate two segments (75/25) rather than committing to one | Sets the outreach allocation and the D3 swap rule |
+| [`ADR-0008`](../../07-decisions/ADR-0008-paid-diagnostic-entry-offer.md) | Make a paid diagnostic the mandatory entry offer; no speculative proposals | Accepts a harder first sale in exchange for funded qualification and baseline-driven proof |
+| [`ADR-0009`](../../07-decisions/ADR-0009-defer-pricing-freeze.md) | Treat all prices as `INFERRED RANGE` until WTP evidence exists | No price may be published or frozen before H-04 |
+| [`ADR-0010`](../../07-decisions/ADR-0010-ai-as-mechanism-not-category.md) | AI is a delivery mechanism, never the category or the headline | Forfeits AI-budget and novelty-seeking demand deliberately |
 
 ## 8. Definition of Done — evidence
 

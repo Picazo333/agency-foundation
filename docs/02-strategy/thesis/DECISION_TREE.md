@@ -20,14 +20,14 @@ depends_on:
 - **Gate** = a node that may not be passed without the stated evidence.
 - No node permits "continue while we figure it out." Each exit is explicit, including the exits
   that end the program.
-- Dates are relative to **Day 0 = the day `ADR-0005` is approved**, not the merge date of this PR.
+- Dates are relative to **Day 0 = the day `ADR-0006` is approved**, not the merge date of this PR.
 
 ## 1. Master flow
 
 ```text
                           D0  Founder context (U-01..U-05)
                                      │
-                          D1  Thesis approval (ADR-0005)
+                          D1  Thesis approval (ADR-0006)
                                      │
                           D2  ICP shortlist confirmation
                                      │
@@ -95,7 +95,7 @@ Running in parallel, not blocking the commercial path:
 **When:** Day 0–7. **Owner:** human project owner. **Input:** this master plan.
 
 **Exits:**
-- **Approve `ADR-0005`** → M8 becomes the working thesis under validation. The §11 stop rule in
+- **Approve `ADR-0006`** → M8 becomes the working thesis under validation. The §11 stop rule in
   `AGENCY_THESIS.md` activates. → D2.
 - **Approve with modified thesis** → amend `AGENCY_THESIS.md` §1, re-derive `FIELD_VALIDATION_PLAN.md`
   hypotheses, then → D2.
@@ -271,7 +271,7 @@ business.
 | **P-E: Pursue M5 deliberately** | Validation shows inbound interest in distinctive work exceeds outbound interest in operational repair (falsifies `E-24`) | Accept 18–36 months of portfolio-building with thin revenue, and say so explicitly |
 
 **Rule:** exactly one pivot option may be selected, it must be written into an ADR superseding
-`ADR-0005`, and the new path re-enters the tree at D2.
+`ADR-0006`, and the new path re-enters the tree at D2.
 
 ---
 

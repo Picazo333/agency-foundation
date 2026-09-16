@@ -1,4 +1,4 @@
-# ADR-0005 — Diagnostic-led vertical productized studio as the working thesis
+# ADR-0006 — Diagnostic-led vertical productized studio as the working thesis
 
 Status: **PROPOSED**
 Date: 2026-09-16

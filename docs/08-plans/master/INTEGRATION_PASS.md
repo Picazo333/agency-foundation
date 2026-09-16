@@ -74,7 +74,7 @@ Key figures traced across every module that uses them.
 | `A-13` rework 20% | Evidence register | Pricing §2.1/§8.1, Delivery §11, Scorecard M-26 | ✅ |
 | `A-08` conversion 30% | Evidence register | Pricing §8.4, Offer §3, Scorecard M-07 | ✅ |
 | `A-11` attachment 40% | Evidence register | Thesis §5, Offer §6.1, Scorecard M-11, Decision D9 | ✅ |
-| Diagnostic credit 50% | Offer §3.1 | Positioning §9, Sales §7, ADR-0007 | ✅ **corrected** — was 100% pre-audit |
+| Diagnostic credit 50% | Offer §3.1 | Positioning §9, Sales §7, ADR-0008 | ✅ **corrected** — was 100% pre-audit |
 | WIP: 1 core | Operating §5 | Pricing §2, Decision D8 | ✅ **corrected** — was 2 pre-audit |
 | L3 WIP 4 → 2 during a build | Operating §5 | Pricing §2.2 | ✅ **corrected** (`AUD-03-02`) |
 | Break-even incl. tax | Pricing §10 | Red Team RT-09 | ✅ **corrected** (`AUD-04-03`): 1.35–1.45× multiplier |
@@ -99,7 +99,7 @@ as analysis. **Residual:** whether that is sufficient is H-01. Recorded as parti
 closed.
 
 **C-04 — BOLD says avoid AI positioning; AI is the founder's fastest lever.** Resolved by
-`ADR-0009`: AI is killed as a category and kept as a mechanism. The founder's own visual anti-profile
+`ADR-0010`: AI is killed as a category and kept as a mechanism. The founder's own visual anti-profile
 (`E-07`) independently rejects AI-coded aesthetics, so the commercial and aesthetic arguments agree.
 **Residual:** whether some segment pays an AI premium is H-11; the ADR names the reopen path rather
 than foreclosing it.
@@ -181,7 +181,7 @@ Against `docs/00-meta/definitions-of-done.md`, "Strategic plan":
 | Assumptions explicit | `EVIDENCE_AND_ASSUMPTIONS_REGISTER.md` §4, 18 assumptions with confidence and calibration |
 | Evidence dependencies explicit | §3 of the same, 26 evidence items graded; 12 unknowns routed |
 | Kill criteria and validation plan included | `FIELD_VALIDATION_PLAN.md` §6; `DECISION_TREE.md` D7; `AGENCY_THESIS.md` §1.3 |
-| Does not silently freeze unvalidated claims | All files `status: review`; five ADRs `PROPOSED`; `ADR-0008` prohibits publishing prices |
+| Does not silently freeze unvalidated claims | All files `status: review`; five ADRs `PROPOSED`; `ADR-0009` prohibits publishing prices |
 
 ## 8. Known limitations of this plan *(per `NO_SILENT_DOWNGRADE.md`)*
 
@@ -200,6 +200,27 @@ Stated plainly rather than concealed:
 8. **Delivery hour estimates are constructed**, not measured. They will be wrong; the plan is built
    so they can be replaced.
 
+## 8b. Post-merge reconciliation with `main`
+
+While this workstream was in progress, `main` advanced with
+`ADR-0005 — Capability-first workstreams and executor substitution` (APPROVED), which reassigns the
+Asset Factory and Technical Foundation workstreams to Jules and makes Gemini and Antigravity
+optional later providers rather than dependencies. `main` was merged into this branch (merge commit,
+no rebase, no force-push) and three reconciliations were made:
+
+1. **ADR renumbering.** This workstream's five proposals originally occupied `ADR-0005`–`ADR-0009`,
+   colliding with the newly approved `ADR-0005`. They were renumbered to **`ADR-0006`–`ADR-0010`**
+   and every reference across the plan was updated. No content changed.
+2. **`PROJECT_STATE.md`.** `main`'s five-workstream structure and executor-simplification section
+   were kept verbatim; this workstream's status line for item 2 and the new "Validation state"
+   section were folded into it.
+3. **Executor references.** Three references naming Gemini as the asset-factory owner were changed
+   to name the workstream and its governing issue instead, consistent with the new capability-first
+   canon. The dependency itself is unchanged: asset production remains blocked on Brand V1.
+
+Nothing in the plan's reasoning depends on which executor runs another workstream, so no module
+required substantive revision.
+
 ## 9. Integration verdict
 
 The plan is internally consistent after five numeric corrections and seven audit-driven structural
@@ -208,4 +229,4 @@ are stated rather than smoothed over, and the three contradictions that could no
 each routed to a dated test rather than argued away.
 
 **It is ready for human review as a proposal.** It is not ready to be treated as truth, and
-`ADR-0005` is written so that approving it authorises validation rather than belief.
+`ADR-0006` is written so that approving it authorises validation rather than belief.

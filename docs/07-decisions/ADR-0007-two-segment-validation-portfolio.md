@@ -1,4 +1,4 @@
-# ADR-0006 — Two-segment validation portfolio, not a single ICP commitment
+# ADR-0007 — Two-segment validation portfolio, not a single ICP commitment
 
 Status: **PROPOSED**
 Date: 2026-09-16

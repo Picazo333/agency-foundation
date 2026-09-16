@@ -15,7 +15,7 @@ depends_on:
 
 ## 1. The thesis
 
-**Working thesis (proposed, not frozen — `ADR-0005`):**
+**Working thesis (proposed, not frozen — `ADR-0006`):**
 
 > Small and mid-sized businesses in operationally repetitive sectors lose a measurable and
 > recoverable share of revenue in the gap between *demand arriving* and *demand being converted
@@ -284,7 +284,7 @@ costs money to honour. Each refusal below has a cost and is accepted anyway.
 has never spoken to a buyer. Those two facts together are the program's central danger, and a
 thesis document is exactly the wrong place to be comfortable about it.
 
-> **Stop rule (binding, proposed for approval with `ADR-0005`):**
+> **Stop rule (binding, proposed for approval with `ADR-0006`):**
 > After this master plan is merged, **no further strategic planning artifact may be created** until
 > **10 qualified buyer conversations** have been logged in `docs/06-validation/interviews/`.
 > Delivery templates, sales collateral and validation instruments are permitted, because they are

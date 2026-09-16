@@ -12,7 +12,7 @@
   30/60/90/180/365 roadmap.
 - Completed nine mandatory audit passes (35 findings: 23 applied, 8 accepted, 4 open), a red-team
   review and a cross-document integration pass.
-- Proposed `ADR-0005`…`ADR-0009` for human decision. Nothing frozen; all outputs `status: review`.
+- Proposed `ADR-0006`…`ADR-0010` for human decision. Nothing frozen; all outputs `status: review`.
 - Updated the risk register with ten business-operation risks and refreshed open questions.
 - Brand canon, research, meta canon and all other workstreams left unmodified.
 

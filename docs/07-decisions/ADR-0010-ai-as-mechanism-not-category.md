@@ -1,4 +1,4 @@
-# ADR-0009 — AI is a delivery mechanism, never the category
+# ADR-0010 — AI is a delivery mechanism, never the category
 
 Status: **PROPOSED**
 Date: 2026-09-16

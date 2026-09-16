@@ -1,4 +1,4 @@
-# ADR-0008 — Defer any pricing freeze until willingness-to-pay evidence exists
+# ADR-0009 — Defer any pricing freeze until willingness-to-pay evidence exists
 
 Status: **PROPOSED**
 Date: 2026-09-16

@@ -1,4 +1,4 @@
-# ADR-0007 — Paid diagnostic as the mandatory entry offer
+# ADR-0008 — Paid diagnostic as the mandatory entry offer
 
 Status: **PROPOSED**
 Date: 2026-09-16

@@ -69,7 +69,7 @@ any unvalidated number:
 | First invoice | Entity, tax and invoicing setup ⚖️ | External accountant |
 | Healthcare ICP viability | Data-protection obligations (`U-10`) ⚖️ | Data-protection counsel |
 | Production website | Brand V1 + validated message | Brand + technical |
-| Asset factory | Brand V1 | Gemini workstream |
+| Asset factory | Brand V1 | Asset Factory workstream (Issue #3) |
 | Brand/Business Fit Review | Brand V0 + H-08 evidence | Brand + founder |
 | **Almost everything else** | Five founder questions | **Founder, this week** |
 
@@ -102,7 +102,7 @@ produces visible artifacts, and carries no risk of rejection. Outreach produces 
 and a great deal of rejection. Without a structural constraint, a capable systems thinker will
 choose the first indefinitely and call it preparation.
 
-**Recommendation:** approve `ADR-0005`, which activates a binding stop rule — *no further strategic
+**Recommendation:** approve `ADR-0006`, which activates a binding stop rule — *no further strategic
 planning artifact until ten qualified buyer conversations are logged* — and begin outreach within
 seven days.
 
@@ -128,11 +128,11 @@ Full argument: `RED_TEAM_REVIEW.md`.
 
 | # | Decision | Where |
 |---|---|---|
-| 1 | Approve, amend or reject the working thesis | `ADR-0005` |
-| 2 | Confirm the two-segment validation portfolio | `ADR-0006` |
-| 3 | Confirm the paid-diagnostic entry offer | `ADR-0007` |
-| 4 | Confirm that no price is published before evidence | `ADR-0008` |
-| 5 | Confirm AI as mechanism, never category | `ADR-0009` |
+| 1 | Approve, amend or reject the working thesis | `ADR-0006` |
+| 2 | Confirm the two-segment validation portfolio | `ADR-0007` |
+| 3 | Confirm the paid-diagnostic entry offer | `ADR-0008` |
+| 4 | Confirm that no price is published before evidence | `ADR-0009` |
+| 5 | Confirm AI as mechanism, never category | `ADR-0010` |
 | 6 | Answer `U-01`–`U-05` | §5 |
 | 7 | Engage an accountant and a lawyer ⚖️ | `GOVERNANCE_RISK_SECURITY_CHECKLIST.md` §12 |
 | 8 | Accept or reject the stop rule | `AGENCY_THESIS.md` §11 |

@@ -48,7 +48,7 @@ version of this failure says. The failure mode is not laziness; it is a competen
 genuinely excellent at the wrong stage of the work.
 
 **What was done.** A binding stop rule (`AGENCY_THESIS.md` §11, proposed for approval with
-`ADR-0005`): after this plan merges, **no further strategic planning artifact may be created until
+`ADR-0006`): after this plan merges, **no further strategic planning artifact may be created until
 10 qualified buyer conversations are logged.** Delivery templates, sales instruments and validation
 tooling are permitted because they are consumed by market contact; more strategy is not.
 
@@ -287,7 +287,7 @@ After nine attacks, the following still stand:
 
 ## The Red Team's recommendation
 
-> **Approve `ADR-0005`, activate the stop rule, and begin outreach within seven days.**
+> **Approve `ADR-0006`, activate the stop rule, and begin outreach within seven days.**
 >
 > Not because the plan is proven — it is not, and this review has shown how far from proven it is.
 > But because every remaining question is answerable only in the field, and every additional week of

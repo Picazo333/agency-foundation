@@ -88,9 +88,9 @@ brand/business interface · web business requirements · 30/60/90/180/365 roadma
 **Supporting:** master plan index · executive synthesis · audits (passes 1–8) · red team (pass 9) ·
 integration pass · deliverable map · hypothesis register · learning log · this handoff.
 
-**Proposed ADRs:** `ADR-0005` working thesis · `ADR-0006` two-segment portfolio ·
-`ADR-0007` paid diagnostic entry offer · `ADR-0008` defer pricing freeze ·
-`ADR-0009` AI as mechanism not category.
+**Proposed ADRs:** `ADR-0006` working thesis · `ADR-0007` two-segment portfolio ·
+`ADR-0008` paid diagnostic entry offer · `ADR-0009` defer pricing freeze ·
+`ADR-0010` AI as mechanism not category.
 
 **Updated:** `RISK_REGISTER.md` (+6 rows) · `OPEN_QUESTIONS.md` · `PROJECT_STATE.md` ·
 `CHANGELOG.md` · `docs/07-decisions/index.md`.
@@ -130,7 +130,7 @@ breakage consequences and calibration routes. The five that gate the most:
 | C-01 | Founder aesthetic vs conservative buyer trust | **Unresolved.** → H-08, Gate 1 |
 | C-02 | Vertical focus vs option value | **Unresolved by design.** Review at D8 |
 | C-03 | Diagnostic bootstrap circle | **Partially resolved** by the free teardown rung; residual → H-01 |
-| C-04 | BOLD anti-AI vs AI as the founder's fastest lever | **Resolved** by `ADR-0009` |
+| C-04 | BOLD anti-AI vs AI as the founder's fastest lever | **Resolved** by `ADR-0010` |
 | C-05 | Two deliverable-name contracts | **Resolved** via `DELIVERABLE_MAP.md`; see §8 |
 | C-06 | Kickstart cites non-existent research files | **Not resolvable in scope**; see §8 |
 
@@ -153,7 +153,7 @@ breakage consequences and calibration routes. The five that gate the most:
 | Brand workstream | 10 commercial requirements (`BR-1`–`BR-10`) and 10 constraints (`BC-01`–`BC-10`); 8 proposed Gate 1 test criteria; H-08 evidence requirement |
 | Technical workstream | `WEB_BUSINESS_REQUIREMENTS.md` — MVS spec (week 3), production gates G-W0–G-W5, spine and `S0→S4` mapping |
 | Human owner | 5 ADR decisions; 5 founder questions; 2 professional engagements ⚖️ |
-| Gemini / asset factory | None. Unchanged, still blocked on Brand V1 |
+| Asset Factory workstream (Issue #3) | None. Unchanged, still blocked on Brand V1 |
 
 ## Files changed
 
@@ -230,7 +230,7 @@ Per `NO_SILENT_DOWNGRADE.md`, these are stated rather than concealed:
 
 1. Read `EXECUTIVE_SYNTHESIS.md`, then `RED_TEAM_REVIEW.md`.
 2. Answer `U-01`–`U-05` (one sitting).
-3. Approve, amend or reject `ADR-0005`–`ADR-0009`.
+3. Approve, amend or reject `ADR-0006`–`ADR-0010`.
 4. Engage an accountant and a commercial lawyer ⚖️.
 5. **Begin outreach within seven days.** Not after Brand V1, not after the website, not after more
    planning.
@@ -246,7 +246,7 @@ Against `docs/00-meta/definitions-of-done.md`, "Strategic plan":
 | Assumptions explicit | 18 assumptions with confidence bands and calibration routes |
 | Evidence dependencies explicit | 26 graded evidence items; 12 unknowns routed |
 | Kill criteria and validation plan included | 12 hypotheses; 7 gates; explicit kill path with a 7-day ADR deadline |
-| Does not silently freeze unvalidated claims | Every file `status: review`; 5 ADRs `PROPOSED`; `ADR-0008` prohibits publishing any price |
+| Does not silently freeze unvalidated claims | Every file `status: review`; 5 ADRs `PROPOSED`; `ADR-0009` prohibits publishing any price |
 
 Against `CLAUDE_KICKSTART.md` "Definition of Done" and Issue #2 §"Required Master Outputs":
 see `AGENCY_MASTER_PLAN.md` §8.

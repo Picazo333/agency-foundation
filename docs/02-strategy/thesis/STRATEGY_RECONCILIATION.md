@@ -375,7 +375,7 @@ Per `STOP_RULE.md` and `HUMAN_AUTHORITY.md`:
 - **Not decided:** any price. `PRICING_AND_ECONOMICS_MODEL.md` builds models with labelled
   assumptions; none is a commitment.
 - **Not frozen:** M8 itself. It is a *working thesis under validation*, proposed for human approval
-  as `ADR-0005`. Approving `ADR-0005` authorises 90 days of validation spend and effort; it does
+  as `ADR-0006`. Approving `ADR-0006` authorises 90 days of validation spend and effort; it does
   not freeze the business model.
 
 ## 7. The one-sentence result

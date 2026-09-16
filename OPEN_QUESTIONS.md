@@ -20,7 +20,7 @@ questions below are updated accordingly; answered questions are retained with th
 reasoning stays traceable.
 
 - ~~Which agency archetype survives strategy reconciliation?~~ **Proposed:** a diagnostic-led,
-  vertical, productized studio (M8). Four archetypes killed, one demoted. Pending `ADR-0005`.
+  vertical, productized studio (M8). Four archetypes killed, one demoted. Pending `ADR-0006`.
 - ~~What is the primary economic unit?~~ **Proposed:** a measured revenue gap — diagnostic, then a
   bounded build, then an operated layer. Not a website and not automation per se.
 - Which ICP survives the access gate? Multi-site specialty clinic groups are the recommended
