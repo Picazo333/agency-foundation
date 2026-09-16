@@ -20,6 +20,7 @@ depends_on:
 | ADR-0008 | Paid diagnostic as the mandatory entry offer; no speculative proposals | **PROPOSED** |
 | ADR-0009 | Defer any pricing freeze until willingness-to-pay evidence exists | **PROPOSED** |
 | ADR-0010 | AI is a delivery mechanism, never the category | **PROPOSED** |
+| ADR-0011 | Adopt the neutral technical foundation baseline and experimental-lab boundaries | APPROVED |
 
 `PROPOSED` ADRs are recommendations from the Claude/CoWork Agency Master Plan workstream
 (GitHub Issue #2) awaiting human decision. They are not canon until approved
