@@ -1,34 +1,48 @@
 {
-  "$schema": "http://json-schema.org/draft-07/schema#",
-  "title": "Asset Provenance and Licensing Metadata",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Asset Provenance Consumer Contract",
   "type": "object",
-  "description": "Schema for tracking the origin, license, and modifications of assets.",
+  "description": "Implementation-facing provenance subset. Keep field names and license-state semantics aligned with the generator-agnostic Asset Factory contract; this file does not supersede that contract.",
+  "additionalProperties": true,
   "properties": {
     "asset_id": {
       "type": "string",
-      "description": "Unique identifier for the asset (e.g., filename or hash)."
+      "minLength": 1,
+      "description": "Stable identifier for the asset or asset family."
     },
-    "source": {
+    "origin_type": {
       "type": "string",
-      "description": "The origin of the asset (e.g., 'Gemini Asset Factory', 'Unsplash', 'Internal Design Team')."
+      "enum": ["original_human", "generated_ai", "licensed_commercial", "open_source", "unknown"]
+    },
+    "license_state": {
+      "type": "string",
+      "enum": ["CLEARED", "REFERENCE_ONLY", "UNKNOWN_RIGHTS", "UNVERIFIED_LICENSE"],
+      "description": "Only CLEARED assets may be treated as production-approved after all other review gates pass."
+    },
+    "source_references": {
+      "type": "array",
+      "items": { "type": "string" },
+      "default": []
+    },
+    "generator_model": {
+      "type": ["string", "null"],
+      "description": "Model/provider identifier when AI generation materially contributed to the asset."
     },
     "author": {
-      "type": "string",
-      "description": "The creator or original author of the asset."
+      "type": ["string", "null"]
     },
     "license": {
-      "type": "string",
-      "description": "The license under which the asset is used (e.g., 'CC-BY-4.0', 'Proprietary', 'MIT')."
+      "type": ["string", "null"],
+      "description": "Human-readable license or commercial-rights record when applicable."
     },
     "modification_date": {
-      "type": "string",
-      "format": "date-time",
-      "description": "The date and time the asset was last modified or processed."
+      "type": ["string", "null"],
+      "format": "date-time"
     },
     "notes": {
-      "type": "string",
-      "description": "Any additional context, such as AI generation prompts or specific processing steps applied."
+      "type": ["string", "null"],
+      "description": "Processing history, material caveats, or additional provenance context."
     }
   },
-  "required": ["asset_id", "source", "license"]
+  "required": ["asset_id", "origin_type", "license_state"]
 }
