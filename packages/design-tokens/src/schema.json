@@ -1,0 +1,58 @@
+{
+  "colors": {
+    "primary": { "value": "TBD", "type": "color" },
+    "secondary": { "value": "TBD", "type": "color" },
+    "background": { "value": "TBD", "type": "color" },
+    "text": { "value": "TBD", "type": "color" }
+  },
+  "typography": {
+    "fontFamily": {
+      "base": { "value": "TBD", "type": "fontFamily" },
+      "heading": { "value": "TBD", "type": "fontFamily" }
+    },
+    "fontSize": {
+      "small": { "value": "TBD", "type": "dimension" },
+      "base": { "value": "TBD", "type": "dimension" },
+      "large": { "value": "TBD", "type": "dimension" }
+    }
+  },
+  "spacing": {
+    "small": { "value": "TBD", "type": "dimension" },
+    "medium": { "value": "TBD", "type": "dimension" },
+    "large": { "value": "TBD", "type": "dimension" }
+  },
+  "radius": {
+    "small": { "value": "TBD", "type": "dimension" },
+    "medium": { "value": "TBD", "type": "dimension" },
+    "large": { "value": "TBD", "type": "dimension" }
+  },
+  "border": {
+    "thin": { "value": "TBD", "type": "dimension" },
+    "medium": { "value": "TBD", "type": "dimension" }
+  },
+  "shadow": {
+    "soft": { "value": "TBD", "type": "shadow" },
+    "hard": { "value": "TBD", "type": "shadow" }
+  },
+  "motion": {
+    "duration": {
+      "fast": { "value": "TBD", "type": "duration" },
+      "normal": { "value": "TBD", "type": "duration" },
+      "slow": { "value": "TBD", "type": "duration" }
+    },
+    "easing": {
+      "linear": { "value": "TBD", "type": "cubicBezier" },
+      "ease-in-out": { "value": "TBD", "type": "cubicBezier" }
+    }
+  },
+  "zIndex": {
+    "base": { "value": "TBD", "type": "number" },
+    "overlay": { "value": "TBD", "type": "number" },
+    "modal": { "value": "TBD", "type": "number" }
+  },
+  "breakpoints": {
+    "mobile": { "value": "TBD", "type": "dimension" },
+    "tablet": { "value": "TBD", "type": "dimension" },
+    "desktop": { "value": "TBD", "type": "dimension" }
+  }
+}
