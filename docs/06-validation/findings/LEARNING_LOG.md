@@ -10,6 +10,11 @@ depends_on:
 
 > Weekly record of what field contact actually taught. Format defined in
 > `../FIELD_VALIDATION_PLAN.md` §7. One entry per week, from the week validation begins.
+>
+> **Entries are produced by the weekly review procedure:**
+> [`../field-kit/14_WEEKLY_VALIDATION_REVIEW.md`](../field-kit/14_WEEKLY_VALIDATION_REVIEW.md)
+> (20–30 min, same day each week). Two consecutive blank *"what I was wrong about"* entries trigger
+> the escalation in that file's §8.
 
 ## Rules
 

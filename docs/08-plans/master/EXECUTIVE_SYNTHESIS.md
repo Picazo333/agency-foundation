@@ -137,6 +137,17 @@ Full argument: `RED_TEAM_REVIEW.md`.
 | 7 | Engage an accountant and a lawyer ⚖️ | `GOVERNANCE_RISK_SECURITY_CHECKLIST.md` §12 |
 | 8 | Accept or reject the stop rule | `AGENCY_THESIS.md` §11 |
 
+## 8b. The instruments exist
+
+Everything in §9 below is ready to run. The **Field Validation Execution Kit**
+([`docs/06-validation/field-kit/`](../../06-validation/field-kit/00_README.md)) contains the target
+ledger, research and teardown procedures, exact outreach sequences, an interviewer-ready script,
+evidence logs for each hypothesis, an experiment runbook, the weekly review and operator checklists
+for every gate — plus CSV templates.
+
+**Open [`16_VALIDATION_LAUNCH_CHECKLIST.md`](../../06-validation/field-kit/16_VALIDATION_LAUNCH_CHECKLIST.md)
+and work down it.** No further process design is required, and none should be undertaken.
+
 ## 9. What happens in the next 90 days
 
 | Days | What |

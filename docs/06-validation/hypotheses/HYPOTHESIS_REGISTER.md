@@ -9,6 +9,9 @@ depends_on:
 # Hypothesis Register
 
 > Live tracking table for the hypotheses defined in `../FIELD_VALIDATION_PLAN.md` §2.
+> **Instruments that produce this evidence:** [`../field-kit/00_README.md`](../field-kit/00_README.md).
+> Which instrument and which field feeds each hypothesis:
+> [`../field-kit/17_TRACEABILITY_MATRIX.md`](../field-kit/17_TRACEABILITY_MATRIX.md).
 > **This file is updated as evidence arrives.** Status may only advance on the grade of evidence
 > actually obtained (`EVIDENCE_AND_ASSUMPTIONS_REGISTER.md` §5 rule 2): interviews produce
 > `SIGNAL`; only money received produces `FACT`.

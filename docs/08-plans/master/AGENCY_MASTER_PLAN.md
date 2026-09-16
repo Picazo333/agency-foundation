@@ -90,6 +90,7 @@ planning artifact may be created until ten qualified buyer conversations are log
 | 16 | Governance, risk, security | [`docs/04-operations/GOVERNANCE_RISK_SECURITY_CHECKLIST.md`](../../04-operations/GOVERNANCE_RISK_SECURITY_CHECKLIST.md) | 13 |
 | 17 | Agency scorecard | [`docs/04-operations/AGENCY_SCORECARD.md`](../../04-operations/AGENCY_SCORECARD.md) | 14 |
 | 18 | Field validation plan | [`docs/06-validation/FIELD_VALIDATION_PLAN.md`](../../06-validation/FIELD_VALIDATION_PLAN.md) | 15 |
+| 18a | **Field Validation Execution Kit** — the operational entry point | [`docs/06-validation/field-kit/00_README.md`](../../06-validation/field-kit/00_README.md) | 15 |
 | 19 | Brand / business interface | [`docs/02-strategy/BRAND_BUSINESS_INTERFACE.md`](../../02-strategy/BRAND_BUSINESS_INTERFACE.md) | 16 |
 | 20 | Web business requirements | [`docs/02-strategy/WEB_BUSINESS_REQUIREMENTS.md`](../../02-strategy/WEB_BUSINESS_REQUIREMENTS.md) | 17 |
 | 21 | Roadmap 30/60/90/180/365 | [`30_60_90_180_365_ROADMAP.md`](30_60_90_180_365_ROADMAP.md) | 18 |
@@ -109,7 +110,7 @@ planning artifact may be created until ten qualified buyer conversations are log
 | If you are | Read |
 |---|---|
 | The human owner, deciding whether to approve | `EXECUTIVE_SYNTHESIS.md` → `RED_TEAM_REVIEW.md` → §7 below → `ADR-0006` |
-| About to start executing | `30_60_90_180_365_ROADMAP.md` §11 → §3 → `FIELD_VALIDATION_PLAN.md` |
+| About to start executing | `30_60_90_180_365_ROADMAP.md` §11 → **`docs/06-validation/field-kit/16_VALIDATION_LAUNCH_CHECKLIST.md`** |
 | Checking the reasoning | Modules 1 → 2 → 3 → 4 in order |
 | The Brand workstream | `BRAND_BUSINESS_INTERFACE.md`, then `POSITIONING_ARCHITECTURE.md` §5, §11 |
 | The technical workstream (Issue #4) | `WEB_BUSINESS_REQUIREMENTS.md`, then `TOOLING_AUTOMATION_REQUIREMENTS.md` |
