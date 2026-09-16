@@ -19,6 +19,7 @@ This repository is the persistent project memory and source of truth for the Age
 - Never commit secrets, tokens, credentials, private keys, or `.env` files.
 - Generated assets belong in `assets/generated/`; approved assets belong in `assets/approved/` only after review.
 - Experimental code belongs in `labs/`; production code belongs in `apps/` or `packages/` only after approval.
+- At the end of a **meaningful** PR, ADR, milestone, experiment, incident, or delivery, perform a quick Project Harvest assessment using `docs/10-knowledge-harvest/PROJECT_HARVEST_PROTOCOL.md`. Do nothing for low-signal routine work. Harvest records never change canon and must never auto-publish or expose confidential information.
 
 ## Status model
 `DRAFT -> REVIEW -> APPROVED -> FROZEN -> SUPERSEDED/DEPRECATED`
@@ -30,5 +31,6 @@ This repository is the persistent project memory and source of truth for the Age
 - Codex: `apps/`, `packages/`, `scripts/`, `infra/`, approved technical docs
 - Antigravity: primarily `labs/`
 - Jules: issue-scoped repo changes through branch + PR
+- Project Harvest: cross-cutting capture protocol under `docs/10-knowledge-harvest/`; downstream transformations remain owned by their respective systems/workstreams.
 
 See `docs/00-meta/agent-contracts.md` for full contracts.
