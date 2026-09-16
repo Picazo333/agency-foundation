@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visual Lab - Neutral Foundation</title>
+    <style>
+        /* Neutral base styles mapped conceptually to token schema */
+        :root {
+            --color-primary: #555;
+            --color-secondary: #888;
+            --color-background: #f9f9f9;
+            --color-text: #111;
+
+            --font-family-base: system-ui, -apple-system, sans-serif;
+            --font-family-heading: system-ui, -apple-system, sans-serif;
+
+            --spacing-small: 0.5rem;
+            --spacing-medium: 1rem;
+            --spacing-large: 2rem;
+
+            --radius-small: 4px;
+            --radius-medium: 8px;
+
+            --border-thin: 1px solid #ccc;
+        }
+
+        body {
+            font-family: var(--font-family-base);
+            background-color: var(--color-background);
+            color: var(--color-text);
+            margin: 0;
+            padding: var(--spacing-large);
+        }
+
+        .warning-banner {
+            background-color: #ffcc00;
+            color: #000;
+            padding: var(--spacing-medium);
+            text-align: center;
+            font-weight: bold;
+            margin-bottom: var(--spacing-large);
+            border-radius: var(--radius-small);
+        }
+
+        .card {
+            border: var(--border-thin);
+            border-radius: var(--radius-medium);
+            padding: var(--spacing-large);
+            background: #fff;
+            max-width: 400px;
+            margin-bottom: var(--spacing-large);
+        }
+
+        .button {
+            display: inline-block;
+            padding: var(--spacing-small) var(--spacing-medium);
+            background-color: var(--color-primary);
+            color: #fff;
+            border: none;
+            border-radius: var(--radius-small);
+            cursor: pointer;
+            text-decoration: none;
+            font-family: var(--font-family-base);
+        }
+
+        .button:hover {
+            background-color: var(--color-secondary);
+        }
+
+        h1, h2 {
+            font-family: var(--font-family-heading);
+        }
+    </style>
+</head>
+<body>
+    <div class="warning-banner">
+        EXPERIMENTAL: DO NOT USE IN PROD. This is a neutral visual lab.
+    </div>
+
+    <h1>Visual Lab</h1>
+    <p>Testing ground for neutral visual components using unopinionated token structures.</p>
+
+    <div class="card">
+        <h2>Card Component</h2>
+        <p>This is a neutral card demonstrating layout and spacing tokens.</p>
+        <button class="button">Action Button</button>
+    </div>
+</body>
+</html>

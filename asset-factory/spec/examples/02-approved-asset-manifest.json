@@ -1,0 +1,54 @@
+{
+  "batch_id": "batch-12345",
+  "status": "COMPLETED",
+  "approved_assets": [
+    {
+      "asset_id": "uuid-icon-001",
+      "semantic_name": "search-magnifier",
+      "filepath": "assets/approved/icon--search-magnifier--base--v1.svg",
+      "implementation_notes": "Use as an inline SVG with 'fill: currentColor' to match typography.",
+      "accessibility": {
+        "alt_text": "Search",
+        "role": "img"
+      },
+      "provenance": {
+        "origin_type": "generated_ai",
+        "license_state": "CLEARED"
+      }
+    },
+    {
+      "asset_id": "uuid-illus-002",
+      "semantic_name": "hero-data-flow",
+      "filepath": "assets/approved/illustration--hero-data-flow--desktop--v1.svg",
+      "implementation_notes": "Desktop hero variant.",
+      "accessibility": {
+        "alt_text": "Abstract geometric data flow representing analytics.",
+        "role": "img"
+      },
+      "provenance": {
+        "origin_type": "generated_ai",
+        "license_state": "CLEARED"
+      },
+      "responsive_variants": [
+        "assets/approved/illustration--hero-data-flow--mobile--v1.svg"
+      ]
+    },
+    {
+      "asset_id": "uuid-illus-002",
+      "semantic_name": "hero-data-flow",
+      "filepath": "assets/approved/illustration--hero-data-flow--mobile--v1.svg",
+      "implementation_notes": "Mobile hero variant. Reduced complexity.",
+      "accessibility": {
+        "alt_text": "Abstract geometric data flow representing analytics.",
+        "role": "img"
+      },
+      "provenance": {
+        "origin_type": "generated_ai",
+        "license_state": "CLEARED"
+      },
+      "responsive_variants": [
+        "assets/approved/illustration--hero-data-flow--desktop--v1.svg"
+      ]
+    }
+  ]
+}

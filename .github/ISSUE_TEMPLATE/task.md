@@ -20,6 +20,11 @@ labels: ''
 
 # Validation / tests
 
+# Agent Safety Checks
+- Must not modify files outside allowed scope.
+- Must not commit secrets.
+- Must run local repository health checks before PR.
+
 # Dependencies
 
 # Handoff destination
