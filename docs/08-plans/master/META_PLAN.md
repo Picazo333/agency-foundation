@@ -20,21 +20,48 @@ It does not auto-publish, does not make research/candidates canonical, and does 
 
 Protocol: `docs/10-knowledge-harvest/PROJECT_HARVEST_PROTOCOL.md`.
 
+## Operating principle — capability first, executor second
+Workstreams are defined by their **capability contract, scope, outputs and Definition of Done**, not by a specific AI product. Executor changes are allowed when they reduce operational friction without reducing required quality.
+
+A tool substitution must preserve:
+- governing Issue;
+- scope and forbidden scope;
+- branch/task isolation;
+- required artifacts;
+- validation/audit requirements;
+- PR review before `main`.
+
 ## Wave 0 — Foundation
 Repository baseline, governance, research import, workstream contracts, handoffs and CI health checks.
 
-## Wave 1 — Run four workstreams in parallel
+## Wave 1 — Parallel workstreams
 ### A — Brand Direction (ChatGPT + human)
 Naming -> shortlist/validation -> identity systems V0 -> Visual Direction Freeze V0.
 
-### B — Agency Master Plan (Claude/CoWork)
-Strategy reconciliation -> thesis/category -> ICP -> positioning -> offer -> pricing -> proof -> sales -> delivery -> economics -> field validation -> 90-day roadmap.
+### B — Agency Master Plan (Claude Code)
+Strategy reconciliation -> thesis/category -> ICP -> positioning -> offer -> pricing -> proof -> sales -> delivery -> economics -> field validation -> dependency-aware roadmap.
 
-### C — Asset Factory Architecture (Gemini)
-Design the Gem/factory, schemas, categories, QA, provenance and production rules. Do not mass-produce final assets before Brand V1.
+### C — Asset Factory Architecture (Jules)
+Design a generator-agnostic factory: schemas, categories, QA, provenance, generation contracts, lifecycle and handoff rules. Do not mass-produce final assets before Brand V1.
 
-### D — Technical Foundation (Codex/Antigravity/Jules/Cursor)
-Neutral token schema, visual/motion/SVG/interaction labs, asset pipeline, QA/test infrastructure. Do not build the final production site prematurely.
+Current governing Issue: #3. Current execution branch: `asset/jules-asset-factory-architecture`.
+
+Gemini is no longer required to design this architecture. It remains a possible generation engine after Brand V1.
+
+### D — Neutral Technical Foundation (Jules)
+Neutral token schema, visual/motion/SVG/interaction labs, SVG pipeline, accessibility/performance foundations, provenance integration and S0-S4 maturity contract. Do not build the final production site prematurely.
+
+Current governing Issue: #4. Current execution branch: `tech/jules-technical-foundation`.
+
+Antigravity is no longer required for this foundation phase. It remains an optional later experimentation surface when the incremental benefit justifies setup complexity.
+
+### E — Repo Hardening (Jules)
+Repo hygiene, CI, documentation validation, secret hygiene and multi-agent work safety.
+
+Current governing Issue: #6. Current execution branch: `tech/jules-repo-hardening`.
+
+## Parallelism rule for Jules
+Jules may execute multiple workstreams concurrently only when each task is isolated by Issue + branch/task environment + explicit write scope. No cross-workstream edits unless a narrow integration dependency is documented.
 
 ## Gate 1 — Brand/Business Fit Review
 Inputs: Brand V0 + Agency Master Plan.
@@ -47,7 +74,7 @@ Freeze serious agency structure while marking unresolved field-validation depend
 Start in a clean brand-system workstream/conversation using approved business strategy + Brand V0.
 
 ## Wave 4 — Asset Factory activation
-Gemini generates approved, versioned assets from Brand V1.
+Activate the approved Asset Factory architecture using Brand V1. The generation provider is selected at execution time; Gemini is an option, not a dependency.
 
 ## Wave 5 — Implementation
 Parallel spines:
