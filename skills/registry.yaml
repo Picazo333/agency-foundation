@@ -1,0 +1,111 @@
+version: 1
+updated: 2026-09-15
+policy: docs/00-meta/capability-governance.md
+
+skills:
+  - id: design-taste-frontend
+    display_name: Taste
+    status: approved
+    intake_tier: 1
+    authority: advisory
+    execution_mode: reference_only
+    source:
+      repository: Leonxlnx/taste-skill
+      commit: ccbc15639c97057cbfcf32ecebc38ef716e4bb37
+      path: skills/taste-skill/SKILL.md
+      license: MIT
+    purpose: >-
+      Anti-slop design direction for landing pages, portfolios, redesigns and editorial/brand-facing frontend work.
+      Use to infer the design read, expose generic AI defaults and calibrate variance/motion/density.
+    allowed_phases:
+      - visual-direction-review
+      - signature-concept-review
+      - composition-review
+      - digital-brand-specimen
+      - stress-test
+    prohibited:
+      - overriding brand canon
+      - deciding business strategy
+      - auto-installing packages or frameworks
+      - executing shell commands without human approval
+    notes: >-
+      v2 is experimental upstream. Project use is pinned to this reviewed commit; upstream updates are not automatic.
+
+  - id: gpt-taste
+    display_name: GPT Taste
+    status: approved_with_restrictions
+    intake_tier: 1
+    authority: advisory
+    execution_mode: reference_only
+    source:
+      repository: Leonxlnx/taste-skill
+      commit: ccbc15639c97057cbfcf32ecebc38ef716e4bb37
+      path: skills/gpt-tasteskill/SKILL.md
+      license: MIT
+    purpose: >-
+      Aggressive anti-default frontend and motion guidance for later digital experimentation.
+    allowed_phases:
+      - digital-brand-specimen
+      - motion-experiment
+      - frontend-red-team
+    prohibited:
+      - brand naming
+      - visual canon definition
+      - logo or signature authority
+      - mandatory AIDA/GSAP/randomization when inconsistent with the approved route
+      - executing shell/package actions without human approval
+    notes: >-
+      Strongly prescriptive. Treat as a challenger/red-team lens, not a governing design system. The project brief always wins.
+
+  - id: superdesign
+    display_name: Superdesign
+    status: approved
+    intake_tier: 1
+    authority: exploration
+    execution_mode: reference_only
+    source:
+      repository: superdesigndev/superdesign-skill
+      commit: f9f05cd988c247dce6c072eaf9ac6b162f2ffc4b
+      path: skills/superdesign/SKILL.md
+      license: MIT
+    purpose: >-
+      Controlled visual divergence, design-system exploration, graphics and side-by-side design drafts.
+    allowed_phases:
+      - signature-concept-exploration
+      - graphic-system-exploration
+      - composition-system
+      - digital-brand-specimen
+    prohibited:
+      - changing frozen brand thesis or canon
+      - running Superdesign CLI/login/network flows without explicit human approval
+      - uploading private repository material externally without explicit approval
+      - writing outside current workstream scope
+    notes: >-
+      Upstream Skill is CLI-driven. This repository currently installs only the pinned methodology adapter. Execution mode is gated separately.
+
+  - id: impeccable
+    display_name: Impeccable
+    status: approved
+    intake_tier: 1
+    authority: validation_and_refinement
+    execution_mode: reference_only
+    source:
+      repository: pbakaus/impeccable
+      commit: 0a4e72a254f3b175c95b36b82e5f2e60fa63f116
+      path: skill/SKILL.src.md
+      license: Apache-2.0
+    purpose: >-
+      Bounded design critique/refinement covering hierarchy, typography, layout, accessibility, responsive behavior, motion and production quality.
+    allowed_phases:
+      - foundations-review
+      - composition-polish
+      - digital-brand-specimen
+      - accessibility-review
+      - stress-test
+    prohibited:
+      - redefining brand strategy or naming
+      - replacing an approved visual world without an explicit redesign task
+      - executing/downloading its launcher or binary without explicit human approval
+      - automatic hooks that rewrite or scan beyond approved scope
+    notes: >-
+      Upstream supports executable launcher/hooks. Those are intentionally disabled in project reference mode until separately approved.
