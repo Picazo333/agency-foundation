@@ -1,0 +1,19 @@
+asset_id: example.asset.001
+category: illustration
+status: draft
+purpose: example
+format: svg
+dimensions: responsive
+palette: TBD
+source:
+  type: original
+  reference: null
+license:
+  class: original
+  notes: null
+variants: []
+responsive_behavior: TBD
+qa:
+  brand_v1_conformant: false
+  provenance_checked: false
+  svg_validated: false
