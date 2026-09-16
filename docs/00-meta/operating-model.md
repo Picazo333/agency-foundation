@@ -21,10 +21,13 @@ This is a **non-blocking sidecar**, not a new mandatory stage in the core loop. 
 Protocol: `docs/10-knowledge-harvest/PROJECT_HARVEST_PROTOCOL.md`.
 
 ## Parallel workstreams
-- Brand Direction Lab — ChatGPT + human
-- Agency Master Plan — Claude/CoWork
-- Asset Factory Architecture — Gemini
-- Technical Foundation — Codex/Antigravity/Jules/Cursor
+Workstreams are defined capability-first; current executors may change without changing the workstream contract (see ADR-0005).
+
+- Brand Direction — ChatGPT + human
+- Agency Master Plan — Claude Code / CoWork capability
+- Asset Factory Architecture — Jules (generator-agnostic; Gemini remains a possible later generation provider)
+- Neutral Technical Foundation — Jules (Antigravity remains an optional later experimentation environment)
+- Repo Hardening — Jules
 
 ## Convergence gates
 1. Brand/Business Fit Review
