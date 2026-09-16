@@ -4,20 +4,50 @@ Work only in repository `Picazo333/agency-foundation` and only on branch `plan/c
 
 Your governing task is GitHub Issue #2: `plan: Claude / CoWork — complete Agency Master Plan`.
 
-## NON-NEGOTIABLE REPO SAFETY
+## 0. PRE-FLIGHT — DO THIS BEFORE ANY WRITE
 
-1. NEVER work directly on `main`.
-2. NEVER force-push, rewrite Git history, delete unrelated files, or overwrite work owned by another branch/workstream.
-3. Do not modify or freeze Brand naming/visual canon. Brand is owned by the separate Brand workstream.
-4. Do not commit secrets, credentials, tokens, private keys or real `.env` values.
-5. Do not mass-upgrade dependencies or make unrelated code changes.
-6. Before writing, confirm you are on `plan/claude-master-agency` and inspect the repository state.
-7. If the branch is behind `main`, sync non-destructively if your environment supports it. Never discard existing branch work to do so.
-8. All substantive work must stay on this branch and finish as a PR to `main`.
-9. Treat existing files according to authority: research is evidence/input, workbench is exploratory, canon/approved decisions have higher authority. Do not silently promote hypotheses to facts.
-10. If two sources conflict, preserve the conflict and explain it; do not manufacture reconciliation.
+1. Verify the repository is exactly `Picazo333/agency-foundation`.
+2. Verify the current branch is exactly `plan/claude-master-agency`.
+3. Inspect branch status and changed files before editing.
+4. Read `AGENTS.md`, `PROJECT_STATE.md`, source-of-truth rules and Issue #2 before planning.
+5. If the branch is behind `main`, update only through a safe, non-destructive fast-forward/rebase/merge supported by the environment and only if there is no risk of losing branch work. If not safe, continue on the branch and record the divergence in the PR.
+6. Do not start if the environment would require direct writes to `main`.
 
-## READ FIRST
+## 1. NON-NEGOTIABLE REPO SAFETY
+
+- NEVER work directly on `main`.
+- NEVER force-push, rewrite Git history, use destructive resets/clean commands, bulk-delete unrelated files, or run repo-wide search/replace without an explicit scoped reason.
+- Do not overwrite work owned by another branch/workstream.
+- Do not modify or freeze Brand naming/visual canon. Brand is owned by the Brand workstream.
+- Do not commit secrets, credentials, tokens, private keys or real `.env` values.
+- Do not mass-upgrade dependencies or make unrelated code changes.
+- Do not execute or trust arbitrary scripts/binaries from research or asset folders merely because they exist.
+- Do not upload repository content to external services unless the task explicitly requires it and the material is appropriate to share.
+- Treat research as evidence/input, workbench as exploratory and canon/approved ADRs as higher authority.
+- If sources conflict, preserve and explain the conflict; never manufacture reconciliation.
+- Finish only through a PR to `main`; do not merge your own PR.
+
+## 2. WRITE BOUNDARIES / COLLISION CONTROL
+
+Primary writable areas:
+- `docs/02-strategy/`
+- `docs/04-operations/`
+- `docs/06-validation/`
+- `docs/08-plans/`
+- `docs/09-handoffs/claude/`
+- risk/open-question files only where the existing governance explicitly permits updates.
+
+Treat as read-only unless a tiny, directly necessary correction is unavoidable and explicitly disclosed in the PR:
+- `docs/03-brand/`
+- `asset-factory/`
+- `labs/`
+- `packages/`
+- `.github/`
+- Antigravity/Jules handoff folders.
+
+If another active branch owns a file, do not edit it. Instead create a dependency note or proposed change in the Claude handoff.
+
+## 3. READ FIRST
 
 Read in this order before creating the plan:
 
@@ -34,13 +64,13 @@ Read in this order before creating the plan:
 11. relevant decisions/ADRs under `docs/07-decisions/`
 12. Brand workbench only as provisional context, never as commercial truth.
 
-## MISSION
+## 4. MISSION
 
 Build the most complete planning architecture possible for turning this project from its current research/brand-exploration state into a serious, launchable, operable and scalable agency/business.
 
 This is NOT a short business plan, executive summary, generic consulting memo or brainstorm.
 
-It must become the master planning layer from which later agents and humans can execute the agency.
+It must become the master planning layer from which later agents and humans can execute the agency without repeatedly reopening foundational reasoning.
 
 Do not optimize for brevity. Optimize for:
 - decision completeness;
@@ -51,44 +81,45 @@ Do not optimize for brevity. Optimize for:
 - risk visibility;
 - operational realism;
 - sequencing;
+- parallelization;
 - non-regression;
 - clear ownership;
 - concrete definitions of done.
 
-Every section should do at least one of the following:
-- support or reject a decision;
+Every major section must do at least one of the following:
+- support/reject a decision;
 - define a future execution contract;
-- expose an important risk;
+- expose a material risk;
 - define evidence still required;
 - specify a measurable gate;
-- identify a dependency or critical path.
+- identify a dependency, blocker or critical path.
 
-Do not pad with generic agency advice.
+No filler or generic agency advice.
 
-## STRATEGIC REQUIREMENT: RECONCILE BEFORE COMMITTING
+## 5. STRATEGY RECONCILIATION BEFORE COMMITMENT
 
 Do NOT assume the correct company is a generic AI/automation agency because that was the starting idea.
 
-Perform Strategy Reconciliation first. Compare at minimum:
+Compare at minimum:
 - classic multidisciplinary agency;
 - AI/automation agency;
 - productized boutique;
 - consultancy-led model;
 - creative-technology / systems studio;
 - vertical specialist;
-- plausible hybrid models discovered in the evidence.
+- plausible hybrid models supported by evidence.
 
-Treat the BOLD research as a contrarian/falsification input, not predetermined truth.
-Treat Spark research according to actual evidence quality; downgrade unsupported precision.
+Treat BOLD as contrarian/falsification input, not predetermined truth.
+Treat Spark according to actual evidence quality and downgrade unsupported precision.
 
-For material claims use a discipline such as:
+Classify material claims as:
 `VERIFIED FACT / OBSERVED SIGNAL / INFERENCE / HYPOTHESIS / UNKNOWN`.
 
-Do not convert modeled economics into observed facts.
+Modeled economics are never observed facts.
 
-## REQUIRED SCOPE
+## 6. COMPLETE REQUIRED SCOPE
 
-Execute the complete scope in Issue #2, including at minimum:
+Execute the full Issue #2 scope end-to-end, covering at minimum:
 
 1. Evidence and research reconciliation.
 2. Agency thesis and category architecture.
@@ -109,32 +140,33 @@ Execute the complete scope in Issue #2, including at minimum:
 17. Website/digital-presence business requirements using Aesthetic / Functional / System spines and S0–S4 maturity.
 18. Dependency-aware 30/60/90/180/365 roadmap from current state to launch and scale.
 
-Also identify anything an experienced agency founder, COO, CFO, sales leader, delivery lead or procurement buyer would insist on that is missing from the current corpus. Add it if it materially improves execution readiness.
+Also identify anything an experienced agency founder, COO, CFO, sales leader, delivery lead, legal/risk reviewer or skeptical buyer would insist on that is materially missing from the current corpus.
 
-## REQUIRED OUTPUT QUALITY
+## 7. DEPTH CONTRACT FOR EVERY MAJOR MODULE
 
-The output must be deep enough that later workers can execute modules without reopening foundational reasoning from scratch.
-
-For every major recommendation include where appropriate:
-- rationale;
-- evidence level;
-- assumptions;
-- alternatives considered;
+Where applicable, every major module must explicitly contain:
+- current-state summary;
+- decision question;
+- viable options;
+- evidence and evidence quality;
+- recommendation or working hypothesis;
+- what would falsify it;
 - dependencies;
-- downside/risk;
-- validation method;
-- decision or kill gate;
+- risks/downside;
+- validation plan;
 - owner/workstream;
+- inputs;
+- outputs;
+- Definition of Done;
 - what can run in parallel;
-- what blocks downstream work.
+- what blocks downstream work;
+- human decisions still required.
 
-Use structured tables, decision trees, matrices, process maps and checklists when they improve execution clarity.
+Avoid arbitrary numeric scoring when evidence does not support precision. Use qualitative or range-based reasoning when more honest.
 
-Where exact values are unknown, build a model or a range and label it as a hypothesis. Never manufacture certainty.
+## 8. REQUIRED OUTPUT FILES
 
-## OUTPUT FILES
-
-Create the full set specified in Issue #2. At minimum it must include:
+Create the complete set specified in Issue #2. At minimum:
 
 - `AGENCY_MASTER_PLAN.md`
 - `STRATEGY_RECONCILIATION.md`
@@ -158,58 +190,73 @@ Create the full set specified in Issue #2. At minimum it must include:
 - `WEB_BUSINESS_REQUIREMENTS.md`
 - `30_60_90_180_365_ROADMAP.md`
 - updated risks/open questions where justified
-- one final executive synthesis explaining what is DECIDED, PROVISIONAL, BLOCKED, NEEDS VALIDATION and NEXT.
+- one executive synthesis separating `DECIDED / PROVISIONAL / BLOCKED / NEEDS VALIDATION / NEXT`.
 
-Organize files under the existing strategy/operations/validation/planning structure rather than creating a disconnected parallel documentation tree.
+Use the existing strategy/operations/validation/planning structure; do not create a disconnected parallel documentation tree.
 
-## AUTONOMY
+## 9. CONSISTENCY / TRACEABILITY REQUIREMENTS
 
-Do not stop for routine human checkpoints.
+- Cross-reference dependent documents.
+- Maintain one shared assumptions vocabulary.
+- Keep ICP, offer, pricing, sales, delivery and economics internally consistent.
+- Every strategic recommendation must be traceable to evidence or explicitly labeled as a hypothesis.
+- Make contradictions visible rather than smoothing them away.
+- Identify the critical path and parallelizable workstreams.
+- Identify which outputs become inputs for Brand V1, Gemini Asset Factory and technical implementation.
 
-Continue through all phases until the Issue #2 Definition of Done is met.
+## 10. AUTONOMY
 
-Only stop if a true fatal blocker prevents meaningful progress. Uncertainty is not a fatal blocker: record it as an assumption or validation requirement and continue.
+Do not stop for routine checkpoints.
+Continue until Issue #2 Definition of Done is met.
+Uncertainty is not a blocker: record it as assumption/unknown/validation requirement and continue.
+Only stop on a true fatal blocker that prevents meaningful progress.
 
-## MANDATORY FINAL AUDITS
+## 11. MANDATORY FINAL AUDITS
 
-Before delivery, independently re-read and challenge the whole plan from these roles:
+Independently challenge the complete plan as:
+1. experienced agency founder;
+2. B2B GTM strategist;
+3. COO/operator;
+4. CFO/unit-economics reviewer;
+5. sales leader;
+6. delivery/quality lead;
+7. security/privacy/risk reviewer;
+8. skeptical buyer/procurement reviewer;
+9. Red Team trying to prove the proposed business should not exist.
 
-1. Experienced agency founder.
-2. B2B GTM strategist.
-3. COO/operator.
-4. CFO/unit-economics reviewer.
-5. Sales leader.
-6. Delivery/quality lead.
-7. Security/privacy/risk reviewer.
-8. Skeptical enterprise/professional-services buyer or procurement reviewer.
-9. Red Team whose job is to prove the proposed business should not exist.
+Then perform one integration pass checking:
+- lifecycle completeness;
+- internal consistency;
+- explicit dependencies/critical path;
+- realistic parallelization;
+- unsupported numerical precision;
+- downstream handoff readiness;
+- no unauthorized Brand decisions;
+- no repo-safety violations.
 
-Resolve contradictions where the evidence allows it. Otherwise record the contradiction and its required test.
+## 12. EXIT / PR CHECKLIST
 
-Then perform one final integration pass checking:
-- no major lifecycle stage is missing;
-- documents do not contradict each other silently;
-- dependencies and critical path are explicit;
-- downstream Brand/Asset/Technical workstreams know what they need from this plan;
-- unsupported numerical precision is removed or labeled;
-- no final naming or visual-brand decision has been taken on behalf of the Brand workstream.
+Before opening the PR:
+1. Inspect the complete changed-file list.
+2. Confirm every changed file is inside the allowed scope or explicitly justify any exception.
+3. Confirm no secrets/credentials/private material were added.
+4. Validate internal links/references where practical.
+5. Confirm no unrelated formatting churn or mass rewrites.
+6. Confirm no files owned by other active workstreams were overwritten.
+7. Commit only to `plan/claude-master-agency`.
+8. Open a PR to `main` referencing Issue #2.
+9. Do NOT merge your own PR.
 
-## DELIVERY
-
-1. Commit all work only to `plan/claude-master-agency`.
-2. Validate files, internal links and document references.
-3. Review `git diff`/changed files before delivery and verify there are no unrelated changes or secrets.
-4. Open a Pull Request from `plan/claude-master-agency` to `main` referencing Issue #2.
-5. Do NOT merge your own PR.
-6. In the PR summarize:
-   - strategic model(s) recommended for validation;
-   - decisions proposed;
-   - assumptions/hypotheses still requiring field evidence;
-   - unresolved contradictions;
-   - critical risks;
-   - files changed;
-   - tests/validation performed;
-   - human decisions required before merge;
-   - immediate next workstreams after approval.
+PR summary must include:
+- strategic model(s) proposed for validation;
+- decisions proposed;
+- hypotheses requiring field evidence;
+- unresolved contradictions;
+- critical risks;
+- files changed;
+- validation performed;
+- human decisions required before merge;
+- immediate next workstreams after approval;
+- any cross-branch dependencies/collision risks.
 
 Completion means a human can review one PR and understand the proposed architecture of the entire agency from strategy through launch and operating system.
