@@ -23,8 +23,8 @@ build/
 secrets.json
 auth.json
 
-# Local worktrees and generic agent artifacts
-../agency-*
+# Local IDE / agent artifacts inside this repository
+# Note: Git worktrees created outside the repository cannot be ignored from this file.
 .cursor/
 .vscode/
 .idea/
