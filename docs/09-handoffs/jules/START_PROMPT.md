@@ -4,123 +4,210 @@ Work only in repository `Picazo333/agency-foundation` and only on branch `tech/j
 
 Your governing task is GitHub Issue #6: `tech: Jules repo hardening + CI/documentation foundation`.
 
-## REPO SAFETY — NON-NEGOTIABLE
+## 0. PRE-FLIGHT
 
-1. NEVER work directly on `main`.
-2. Do not force-push, rewrite Git history, delete unrelated files or overwrite another workstream.
-3. Do not modify Brand, naming, ICP, offer, pricing, strategy or research conclusions.
-4. Do not build the final production website.
-5. Do not commit secrets, tokens, credentials, private keys or real `.env` values.
-6. Do not mass-upgrade dependencies.
-7. Keep changes narrowly scoped, deterministic and easy to review/revert.
-8. All work must stay on `tech/jules-repo-hardening` and finish as a PR to `main`.
-9. Do not merge your own PR.
-10. If a repository setting cannot be changed from your environment, document the exact human action required rather than claiming it was changed.
+Before writing:
+1. Verify repository = `Picazo333/agency-foundation`.
+2. Verify branch = `tech/jules-repo-hardening`.
+3. Inspect current changed files/status.
+4. Read repo governance + Issue #6 completely.
+5. If behind `main`, sync only non-destructively and only if branch work is safe. Never discard work merely to sync.
+6. If direct writes to `main` are unavoidable, stop.
 
-## READ FIRST
+## 1. REPO SAFETY — NON-NEGOTIABLE
+
+- NEVER work directly on `main`.
+- Never force-push, rewrite history, destructively reset/clean, bulk-delete unrelated files or overwrite another workstream.
+- Do not modify Brand, naming, ICP, offer, pricing, strategy or research conclusions.
+- Do not build the production website.
+- Never commit secrets, tokens, credentials, private keys or real `.env` values.
+- Do not mass-upgrade dependencies.
+- Do not enable destructive automation or auto-fix workflows that can rewrite large parts of the repo without review.
+- Do not weaken checks to make CI pass; fix root causes or document an intentional exception.
+- Keep changes small, deterministic, reviewable and reversible.
+- Finish only through a PR to `main`; do not merge your own PR.
+
+## 2. WRITE BOUNDARIES / COLLISION CONTROL
+
+Primary writable areas:
+- `.github/`
+- dedicated repo-health utilities such as `scripts/repo-health/`
+- minimal root-level config files when directly required for repository hygiene
+- repo-governance docs under `docs/00-meta/` when directly within scope
+- `docs/09-handoffs/jules/`
+
+Read-only unless fixing a provably broken repo-level reference and explicitly disclosing it:
+- `labs/` (Antigravity-owned)
+- experimental/neutral `packages/` (Antigravity-owned unless shared later)
+- `asset-factory/` (Gemini-owned)
+- `docs/02-strategy/` and `docs/04-operations/` (Claude-owned)
+- `docs/03-brand/` (Brand workstream)
+- other agents' handoff folders.
+
+Never edit another active workstream's owned file merely to improve style or consistency. Log the issue instead.
+
+## 3. READ FIRST
 
 1. `AGENTS.md`
 2. `PROJECT_STATE.md`
 3. `README.md`
 4. `docs/00-meta/source-of-truth.md`
 5. `docs/00-meta/WORKTREE_OPERATING_GUIDE.md`
-6. current `.github/` files and workflows
+6. current `.github/` files/workflows/templates
 7. GitHub Issue #6 in full
-8. repo governance/definition-of-done documentation relevant to your scope.
+8. repo governance / Definition-of-Done documentation relevant to scope.
 
-## MISSION
+## 4. MISSION
 
-Harden the repository so multiple human/AI workers can operate safely, consistently and with less manual review overhead.
+Harden the repository so multiple human/AI workers can operate concurrently with less collision risk, safer defaults, clearer validation and lower manual-review overhead.
 
-Jules owns repo hygiene, CI/document validation and narrowly scoped maintenance. Antigravity separately owns experimental visual/motion/SVG/interaction technical labs. Avoid overlapping with Antigravity's architecture unless an objectively broken repo-level integration must be fixed.
+Jules owns REPO HYGIENE + CI + DOCUMENT VALIDATION + AGENTIC-WORK TEMPLATES + SECRET HYGIENE.
+Antigravity owns experimental visual/motion/SVG/interaction labs and broader neutral technical experimentation.
 
-## REQUIRED WORK
+Do not duplicate Antigravity's architecture.
 
-### 1. Repository health audit
-Inspect the current tree for:
-- broken/missing documentation references;
+## 5. REQUIRED WORK
+
+### A. Repository health audit
+Inspect for:
+- broken/missing doc references;
 - inconsistent paths/naming;
-- duplicated or stale governance files;
-- obvious source-of-truth violations;
-- missing ignore/config files;
+- duplicated/stale governance docs;
+- source-of-truth ambiguity;
+- missing ignore/config safeguards;
 - fragile automation;
-- areas where an agent could accidentally write to the wrong place.
+- places where agents can accidentally write to the wrong area;
+- stale/accidental branches or governance debt that should be reported for human cleanup.
 
-Do not reorganize the whole repo merely for aesthetics. Make only justified changes.
+Do not reorganize the whole repo for aesthetics.
 
-### 2. CI / deterministic validation
-Strengthen lightweight checks where appropriate for:
+### B. CI / deterministic validation
+Strengthen lightweight checks where justified for:
 - Markdown/document health;
-- broken internal links if practical;
-- required metadata/frontmatter where the repo already expects it;
-- basic structural invariants;
-- duplicate IDs/names where they are genuinely risky;
-- obvious invalid references.
+- broken internal links where practical;
+- required metadata/frontmatter where already expected;
+- structural invariants;
+- duplicate identifiers where risky;
+- obvious invalid references;
+- basic secret-leak prevention if feasible without exposing secrets.
 
-Prefer simple scripts/actions with low maintenance cost.
+Prefer low-maintenance, deterministic checks.
 
-### 3. Secret/environment hygiene
-Review and improve, where needed:
+### C. Secret / environment hygiene
+Review/improve where needed:
 - `.gitignore`;
 - `.env.example` strategy;
-- instructions preventing real secrets from entering Git;
-- CI behavior that must not expose sensitive values.
+- guidance preventing real secrets entering Git;
+- CI behavior that must not print sensitive values;
+- recommendations for GitHub secret scanning/settings if these require human action.
+
 Never add actual credentials.
 
-### 4. Agentic-work templates
+### D. Agentic-work templates
 Audit/improve:
 - PR template;
 - Issue templates;
-- Definition of Done fields;
-- required reporting of files changed, validation performed, risks and non-goals;
-- instructions that reinforce branch-only work and PR review.
+- Definition of Done;
+- changed-files reporting;
+- validation evidence;
+- risks/non-goals;
+- explicit branch-only work;
+- PR-before-merge discipline;
+- cross-workstream dependency/collision reporting.
 
-### 5. AGENTS guidance
-Review `AGENTS.md` for correctness and usability. Keep it concise. Link to deeper documentation rather than bloating it.
+### E. AGENTS guidance
+Review `AGENTS.md` for correctness/usability. Keep it concise and link to deeper docs rather than bloating it.
 
-### 6. Local/CI helper scripts
-Where valuable, create small deterministic scripts that a human or agent can run to validate repo health before opening a PR. Document how to use them.
+### F. Local/CI helper scripts
+Where useful, create small deterministic helpers that humans/agents can run before PR. Document exact usage and exit behavior.
 
-### 7. GitHub settings recommendations
-Inspect what is currently visible and produce a precise list of human-side settings worth enabling later, such as branch protection/required checks/review rules. Do not claim to have enabled anything you could not actually change.
+Use a Jules-owned script namespace such as `scripts/repo-health/` to avoid collisions with Antigravity technical-lab scripts.
 
-### 8. Hardening report
-Create `JULES_REPO_HARDENING_REPORT.md` in the appropriate handoff/technical documentation area containing:
-- audit findings;
+### G. GitHub settings recommendations
+Inspect visible state and produce exact human-side recommendations for:
+- branch protection/rulesets;
+- required checks;
+- review requirements;
+- deletion protection where useful;
+- secret scanning/security features if applicable;
+- auto-merge policy if any.
+
+Do not claim settings were enabled if your environment cannot enable them.
+
+### H. Hardening report
+Create `JULES_REPO_HARDENING_REPORT.md` in the appropriate Jules handoff/technical documentation location containing:
+- baseline findings;
 - changes made;
-- checks added;
+- before/after checks;
 - remaining risks;
-- recommended manual GitHub settings;
+- recommended human GitHub settings;
 - deferred items;
-- any collision risks with other active branches.
+- stale/accidental branches or cleanup recommendations;
+- collision risks with active branches.
 
-## QUALITY STANDARD
+## 6. CHANGE-DISCIPLINE CONTRACT
 
-Do not create complexity for its own sake. The goal is a safer repo for parallel AI/human work, not an enterprise bureaucracy.
+Before changing any existing file ask:
+1. Is this file owned by Jules's scope?
+2. Is the change necessary for repo safety/reliability?
+3. Can it be solved with a narrower change?
+4. Could another active branch be editing this file?
+5. Is there a deterministic way to validate the change?
 
-Every automation/check must be:
+Avoid repo-wide formatting churn.
+Avoid lockfile changes unless directly required.
+Avoid package upgrades unless a specific security/reliability issue justifies them.
+
+For any CI change, record:
+- trigger;
+- expected runtime/cost;
+- failure conditions;
+- false-positive risk;
+- how to reproduce locally if possible;
+- rollback/removal path.
+
+## 7. QUALITY STANDARD
+
+Do not create enterprise bureaucracy for its own sake.
+Every check/automation must be:
 - deterministic;
 - understandable;
 - documented;
 - cheap to maintain;
-- easy to remove if it stops providing value.
+- proportionate to risk;
+- easy to remove if it stops adding value.
 
-## FINAL AUDITS
+Measure before/after where possible rather than claiming improvement abstractly.
 
-Before delivery run:
+## 8. FINAL AUDITS
+
+Run and integrate fixes from:
 1. Repository maintainer audit.
 2. CI reliability audit.
 3. Secret-safety audit.
 4. Multi-agent collision audit.
-5. Red Team pass: identify ways your own changes could block legitimate work, create false failures or over-constrain the repo.
+5. Developer/agent ergonomics audit.
+6. Red Team audit for false failures, over-constraint, hidden destructive behavior or maintenance burden.
 
-Then fix material issues.
+## 9. EXIT / PR CHECKLIST
 
-## DELIVERY
+Before PR:
+1. Run all checks you added/changed and record results.
+2. Inspect complete changed-file list.
+3. Confirm all edits are inside Jules-owned scope or explicitly justify an exception.
+4. Confirm no `labs/`, Gemini Asset Factory, Brand or Claude-owned content was modified unintentionally.
+5. Confirm no secrets or credentials.
+6. Confirm no mass formatting/dependency churn.
+7. Commit only to `tech/jules-repo-hardening`.
+8. Open PR to `main` referencing Issue #6.
+9. Do NOT merge your own PR.
 
-1. Commit only to `tech/jules-repo-hardening`.
-2. Run all new/existing checks you touched and record results.
-3. Inspect the complete diff for unrelated modifications or secrets.
-4. Open a PR to `main` referencing Issue #6.
-5. Do NOT merge your own PR.
-6. PR must list files changed, checks run, remaining risks, manual GitHub settings recommended and any coordination needed with Antigravity or future implementation agents.
+PR must include:
+- files changed;
+- checks run/results;
+- remaining risks;
+- human GitHub settings recommended;
+- before/after repository-health observations;
+- any stale/accidental branch cleanup recommendations;
+- coordination needed with Antigravity or future implementation agents;
+- cross-branch collision risks.
