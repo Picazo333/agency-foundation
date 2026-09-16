@@ -1,28 +1,42 @@
 # S0–S4 Technical Maturity Contract
 
-This document defines the entry and exit criteria for technical prototypes and components transitioning through maturity stages.
+This model describes implementation maturity for a surface or capability. It is not a mandatory ladder for every component: a static marketing block may legitimately stop before S2, and **S4 is optional** unless AI/MCP behavior is an actual product requirement.
 
-## S0: Visual
-*Focus: Aesthetics, layout, and responsiveness.*
-- **Entry:** Design tokens (schema or values) exist; conceptual layout required.
-- **Exit:** Component renders correctly across target breakpoints. Code is isolated in `labs/visual` or a conceptual viewer. No complex interactivity exists.
+A stage may only be claimed when its exit criteria are evidenced. Experimental work remains in `labs/` until a separate implementation decision promotes it.
 
-## S1: Interactive
-*Focus: UI behavior, state changes, and accessibility.*
-- **Entry:** Component passes S0. Interaction design (e.g., hover states, accordions) is defined.
-- **Exit:** Component responds to user input (click, hover, focus). Keyboard navigation is functional. ARIA attributes (if necessary) are applied. Code is isolated in `labs/interaction`.
+## S0 — Visual
+**Focus:** visual composition, responsive layout and brand-system feasibility.
 
-## S2: Mock Data
-*Focus: Data binding and state management (Frontend).*
-- **Entry:** Component passes S1. Data schema for the component is defined.
-- **Exit:** Component successfully renders using a static JSON payload or a client-side mock store. Loading and error states are visually handled.
+- **Entry:** a defined visual intent plus the minimum token/schema context needed to render it.
+- **Exit:** the specimen renders coherently at the target viewport classes; typography, spacing and major states are represented; no production functionality is implied.
+- **Typical location:** `labs/visual/` or an approved design/specimen environment.
 
-## S3: Backend Wired
-*Focus: End-to-end data flow and API integration.*
-- **Entry:** Component passes S2. API endpoints and authorization methods are defined.
-- **Exit:** Component fetches data from a live backend (staging or production). Data mutations (POST/PUT) succeed. Network errors are gracefully handled by the UI.
+## S1 — Interactive
+**Focus:** input behavior, state transitions and interaction accessibility.
 
-## S4: AI / MCP
-*Focus: Agentic capability and Model Context Protocol integrations.*
-- **Entry:** Component passes S3. AI prompt parameters and MCP tool schemas are defined. Security constraints are documented.
-- **Exit:** System safely executes AI/MCP workflows. Outputs are validated against schemas before rendering. Logging and auditing are functional.
+- **Entry:** S0 evidence exists and the interaction contract is defined.
+- **Exit:** pointer and keyboard behavior work; focus states are intentional; semantic controls are used; ARIA is added only where semantics require it; reduced-motion behavior exists where animation is non-essential; interaction errors do not trap the user.
+- **Typical location:** `labs/interaction/` until promoted.
+
+## S2 — Mock-data integrated
+**Focus:** data/state contracts without live backend dependency.
+
+- **Entry:** the surface genuinely needs data/state and S1 requirements relevant to it are satisfied.
+- **Exit:** realistic typed/structured mock data drives the surface; loading, empty, error and success states are represented where applicable; deterministic fixtures make visual/behavioral testing possible.
+
+## S3 — Backend wired
+**Focus:** authenticated/authorized end-to-end integration where applicable.
+
+- **Entry:** API/data contracts, ownership and authorization behavior are defined; S2 fixtures exist for regression/testing.
+- **Exit:** the surface integrates with an approved staging/production backend; reads and mutations behave correctly; authorization boundaries are enforced server-side; network/retry/error states are handled; sensitive data is not exposed to the client unnecessarily; observability needed for the feature is defined.
+
+## S4 — AI / MCP / agentic (optional)
+**Focus:** model- or tool-mediated behavior for surfaces that actually require it.
+
+- **Entry:** the underlying non-AI workflow is sufficiently mature; prompt/tool schemas, permissions, data boundaries and failure modes are documented.
+- **Exit:** tool/model outputs are schema-validated where feasible; permissions and human-confirmation boundaries are enforced; prompt/data handling follows project privacy/security rules; fallbacks exist for unavailable or invalid model/tool responses; material actions are logged/auditable where required.
+
+**S4 is not a badge of higher quality.** Do not add AI/MCP behavior merely to advance a maturity label.
+
+## Promotion rule
+Moving experimental work into production code requires a separate implementation decision/PR. A maturity label does not by itself authorize copying lab code into `apps/` or `packages/`.
