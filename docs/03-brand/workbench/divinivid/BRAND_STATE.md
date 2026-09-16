@@ -5,6 +5,7 @@ updated: 2026-09-16
 authority: workbench
 depends_on:
   - ../../../08-plans/workstreams/DIVINIVID_VISUAL_IDENTITY_MASTER_PLAN.md
+  - CREATIVE_DIRECTION_BRIEF.md
 ---
 # DIVINIVID — Brand State
 
@@ -49,6 +50,13 @@ Route 01 KIROGRAF tests whether anatomical/knowledge structures can act as the r
 5. active route thesis/grammar;
 6. human-approved generated artifacts only.
 
+## Phase 1 status
+**CLOSED / PASS — Creative Direction Contract approved 2026-09-16.**
+
+The contract now operationally defines the Brand's key aesthetic terms, resolves the four directional axes, sets testable ornament/pigment/darkness/grotesque/historical-visibility budgets, defines per-surface intensity ceilings, and records rejection tests plus Creative Direction and Taste review passes.
+
+It does **not** approve exact colors, typefaces, logos, imagery, route artifacts or Brand Direction V0.
+
 ## Recent-generation status
 The recent multi-round generated moodboards/application boards are **not canonical** and must not be used as positive references by default. Their primary value is negative evidence about process and cliché drift.
 
@@ -63,6 +71,8 @@ Recurring failure signatures to guard against:
 - five boards that were cosmetic variations of one idea.
 
 ## Current gate
-**Phase 1 — Creative Direction Contract.**
+**Phase 2 — Expanded Reference Research.**
 
-Do not start a new generated moodboard round before the contract is complete and the source-only Reference Atlas process has begun.
+Required next action: expand the source universe across the nine research lanes using real works/sources, admit new references only as `CANDIDATE`, record provenance/rights state, and cut anything that does not add a unique transferable principle.
+
+Do **not** start new project identity/moodboard generation in Phase 2. Phase 3 must build the source-only Reference Atlas before route production begins.
