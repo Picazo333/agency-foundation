@@ -12,3 +12,19 @@ build/
 .tmp/
 .cache/
 *.log
+
+# Secret hygiene and credentials
+*.pem
+*.key
+*.cert
+*.p12
+.npmrc
+.yarnrc
+secrets.json
+auth.json
+
+# Local worktrees and generic agent artifacts
+../agency-*
+.cursor/
+.vscode/
+.idea/

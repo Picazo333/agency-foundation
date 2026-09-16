@@ -19,6 +19,7 @@ This repository is the persistent project memory and source of truth for the Age
 - Never commit secrets, tokens, credentials, private keys, or `.env` files.
 - Generated assets belong in `assets/generated/`; approved assets belong in `assets/approved/` only after review.
 - Experimental code belongs in `labs/`; production code belongs in `apps/` or `packages/` only after approval.
+- **Before opening a PR**, run `python3 scripts/repo-health/validate_repo.py` locally to verify repository health and ensure no secrets or broken links are introduced.
 
 ## Status model
 `DRAFT -> REVIEW -> APPROVED -> FROZEN -> SUPERSEDED/DEPRECATED`
