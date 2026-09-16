@@ -83,6 +83,7 @@ depends_on:
 | **Stop** | 15 quotes, or 5 consecutive immediate dismissals in the base arm (stop and re-derive) |
 | **Interpretation** | n=15 → directional `SIGNAL`. A single acceptance is an `EXISTENCE PROOF` that someone pays this, not that the price is correct |
 | **Cost** | **Real.** This experiment will lose deals. Accepted: mispricing for a year costs more |
+| **Interaction with H-01 / D5** | X-02 arm 2 runs right across the D5 boundary, so the H-01 denominator at day 60 will contain **two different prices**. Rules: (a) a payment at **either** price counts toward H-01 — the hypothesis is "will they pay for diagnosis", not "will they pay exactly this"; (b) at D5, **report the paid count split by arm**; (c) if every base-arm quote converted and every +25% quote failed, that is an H-04 price finding, **not** an H-01 failure — do not route to path C on it; (d) if both arms failed, H-01 and H-04 cannot be separated at this sample — say so rather than picking the more comfortable of the two (finding `DEEP-7`) |
 | **Next action** | Fire T-11 on any real price observation; re-derive §4 at the next weekly review |
 
 ---

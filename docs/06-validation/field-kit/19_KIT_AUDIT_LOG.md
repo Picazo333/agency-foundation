@@ -24,7 +24,8 @@ depends_on:
 | 6 | Human error | 1 | 1 | 0 |
 | 7 | Red team | 3 | 2 | 1 |
 | 8 | Integration | 2 | 2 | 0 |
-| **Total** | | **21** | **20** | **1** |
+| **9** | **Deepening pass** (2nd sweep) | **7** | **7** | **0** |
+| **Total** | | **28** | **27** | **1** |
 
 ---
 
@@ -148,6 +149,38 @@ verbal intent→payment (four-level ladder, cleared funds only) · teardown-then
 | INT-2 | ADR numbering in the kit had to match post-merge `main` (`ADR-0006`–`ADR-0010`) | Verified: the kit references `ADR-0007` (segments), `ADR-0008` (paid diagnostic), `ADR-0009` (pricing freeze), all still **PROPOSED**. No ADR status altered |
 
 ---
+
+## Pass 9 — Deepening pass *(second sweep, after the kit was complete)*
+
+Re-ran passes 1–7 against the finished kit with fresh adversarial reading, plus arithmetic checks
+that the first sweep did not perform. **7 findings, 7 fixed.** These are defects in the kit as
+shipped, not in the plan it implements.
+
+| ID | Finding | Severity | Fix |
+|---|---|---|---|
+| **DEEP-1** | **The D5 gate blocked a legitimate PASS.** The checklist read "< 20 qualified → NOT DECIDABLE, do not call it in either direction." But `FIELD_VALIDATION_PLAN.md` §3 sets pass at "≥ 2 paid diagnostics by day 60" with **no denominator condition** — 20 is the sample at which a *zero* becomes conclusive, not a quota a pass must clear. Two cleared payments from 12 conversations is an existence proof and was being refused | **Critical** | `15_` D5 table: pass is called at any denominator, with the reasoning stated so it is not re-broken |
+| **DEEP-2** | **`NOT DECIDABLE` had no deadline, anywhere.** At D4 and D5 the operator could record "not decidable" indefinitely — which is exactly the drift the plan names as fatal (*"let's give it another month," three times*). The kit had built the drift path it was written to close | **Critical** | New rules **G-8** (a named cause + a re-gate date within 14 days + a log entry, or it is not a result) and **G-9** (at most twice per gate; the second escalates). Renamed `UNDER-SAMPLED` and routed: §D5-U for D5, exclusions-vs-volume triage for D4 |
+| **DEEP-3** | **The cadence arithmetic does not close.** Conversations start ~week 3; at `AGENCY_SCORECARD.md` M-03's stated **≥2/week** the operator reaches day 30 with 4.6 (needs 8), day 45 with 8.8 (needs 10) and day 60 with 13.2 (needs 20). **They hit their stated weekly target and miss every gate** — then read three gate failures as a verdict on the market | **High** | `15_` §0.2: full arithmetic table, required rates (3.5 / 2.3 / 3.0 per week), and "plan at 4/week." Surfaced in the launch checklist and tracked weekly as a 3-week trailing average. **The three merged documents that imply three different volumes are flagged, not reconciled** — that is the human owner's call |
+| **DEEP-4** | **"Free teardown" and "free alternative" were conflated.** L0 is free by design; the prohibited "free alternative" is giving away the paid L1 diagnostic. An operator could mark `free_alternative_offered = Y` on every row because they sent a teardown — invalidating the entire H-01 log — or believe a teardown breached the 15-attempt rule | Medium | `12_` §5: explicit two-row disambiguation before the rule |
+| **DEEP-5** | **Two sources of truth for contamination.** `interview_index.csv` and `resonance_log.csv` both carry it. Drift between them makes the D4 denominator unfalsifiable | Medium | Resonance log declared authoritative (it is set during classification, from the transcript); index is a convenience copy, never counted. Drift check added to the weekly review |
+| **DEEP-6** | **The weekly review timebox was backwards.** Block 1 had 4 minutes to *compute* 12 metrics (20 s each — impossible) and block 4 had 4 minutes for 9 self-deception questions (27 s each). The cheapest block was realistic and the **highest-value block the most rushed** | Medium | Numbers are now filled in **before** the meeting and read out in 2 minutes; the self-deception check gets 7 |
+| **DEEP-7** | **X-02 crosses the D5 boundary**, so the H-01 denominator at day 60 contains two different prices, and an all-fail higher arm could be misread as H-01 failure and routed to path C (kill/pivot) when it is an H-04 price finding | Medium | `13_` X-02: four interaction rules — either price counts for H-01, paid count reported split by arm, a base/+25% divergence is a price finding not a thesis failure, and if both arms fail the two cannot be separated at this sample |
+
+### Also added, not a defect fix
+
+**Early-fail certainty at D4.** If the threshold can no longer be reached even if every remaining
+interview volunteers (`V + R < 5`, where `R = 10 − C`), the gate has already failed and waiting for
+the tenth interview learns nothing. Formula verified against brute force over all reachable states,
+0 errors. This makes D4 *harder* to rationalise around, not easier: it removes "let's do two more
+and see" as an option when the arithmetic is already settled.
+
+### What Pass 9 did NOT change
+
+No threshold, no hypothesis, no decision rule. D3 ≥8 · D4 ≥5/10 · D5 ≥2 paid from 20 · D6 ≤130% ·
+H-04 40%/70% · H-06 50%/25% are untouched and re-verified. `DEEP-1` and `DEEP-3` **surface**
+arithmetic that was always implied by the merged documents; reconciling the M-03 / §5 / H-01 volume
+discrepancy would change a merged numeric target and is deliberately left to the human owner
+(`CANON_PROMOTION_RULE.md`).
 
 ## Non-regression verification
 

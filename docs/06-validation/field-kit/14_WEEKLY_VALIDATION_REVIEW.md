@@ -21,12 +21,20 @@ depends_on:
 
 | # | Block | Min | Output |
 |---:|---|---:|---|
-| 1 | Numbers, read aloud, no commentary | 4 | Counts only |
+| 0 | *(before the meeting)* Fill the §2 table from the logs | — | Numbers ready |
+| 1 | Numbers, read aloud, no commentary | 2 | Counts only |
 | 2 | Contradictions and surprises | 6 | What reality did not match |
 | 3 | Hypothesis movement | 5 | Register updates |
-| 4 | Rationalisation check | 4 | Named temptations |
+| 4 | **Rationalisation check** | **7** | Named temptations |
 | 5 | Information-value triage | 3 | Next week's highest-value unknown |
 | 6 | Stop / continue / start | 3 | One decision, written |
+
+**Timebox note (finding `DEEP-6`):** an earlier version gave block 1 four minutes to *compute*
+twelve metrics (20 seconds each — not possible) and block 4 four minutes for nine questions
+(27 seconds each). That made the cheapest block realistic and the **highest-value block the most
+rushed**, which is backwards. The numbers are now filled in **before** the meeting and merely read
+out; the time saved goes to the self-deception check, which is the one part of this review that
+cannot be done quickly and honestly at the same time.
 
 **Order matters.** Numbers before narrative — reversing it means the narrative selects the numbers.
 
@@ -48,6 +56,8 @@ depends_on:
 | Outreach hours (M-41) | | | 8–10 | Time log |
 | Median days first-contact → payment (H-05) | | | *observe; `A-10` says 30–60* | Sales log |
 | **Baseline availability (H-06)** — buyers with ≥4wk reconstructable ÷ asked | | | **≥ 50% pass · < 25% fail** | Interview §6 |
+| **Cadence: qualified conversations/week, 3-week trailing average** | | | **≈ 4/wk** — see `15_…` §0.2 | Ledger |
+| **Gate runway:** at the current rate, will D3/D4/D5 have their sample on the due date? | | | yes | §0.2 table |
 
 **Reporting rules:**
 - Verbal intent is **never** added to paid. Two separate lines, always.
@@ -79,6 +89,10 @@ Answer all. Short answers are fine; blank answers are not.
 | H-06 | | | | |
 | H-04 | | | | |
 | H-03b / H-07 / H-11 | | | | |
+
+**Data-integrity check (30 s, finding `DEEP-5`):** does `resonance_log.csv` `contaminated` match
+`interview_index.csv` `resonance_contaminated` on every row this week? The **resonance log is
+authoritative**; correct the index, never the reverse.
 
 **Rules:** status advances only at the defined sample size, never on the first encouraging
 conversation. Grade advances only by the grade of evidence actually obtained — interviews produce

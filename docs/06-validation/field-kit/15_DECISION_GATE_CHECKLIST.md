@@ -28,6 +28,56 @@ depends_on:
 | G-5 | A gate result is recorded even when it is a fail. Especially then |
 | G-6 | An override requires a completed entry in `18_GATE_OVERRIDE_REGISTER.md`. A gate cannot be overridden by deciding it was "basically passed" |
 | G-7 | Two overrides on the same gate, or three across the program, escalate to the human owner |
+| **G-8** | **`NOT DECIDABLE` is never an outcome on its own.** It is only valid with (a) a named cause, (b) a re-gate date **within 14 days**, and (c) a log entry. Without all three it is not a result — the gate stands at its raw count |
+| **G-9** | **A gate may be `NOT DECIDABLE` at most twice.** The second time escalates to the human owner with the arithmetic in §0.1. There is no third |
+
+### 0.1 Why `NOT DECIDABLE` is fenced this way
+
+An under-sampled gate and a failed gate feel identical in the moment and are completely different
+findings. The distinction is worth preserving — but "not decidable" with no deadline is a licence to
+drift, and drift at D5 is the specific failure the plan names as fatal: *"let's give it another
+month," three times, is how a 90-day validation becomes an 18-month drift*
+(`FIELD_VALIDATION_PLAN.md` §6).
+
+So the kit keeps the distinction and removes the drift: every `NOT DECIDABLE` costs a written cause,
+a dated re-gate inside two weeks, and a countable strike.
+
+**It also means something specific.** Under-sampling is not a neutral "we need more time" — it is
+itself a result about **access**, which is H-03, which already had a gate at day 30. A D4 or D5 that
+cannot be called for lack of sample is a **D3 problem surfacing late**, and must be recorded as one.
+
+### 0.2 The cadence arithmetic — read this before day 1, not at day 60
+
+Conversations begin around week 3 (weeks 1–2 build the instruments). Cumulative qualified
+conversations by each gate date, at various sustained rates:
+
+| Qualified/week | Day 30 — D3 needs 8 | Day 45 — D4 needs 10 clean | Day 60 — D5 needs 20 for a conclusive zero |
+|---:|---|---|---|
+| 2 | 4.6 ✗ | 8.8 ✗ | 13.2 ✗ |
+| 3 | 6.9 ✗ | 13.2 ✓ | 19.8 ~ |
+| **4** | **9.2 ✓** | **17.6 ✓** | **26.4 ✓** |
+| 5 | 11.5 ✓ | 22.0 ✓ | 33.0 ✓ |
+
+**Required rates:** D3 needs ≈3.5/week from week 3 · D4 needs ≈2.3/week *before* exclusions ·
+D5 needs ≈3.0/week sustained.
+
+> **Plan the cadence at 4 qualified conversations per week, not 2.** At 2/week — which is what
+> `AGENCY_SCORECARD.md` M-03 lists as the weekly target — the operator hits their stated target
+> **and misses every gate**, then reads three gate failures as evidence that the market is wrong.
+> It would not be the market. It would be the cadence.
+
+**⚠️ Discrepancy flagged, not resolved** (finding `DEEP-3`). Three merged documents imply three
+different volumes, and this kit changes none of them:
+
+| Source | Says | Implies |
+|---|---|---|
+| `AGENCY_SCORECARD.md` M-03 | ≥ 2 qualified/week | ~13 by day 60 |
+| `AGENCY_SCORECARD.md` §5 | ≥ 16 qualified by day 60 | ~2.4/week |
+| `FIELD_VALIDATION_PLAN.md` §3 H-01 | zero is conclusive at 20 | ~3.0/week |
+
+Reconciling them changes a merged numeric target and is the human owner's call, not this kit's
+(`CANON_PROMOTION_RULE.md`). Until then: **plan at 4/week, and treat M-03's ≥2/week as a floor below
+which the gates are certainly unreachable, not as a target that makes them reachable.**
 
 ---
 
@@ -107,8 +157,23 @@ spend on a channel that has not produced access.
 - [ ] **`PC-8` unanticipated problems tallied by theme** — a cluster of ≥3 of the same one is a
       D4b reframe candidate even when the headline ratio passes
 
-**MINIMUM EVIDENCE:** denominator ≥ 10 clean interviews. **Below 10, the gate is not decidable** —
-do not call it in either direction.
+**MINIMUM EVIDENCE:** denominator ≥ 10 clean interviews — the sample `FIELD_VALIDATION_PLAN.md` §3
+specifies. Below 10 the gate is `UNDER-SAMPLED`, **not** a neutral hold (G-8).
+
+**Early-fail certainty — call it as soon as it is arithmetically settled.** If the threshold can no
+longer be reached even if every remaining interview volunteers, the gate has already failed and
+waiting for the tenth interview learns nothing:
+
+```
+volunteered so far: V     clean interviews so far: C     remaining to reach 10: R = 10 − C
+maximum reachable:  V + R      →  if V + R < 5, D4 has FAILED. Call it today.
+```
+
+*Example: 8 clean, 1 volunteered → max reachable 1 + 2 = 3 < 5. Failed. Do not run two more
+interviews to confirm what the arithmetic already settled.*
+
+There is no symmetric early pass: a ratio above 50% at 8 interviews is encouraging, but 10 is the
+specified sample and calling a pass early would change it.
 
 **COUNT FIRST:**
 ```
@@ -124,7 +189,19 @@ Unanticipated problems (PC-8): ___
 | **PASS** | ≥ 5/10 | → D5. Harvest the verbatim corpus; replace all provisional copy (`POSITIONING_ARCHITECTURE.md` §3) |
 | **PARTIAL** | 2–4/10 | → D4b reframe, **once**, around the problem they *did* volunteer. Re-enter D4 with a 15-day window |
 | **FAIL** | ≤ 1/10 | The thesis' core problem claim is false in this segment → D3b (different segment) or D7 if rotations exhausted |
-| **NOT DECIDABLE** | denominator < 10 | Keep interviewing. Do not call it |
+| **UNDER-SAMPLED** | clean denominator < 10 | Named cause + re-gate within 14 days (G-8) + strike (G-9). **Not a neutral hold** — see below |
+
+**If D4 is under-sampled:** the cause is almost always exclusions, not interviews. Count them
+separately before blaming volume:
+
+```
+Interviews held: ___   contaminated: ___   calibration: ___   clean denominator: ___
+```
+
+- **Exclusions dominate** → the problem is *operator discipline*, not access. You are naming the
+  problem before Phase 4. Re-read `07_BUYER_INTERVIEW_GUIDE.md` §0 and §10 before the next call —
+  more interviews run the same way will not fix the denominator.
+- **Volume dominates** → this is a **D3 access problem surfacing at D4** (G-8). Record it as such.
 
 **The pattern that looks like a pass and is not:**
 > High `AGREED AFTER FRAMING`, low `VOLUNTEERED` = you are selling a problem rather than finding
@@ -163,11 +240,40 @@ Objections: price ___ trust ___ problem ___ authority ___ timing ___
 
 | Result | Condition | Path |
 |---|---|---|
-| **PASS** | ≥ 2 paid | **A** — thesis holds as designed → D6 |
+| **PASS** | **≥ 2 paid — at any denominator** | **A** — thesis holds as designed → D6 |
 | **PARTIAL** | 1 paid | Extend 15 days. Still 1 → treat as fail and run the diagnosis |
 | **FALLBACK** | 0 paid, but ≥1 core sold after a free teardown | **B** — `A-07` false. Free wedge, with stated costs. Model mutates to M3+M6 → D6 |
-| **FAIL** | 0 paid, 0 cores, from ≥ 20 qualified | **C** → diagnosis below, then D7 |
-| **NOT DECIDABLE** | < 20 qualified conversations | Do not call it early in either direction |
+| **FAIL** | 0 paid, 0 cores, **and ≥ 20 qualified** | **C** → diagnosis below, then D7 |
+| **UNDER-SAMPLED** | 0 paid **and < 20 qualified** at day 60 | → §D5-U below. **Not a neutral hold** |
+
+> **A pass is never blocked by the denominator.** Two cleared payments is an existence proof that
+> buyers in this segment fund diagnosis, whether it took 12 conversations or 30. The sample size of
+> 20 is the threshold at which a **zero** becomes conclusive, not a quota a pass must clear.
+> *(An earlier version of this checklist made the whole gate undecidable below 20, which blocked
+> calling a legitimate pass — corrected in the deepening pass, finding `DEEP-1`.)*
+
+### D5-U — 0 paid and fewer than 20 qualified at day 60
+
+This is **not** "H-01 failed" and it is **not** "we need more time." It is two findings at once:
+
+1. **H-01 is under-sampled** — the paid-diagnostic question has not yet been asked enough times.
+2. **H-03 under-delivered** — access did not produce the conversation volume the schedule assumed.
+   D3 may have passed at 8 and then the rate fell away.
+
+**Required actions, all of them:**
+
+- [ ] Record the raw counts and name **which** of the two is dominant
+- [ ] Re-gate date set, **within 14 days** (G-8). Write it in the calendar now
+- [ ] State the arithmetic: qualified/week actually achieved vs the ~3.0/week D5 needs (§0.2)
+- [ ] If the shortfall is access: the remedy is outreach volume, **not** more time at the same rate.
+      More time at a rate that misses the gate just misses it later
+- [ ] If ≥ 15 qualified with 0 paid: run the **path C diagnosis now**, do not wait for 20. The
+      objection distribution is already informative at 15
+- [ ] Strike logged (G-9). **Second `UNDER-SAMPLED` on D5 → escalate to the human owner**
+
+> **The honest reading:** reaching day 60 without enough conversations to test the decisive question
+> is itself bad news about the acquisition model. Recording it as "not decidable" and moving on
+> loses that information entirely.
 
 **Path C diagnosis — required before any action** (dominant objection decides the remedy):
 price → re-test lower before killing · trust → get one pilot at ≥60% with a case-study agreement ·
@@ -256,7 +362,11 @@ Due date: ____   Run on: ____   (late? Y/N — if Y, why)
 
 RAW COUNTS (written before discussion):
 
-RESULT: PASS | PARTIAL | FAIL | SWAP | NOT DECIDABLE
+RESULT: PASS | PARTIAL | FAIL | SWAP | FALLBACK | UNDER-SAMPLED
+  If UNDER-SAMPLED (G-8, all three required):
+    named cause (exclusions / volume / access):
+    re-gate date (<= 14 days):
+    strike count on this gate (2nd -> escalate, G-9):
 Caveats (warm-dependent / contaminated excluded / small denominator):
 Next action:
 Assumptions changed:
@@ -268,10 +378,13 @@ Logged in HYPOTHESIS_REGISTER? ☐   LEARNING_LOG? ☐
 
 ## Summary
 
-| Gate | Day | Threshold | Override? |
-|---|---|---|---|
-| D0 | 3 | U-01…U-05 answered + recalibrated | **No** |
-| D3 | 30 | ≥ 8 qualified in primary | Yes, with register |
-| D4 | 45 | ≥ 5/10 volunteered, clean denominator ≥ 10 | **No** |
-| D5 | 60 | ≥ 2 paid, cleared, undiscounted | Yes, with register |
-| D6 | 90 | Baseline + ≤130% hours + reference | Partial — baseline check is **not** overridable |
+| Gate | Day | Threshold | Under-sampled route | Override? |
+|---|---|---|---|---|
+| D0 | 3 | U-01…U-05 answered + recalibrated | n/a | **No** |
+| D3 | 30 | ≥ 8 qualified in primary | n/a — the count *is* the result | Yes, with register |
+| D4 | 45 | ≥ 5/10 volunteered, clean denominator ≥ 10 | G-8 + early-fail arithmetic | **No** |
+| D5 | 60 | ≥ 2 paid, cleared, undiscounted — **pass at any denominator** | §D5-U | Yes, with register |
+| D6 | 90 | Baseline + ≤130% hours + reference | n/a | Partial — baseline check **not** overridable |
+
+**Cadence reality check:** plan at ≈4 qualified conversations/week. At 2/week every gate above is
+missed on schedule (§0.2).

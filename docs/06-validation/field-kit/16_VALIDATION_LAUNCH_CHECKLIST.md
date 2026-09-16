@@ -93,6 +93,12 @@ Only these. Everything else on the governance checklist blocks *selling*, not *t
 ## Week 1 onward — the loop
 
 ### 11. Run the loop
+
+> **Plan for ≈4 qualified conversations per week, not 2** (`15_DECISION_GATE_CHECKLIST.md` §0.2).
+> At 2/week you hit the scorecard's stated weekly target and still miss D3, D4 and D5 — and then
+> read three gate failures as a verdict on the market rather than on the cadence. Check the trailing
+> rate every week; it is the earliest possible warning that a gate will be missed.
+
 - [ ] 15–20 new targets/week · 6–8 deep, the rest light
 - [ ] 2 teardowns/week
 - [ ] Every conversation → interview record within 24 h

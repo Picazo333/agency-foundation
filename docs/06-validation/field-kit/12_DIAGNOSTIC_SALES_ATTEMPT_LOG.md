@@ -82,7 +82,7 @@ paid                    = count(payment_received = Y AND discount_offered = N)
 | `paid = 1` | **Partial** | Extend 15 days. If still 1 → treat as fail and run the §4.1 diagnosis |
 | `paid = 0` but ≥ 1 core sold after a **free** teardown | **B — free-wedge fallback** | `A-07` false. Wedge becomes free, with stated costs. Model mutates to M3+M6. → D6 |
 | `paid = 0` and no core sold, from ≥ 20 qualified | **C — no monetisation** | → §4.1 diagnosis, then D7 |
-| < 20 qualified conversations | **Not yet decidable** | Do not call the gate early in either direction |
+| 0 paid **and** < 20 qualified at day 60 | **UNDER-SAMPLED** | `15_DECISION_GATE_CHECKLIST.md` §D5-U. Named cause + re-gate within 14 days + strike. **Never a neutral hold.** A **pass at ≥2 paid is called at any denominator** |
 
 ### 4.1 Path C diagnosis — required before any action
 
@@ -100,6 +100,20 @@ Four causes, opposite remedies. Read from the objection columns, not from impres
 times, is how a 90-day validation becomes an 18-month drift.
 
 ## 5. The free-alternative rule
+
+> **Disambiguation first — these are two different things and conflating them corrupts H-01.**
+>
+> | | What it is | Status |
+> |---|---|---|
+> | **L0 teardown** | The free, 3-hour, asynchronous observation piece that opens the conversation | **Always free, by design.** Sending one is never a "free alternative". `free_alternative_offered` stays `N` |
+> | **Free alternative** | Giving away the **L1 diagnostic** — the paid measurement — at no charge | **Prohibited** until 15 qualified attempts have failed |
+>
+> D5 path B ("core sold after a free teardown") refers to the L0 teardown doing the wedge's job
+> without a paid diagnostic in between. It does **not** mean a diagnostic was given away.
+>
+> Marking `free_alternative_offered = Y` because you sent a teardown would invalidate every row in
+> this log as H-01 evidence. Marking it `N` after giving away a diagnostic hides the one violation
+> the column exists to catch.
 
 `FIELD_VALIDATION_PLAN.md` §3 H-01: *no free alternative is offered unless and until 15 qualified
 attempts have failed.*

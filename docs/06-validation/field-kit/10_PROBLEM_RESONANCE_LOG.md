@@ -52,6 +52,19 @@ Plus one more, which is often the most valuable row in the log:
 | Phase 4: "what bothers you most?" → "recruitment, honestly" | **OTHER PROBLEM (unanticipated)** |
 | Teardown named the problem, buyer later repeats it in Phase 2 | **Contaminated — excluded from the denominator** |
 
+## 2b. Single source of truth for contamination
+
+Two files carry a contamination field: `data/interview_index.csv` (`resonance_contaminated`) and
+`data/resonance_log.csv` (`contaminated`). They can drift, and a drifted denominator is an
+unfalsifiable gate.
+
+> **`resonance_log.csv` is authoritative.** It is set during classification, from the transcript,
+> at least an hour after the interview — the moment when the judgement is actually being made.
+> `interview_index.csv` is a convenience copy for finding records and is never counted.
+
+If the two disagree, the resonance log wins and the index is corrected. The weekly review checks
+the two for drift (finding `DEEP-5`).
+
 ## 3. Classification procedure *(binding)*
 
 1. Classify **from the recording or transcript**, not from memory. Memory systematically upgrades.
@@ -111,7 +124,7 @@ numerator   = those with ≥1 of PC-1..PC-7 classified VOLUNTEERED
 | ≥ 5/10 | **PASS** | → D5. Harvest the verbatim corpus (`POSITIONING_ARCHITECTURE.md` §3) |
 | 2–4/10 | **PARTIAL** | → D4b reframe, once, around the problem they *did* volunteer |
 | ≤ 1/10 | **FAIL** | Thesis' core claim is false in this segment → D3b or D7 |
-| Denominator < 10 | **Not yet decidable** | Do not call the gate. Keep interviewing |
+| Clean denominator < 10 | **UNDER-SAMPLED** | Separate exclusions from volume first, then `15_DECISION_GATE_CHECKLIST.md` G-8: named cause + re-gate within 14 days + strike |
 
 ### 6.1 The warm/cold split — mandatory at D4 *(red-team finding `RT-K2`)*
 
