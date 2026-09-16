@@ -15,7 +15,7 @@ depends_on:
 ## State
 **ACTIVE — Phase 3 current gate.**
 
-Phase 1 Creative Direction and Phase 2 Expanded Reference Research are closed with `PASS`. This folder now becomes the active curation workspace.
+Phase 1 Creative Direction and Phase 2 Expanded Reference Research are closed with `PASS`. Phase 3 is now in **human curation review** after `PHASE_3_CURATION_PASS_1.md` reduced the broad source universe to proposed board survivors.
 
 ## Required boards
 1. `01_DIVINE_ILLUMINATION`
@@ -24,6 +24,22 @@ Phase 1 Creative Direction and Phase 2 Expanded Reference Research are closed wi
 4. `04_ORDER_KNOWLEDGE`
 5. `05_RECONCILIATION`
 6. `ANTI_ATLAS`
+
+## Current curation status
+`PHASE_3_CURATION_PASS_1.md` proposes:
+- 8 survivors for `DIVINE / ILLUMINATION`;
+- 8 survivors for `GROTESQUE / CORPOREAL`;
+- 9 survivors for `DARKNESS / REVELATION`;
+- 8 survivors for `ORDER / KNOWLEDGE`;
+- 10 survivors for `RECONCILIATION`;
+- 10 Anti-Atlas failure families.
+
+These selections are **not yet promoted to canon**. Human `PASS / MUTATE / KILL` remains mandatory.
+
+## Figma policy at the current sub-gate
+Figma assembly is deliberately **deferred during source-name curation**. It becomes required after the survivor lists are human-approved or when the unresolved question depends on scale, adjacency, rhythm, density, negative space or set-level visual cohesion.
+
+This preserves both methodological quality and scarce MCP capacity: Figma is the required assembly/evaluation environment for final boards, not a substitute for conceptual curation.
 
 ## Input universe
 Use:
@@ -43,8 +59,8 @@ For each positive board:
 5. cover color/tone, material/texture, light/shadow, composition/space and body/human presence when relevant;
 6. record source metadata plus `EXTRACT / DO NOT EXTRACT` and rights/provenance state;
 7. limit single-author/film domination unless the board explicitly studies that source;
-8. assemble in **Figma** rather than asking a generative image model to synthesize the board;
-9. run Visual Asset Curation on the set;
+8. assemble in **Figma** after source curation is approved rather than asking a generative image model to synthesize the board;
+9. run Visual Asset Curation on the assembled set;
 10. run the eight transversal quality gates;
 11. obtain explicit human `PASS / MUTATE / KILL`.
 
