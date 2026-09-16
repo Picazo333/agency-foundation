@@ -1,7 +1,7 @@
 ---
 status: approved
 owner: meta
-updated: 2026-09-15
+updated: 2026-09-16
 authority: canon
 depends_on:
   []
@@ -10,6 +10,15 @@ depends_on:
 
 ## Goal
 Parallelize high-value work without allowing tools to make conflicting decisions or contaminate each other's domains.
+
+## Cross-cutting sidecar — Project Harvest
+Across all waves, meaningful PRs, ADRs, milestones, experiments, incidents, and deliveries may produce a lightweight Project Harvest record for reusable organizational knowledge.
+
+Project Harvest is deliberately **non-blocking** and does not alter existing gates, ownership, or workstream sequencing. It captures evidence/lessons once and may later route them to story/media, Skill candidates, SOPs, templates, evals, reusable components/assets, case studies/proof, or benchmarks.
+
+It does not auto-publish, does not make research/candidates canonical, and does not couple this project to Noema, Skill Foundry, or another downstream tool.
+
+Protocol: `docs/10-knowledge-harvest/PROJECT_HARVEST_PROTOCOL.md`.
 
 ## Wave 0 — Foundation
 Repository baseline, governance, research import, workstream contracts, handoffs and CI health checks.
