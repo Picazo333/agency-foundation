@@ -3,36 +3,47 @@
 ## Baseline Findings
 - No systematic local or CI check for broken Markdown links or required document frontmatter.
 - No automated secret leak detection tailored to common issues.
-- `.gitignore` and `.env.example` lacked robust agent-specific exclusion (like local worktree formats).
+- `.gitignore` and `.env.example` lacked stronger secret/agent hygiene guidance.
 - PR and Issue templates lacked explicit checklists for multi-agent safety and boundary constraints.
-- `AGENTS.md` missing explicit command to run pre-PR checks.
+- `AGENTS.md` lacked an explicit command to run pre-PR checks.
 
 ## Changes Made
-- **Created `scripts/repo-health/validate_repo.py`**: A deterministic python script with zero dependencies that scans for secrets, broken relative links, and verifies canonical document frontmatter.
-- **Implemented GitHub Actions CI**: Added `.github/workflows/repo-health.yml` that runs the validation script on `push` to `main` and all `pull_request` events.
-- **Updated Secret Hygiene**: Expanded `.gitignore` with more key/cert extensions and ignored worktrees matching `../agency-*`. Explicit warnings added to `.env.example`.
-- **Improved Templates**: Added specific "Agent Safety Checks" sections to `.github/ISSUE_TEMPLATE/task.md` and `research.md`. Appended similar verifications and the local validation command to `.github/PULL_REQUEST_TEMPLATE.md`.
-- **Updated `AGENTS.md`**: Added a rule mandating running the repo validation script locally before PR submission.
+- **Created `scripts/repo-health/validate_repo.py`**: a deterministic, zero-dependency Python baseline that scans text files for several common secret formats, checks local Markdown links (including repository-escape paths), and validates required metadata on approved/frozen docs that use YAML frontmatter.
+- **Implemented GitHub Actions CI**: added `.github/workflows/repo-health.yml` to run the same validator on pull requests and pushes to `main`.
+- **Updated Secret Hygiene**: expanded `.gitignore` for common credential/key files and local IDE/agent artifacts; `.env.example` now uses placeholders that are intentionally not shaped like real credentials.
+- **Improved Templates**: added explicit Agent Safety Checks to Issue/PR templates and the local validation command to the PR checklist.
+- **Updated `AGENTS.md`**: added a pre-PR repository-health validation rule.
 
 ## Before/After Checks
-- **Before**: Run validation script manually (failed if arbitrary bad links were present).
-- **After**: All tests pass cleanly (`✅ All Repository Health Checks Passed.`). PRs will be automatically guarded by the CI workflow running the same script.
+- **Before**: repository safety depended primarily on manual review.
+- **After**: a single deterministic local command and matching CI job provide a repeatable baseline for obvious secrets, broken local links, repository-escaping links, malformed canonical frontmatter, and required canonical metadata.
+
+Local reproduction:
+
+```bash
+python3 scripts/repo-health/validate_repo.py
+```
 
 ## Remaining Risks
-- The secret checking in `validate_repo.py` is heuristic and lightweight (regex-based) to maintain zero dependencies and determinism. It might miss complex or obfuscated secrets, and it has a small false-positive risk.
-- Autonomous AI agents may skip reading PR templates or `AGENTS.md` unless explicitly instructed in their handoff prompts.
+- The secret checker is intentionally heuristic and lightweight. It is not a substitute for GitHub Secret Scanning / push protection and may miss novel, encoded, or provider-specific credentials.
+- Markdown parsing is intentionally simple; unusually complex Markdown/HTML link syntax may require future refinement.
+- Generated/binary-heavy `assets/` is excluded from this lightweight walk. Asset provenance/licensing and binary validation are handled by their own workstreams/contracts.
+- Autonomous agents can still ignore repository guidance unless their task contract requires reading `AGENTS.md` and passing CI.
+- Repository `.gitignore` cannot ignore worktrees created outside the repository; external worktree cleanup is an operational Git task, not an ignore-file feature.
 
 ## Human GitHub Settings Recommendations
-- **Branch Protection**: Go to GitHub Repo Settings -> Branches -> Add branch protection rule for `main`.
-  - Check "Require a pull request before merging".
-  - Check "Require status checks to pass before merging" and select the `validate` job from the Repository Health workflow.
-  - Disable "Allow force pushes".
-- **Secret Scanning**: Enable GitHub Secret Scanning in the repo security settings if available on your plan (this provides a much deeper layer of security than the basic python script).
+- **Branch Protection / Ruleset for `main`**:
+  - require a pull request before merging;
+  - require the Repository Health `validate` status check once it has run successfully at least once;
+  - disable force pushes and branch deletion where appropriate;
+  - consider requiring conversation resolution before merge.
+- **Secret Scanning / Push Protection**: enable GitHub secret scanning and push protection when available. These provide substantially deeper detection than the local regex baseline.
 
 ## Deferred Items
-- We deferred adding dependency auto-upgrades or third-party auto-formatting to avoid mass dependency churn (per safety rules).
-- We avoided complex AST or deep code analysis since this repository acts heavily as a markdown-based configuration and planning space right now.
+- Dependency auto-upgrades and third-party auto-formatting were intentionally deferred to avoid broad, low-signal churn.
+- Complex AST/deep-code analysis was deferred because the repository is currently documentation/planning-heavy.
+- Helper/superseded branch retirement remains explicitly tracked in `PENDING.md`; no branch is deleted until unique work is ruled out.
 
 ## Collision Risks & Stale Branches
-- **Collision Risk**: Active branches (like `tech/agent-foundation` or `plan/claude-master-agency`) might conflict with template or `.gitignore` changes here. When merging this PR, recommend that active agents run `git pull origin main` into their local branches, but do so carefully.
-- **Stale Branches**: It is recommended that a human operator periodically inspects remote branches using `git branch -r` and deletes any abandoned branches to prevent agent confusion.
+- **Collision risk**: active branches may also modify `AGENTS.md`, templates, or root hygiene files. Integrate those changes deliberately rather than resolving by overwrite.
+- **Stale/helper branches**: periodically inspect remote branches and retire only those confirmed to contain no unique work. Do not assign new work to superseded/helper branches.
