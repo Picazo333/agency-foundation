@@ -13,9 +13,11 @@ Before making changes:
 1. Confirm the repository is exactly `Picazo333/agency-foundation`.
 2. Confirm you are NOT on `main`.
 3. Prefer the prepared branch `tech/jules-technical-foundation`. If Jules provisions an isolated task branch, it must start from this branch or an equivalent up-to-date base.
-4. Confirm the working tree is clean before substantive edits.
-5. Read `AGENTS.md`, `PROJECT_STATE.md`, `docs/00-meta/source-of-truth.md`, `docs/08-plans/master/META_PLAN.md`, `docs/08-plans/workstreams/TECH_FOUNDATION_WORKSTREAM.md`, relevant Aesthetic/Functional/System spine rules, the S0–S4 maturity model, relevant security/provenance docs, and Issue #4 in full.
-6. Treat older references to Antigravity as historical executor metadata. The current executor is Jules and the capability goal is unchanged.
+4. Confirm the governance change from PR #10 (`meta: simplify executors and consolidate foundation work on Jules`) is present in the base you are using. If PR #10 has not been merged to `main`, do not start substantive work; report that dependency instead.
+5. Sync from the latest `main` using a normal non-destructive merge/update path before substantive edits. If synchronization causes conflicts, stop and report them rather than force-resolving or rewriting history.
+6. Confirm the working tree is clean before substantive edits.
+7. Read `AGENTS.md`, `PROJECT_STATE.md`, `docs/00-meta/source-of-truth.md`, `docs/08-plans/master/META_PLAN.md`, `docs/08-plans/workstreams/TECH_FOUNDATION_WORKSTREAM.md`, relevant Aesthetic/Functional/System spine rules, the S0–S4 maturity model, relevant security/provenance docs, and Issue #4 in full.
+8. Treat older references to Antigravity as historical executor metadata. The current executor is Jules and the capability goal is unchanged.
 
 ## Safety and scope
 
