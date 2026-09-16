@@ -83,7 +83,9 @@ Parallel spines:
 - System
 
 Maturity stages:
-`S0 Visual -> S1 Interactive -> S2 Mock Data -> S3 Backend Wired -> S4 AI/MCP`
+`S0 Visual -> S1 Interactive -> S2 Mock Data -> S3 Backend Wired`
+
+`S4 AI/MCP` is an **optional capability stage** only for surfaces that actually require model/tool-mediated behavior. It is not a mandatory endpoint or a quality badge.
 
 ## Wave 6 — Field validation
 Validate WTP, access, buyer language, offer clarity, pricing, objections and proof.
