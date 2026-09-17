@@ -43,13 +43,26 @@ For each positive board:
 5. cover color/tone, material/texture, light/shadow, composition/space and body/human presence when relevant;
 6. record source metadata plus `EXTRACT / DO NOT EXTRACT` and rights/provenance state;
 7. limit single-author/film domination unless the board explicitly studies that source;
-8. assemble in **Figma** rather than asking a generative image model to synthesize the board;
+8. assemble in **Figma** only after the source-surrogate and transfer gates are satisfied;
 9. run Visual Asset Curation on the set;
 10. run the eight transversal quality gates;
 11. obtain explicit human `PASS / MUTATE / KILL`.
 
 ## Source rule
 Only real/source references belong on these boards. Project-generated imagery is excluded unless later explicitly human-approved as an execution reference, and even then it cannot replace the underlying source record.
+
+## Figma trigger and transfer gate
+Figma is used only when the unresolved question is spatial/cohesive and seeing references together can change the decision.
+
+A controlled remote-fetch test on six verified Tier-A sources failed in the current Figma write environment. Therefore Figma is **not** used as an acquisition mechanism. It remains the preferred final assembly surface after exact source bytes can be transferred through a supported asset-upload path.
+
+`FIGMA_READY` requires:
+- exact surrogate selected for each survivor;
+- rights/provenance state recorded;
+- supported image-byte transfer path available;
+- composition/cohesion is the remaining unresolved question.
+
+See `SOURCE_ACQUISITION_STATUS.md`.
 
 ## Anti-Atlas
 Use the Anti-Atlas to make rejected territories concrete. It must explain *why* each example conflicts with DIVINIVID rather than functioning as a taste-shaming board.
