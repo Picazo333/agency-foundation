@@ -15,7 +15,17 @@ depends_on:
 ## State
 **ACTIVE — Phase 3 current gate.**
 
-Phase 1 Creative Direction and Phase 2 Expanded Reference Research are closed with `PASS`. Phase 3 is now in **human curation review** after `PHASE_3_CURATION_PASS_1.md` reduced the broad source universe to proposed board survivors.
+Phase 1 Creative Direction and Phase 2 Expanded Reference Research are closed with `PASS`. This folder now becomes the active curation workspace.
+
+Current curation state:
+- `PHASE_3_CURATION_PASS_1.md` — first survivor cut and board-level mechanism audit;
+- `PHASE_3_CURATION_PASS_2.md` — specific source-object manifests, rights/provenance roots, cross-board redundancy audit, and Figma trigger policy.
+
+Figma master file prepared for the future spatial/cohesion gate:
+- `DIVINIVID — Reference Atlas`
+- https://www.figma.com/design/MYmg3z68HEWh5bomC2wOFc
+
+The file exists as a container only. No board is visually approved merely because it is assembled there.
 
 ## Required boards
 1. `01_DIVINE_ILLUMINATION`
@@ -24,22 +34,6 @@ Phase 1 Creative Direction and Phase 2 Expanded Reference Research are closed wi
 4. `04_ORDER_KNOWLEDGE`
 5. `05_RECONCILIATION`
 6. `ANTI_ATLAS`
-
-## Current curation status
-`PHASE_3_CURATION_PASS_1.md` proposes:
-- 8 survivors for `DIVINE / ILLUMINATION`;
-- 8 survivors for `GROTESQUE / CORPOREAL`;
-- 9 survivors for `DARKNESS / REVELATION`;
-- 8 survivors for `ORDER / KNOWLEDGE`;
-- 10 survivors for `RECONCILIATION`;
-- 10 Anti-Atlas failure families.
-
-These selections are **not yet promoted to canon**. Human `PASS / MUTATE / KILL` remains mandatory.
-
-## Figma policy at the current sub-gate
-Figma assembly is deliberately **deferred during source-name curation**. It becomes required after the survivor lists are human-approved or when the unresolved question depends on scale, adjacency, rhythm, density, negative space or set-level visual cohesion.
-
-This preserves both methodological quality and scarce MCP capacity: Figma is the required assembly/evaluation environment for final boards, not a substitute for conceptual curation.
 
 ## Input universe
 Use:
@@ -59,10 +53,15 @@ For each positive board:
 5. cover color/tone, material/texture, light/shadow, composition/space and body/human presence when relevant;
 6. record source metadata plus `EXTRACT / DO NOT EXTRACT` and rights/provenance state;
 7. limit single-author/film domination unless the board explicitly studies that source;
-8. assemble in **Figma** after source curation is approved rather than asking a generative image model to synthesize the board;
-9. run Visual Asset Curation on the assembled set;
+8. assemble in **Figma** rather than asking a generative image model to synthesize the board;
+9. run Visual Asset Curation on the set;
 10. run the eight transversal quality gates;
 11. obtain explicit human `PASS / MUTATE / KILL`.
+
+## Figma trigger policy
+Figma is used only when the unresolved decision is spatial/visual and seeing the references together can change the answer: relative scale, proximity, rhythm, density, color balance, negative space, visual overlap between boards, or whether a thesis reads without prose.
+
+Do not spend Figma operations on source selection, rights/provenance bookkeeping, redundancy cuts, `EXTRACT / DO NOT EXTRACT` reasoning, or textual synthesis.
 
 ## Source rule
 Only real/source references belong on these boards. Project-generated imagery is excluded unless later explicitly human-approved as an execution reference, and even then it cannot replace the underlying source record.
