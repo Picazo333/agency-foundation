@@ -1,37 +1,29 @@
 ---
 status: approved
 owner: brand
-updated: 2026-09-16
+updated: 2026-09-17
 authority: workbench
 depends_on:
   - ../../../08-plans/workstreams/DIVINIVID_VISUAL_IDENTITY_MASTER_PLAN.md
   - CREATIVE_DIRECTION_BRIEF.md
-  - reference-research/PHASE_2_REFERENCE_RESEARCH.md
+  - DIVINIVID_VISUAL_GRAMMAR_V0.md
+  - PHASE_5_ITERATION_CONTRACT.md
+  - PHASE_5_ANCHORED_DERIVATION_PLAN.md
+  - PHASE_5_NEGATIVE_EVIDENCE_LEDGER.md
 ---
 # DIVINIVID — Brand State
 
 ## Purpose
-This file is the current human-readable state checkpoint for DIVINIVID. It prevents agents from reconstructing the Brand from stale branches, old moodboards or chat memory.
+Current human-readable checkpoint for the DIVINIVID visual-identity program. A new agent should be able to reconstruct the current gate without relying on chat memory or stale branches.
 
 ## Current hierarchy
 - **Brand under identity exploration:** `DIVINIVID`
 - **Route 01 internal codename:** `KIROGRAF`
 - **Route 01 descriptor:** `Sacred Anatomy`
-- Route codenames are internal and must not replace `DIVINIVID` in customer-facing mockups or applications.
-
-## Naming status
-`DIVINIVID` is the **working selected name for identity-system exploration** after a long naming process that included semantic, phonetic, palindrome and preliminary collision exploration.
-
-This does **not** mean:
-- trademark registration is complete;
-- every jurisdiction is cleared;
-- domain/social availability is permanently guaranteed;
-- the name is Brand V1 canon.
-
-Do not reopen naming during visual phases unless a real diligence blocker appears or the human owner explicitly reopens it.
+- Route names are internal metadata and do not replace `DIVINIVID` in customer-facing work.
 
 ## Central creative thesis
-> **Contrast with elegance the tension and harmony between the divine and the grotesque, darkness and light, showing how apparent opposites can exist inside the same system.**
+> **Contrast with elegance the tension and harmony between the divine and the grotesque, darkness and light, showing how apparent opposites can coexist inside one system.**
 
 ## Master tensions
 - Divine ↔ Grotesque
@@ -41,64 +33,122 @@ Do not reopen naming during visual phases unless a real diligence blocker appear
 - Body ↔ Transcendence
 
 ## Current route objective
-Route 01 KIROGRAF tests whether anatomical/knowledge structures can act as the rational skeleton while sacred illumination, grotesque anomaly and tenebrist revelation create controlled tension without collapsing into gore, occult branding, dark luxury or generic historical pastiche.
+Use anatomical/knowledge structures, sacred/liturgical image logic, grotesque or impossible organic matter, surreal displacement and tenebrist revelation as controlled mechanisms inside one contemporary identity — without collapsing into gore, occult branding, generic Gothic, dark luxury, fantasy concept art, dark-tech or historical pastiche.
 
 ## Source-of-truth order
-1. frozen visual-identity master plan;
+1. frozen `DIVINIVID_VISUAL_IDENTITY_MASTER_PLAN.md`;
 2. this Brand State;
-3. Clean Reference Canon + Anti-Canon;
-4. approved Creative Direction Contract;
-5. approved Phase 2 Reference Research + Source Registry;
-6. active route thesis/grammar;
-7. human-approved generated artifacts only.
+3. approved Creative Direction Contract;
+4. Clean Reference Canon + Anti-Canon;
+5. approved Phase 2 Research + Source Registry;
+6. approved Phase 3 Reference Atlas / human mutations;
+7. Phase 4 Tension Grammar + Red Team;
+8. active Phase 5 Anchored Derivation Plan;
+9. exact human-approved generated anchors only.
 
-## Phase 1 status
-**CLOSED / PASS — Creative Direction Contract approved 2026-09-16.**
+Rejected or unapproved generated experiments never outrank the source/grammar stack.
 
-The contract operationally defines the Brand's key aesthetic terms, resolves the four directional axes, sets testable ornament/pigment/darkness/grotesque/historical-visibility budgets, defines per-surface intensity ceilings, and records rejection tests plus Creative Direction and Taste review passes.
+---
 
-## Phase 2 status
-**CLOSED / PASS — Expanded Reference Research completed 2026-09-16.**
+# Completed phases
 
-Nine lanes were researched using real works/sources only. Phase 2 preserved the existing Core references, added distinct candidates where they contributed a transferable mechanism, explicitly held/cut redundant or contamination-prone sources, and established a source/right-state registry for Phase 3.
+## Phase 1 — Creative Direction Contract
+**CLOSED / PASS.**
 
-High-yield additions include:
-- Isenheim Altarpiece;
-- William Blake's Book of Job engravings;
-- Martin Schongauer's Saint Anthony;
-- Hours of Catherine of Cleves;
-- Aberdeen Bestiary;
-- Vesalius;
-- Cellarius;
-- Odilon Redon;
-- The Night of the Hunter;
-- Vampyr;
-- The Color of Pomegranates;
-- Andrei Rublev;
-- Kwaidan;
-- Bruder Klaus Field Chapel;
-- Pierre Soulages / Outrenoir;
-- Hypnerotomachia Poliphili;
-- Bill Viola / The Crossing.
+Operational meanings, directional axes and aesthetic budgets are approved.
 
-Candidate status does **not** equal canon promotion. Phase 3 must curate survivors into source-only boards and obtain explicit human `PASS / MUTATE / KILL`.
+## Phase 2 — Expanded Reference Research
+**CLOSED / PASS.**
 
-## Recent-generation status
-The recent multi-round generated moodboards/application boards are **not canonical** and must not be used as positive references by default. Their primary value is negative evidence about process and cliché drift.
+Nine real-source research lanes completed with provenance and candidate/cut states.
 
-Recurring failure signatures to guard against:
-- `KIROGRAF` presented as if it were the Brand;
-- serif + classical statue + black field + geometric star;
-- reduced palette that erased medieval polychromy;
-- generic dark-luxury presentation;
-- anatomy used as decoration rather than knowledge/body/transformation;
-- contemporary interpreted as trendy brutalism or Swiss-grid spectacle;
-- generator asked to solve art, logo, typography, UI and layout simultaneously;
-- five boards that were cosmetic variations of one idea.
+## Phase 3 — Reference Atlas
+**CLOSED / PASS WITH DOCUMENTED MUTATIONS / FIGMA BACKFILL REQUIRED.**
 
-## Current gate
-**Phase 3 — Reference Atlas.**
+Important human learning:
+- strongest attraction toward `GROTESQUE / CORPOREAL` and `DARKNESS / REVELATION`;
+- `ORDER / KNOWLEDGE` narrowed toward classical anatomy / Vesalian scientific engraving;
+- surrealism explicitly added as a bounded cross-cutting modulation;
+- liturgical/manuscript illustration remains important and must not decay into pasted Gothic ornament.
 
-Required next action: curate five source-only boards plus the Anti-Atlas in Figma from the Clean Reference Canon and Phase 2 research. Each positive board must cut broad sourcing down to 8–16 unique references, preserve source/provenance records, and pass human review.
+## Phase 4 — Tension Grammar
+**CLOSED / PASS.**
 
-Do **not** start Route 01 generated identity production before the Phase 3 Atlas gate passes.
+The grammar formalizes `CONTAIN`, `INVADE`, `REVEAL`, `MIRROR`, `TRANSFORM`, `RECONCILE` and `DISLOCATE`, plus control axes, anti-rules and a red-team gate. Phase 5 is allowed to generate original hypotheses under the iteration contract.
+
+---
+
+# Phase 5 — Current status
+
+**ACTIVE / RECONCILED AFTER GENERATION DRIFT.**
+
+## Strongest current human evidence
+The human owner has clarified that the **earliest serious original explorations remain the best work produced so far**. Later rounds must not replace them merely because they are newer.
+
+The exact three strongest early artifacts must be recovered and pinned as:
+- `GA-01`
+- `GA-02`
+- `GA-03`
+
+They form the **Golden Anchor Set** for the corrected Phase-5 funnel.
+
+Known positive signals extracted across the early work include:
+- Oneiric Anatomy: solemn surreal threshold, impossible interior, crimson semantic event, strong ivory/dark tension;
+- Bestiary/System logic: serious impossible organism, classification/annotation, editorial containment;
+- Surreal Dislocation: marked surrealism and dream-born organic impossibility;
+- Dark Revelation: semantic darkness, restraint, apparition and selective reveal;
+- Liturgical illustration: manuscript/marginalia/devotional structure used as real visual language.
+
+These are principles to test against the exact Golden Anchors, not permission to invent a new specimen-first direction.
+
+## Negative evidence retained
+- later OA mutations became too structurally similar;
+- corporeal prompt wording caused safety/process failures;
+- later bestiary rounds locked into repeated dragon/wyvern morphology;
+- full identity-board generation mixed too many variables;
+- some boards had typography/applications while others did not;
+- liturgical language decayed into generic ornament;
+- the recent morphology-only probe over-focused the specimen and is **not** the current next step.
+
+All such material remains quarantined in `PHASE_5_NEGATIVE_EVIDENCE_LEDGER.md`.
+
+## Current governing Phase-5 method
+`PHASE_5_ANCHORED_DERIVATION_PLAN.md`
+
+Core funnel:
+`PIN 3 GOLDEN ANCHORS → 7-LAYER DNA MAP → 3 EQUIVALENT ANCHOR SPECIMENS → 6 SINGLE-CONTRAST CHILDREN → 3 SURVIVORS → 2 SYSTEM-PROOF DIRECTIONS → 1 PASS / EXPLICIT CONVERGENCE`
+
+### Key rule
+The Brand must survive **without the beast/specimen**. Image language is one layer of identity, not the identity itself.
+
+## Capability routing
+Decision: `USE_EXISTING + LOCAL ORCHESTRATION`.
+
+Active approved methods:
+- Creative Direction;
+- Moodboard Builder;
+- Visual Asset Curation;
+- Superdesign methodology;
+- Taste;
+- Brand Identity;
+- Typography System later for final foundations;
+- Figma as editable visual source of truth when available.
+
+A bounded GitHub workflow search found useful external precedents, but no additional executable/installable capability is justified. Generic broad→narrow and per-dimension feedback patterns were integrated into the local Phase-5 plan instead of adding conflicting design authority.
+
+---
+
+# Current gate / immediate next action
+
+**BLOCKED ON GOLDEN ANCHOR RECOVERY.**
+
+Do not generate more visual material yet.
+
+Next actions in order:
+1. recover the exact three early serious original artifacts the human owner says remain best;
+2. pin them in `PHASE_5_GOLDEN_ANCHOR_MANIFEST.md`;
+3. decompose each across seven identity layers;
+4. assemble three equivalent editable Anchor Specimens;
+5. only then start the six-child controlled derivation round.
+
+The recent `ORG-PROBE-01` morphology experiment is closed as diagnostic learning and must not become the parent of the Brand identity.
