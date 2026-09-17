@@ -1,5 +1,5 @@
 phase: 5
-state: golden_anchor_recovery_required
+state: five_route_checkpoint_passed_route_convergence_next
 updated: 2026-09-17
 authority: workbench
 source_pr: 26
@@ -8,10 +8,49 @@ frozen_master_plan:
   file: docs/08-plans/workstreams/DIVINIVID_VISUAL_IDENTITY_MASTER_PLAN.md
   phase_order_unchanged: true
 
+checkpoint:
+  file: docs/03-brand/workbench/divinivid/PHASE_5_ROUTE_CHECKPOINT.md
+  result: PASS
+  approved_routes: 5
+  approved_boards: 10
+  rule: two_approved_boards_per_route_before_convergence
+  board_types:
+    - identity_atmosphere
+    - system_surface
+
 current_method:
-  file: docs/03-brand/workbench/divinivid/PHASE_5_ANCHORED_DERIVATION_PLAN.md
-  audit: docs/03-brand/workbench/divinivid/PHASE_5_100_PASS_AUDIT.md
-  rule: anchored_derivation_not_specimen_first
+  file: docs/03-brand/workbench/divinivid/PHASE_5_ROUTE_CONVERGENCE_PLAN.md
+  predecessor: docs/03-brand/workbench/divinivid/PHASE_5_ANCHORED_DERIVATION_PLAN.md
+  rule: normalize_compare_then_controlled_convergence
+
+routes:
+  R1:
+    name: Dark Revelation
+    boards_approved: 2
+    thesis: semantic_darkness_selective_revelation
+    status: approved_route_evidence
+  R2:
+    name: Bestiary of Systems
+    boards_approved: 2
+    thesis: observe_classify_contain_impossible_living_systems
+    status: approved_route_evidence
+  R3:
+    name: Sacred Corporeal
+    boards_approved: 2
+    thesis: intact_human_body_as_threshold_between_matter_and_transcendence
+    status: approved_route_evidence
+    safety_rule: non_traumatic_non_graphic_no_literal_dissection
+  R4:
+    name: Oneiric Anatomy
+    boards_approved: 2
+    thesis: body_as_dream_logical_landscape_of_meaning
+    status: approved_route_evidence
+    human_signal: strongest_current_inclination_not_final_selection
+  R5:
+    name: Illuminated Marginalia
+    boards_approved: 2
+    thesis: central_order_with_meaning_and_strangeness_in_the_margins
+    status: approved_route_evidence
 
 controls:
   X1: {label: anatomical_to_symbolic, low: anatomical_evidentiary, high: symbolic_metaphysical}
@@ -33,30 +72,36 @@ identity_layers:
   L6: color_material
   L7: information_system_behavior
 
-golden_anchor_set:
-  status: exact_assets_not_yet_pinned
-  authority: highest_generated_positive_evidence_once_human_confirmed
-  anchors:
-    - id: GA-01
-      status: recover_exact_artifact
-    - id: GA-02
-      status: recover_exact_artifact
-    - id: GA-03
-      status: recover_exact_artifact
-  rule: do_not_reconstruct_from_memory
+route_dossier_fields:
+  - thesis
+  - L1_image_illustration_language
+  - L2_composition
+  - L3_darkness_illumination
+  - L4_liturgical_historical_structure
+  - L5_typography_behavior
+  - L6_color_material
+  - L7_information_system_behavior
+  - graphic_devices_micro_language
+  - motion_behavior
+  - reduced_state_behavior
+  - anti_pattern_no_leak
+  - strongest_human_signal
+  - known_route_risk
 
-retained_positive_mechanisms:
-  - solemn_oneiric_threshold
-  - impossible_interior
-  - crimson_as_semantic_event
-  - ivory_dark_tension
-  - serious_impossible_organism
-  - classification_annotation
-  - editorial_containment
-  - marked_surreal_dislocation
-  - organic_impossible_materiality
-  - semantic_dark_revelation
-  - liturgical_manuscript_structure
+additional_constraints:
+  - historical_visibility
+  - liturgy_structurality
+  - ornament_budget
+  - crimson_budget
+  - darkness_budget
+  - hero_dependence
+  - safety_risk
+
+positive_evidence_rule:
+  ten_approved_boards_are_positive_phase5_evidence: true
+  generated_typography_is_not_final_font_selection: true
+  generated_web_fragments_are_not_final_interface_design: true
+  full_route_blending_without_mutation_card_forbidden: true
 
 negative_evidence:
   - id: NE-01
@@ -64,26 +109,28 @@ negative_evidence:
     prohibition: cannot_seed_future_generation
   - id: NE-02
     name: safety_triggered_corporeal_prompt_failures
-    interpretation: process_failure_not_creative_rejection
+    interpretation: localized_process_failure_from_literal_graphic_anatomy
   - id: NE-03
     name: repeated_dragon_wyvern_morphology
     prohibition: cannot_seed_future_generation
   - id: NE-04
     name: full_board_generation_overcompressed_identity_problem
-    prohibition: method_killed
+    prohibition: undifferentiated_full_identity_generation_killed
   - id: NE-05
     name: liturgical_signal_became_generic_ornament
-    prohibition: cannot_promote_without_structural_retest
+    prohibition: liturgy_must_be_structural_not_decorative
   - id: NE-06
     name: premature_application_previews
-    prohibition: no_application_collage_in_phase5_derivation
+    interpretation: applications_must_be_equivalent_and_phase_appropriate
   - id: NE-07
     name: unequal_evidence_across_comparison_boards
     prohibition: invalid_comparison_set
   - id: NE-08
     name: morphology_only_probe_overfocused_specimen
     interpretation: diagnostic_learning_only
-    prohibition: not_current_parent
+  - id: NE-09
+    name: route_contamination_from_mixed_prompts
+    prohibition: generation_receives_parent_route_packet_only
 
 capability_preflight:
   decision: USE_EXISTING_PLUS_LOCAL_ORCHESTRATION
@@ -96,58 +143,49 @@ capability_preflight:
     - brand-identity
     - typography-system_later_foundations
     - figma_when_available
-  external_workflow_review:
-    hermetic_brand_identity_builder:
-      license: MIT
-      decision: process_precedent_only_duplicate_authority_not_added
-    roxabi_brand_exploration_playbook:
-      license: AGPL-3.0
-      decision: generic_funnel_lessons_only_do_not_vendor
-    jinstronda_design_with_ai:
-      license: not_found_during_intake
-      decision: do_not_vendor
   external_cli_execution_authorized: false
 
 next_actions:
-  - recover_exact_GA_01_GA_02_GA_03
-  - create_PHASE_5_GOLDEN_ANCHOR_MANIFEST
-  - create_seven_layer_DNA_map_per_anchor
-  - assemble_three_equivalent_editable_anchor_specimens
-  - choose_two_high_learning_contrast_lanes_per_anchor
-  - generate_or_assemble_six_single_variable_children
+  - extract_five_route_dossiers_from_approved_pairs
+  - derive_route_baseline_X1_X9_vectors_and_budgets
+  - present_normalized_five_route_comparison
+  - collect_route_level_and_layer_level_human_feedback
+  - select_three_parent_directions
+  - create_two_single_mechanism_children_per_parent
 
-first_derivation_round:
-  child_count: 6
-  parent_count: 3
-  children_per_parent: 2
-  available_contrast_lanes:
-    - oneiric_surreal_intensity
-    - liturgical_manuscript_structure
-    - dark_revelation
-    - editorial_system_rigor
-  one_primary_variable_per_child: true
-  comparable_evidence_shell_required: true
-  application_mockups_forbidden: true
-
-funnel:
-  - three_golden_anchors
-  - six_children
+convergence_funnel:
+  - five_approved_routes
+  - five_normalized_route_dossiers
+  - three_parent_directions
+  - six_controlled_mutation_boards
   - three_survivors
-  - two_system_proof_directions
-  - one_pass_or_explicit_convergence
+  - three_targeted_refinements
+  - two_system_proof_finalists
+  - one_pass_or_named_convergence
 
-mandatory_tests_before_phase5_close:
-  - brand_without_beast
-  - beast_without_brand
-  - image_removal
+mandatory_finalist_tests:
+  - brand_without_hero
+  - image_swap
   - monochrome
   - light_surface
+  - dark_surface
   - small_scale
+  - information_density
   - anti_canon
+  - distinctive_without_historical_costume
   - system_fertility
+
+repository_cadence:
+  write_after_every_generation: false
+  checkpoints:
+    - five_route_checkpoint_current
+    - three_parents_selected
+    - three_mutation_survivors_selected
+    - two_system_proof_finalists_ready
+    - phase5_final_pass_or_convergence
 
 merge_policy:
   pr26_remains_draft: true
   merge_only_after:
-    - exact_golden_anchors_pinned
-    - first_corrected_derivation_round_proves_method
+    - corrected_route_convergence_method_proves_stable
+    - meaningful_phase5_promotion_checkpoint_reached
