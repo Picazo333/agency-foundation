@@ -1,203 +1,162 @@
 phase: 5
-state: controlled_mutations
+state: reconciliation_ready_for_review
 updated: 2026-09-17
 authority: workbench
-source_pr: 25
+source_pr: 26
 
 controls:
-  X1:
-    label: anatomical_to_symbolic
-    low: anatomical_evidentiary
-    high: symbolic_metaphysical
-  X2:
-    label: revealed_to_withheld
-    low: exposed_luminous
-    high: concealed_delayed_revelation
-  X3:
-    label: grotesque_intensity
-    low: absent
-    high: prohibited_extreme
-    working_ceiling: 75
-  X4:
-    label: rational_to_oneiric
-    low: physically_coherent
-    high: dream_logical
-  X5:
-    label: scientific_to_ritual
-    low: scientific_treatise
-    high: ceremonial_iconic
-  X6:
-    label: editorial_to_pictorial
-    low: information_structure
-    high: image_atmosphere
-  X7:
-    label: silent_to_dramatic
-    low: restrained
-    high: confrontational
-  X8:
-    label: system_to_hero
-    low: repeatable_system
-    high: singular_hero
-  X9:
-    label: human_to_specimen
-    low: human_threshold
-    high: classified_specimen
+  X1: {label: anatomical_to_symbolic, low: anatomical_evidentiary, high: symbolic_metaphysical}
+  X2: {label: revealed_to_withheld, low: exposed_luminous, high: concealed_delayed_revelation}
+  X3: {label: grotesque_intensity, low: absent, high: prohibited_extreme, working_ceiling: 75}
+  X4: {label: rational_to_oneiric, low: physically_coherent, high: dream_logical}
+  X5: {label: scientific_to_ritual, low: scientific_treatise, high: ceremonial_iconic}
+  X6: {label: editorial_to_pictorial, low: information_structure, high: image_atmosphere}
+  X7: {label: silent_to_dramatic, low: restrained, high: confrontational}
+  X8: {label: system_to_hero, low: repeatable_system, high: singular_hero}
+  X9: {label: human_to_specimen, low: human_threshold, high: classified_specimen}
 
-survivors:
-  OA:
-    route: oneiric_anatomy
-    status: survivor
-    human_signal: strongest_pull
-    baseline_id: OA-01
-    baseline:
-      X1: 75
-      X2: 40
-      X3: 35
-      X4: 85
-      X5: 70
-      X6: 80
-      X7: 65
-      X8: 85
-      X9: 25
-    preserve:
-      - monumental_human_figure
-      - body_as_threshold
+structural_controls:
+  M1: morphology_family
+  M2: silhouette
+  M3: symmetry
+  M4: appendage_logic
+  M5: posture_orientation
+  M6: material_logic
+  M7: physical_impossibility
+
+positive_evidence:
+  OA-01:
+    lineage: oneiric_anatomy
+    status: secondary_positive_evidence
+    human_signal: strong_original_pull
+    profile: {X1: 75, X2: 40, X3: 35, X4: 85, X5: 70, X6: 80, X7: 65, X8: 85, X9: 25}
+    preserve_principles:
+      - solemn_oneiric_threshold
       - impossible_interior
-      - crimson_semantic_interior
-      - solemn_surrealism
-      - ivory_dark_red_contrast
-    risks:
-      - poster_dependence
-      - architecture_over_anatomy
-      - expensive_pictorial_repeatability
-      - surreal_spectacle
-    proposed_mutations:
-      - id: OA-02
-        name: anatomical_reinforcement
-        question: Can the route become more anatomical and less literally architectural without losing its oneiric force?
-        target:
-          X1: 55
-          X2: 40
-          X3: 35
-          X4: 85
-          X5: 55
-          X6: 80
-          X7: 65
-          X8: 85
-          X9: 25
-      - id: OA-03
-        name: editorialization
-        question: Can the route preserve emotional pull while becoming more repeatable as an identity system?
-        target:
-          X1: 75
-          X2: 40
-          X3: 35
-          X4: 85
-          X5: 70
-          X6: 50
-          X7: 50
-          X8: 55
-          X9: 25
-      - id: OA-04
-        name: dark_revelation
-        question: Does stronger concealment improve threshold/revelation behavior without collapsing into generic darkness?
-        target:
-          X1: 75
-          X2: 75
-          X3: 35
-          X4: 75
-          X5: 70
-          X6: 80
-          X7: 70
-          X8: 85
-          X9: 25
+      - crimson_semantic_event
+      - ivory_dark_tension
+      - monumental_pictorial_pull
+    do_not_auto_preserve:
+      - human_subject
+      - exact_architecture
+      - exact_composition
 
-  BS:
-    route: bestiary_of_systems
-    status: survivor
-    human_signal: strong_pull
-    baseline_id: BS-01
-    baseline:
-      X1: 35
-      X2: 20
-      X3: 45
-      X4: 45
-      X5: 20
-      X6: 20
-      X7: 30
-      X8: 20
-      X9: 90
-    preserve:
-      - dossier_specimen_logic
-      - bilateral_organism
-      - classification_and_observation_language
-      - generous_ivory_surface
-      - crimson_evidentiary_marker
-      - evidence_panels_and_annotations
-      - impossible_organism_presented_scientifically
-    risks:
-      - clinical_scifi_drift
-      - weak_sacred_symbolic_charge
-      - repeated_specimen_motif
-      - ui_structure_over_mystery
-    proposed_mutations:
-      - id: BS-02
-        name: corporeal_escalation
-        question: Can the route become more bodily and grotesque without losing classification rigor?
-        target:
-          X1: 45
-          X2: 20
-          X3: 60
-          X4: 45
-          X5: 20
-          X6: 20
-          X7: 30
-          X8: 20
-          X9: 90
-      - id: BS-03
-        name: ritual_infusion
-        question: Can the route gain sacred weight without becoming occult, Gothic, or pseudo-luxury?
-        target:
-          X1: 35
-          X2: 35
-          X3: 45
-          X4: 45
-          X5: 50
-          X6: 20
-          X7: 40
-          X8: 20
-          X9: 90
-      - id: BS-04
-        name: surreal_dislocation
-        question: Can the route incorporate dream logic while preserving the credibility of the classification system?
-        target:
-          X1: 35
-          X2: 20
-          X3: 45
-          X4: 70
-          X5: 20
-          X6: 30
-          X7: 30
-          X8: 20
-          X9: 90
+  BS-01:
+    lineage: bestiary_of_systems
+    status: positive_evidence
+    human_signal: strong_original_pull
+    preserve_principles:
+      - impossible_organism
+      - serious_classification
+      - editorial_containment
+      - specimen_as_meaning_carrier
 
-history:
-  - id: ROUND_A
-    decision: two_survivors
-    survivors:
-      - OA-01
-      - BS-01
-    human_feedback:
-      OA-01: strongest_pull
-      BS-01: strong_pull
+  BS-04:
+    lineage: bestiary_surreal_dislocation
+    status: primary_current_lineage
+    human_signal: strongest_later_pull
+    profile: {X1: 35, X2: 20, X3: 45, X4: 70, X5: 20, X6: 30, X7: 30, X8: 20, X9: 90}
+    preserve_principles:
+      - marked_surrealism
+      - organic_impossible_materiality
+      - impossible_organism
+      - serious_observation_system
+      - non_fantasy_intent
+    unproven_desired_dimensions:
+      - dark_revelation_compatibility
+      - liturgical_illustration_compatibility
 
-next_gate:
-  round: B
-  objective: controlled_mutations
-  planned_iterations:
-    - OA-02
-    - OA-03
-    - OA-04
-    - BS-02
-    - BS-03
-    - BS-04
+negative_evidence:
+  - id: NE-01
+    name: oa_mutations_structurally_too_similar
+    status: kill_as_comparison_evidence
+  - id: NE-02
+    name: safety_triggered_corporeal_prompt_failures
+    status: process_failure_not_creative_rejection
+  - id: NE-03
+    name: repeated_dragon_wyvern_morphology
+    status: kill_as_positive_evidence
+    prohibition: never_use_as_reference_or_parent
+  - id: NE-04
+    name: full_board_generation_overcompressed_identity_problem
+    status: kill_as_method
+  - id: NE-05
+    name: liturgical_signal_became_generic_ornament
+    status: mutate_do_not_promote
+  - id: NE-06
+    name: premature_application_previews
+    status: method_drift
+  - id: NE-07
+    name: unequal_evidence_across_comparison_boards
+    status: invalid_comparison_set
+
+capability_preflight:
+  decision: USE_EXISTING
+  active:
+    - creative-direction
+    - visual-asset-curation
+    - superdesign_reference_methodology
+    - brand-identity
+    - typography-system_later_foundations
+    - taste
+    - figma_when_available
+  no_new_capability_required: true
+  external_cli_execution_authorized: false
+
+obsolete_round_b_plan:
+  status: historical_only
+  iterations: [OA-02, OA-03, OA-04, BS-02, BS-03, BS-04]
+  learning:
+    OA_mutations: insufficient_structural_independence
+    strongest_mutation: BS-04
+    later_rounds: invalidated_by_morphology_lock_and_comparison_drift
+
+next_experiment:
+  id: ORG-PROBE-01
+  name: oneiric_organic_morphology_divergence
+  output_type: INGREDIENT_MORPHOLOGY
+  question: Which non-fantasy families of impossible organic form preserve the pull of BS-04 while avoiding morphology lock?
+  locked:
+    - elegant
+    - solemn
+    - oneiric_high
+    - organic_materiality_high
+    - non_traumatic
+    - ivory_black_crimson_compatible
+    - no_scifi_gloss
+    - no_typography
+    - no_layout
+    - no_web_mockup
+    - no_liturgical_decoration_yet
+  mutate:
+    - morphology_family
+    - silhouette
+    - symmetry
+    - appendage_logic
+    - physical_impossibility
+  forbidden_defaults:
+    - dragon
+    - wyvern
+    - dinosaur
+    - generic_fantasy_creature
+  success:
+    - structurally_distinct_at_thumbnail_size
+    - same_brand_universe
+    - at_least_one_human_pull
+    - no_fantasy_default
+  followups_after_human_pull:
+    - dark_revelation_light_probe
+    - liturgical_illustration_probe
+    - editable_system_proof_assembly
+
+workflow:
+  - control_card
+  - isolated_probe
+  - set_level_curation
+  - human_signal
+  - state_update
+  - next_probe
+
+merge_policy:
+  pr26_remains_draft: true
+  merge_only_after_first_corrected_probe_validates_the_reconciled_process: true
