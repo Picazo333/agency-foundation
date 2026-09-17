@@ -4,293 +4,276 @@ owner: brand
 updated: 2026-09-17
 authority: workbench
 phase: 5
+version: 2
 inherits:
   - DIVINIVID_VISUAL_GRAMMAR_V0.md
   - PHASE_5_ITERATION_CONTRACT.md
+  - PHASE_5_RECONCILIATION_PLAN.md
+  - PHASE_5_NEGATIVE_EVIDENCE_LEDGER.md
 ---
-# DIVINIVID — Phase 5 Iteration Control Panel
+# DIVINIVID — Phase 5 Iteration Control Panel v2
 
 ## Purpose
-Provide a compact, persistent control surface for original visual iteration without requiring a bespoke HTML tool.
+Provide a persistent control surface for visual discovery while preventing vague iteration, visual contamination, repeated morphology and premature identity-board generation.
 
-The human owner can adjust the identity in conversation using percentages, plain-language comments, or both. The operator translates that input into controlled mutations and records the resulting state.
-
-The panel exists to prevent vague iteration such as `make it better` or `make it more artistic`.
+The panel is not an identity generator. It records experimental state.
 
 ---
 
 # 1. Canonical controls
 
-All axes are represented from `0–100` for convenience in conversation, while preserving the semantics of the Phase-4 grammar.
-
 | Control | 0 | 100 |
 |---|---|---|
-| `X1` Anatomical ↔ Symbolic | anatomical / evidentiary | symbolic / metaphysical |
-| `X2` Revealed ↔ Withheld | exposed / luminous | concealed / delayed revelation |
-| `X3` Grotesque intensity | absent / nearly neutral | prohibited extreme; practical working ceiling ≈ 75 |
-| `X4` Rational ↔ Oneiric | physically coherent | dream-logical / surreal |
-| `X5` Scientific ↔ Ritual | plate / treatise / observation | ceremonial / iconic / liturgical |
-| `X6` Editorial ↔ Pictorial | information structure dominates | image / atmosphere dominates |
-| `X7` Silent ↔ Dramatic | restrained / quiet tension | confrontational visual event |
-| `X8` System ↔ Hero | repeatable system surface | singular hero-image emphasis |
-| `X9` Human ↔ Specimen | human subject / threshold | classified organism / object of study |
+| `X1` Anatomical ↔ Symbolic | evidentiary anatomy | metaphysical symbol |
+| `X2` Revealed ↔ Withheld | luminous/exposed | concealed/delayed |
+| `X3` Grotesque intensity | nearly neutral | practical ceiling ≈75 |
+| `X4` Rational ↔ Oneiric | physically coherent | dream-logical |
+| `X5` Scientific ↔ Ritual | treatise/observation | ceremonial/liturgical |
+| `X6` Editorial ↔ Pictorial | information structure | image/atmosphere |
+| `X7` Silent ↔ Dramatic | quiet tension | visual event |
+| `X8` System ↔ Hero | repeatable system | singular hero |
+| `X9` Human ↔ Specimen | human threshold | classified organism |
 
-`X8` and `X9` are Phase-5 convenience controls. They do not replace the Phase-4 grammar; they make route mutation easier to discuss and record.
-
----
-
-# 2. How the owner can operate it
-
-The owner may respond in any of these forms.
-
-## A. Direct numeric move
-```text
-OA: X4 85 → 65
-OA: X6 80 → 55
-Keep composition.
-```
-
-## B. Relative move
-```text
-OA: surreal -15, editorial +20, darkness +10.
-```
-
-The operator maps natural-language controls onto the canonical axes.
-
-## C. Pure qualitative feedback
-```text
-More anatomical.
-Keep the body-threshold idea.
-Less cathedral.
-More silent.
-```
-
-The operator must translate qualitative feedback into explicit axis deltas before producing the next artifact.
-
-## D. Locked invariant + mutation
-```text
-LOCK: central monumental figure, crimson interior, ivory field.
-MUTATE: more anatomical, less pictorial.
-```
+These axes describe intensity. They do **not** prove that two outputs are meaningfully different.
 
 ---
 
-# 3. Required mutation card
+# 2. Mandatory structural controls
 
-Every generated iteration must carry a short card:
+Every creature/organism experiment must additionally declare:
+
+```text
+M1 MORPHOLOGY FAMILY:
+M2 SILHOUETTE:
+M3 SYMMETRY:
+M4 APPENDAGE LOGIC:
+M5 POSTURE / ORIENTATION:
+M6 MATERIAL LOGIC:
+M7 PHYSICAL IMPOSSIBILITY:
+```
+
+For a divergence set, at least three of `M1–M5` must differ visibly between candidates unless the explicit question requires them to stay constant.
+
+A batch that repeats the same underlying creature with different lighting/layout is invalid.
+
+---
+
+# 3. Evidence-type control
+
+Before generation, declare exactly one output type:
+
+- `INGREDIENT_MORPHOLOGY`
+- `INGREDIENT_LIGHT`
+- `INGREDIENT_LITURGICAL_ILLUSTRATION`
+- `INGREDIENT_ANNOTATION`
+- `COMPARISON_ASSEMBLY`
+- `SYSTEM_PROOF_HERO`
+- `SYSTEM_PROOF_EDITORIAL`
+- `SYSTEM_PROOF_OPERATIONAL`
+
+Do not mix output types in one comparison set.
+
+In particular, `INGREDIENT_*` generations must not invent website mockups, final typography or full identity boards.
+
+---
+
+# 4. Required iteration card
+
+No visual generation proceeds without this card:
 
 ```text
 ID:
-PARENT:
+LINEAGE:
+OUTPUT_TYPE:
 QUESTION:
 LOCKED:
 MUTATE:
-AXIS BEFORE:
-AXIS AFTER:
-COMMENTS:
-EXPECTED LEARNING:
-KNOWN RISK:
+AXIS_BEFORE:
+AXIS_AFTER:
+STRUCTURAL_CONTROLS:
+SOURCE_PRINCIPLES:
+NEGATIVE_EVIDENCE_CHECK:
+EXPECTED_LEARNING:
+KNOWN_RISK:
 DECISION: pending / PASS / MUTATE / KILL
 ```
 
-No image should be generated unless `QUESTION`, `LOCKED`, and `MUTATE` are explicit.
+## Anti-contamination declaration
+Also state:
+
+```text
+PRIOR_GENERATED_PIXELS_USED_AS_REFERENCE: NO
+```
+
+The only valid `YES` requires explicit human approval naming exactly what is being preserved.
 
 ---
 
-# 4. Initial survivor baselines
+# 5. Human feedback modes
 
-These profiles describe the first serious original artifacts approximately. They are control-state estimates, not measurements of pixels.
+The owner may use numbers or ordinary language.
+
+Examples:
+
+```text
+X4 70 → 85
+X5 20 → 35
+```
+
+or
+
+```text
+more surreal, less taxonomic, keep the elegance
+```
+
+or
+
+```text
+keep the material, kill the creature silhouette
+```
+
+The operator must translate qualitative feedback into explicit state changes before the next generation.
+
+---
+
+# 6. Current positive-evidence lineages
 
 ## OA-01 — Oneiric Anatomy
+Status: `RETAINED POSITIVE EVIDENCE / SECONDARY LINEAGE`
 
+Original profile:
 ```text
-X1 Anatomical→Symbolic   75
-X2 Revealed→Withheld     40
-X3 Grotesque intensity   35
-X4 Rational→Oneiric      85
-X5 Scientific→Ritual     70
-X6 Editorial→Pictorial   80
-X7 Silent→Dramatic       65
-X8 System→Hero           85
-X9 Human→Specimen        25
+X1 75
+X2 40
+X3 35
+X4 85
+X5 70
+X6 80
+X7 65
+X8 85
+X9 25
 ```
 
-### Preserve candidates
-- monumental human figure;
-- body as threshold / impossible interior;
-- crimson as interior semantic event;
-- solemn surrealism;
-- strong ivory field / dark-red contrast;
-- explicit relation between anatomy, architecture and inner realm.
+Preserve only as principles:
+- solemn oneiric threshold;
+- impossible interior;
+- crimson as semantic event;
+- strong ivory/dark tension;
+- monumental pictorial pull.
 
-### Current risks
-- may remain a poster rather than become a system;
-- architecture could overpower anatomical logic;
-- high pictoriality may make repeatability expensive;
-- surrealism could become spectacle if raised indiscriminately.
+Do not automatically preserve the human figure, exact architecture or composition.
 
----
+## BS-01 → BS-04 — Bestiary / Surreal Dislocation
+Status: `PRIMARY CURRENT LINEAGE`
 
-## BS-01 — Bestiary of Systems
-
+BS-04 target profile:
 ```text
-X1 Anatomical→Symbolic   35
-X2 Revealed→Withheld     20
-X3 Grotesque intensity   45
-X4 Rational→Oneiric      45
-X5 Scientific→Ritual     20
-X6 Editorial→Pictorial   20
-X7 Silent→Dramatic       30
-X8 System→Hero           20
-X9 Human→Specimen        90
+X1 35
+X2 20
+X3 45
+X4 70
+X5 20
+X6 30
+X7 30
+X8 20
+X9 90
 ```
 
-### Preserve candidates
-- dossier/specimen logic;
-- bilateral organism;
-- classification + observation language;
-- generous ivory surface;
-- crimson as evidentiary marker;
-- evidence panels / annotations;
-- impossible organism presented as if scientifically ordinary.
+Strongest retained signals:
+- impossible organism;
+- organic materiality;
+- marked surrealism;
+- serious observation/classification;
+- editorial containment;
+- non-fantasy intent.
 
-### Current risks
-- may become clinical/science-fiction adjacent;
-- could lose sacred/symbolic charge;
-- creature may become a repeated logo-like motif;
-- too much UI structure could weaken mystery.
+Desired but not yet proven against this lineage:
+- Dark Revelation behavior;
+- liturgical/manuscript illustration compatibility.
 
 ---
 
-# 5. Recommended Round-B mutations
+# 7. Obsolete planned mutations
 
-The following are controlled experiments, not mandatory final directions.
+The old Round-B plan `OA-02/03/04 + BS-02/03/04` is historical evidence, not the active next gate.
 
-## OA-02 — Anatomical Reinforcement
-**Question:** does Oneiric Anatomy become stronger if the human body remains the main impossible architecture but explicit cathedral/architectural language is reduced?
+Results:
+- OA mutations produced insufficient structural independence and were less favored than the original OA signal;
+- BS-04 produced the strongest later positive signal;
+- subsequent bestiary/identity-board rounds suffered morphology lock and invalid comparisons.
 
-- `X1`: 75 → 55
-- `X4`: keep 85
-- `X5`: 70 → 55
-- `X6`: keep 80
-- `X8`: keep 85
-
-**Lock:** monumental figure, surreal interior, crimson event, ivory field.
-
-**Mutate:** more sectional/anatomical interior; less literal architecture.
+Do not continue numbering from those failed boards as if they were valid parents.
 
 ---
 
-## OA-03 — Editorialization
-**Question:** can Oneiric Anatomy preserve emotional pull while behaving more like a repeatable identity system?
+# 8. Batch preflight
 
-- `X6`: 80 → 50
-- `X8`: 85 → 55
-- `X7`: 65 → 50
+Before showing any batch to the owner, operator checks:
 
-**Lock:** core image concept and oneiric intensity.
+1. Same output type across set?
+2. Same approximate polish/information burden?
+3. Declared question visible in the differences?
+4. At least three structural differences when divergence is intended?
+5. Any repeated dragon/wyvern/fantasy default?
+6. Any generated typography masquerading as a type decision?
+7. Any premature website/application design?
+8. Any generic Gothic / occult / pseudo-luxury contamination?
+9. Any prior generated image acting as an undeclared seed?
+10. Does the batch add new learning?
 
-**Mutate:** stronger annotation, plate logic, caption hierarchy, secondary evidence fields.
-
----
-
-## OA-04 — Dark Revelation
-**Question:** does stronger concealment improve the Macario/threshold quality without collapsing into generic black luxury or cinematic darkness?
-
-- `X2`: 40 → 75
-- `X7`: 65 → 70
-- `X5`: keep 70
-- `X4`: 85 → 75
-
-**Lock:** body threshold and surreal relation.
-
-**Mutate:** reveal less; semantic illumination targets anatomy/interior only.
+If 1–9 fail materially, reject internally before human review.
 
 ---
 
-## BS-02 — Corporeal Escalation
-**Question:** can Bestiary become more bodily/grotesque without losing classification rigor?
+# 9. Current next experiment
 
-- `X3`: 45 → 60
-- `X1`: 35 → 45
-- `X9`: keep 90
+## `ORG-PROBE-01 — Oneiric Organic Morphology Divergence`
 
-**Lock:** dossier layout, bilateral specimen, annotation.
+Question:
+> Which non-fantasy families of impossible organic form preserve the human pull of BS-04 while avoiding morphology lock?
 
-**Mutate:** more biological materiality and interpretably impossible anatomy.
+Output type: `INGREDIENT_MORPHOLOGY`.
 
----
+Locked:
+- elegant;
+- solemn;
+- oneiric HIGH;
+- organic materiality HIGH;
+- non-traumatic;
+- compatible with ivory / black / crimson;
+- no sci-fi gloss;
+- no typography;
+- no layout;
+- no website mockup;
+- no liturgical decoration yet.
 
-## BS-03 — Ritual Infusion
-**Question:** can Bestiary gain sacred weight without becoming occult, Gothic, or pseudo-luxury?
+Mutate:
+- morphology family;
+- silhouette;
+- symmetry;
+- appendage logic;
+- physical impossibility.
 
-- `X5`: 20 → 50
-- `X2`: 20 → 35
-- `X7`: 30 → 40
+Success:
+- candidates remain recognizably inside one Brand universe while being structurally different at thumbnail size;
+- at least one candidate receives genuine human `PULL`;
+- no candidate defaults to dragon/wyvern/dinosaur/fantasy-character anatomy.
 
-**Lock:** scientific observation and information hierarchy.
-
-**Mutate:** ceremonial axis, restrained symbolic geometry, more solemn material behavior.
-
----
-
-## BS-04 — Surreal Dislocation
-**Question:** can Bestiary incorporate dream logic while preserving the credibility of the classification system?
-
-- `X4`: 45 → 70
-- `X3`: keep 45
-- `X6`: 20 → 30
-
-**Lock:** specimen/dossier system.
-
-**Mutate:** one dominant physical impossibility, repeated/reciprocal behavior, or spatial contradiction.
-
----
-
-# 6. Conversation display convention
-
-Before every new generation, show the owner a compact state card like:
-
-```text
-OA-03 · Editorialization
-Anatomical 45% ████░░░░░░ Symbolic 55%
-Revealed   60% ██████░░░░ Withheld 40%
-Grotesque  35% ███░░░░░░░
-Rational   15% ██░░░░░░░░ Oneiric 85%
-Scientific 30% ███░░░░░░░ Ritual 70%
-Editorial  50% █████░░░░░ Pictorial 50%
-Silent     50% █████░░░░░ Dramatic 50%
-System     45% ████░░░░░░ Hero 55%
-Human      75% ███████░░░ Specimen 25%
-
-LOCK: body-threshold + crimson interior + solemnity
-MUTATE: stronger information system
-COMMENT: keep the emotional pull; reduce poster-dependence
-```
-
-The bars are a conversational display, not a precision measurement.
+After human selection only:
+1. test Dark Revelation lighting as a separate controlled probe;
+2. test liturgical illustration as a separate controlled probe;
+3. assemble approved mechanisms into editable system-proof surfaces.
 
 ---
 
-# 7. State authority
+# 10. Persistent state
 
-The machine-readable companion file `phase5_iteration_state.yaml` is the persistent state of the iteration loop.
+`phase5_iteration_state.yaml` is authoritative for machine-readable Phase-5 state.
 
-Rules:
-1. the current parent profile is recorded before generation;
-2. user comments are appended as evidence;
-3. numeric changes are recorded as deltas;
-4. rejected variants remain in history but never seed future work unless a preserved invariant is explicitly named;
-5. only `PASS` or explicit `preserve` signals may become inputs to convergence.
+The workflow is now:
 
----
+`CONTROL CARD → ISOLATED PROBE → SET-LEVEL CURATION → HUMAN SIGNAL → STATE UPDATE → NEXT PROBE`
 
-# 8. Why not an HTML slider app yet?
+not:
 
-A slider app would be useful later, but building it now introduces interface work before the control vocabulary has stabilized.
-
-For Round B the preferred system is:
-
-`CHAT CONTROL CARD ↔ YAML STATE ↔ GENERATED ARTIFACT ↔ HUMAN FEEDBACK`
-
-If the vocabulary survives several rounds, it can later become a Figma component, lightweight local control panel, or Brand tooling surface without changing the underlying data model.
+`PROMPT → FULL IDENTITY BOARD → VAGUE FEEDBACK → PROMPT`.
