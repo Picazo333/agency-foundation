@@ -1,8 +1,17 @@
 phase: 5
-state: reconciliation_ready_for_review
+state: golden_anchor_recovery_required
 updated: 2026-09-17
 authority: workbench
 source_pr: 26
+
+frozen_master_plan:
+  file: docs/08-plans/workstreams/DIVINIVID_VISUAL_IDENTITY_MASTER_PLAN.md
+  phase_order_unchanged: true
+
+current_method:
+  file: docs/03-brand/workbench/divinivid/PHASE_5_ANCHORED_DERIVATION_PLAN.md
+  audit: docs/03-brand/workbench/divinivid/PHASE_5_100_PASS_AUDIT.md
+  rule: anchored_derivation_not_specimen_first
 
 controls:
   X1: {label: anatomical_to_symbolic, low: anatomical_evidentiary, high: symbolic_metaphysical}
@@ -15,148 +24,130 @@ controls:
   X8: {label: system_to_hero, low: repeatable_system, high: singular_hero}
   X9: {label: human_to_specimen, low: human_threshold, high: classified_specimen}
 
-structural_controls:
-  M1: morphology_family
-  M2: silhouette
-  M3: symmetry
-  M4: appendage_logic
-  M5: posture_orientation
-  M6: material_logic
-  M7: physical_impossibility
+identity_layers:
+  L1: image_illustration_language
+  L2: composition
+  L3: darkness_illumination
+  L4: liturgical_historical_structure
+  L5: typography_behavior
+  L6: color_material
+  L7: information_system_behavior
 
-positive_evidence:
-  OA-01:
-    lineage: oneiric_anatomy
-    status: secondary_positive_evidence
-    human_signal: strong_original_pull
-    profile: {X1: 75, X2: 40, X3: 35, X4: 85, X5: 70, X6: 80, X7: 65, X8: 85, X9: 25}
-    preserve_principles:
-      - solemn_oneiric_threshold
-      - impossible_interior
-      - crimson_semantic_event
-      - ivory_dark_tension
-      - monumental_pictorial_pull
-    do_not_auto_preserve:
-      - human_subject
-      - exact_architecture
-      - exact_composition
+golden_anchor_set:
+  status: exact_assets_not_yet_pinned
+  authority: highest_generated_positive_evidence_once_human_confirmed
+  anchors:
+    - id: GA-01
+      status: recover_exact_artifact
+    - id: GA-02
+      status: recover_exact_artifact
+    - id: GA-03
+      status: recover_exact_artifact
+  rule: do_not_reconstruct_from_memory
 
-  BS-01:
-    lineage: bestiary_of_systems
-    status: positive_evidence
-    human_signal: strong_original_pull
-    preserve_principles:
-      - impossible_organism
-      - serious_classification
-      - editorial_containment
-      - specimen_as_meaning_carrier
-
-  BS-04:
-    lineage: bestiary_surreal_dislocation
-    status: primary_current_lineage
-    human_signal: strongest_later_pull
-    profile: {X1: 35, X2: 20, X3: 45, X4: 70, X5: 20, X6: 30, X7: 30, X8: 20, X9: 90}
-    preserve_principles:
-      - marked_surrealism
-      - organic_impossible_materiality
-      - impossible_organism
-      - serious_observation_system
-      - non_fantasy_intent
-    unproven_desired_dimensions:
-      - dark_revelation_compatibility
-      - liturgical_illustration_compatibility
+retained_positive_mechanisms:
+  - solemn_oneiric_threshold
+  - impossible_interior
+  - crimson_as_semantic_event
+  - ivory_dark_tension
+  - serious_impossible_organism
+  - classification_annotation
+  - editorial_containment
+  - marked_surreal_dislocation
+  - organic_impossible_materiality
+  - semantic_dark_revelation
+  - liturgical_manuscript_structure
 
 negative_evidence:
   - id: NE-01
     name: oa_mutations_structurally_too_similar
-    status: kill_as_comparison_evidence
+    prohibition: cannot_seed_future_generation
   - id: NE-02
     name: safety_triggered_corporeal_prompt_failures
-    status: process_failure_not_creative_rejection
+    interpretation: process_failure_not_creative_rejection
   - id: NE-03
     name: repeated_dragon_wyvern_morphology
-    status: kill_as_positive_evidence
-    prohibition: never_use_as_reference_or_parent
+    prohibition: cannot_seed_future_generation
   - id: NE-04
     name: full_board_generation_overcompressed_identity_problem
-    status: kill_as_method
+    prohibition: method_killed
   - id: NE-05
     name: liturgical_signal_became_generic_ornament
-    status: mutate_do_not_promote
+    prohibition: cannot_promote_without_structural_retest
   - id: NE-06
     name: premature_application_previews
-    status: method_drift
+    prohibition: no_application_collage_in_phase5_derivation
   - id: NE-07
     name: unequal_evidence_across_comparison_boards
-    status: invalid_comparison_set
+    prohibition: invalid_comparison_set
+  - id: NE-08
+    name: morphology_only_probe_overfocused_specimen
+    interpretation: diagnostic_learning_only
+    prohibition: not_current_parent
 
 capability_preflight:
-  decision: USE_EXISTING
+  decision: USE_EXISTING_PLUS_LOCAL_ORCHESTRATION
   active:
     - creative-direction
+    - moodboard-builder
     - visual-asset-curation
     - superdesign_reference_methodology
+    - taste
     - brand-identity
     - typography-system_later_foundations
-    - taste
     - figma_when_available
-  no_new_capability_required: true
+  external_workflow_review:
+    hermetic_brand_identity_builder:
+      license: MIT
+      decision: process_precedent_only_duplicate_authority_not_added
+    roxabi_brand_exploration_playbook:
+      license: AGPL-3.0
+      decision: generic_funnel_lessons_only_do_not_vendor
+    jinstronda_design_with_ai:
+      license: not_found_during_intake
+      decision: do_not_vendor
   external_cli_execution_authorized: false
 
-obsolete_round_b_plan:
-  status: historical_only
-  iterations: [OA-02, OA-03, OA-04, BS-02, BS-03, BS-04]
-  learning:
-    OA_mutations: insufficient_structural_independence
-    strongest_mutation: BS-04
-    later_rounds: invalidated_by_morphology_lock_and_comparison_drift
+next_actions:
+  - recover_exact_GA_01_GA_02_GA_03
+  - create_PHASE_5_GOLDEN_ANCHOR_MANIFEST
+  - create_seven_layer_DNA_map_per_anchor
+  - assemble_three_equivalent_editable_anchor_specimens
+  - choose_two_high_learning_contrast_lanes_per_anchor
+  - generate_or_assemble_six_single_variable_children
 
-next_experiment:
-  id: ORG-PROBE-01
-  name: oneiric_organic_morphology_divergence
-  output_type: INGREDIENT_MORPHOLOGY
-  question: Which non-fantasy families of impossible organic form preserve the pull of BS-04 while avoiding morphology lock?
-  locked:
-    - elegant
-    - solemn
-    - oneiric_high
-    - organic_materiality_high
-    - non_traumatic
-    - ivory_black_crimson_compatible
-    - no_scifi_gloss
-    - no_typography
-    - no_layout
-    - no_web_mockup
-    - no_liturgical_decoration_yet
-  mutate:
-    - morphology_family
-    - silhouette
-    - symmetry
-    - appendage_logic
-    - physical_impossibility
-  forbidden_defaults:
-    - dragon
-    - wyvern
-    - dinosaur
-    - generic_fantasy_creature
-  success:
-    - structurally_distinct_at_thumbnail_size
-    - same_brand_universe
-    - at_least_one_human_pull
-    - no_fantasy_default
-  followups_after_human_pull:
-    - dark_revelation_light_probe
-    - liturgical_illustration_probe
-    - editable_system_proof_assembly
+first_derivation_round:
+  child_count: 6
+  parent_count: 3
+  children_per_parent: 2
+  available_contrast_lanes:
+    - oneiric_surreal_intensity
+    - liturgical_manuscript_structure
+    - dark_revelation
+    - editorial_system_rigor
+  one_primary_variable_per_child: true
+  comparable_evidence_shell_required: true
+  application_mockups_forbidden: true
 
-workflow:
-  - control_card
-  - isolated_probe
-  - set_level_curation
-  - human_signal
-  - state_update
-  - next_probe
+funnel:
+  - three_golden_anchors
+  - six_children
+  - three_survivors
+  - two_system_proof_directions
+  - one_pass_or_explicit_convergence
+
+mandatory_tests_before_phase5_close:
+  - brand_without_beast
+  - beast_without_brand
+  - image_removal
+  - monochrome
+  - light_surface
+  - small_scale
+  - anti_canon
+  - system_fertility
 
 merge_policy:
   pr26_remains_draft: true
-  merge_only_after_first_corrected_probe_validates_the_reconciled_process: true
+  merge_only_after:
+    - exact_golden_anchors_pinned
+    - first_corrected_derivation_round_proves_method
