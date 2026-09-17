@@ -1,5 +1,5 @@
 phase: 5
-state: five_route_checkpoint_passed_route_convergence_next
+state: three_parent_directions_selected
 updated: 2026-09-17
 authority: workbench
 source_pr: 26
@@ -9,48 +9,59 @@ frozen_master_plan:
   phase_order_unchanged: true
 
 checkpoint:
-  file: docs/03-brand/workbench/divinivid/PHASE_5_ROUTE_CHECKPOINT.md
-  result: PASS
+  route_checkpoint: docs/03-brand/workbench/divinivid/PHASE_5_ROUTE_CHECKPOINT.md
+  parent_selection_checkpoint: docs/03-brand/workbench/divinivid/PHASE_5_PARENT_SELECTION_CHECKPOINT.md
+  five_route_result: PASS
   approved_routes: 5
   approved_boards: 10
   rule: two_approved_boards_per_route_before_convergence
-  board_types:
-    - identity_atmosphere
-    - system_surface
 
 current_method:
   file: docs/03-brand/workbench/divinivid/PHASE_5_ROUTE_CONVERGENCE_PLAN.md
-  predecessor: docs/03-brand/workbench/divinivid/PHASE_5_ANCHORED_DERIVATION_PLAN.md
   rule: normalize_compare_then_controlled_convergence
 
-routes:
-  R1:
+selected_parent_directions:
+  P1:
+    route: R4
+    name: Oneiric Anatomy
+    role: PRIMARY_PARENT
+    reason: strongest_current_human_pull_and_highest_visual_fertility
+  P2:
+    route: R1
     name: Dark Revelation
-    boards_approved: 2
-    thesis: semantic_darkness_selective_revelation
-    status: approved_route_evidence
+    role: PARENT
+    reason: semantic_conceal_reveal_silence_and_reduced_state_strength
+  P3:
+    route: R5
+    name: Illuminated Marginalia
+    role: PARENT
+    reason: structural_liturgical_editorial_logic_and_no_hero_strength
+
+donor_routes:
   R2:
     name: Bestiary of Systems
-    boards_approved: 2
-    thesis: observe_classify_contain_impossible_living_systems
-    status: approved_route_evidence
+    role: DONOR
+    transferable:
+      - information_system_rigor
+      - classification_annotation
+      - editorial_containment
+    forbidden_auto_transfer:
+      - specimen_protagonist
+      - morphology
+      - biotech_surface
+      - full_dossier_composition
   R3:
     name: Sacred Corporeal
-    boards_approved: 2
-    thesis: intact_human_body_as_threshold_between_matter_and_transcendence
-    status: approved_route_evidence
-    safety_rule: non_traumatic_non_graphic_no_literal_dissection
-  R4:
-    name: Oneiric Anatomy
-    boards_approved: 2
-    thesis: body_as_dream_logical_landscape_of_meaning
-    status: approved_route_evidence
-    human_signal: strongest_current_inclination_not_final_selection
-  R5:
-    name: Illuminated Marginalia
-    boards_approved: 2
-    thesis: central_order_with_meaning_and_strangeness_in_the_margins
-    status: approved_route_evidence
+    role: DONOR_HOLD
+    transferable:
+      - intact_human_presence
+      - gesture_hands_body_threshold
+      - axial_ceremonial_composition
+      - sacred_materiality
+    forbidden_auto_transfer:
+      - repeated_halo_frontality
+      - human_hero_dependency
+      - literal_anatomy
 
 controls:
   X1: {label: anatomical_to_symbolic, low: anatomical_evidentiary, high: symbolic_metaphysical}
@@ -72,117 +83,50 @@ identity_layers:
   L6: color_material
   L7: information_system_behavior
 
-route_dossier_fields:
-  - thesis
-  - L1_image_illustration_language
-  - L2_composition
-  - L3_darkness_illumination
-  - L4_liturgical_historical_structure
-  - L5_typography_behavior
-  - L6_color_material
-  - L7_information_system_behavior
-  - graphic_devices_micro_language
-  - motion_behavior
-  - reduced_state_behavior
-  - anti_pattern_no_leak
-  - strongest_human_signal
-  - known_route_risk
-
-additional_constraints:
-  - historical_visibility
-  - liturgy_structurality
-  - ornament_budget
-  - crimson_budget
-  - darkness_budget
-  - hero_dependence
-  - safety_risk
-
-positive_evidence_rule:
-  ten_approved_boards_are_positive_phase5_evidence: true
-  generated_typography_is_not_final_font_selection: true
-  generated_web_fragments_are_not_final_interface_design: true
-  full_route_blending_without_mutation_card_forbidden: true
+mutation_round:
+  child_count: 6
+  one_primary_mechanism_per_child: true
+  order:
+    - R4-D1
+    - R4-D2
+    - R1-D1
+    - R1-D2
+    - R5-D1
+    - R5-D2
+  hypotheses:
+    R4-D1: oneiric_anatomy_plus_dark_revelation_semantic_conceal_reveal
+    R4-D2: oneiric_anatomy_plus_illuminated_marginalia_structural_liturgical_page_logic
+    R1-D1: dark_revelation_plus_oneiric_dream_logical_displacement
+    R1-D2: dark_revelation_plus_bestiary_information_annotation_rigor_only
+    R5-D1: illuminated_marginalia_plus_oneiric_surreal_displacement
+    R5-D2: illuminated_marginalia_plus_dark_revelation_semantic_darkness_reveal
+  required_card_fields:
+    - parent
+    - donor_mechanism
+    - changed
+    - frozen
+    - expected_learning
+    - failure_risk
+    - no_leak
 
 negative_evidence:
-  - id: NE-01
-    name: oa_mutations_structurally_too_similar
-    prohibition: cannot_seed_future_generation
-  - id: NE-02
-    name: safety_triggered_corporeal_prompt_failures
-    interpretation: localized_process_failure_from_literal_graphic_anatomy
-  - id: NE-03
-    name: repeated_dragon_wyvern_morphology
-    prohibition: cannot_seed_future_generation
-  - id: NE-04
-    name: full_board_generation_overcompressed_identity_problem
-    prohibition: undifferentiated_full_identity_generation_killed
-  - id: NE-05
-    name: liturgical_signal_became_generic_ornament
-    prohibition: liturgy_must_be_structural_not_decorative
-  - id: NE-06
-    name: premature_application_previews
-    interpretation: applications_must_be_equivalent_and_phase_appropriate
-  - id: NE-07
-    name: unequal_evidence_across_comparison_boards
-    prohibition: invalid_comparison_set
-  - id: NE-08
-    name: morphology_only_probe_overfocused_specimen
-    interpretation: diagnostic_learning_only
-  - id: NE-09
-    name: route_contamination_from_mixed_prompts
-    prohibition: generation_receives_parent_route_packet_only
-
-capability_preflight:
-  decision: USE_EXISTING_PLUS_LOCAL_ORCHESTRATION
-  active:
-    - creative-direction
-    - moodboard-builder
-    - visual-asset-curation
-    - superdesign_reference_methodology
-    - taste
-    - brand-identity
-    - typography-system_later_foundations
-    - figma_when_available
-  external_cli_execution_authorized: false
+  - repeated_or_cosmetic_variation_is_invalid
+  - route_contamination_from_mixed_prompts_is_forbidden
+  - literal_graphic_anatomy_is_not_required_and_caused_safety_failures
+  - full_identity_generation_in_one_pass_is_killed
+  - generated_typography_is_provisional_only
+  - web_fragments_are_evidence_not_final_interface
 
 next_actions:
-  - extract_five_route_dossiers_from_approved_pairs
-  - derive_route_baseline_X1_X9_vectors_and_budgets
-  - present_normalized_five_route_comparison
-  - collect_route_level_and_layer_level_human_feedback
-  - select_three_parent_directions
-  - create_two_single_mechanism_children_per_parent
-
-convergence_funnel:
-  - five_approved_routes
-  - five_normalized_route_dossiers
-  - three_parent_directions
-  - six_controlled_mutation_boards
-  - three_survivors
-  - three_targeted_refinements
-  - two_system_proof_finalists
-  - one_pass_or_named_convergence
-
-mandatory_finalist_tests:
-  - brand_without_hero
-  - image_swap
-  - monochrome
-  - light_surface
-  - dark_surface
-  - small_scale
-  - information_density
-  - anti_canon
-  - distinctive_without_historical_costume
-  - system_fertility
+  - prepare_R4_D1_control_card
+  - generate_and_review_R4_D1_independently
+  - repeat_for_remaining_five_children
+  - select_three_mutation_survivors
 
 repository_cadence:
   write_after_every_generation: false
-  checkpoints:
-    - five_route_checkpoint_current
-    - three_parents_selected
-    - three_mutation_survivors_selected
-    - two_system_proof_finalists_ready
-    - phase5_final_pass_or_convergence
+  current_checkpoint_recorded: three_parents_selected
+  next_checkpoint: three_mutation_survivors_selected
 
 merge_policy:
   pr26_remains_draft: true
