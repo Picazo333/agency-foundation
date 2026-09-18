@@ -12,6 +12,7 @@ depends_on:
   - PHASE_5_ROUTE_CONVERGENCE_PLAN.md
   - PHASE_5_PARENT_SELECTION_CHECKPOINT.md
   - PHASE_5_WORKING_IDENTITY_UNIVERSE_CHECKPOINT.md
+  - PHASE_5_WORKING_BASE_V2_CHECKPOINT.md
   - PHASE_5_NEGATIVE_EVIDENCE_LEDGER.md
 ---
 
@@ -62,7 +63,7 @@ Develop DIVINIVID as a contemporary identity combining surrealism, liturgical/ed
 **CLOSED / PASS.**
 
 ## Phase 5 — Original Visual Hypotheses / Convergence
-**ACTIVE — WORKING IDENTITY UNIVERSE CHECKPOINT PASSED.**
+**ACTIVE — WORKING BASE V2 PROMOTED / MUTATION REFINEMENT.**
 
 ---
 
@@ -94,43 +95,49 @@ Parent-selection checkpoint promoted:
 
 # Strongest current convergence signal
 
-## Working visual anchor
+## Working Base v2 — Surgical Living Codex
 
-`R5-D1 — Illuminated Marginalia × Oneiric Displacement`
+The currently promoted visual parent is:
 
-The human owner identified this as the strongest generation produced to date and explicitly promoted it as the point of departure for subsequent exploration.
+`WB2 — Surgical Living Codex`
 
-This is a **working identity anchor**, not yet a final Brand Direction.
+Exact generated evidence:
+- generation ID: `92964af8-6381-4120-ae44-999584cdfc87`;
+- conversation file: `a_wide_detailed_high_resolution_dark_editorial_c.png`.
+
+The owner explicitly preferred this penultimate board over the later MUT-C output and promoted WB2 as the new base for all further iterations.
 
 ### Current formula
 
-`CONTEMPORARY MANUSCRIPT + LITURGICAL EDITORIALITY + ONEIRIC DISPLACEMENT + NARRATIVE MARGINS + DISCIPLINED SURREALISM`
+`LIVING DARKNESS + LIVING CRIMSON MATTER + CONTEMPORARY CODEX + SURGICAL EDITORIAL DISCIPLINE + CONTROLLED ONEIRISM`
 
-### Frozen DNA
+### Interpretation
 
-- page / codex architecture;
-- active margins;
-- center ↔ periphery tension;
-- structured dream logic;
-- structural liturgical behavior;
-- ivory / black / crimson / aged-gold material family;
-- narrative fragments and small scenes;
-- editorial seriousness;
-- meaningful symbolic and historical references;
-- no dependence on one mandatory hero specimen.
+R5-D1 remains the lineage root and the seven Identity Universe boards remain valid system evidence, but WB2 now outranks the previous single-image anchor for mutation work.
 
-### Still open
+WB2 is valued for:
+- darkness behaving as absorbent living material;
+- crimson behaving as living matter rather than flat accent;
+- severe editorial clarity;
+- scientific/surgical presentation discipline;
+- reduced ornamental noise;
+- controlled surrealism;
+- state-of-matter / transformation logic;
+- contrast between deep creative imagery and precise explanatory form.
 
-- darkness budget;
-- ornament budget;
-- final typography;
-- human/corporeal presence;
-- digital density;
-- motion behavior;
-- final wordmark/signature;
-- exact palette/tokens;
-- historical visibility;
-- operational simplification.
+### Derived-system ideas approved for later exploration
+
+- **Motion:** micro-cellular form → condensation → crimson disc → red moon.
+- **Bestiary Entity System:** medieval-illustration brand entities / mascot catalog; subsystem, not master aesthetic.
+- **Scientific/Surgical Display Framework:** precise presentation language for app/product, research, case studies and system states.
+- **Living Darkness:** absorb / conceal / invade / contain / reveal.
+- **Living Crimson:** emerge / pulse / condense / disperse / transform.
+
+### Immediate mutation target
+
+`WB2-M1 — More Oneiric Tension`
+
+Increase oneiric intensity slightly while preserving surgical clarity, living-material depth, codex structure and editorial control.
 
 ---
 
@@ -206,9 +213,9 @@ GitHub records meaningful checkpoints, not every generation.
 
 # Current gate / immediate next action
 
-**IDENTITY-UNIVERSE BUILD IS COMPLETE. MUTATION PLANNING BEGINS.**
+**WORKING BASE V2 IS PROMOTED. CONTROLLED MUTATION REFINEMENT CONTINUES.**
 
-Future mutations use the **system extracted from R5-D1 + the seven approved boards** as the parent, not the R5-D1 hero composition alone.
+Future mutations use **WB2 + the seven approved Identity Universe boards + the retained R5-D1 lineage rules** as the parent packet.
 
 Next actions:
 1. derive a compact system-level parameter card;
