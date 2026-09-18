@@ -1,5 +1,5 @@
 phase: 5
-state: working_base_v2_promoted_more_oneiric_mutation_next
+state: visual_base_v1_locked_system_formalization_next
 updated: 2026-09-18
 authority: workbench
 source_pr: 26
@@ -13,6 +13,7 @@ checkpoint:
   parent_selection_checkpoint: docs/03-brand/workbench/divinivid/PHASE_5_PARENT_SELECTION_CHECKPOINT.md
   working_identity_checkpoint: docs/03-brand/workbench/divinivid/PHASE_5_WORKING_IDENTITY_UNIVERSE_CHECKPOINT.md
   working_base_v2_checkpoint: docs/03-brand/workbench/divinivid/PHASE_5_WORKING_BASE_V2_CHECKPOINT.md
+  visual_base_v1: docs/03-brand/workbench/divinivid/DIVINIVID_VISUAL_BASE_V1.md
   approved_routes: 5
   approved_route_boards: 10
   working_identity_universe_boards: 7
@@ -22,7 +23,7 @@ working_identity_anchor:
   origin_id: R5-D1
   origin_name: Illuminated Marginalia x Oneiric Displacement
   status: lineage_root_retained
-  final_brand_direction_selected: false
+  final_brand_direction_selected: true
   system_parent_rule: WB2_plus_seven_approved_identity_universe_boards_plus_R5_D1_lineage_rules
 
 working_base_v2:
@@ -98,15 +99,18 @@ anti_drift:
   - preserve_reduced_light_monochrome_no_hero_identity
 
 next_actions:
-  - generate_WB2_M1_more_oneiric_tension
-  - compare_against_WB2_and_full_seven_board_universe
-  - keep_surgical_clarity_and_living_material_depth_frozen
-  - promote_or_reject_with_explicit_learning
+  - formalize_canonical_visual_spec
+  - develop_bestiary_entity_system_in_depth
+  - formalize_transformative_morphology_motion
+  - formalize_scientific_surgical_display_framework
+  - translate_identity_to_web_and_app_systems
+  - finalize_signature_typography_color_tokens_and_assets
+  - stress_test_real_deliverables
 
 repository_cadence:
   write_after_every_generation: false
-  current_checkpoint_recorded: working_base_v2_promoted
-  next_checkpoint: promoted_mutation_survivor_or_named_convergence
+  current_checkpoint_recorded: visual_base_v1_locked
+  next_checkpoint: first_formalized_application_system
 
 merge_policy:
   pr26_remains_draft: true
