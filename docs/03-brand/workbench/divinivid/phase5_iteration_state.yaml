@@ -1,0 +1,118 @@
+phase: 5
+state: aesthetic_pre_freeze_v1_universe_expansion_planning
+updated: 2026-09-18
+authority: workbench
+source_pr: 26
+
+frozen_master_plan:
+  file: docs/08-plans/workstreams/DIVINIVID_VISUAL_IDENTITY_MASTER_PLAN.md
+  phase_order_unchanged: true
+
+checkpoint:
+  route_checkpoint: docs/03-brand/workbench/divinivid/PHASE_5_ROUTE_CHECKPOINT.md
+  parent_selection_checkpoint: docs/03-brand/workbench/divinivid/PHASE_5_PARENT_SELECTION_CHECKPOINT.md
+  working_identity_checkpoint: docs/03-brand/workbench/divinivid/PHASE_5_WORKING_IDENTITY_UNIVERSE_CHECKPOINT.md
+  working_base_v2_checkpoint: docs/03-brand/workbench/divinivid/PHASE_5_WORKING_BASE_V2_CHECKPOINT.md
+  visual_base_v1: docs/03-brand/workbench/divinivid/DIVINIVID_VISUAL_BASE_V1.md
+  aesthetic_pre_freeze_v1: docs/03-brand/workbench/divinivid/DIVINIVID_AESTHETIC_PRE_FREEZE_V1.md
+  approved_routes: 5
+  approved_route_boards: 10
+  working_identity_universe_boards: 7
+  working_identity_universe_result: PASS
+
+working_identity_anchor:
+  origin_id: R5-D1
+  origin_name: Illuminated Marginalia x Oneiric Displacement
+  status: lineage_root_retained
+  final_brand_direction_selected: true
+  system_parent_rule: WB2_plus_seven_approved_identity_universe_boards_plus_R5_D1_lineage_rules
+
+working_base_v2:
+  id: WB2
+  name: Surgical Living Codex
+  alias: Living Matter Atlas / Between Matter and Meaning
+  generation_id: 92964af8-6381-4120-ae44-999584cdfc87
+  conversation_file: a_wide_detailed_high_resolution_dark_editorial_c.png
+  status: strongest_current_working_base
+  final_brand_direction_selected: false
+  short_formula: living_darkness_plus_living_crimson_matter_plus_contemporary_codex_plus_surgical_editorial_discipline_plus_controlled_oneirism
+  frozen:
+    - absorbent_living_darkness
+    - crimson_as_living_matter
+    - contemporary_codex_archive_logic
+    - surgical_editorial_hierarchy
+    - controlled_surrealism
+    - reduced_ornamental_noise
+    - tactile_material_depth
+    - black_ivory_crimson_restrained_aged_gold
+  derived_systems_later:
+    - red_cell_to_red_moon_motion_motif
+    - medieval_bestiary_entity_catalog
+    - scientific_surgical_app_display_framework
+  next_mutation: WB2_M1_more_oneiric_tension
+
+working_identity_thesis:
+  short_formula: contemporary_manuscript_plus_liturgical_editoriality_plus_oneiric_displacement_plus_narrative_margins_plus_disciplined_surrealism
+  frozen:
+    - page_codex_architecture
+    - active_margins
+    - center_periphery_tension
+    - structured_dream_logic
+    - structural_liturgical_behavior
+    - ivory_black_crimson_aged_gold_material_family
+    - narrative_fragments_and_small_scenes
+    - editorial_seriousness
+    - no_single_mandatory_hero
+  open:
+    - darkness_budget
+    - ornament_budget
+    - final_typography
+    - human_corporeal_presence
+    - digital_density
+    - motion_behavior
+    - final_signature
+    - exact_palette_tokens
+    - historical_visibility
+    - operational_simplification
+
+identity_universe_boards:
+  B01: {name: Identity DNA / Master Territory, status: approved}
+  B02: {name: Typography & Editorial Voice, status: approved, fonts_final: false}
+  B03: {name: Color Material Texture & Light, status: approved, exact_tokens_final: false}
+  B04: {name: Image & Illustration Universe, status: approved}
+  B05: {name: Composition Margins & Graphic Grammar, status: approved}
+  B06: {name: Digital Behavior & Motion, status: approved, ui_final: false}
+  B07: {name: Applications Reduced States & Stress Test, status: approved}
+
+anti_drift:
+  - no_free_route_discovery
+  - no_silent_complete_route_blending
+  - declared_mutation_dimensions_only
+  - generated_type_is_provisional
+  - generated_web_is_directional_evidence_not_final_ui
+  - no_historical_costume
+  - liturgy_structural_not_pasted_ornament
+  - surrealism_meaningful_and_controlled
+  - no_cyan_neon_dark_tech
+  - no_fantasy_rpg_or_occult_branding
+  - no_stock_surreal
+  - no_graphic_anatomical_gore
+  - preserve_reduced_light_monochrome_no_hero_identity
+
+next_actions:
+  - approve_detailed_50_moodboard_universe_expansion_plan
+  - execute_10_rounds_of_5_boards
+  - review_each_round_before_next
+  - derive_asset_factory_families_from_approved_boards
+  - assemble_final_brandbook_after_universe_expansion
+
+repository_cadence:
+  write_after_every_generation: false
+  current_checkpoint_recorded: aesthetic_pre_freeze_v1
+  next_checkpoint: universe_expansion_plan_approved
+
+merge_policy:
+  pr26_remains_draft: true
+  merge_only_after:
+    - mutation_method_proves_stable_from_working_identity_system
+    - meaningful_phase5_promotion_checkpoint_reached

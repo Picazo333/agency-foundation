@@ -1,104 +1,234 @@
 ---
 status: approved
 owner: brand
-updated: 2026-09-16
+updated: 2026-09-18
 authority: workbench
 depends_on:
   - ../../../08-plans/workstreams/DIVINIVID_VISUAL_IDENTITY_MASTER_PLAN.md
   - CREATIVE_DIRECTION_BRIEF.md
-  - reference-research/PHASE_2_REFERENCE_RESEARCH.md
+  - DIVINIVID_VISUAL_GRAMMAR_V0.md
+  - PHASE_5_ITERATION_CONTRACT.md
+  - PHASE_5_ROUTE_CHECKPOINT.md
+  - PHASE_5_ROUTE_CONVERGENCE_PLAN.md
+  - PHASE_5_PARENT_SELECTION_CHECKPOINT.md
+  - PHASE_5_WORKING_IDENTITY_UNIVERSE_CHECKPOINT.md
+  - PHASE_5_WORKING_BASE_V2_CHECKPOINT.md
+  - DIVINIVID_VISUAL_BASE_V1.md
+  - DIVINIVID_AESTHETIC_PRE_FREEZE_V1.md
+  - PHASE_5_NEGATIVE_EVIDENCE_LEDGER.md
 ---
+
 # DIVINIVID — Brand State
 
 ## Purpose
-This file is the current human-readable state checkpoint for DIVINIVID. It prevents agents from reconstructing the Brand from stale branches, old moodboards or chat memory.
 
-## Current hierarchy
+Current human-readable source of truth for the DIVINIVID visual-identity program.
+
+## Brand
+
 - **Brand under identity exploration:** `DIVINIVID`
-- **Route 01 internal codename:** `KIROGRAF`
-- **Route 01 descriptor:** `Sacred Anatomy`
-- Route codenames are internal and must not replace `DIVINIVID` in customer-facing mockups or applications.
-
-## Naming status
-`DIVINIVID` is the **working selected name for identity-system exploration** after a long naming process that included semantic, phonetic, palindrome and preliminary collision exploration.
-
-This does **not** mean:
-- trademark registration is complete;
-- every jurisdiction is cleared;
-- domain/social availability is permanently guaranteed;
-- the name is Brand V1 canon.
-
-Do not reopen naming during visual phases unless a real diligence blocker appears or the human owner explicitly reopens it.
+- Customer-facing identity name remains `DIVINIVID`.
+- Historical/internal codenames do not replace the Brand.
 
 ## Central creative thesis
-> **Contrast with elegance the tension and harmony between the divine and the grotesque, darkness and light, showing how apparent opposites can exist inside the same system.**
+
+> **Contrast with elegance the tension and harmony between the divine and the grotesque, darkness and light, showing how apparent opposites can coexist inside one system.**
 
 ## Master tensions
+
 - Divine ↔ Grotesque
 - Light ↔ Darkness
 - Order ↔ Aberration
 - Knowledge ↔ Mystery
 - Body ↔ Transcendence
+- History ↔ Contemporary systems
+- Central order ↔ Marginal strangeness
 
-## Current route objective
-Route 01 KIROGRAF tests whether anatomical/knowledge structures can act as the rational skeleton while sacred illumination, grotesque anomaly and tenebrist revelation create controlled tension without collapsing into gore, occult branding, dark luxury or generic historical pastiche.
+## Current visual objective
 
-## Source-of-truth order
-1. frozen visual-identity master plan;
-2. this Brand State;
-3. Clean Reference Canon + Anti-Canon;
-4. approved Creative Direction Contract;
-5. approved Phase 2 Reference Research + Source Registry;
-6. active route thesis/grammar;
-7. human-approved generated artifacts only.
+Develop DIVINIVID as a contemporary identity combining surrealism, liturgical/editorial structure, symbolic history, organic or corporeal matter, semantic darkness, disciplined information systems and rich materiality without collapsing into gore, occult branding, generic Gothic, dark luxury, fantasy concept art, neon/dark-tech or historical costume.
 
-## Phase 1 status
-**CLOSED / PASS — Creative Direction Contract approved 2026-09-16.**
+---
 
-The contract operationally defines the Brand's key aesthetic terms, resolves the four directional axes, sets testable ornament/pigment/darkness/grotesque/historical-visibility budgets, defines per-surface intensity ceilings, and records rejection tests plus Creative Direction and Taste review passes.
+# Phase status
 
-## Phase 2 status
-**CLOSED / PASS — Expanded Reference Research completed 2026-09-16.**
+## Phase 1 — Creative Direction Contract
+**CLOSED / PASS.**
 
-Nine lanes were researched using real works/sources only. Phase 2 preserved the existing Core references, added distinct candidates where they contributed a transferable mechanism, explicitly held/cut redundant or contamination-prone sources, and established a source/right-state registry for Phase 3.
+## Phase 2 — Expanded Reference Research
+**CLOSED / PASS.**
 
-High-yield additions include:
-- Isenheim Altarpiece;
-- William Blake's Book of Job engravings;
-- Martin Schongauer's Saint Anthony;
-- Hours of Catherine of Cleves;
-- Aberdeen Bestiary;
-- Vesalius;
-- Cellarius;
-- Odilon Redon;
-- The Night of the Hunter;
-- Vampyr;
-- The Color of Pomegranates;
-- Andrei Rublev;
-- Kwaidan;
-- Bruder Klaus Field Chapel;
-- Pierre Soulages / Outrenoir;
-- Hypnerotomachia Poliphili;
-- Bill Viola / The Crossing.
+## Phase 3 — Reference Atlas
+**CLOSED / PASS WITH DOCUMENTED MUTATIONS / FIGMA BACKFILL REQUIRED.**
 
-Candidate status does **not** equal canon promotion. Phase 3 must curate survivors into source-only boards and obtain explicit human `PASS / MUTATE / KILL`.
+## Phase 4 — Tension Grammar
+**CLOSED / PASS.**
 
-## Recent-generation status
-The recent multi-round generated moodboards/application boards are **not canonical** and must not be used as positive references by default. Their primary value is negative evidence about process and cliché drift.
+## Phase 5 — Original Visual Hypotheses / Convergence
+**PASS — AESTHETIC CORE PRE-FROZEN / UNIVERSE EXPANSION OPEN.**
 
-Recurring failure signatures to guard against:
-- `KIROGRAF` presented as if it were the Brand;
-- serif + classical statue + black field + geometric star;
-- reduced palette that erased medieval polychromy;
-- generic dark-luxury presentation;
-- anatomy used as decoration rather than knowledge/body/transformation;
-- contemporary interpreted as trendy brutalism or Swiss-grid spectacle;
-- generator asked to solve art, logo, typography, UI and layout simultaneously;
-- five boards that were cosmetic variations of one idea.
+---
 
-## Current gate
-**Phase 3 — Reference Atlas.**
+# Phase 5 history retained
 
-Required next action: curate five source-only boards plus the Anti-Atlas in Figma from the Clean Reference Canon and Phase 2 research. Each positive board must cut broad sourcing down to 8–16 unique references, preserve source/provenance records, and pass human review.
+Five independent visual routes were explored and approved with two complementary boards each:
 
-Do **not** start Route 01 generated identity production before the Phase 3 Atlas gate passes.
+1. `R1 — Dark Revelation`
+2. `R2 — Bestiary of Systems`
+3. `R3 — Sacred Corporeal`
+4. `R4 — Oneiric Anatomy`
+5. `R5 — Illuminated Marginalia`
+
+Frozen process rule:
+- Moodboard I = Identity / Atmosphere
+- Moodboard II = System / Surface
+- both must be approved before a route enters convergence.
+
+The ten route boards remain positive Phase-5 evidence.
+
+Parent-selection checkpoint promoted:
+- `R4 Oneiric Anatomy` — primary parent;
+- `R1 Dark Revelation` — parent;
+- `R5 Illuminated Marginalia` — parent;
+- `R2 Bestiary of Systems` — donor for information/system rigor;
+- `R3 Sacred Corporeal` — donor/hold for intact human presence and ceremonial corporeality.
+
+---
+
+# Aesthetic pre-freeze
+
+## DIVINIVID Aesthetic Pre-Freeze v1 — ACTIVE
+
+The owner has now explicitly approved the core aesthetic for pre-freeze.
+
+Canonical source:
+`docs/03-brand/workbench/divinivid/DIVINIVID_AESTHETIC_PRE_FREEZE_V1.md`
+
+### State
+
+- **Core identity DNA:** frozen.
+- **Application universe:** open for structured expansion.
+- **Final production brandbook/tokens:** not frozen yet.
+
+### Canonical formula
+
+`LIVING DARKNESS + LIVING CRIMSON + SURGICAL CODEX + CONTROLLED ONEIRISM + ANATOMY BY ANALOGY + TRANSFORMATION ACROSS SCALES`
+
+### Frozen selective-accent rule
+
+- black contains;
+- ivory reveals;
+- crimson lives / transforms;
+- aged gold measures / consecrates;
+- ultramar alters / transcends.
+
+**Ultramar and aged gold do not expand the master palette; they signal events.**
+
+The Bestiary remains the sanctioned exception where ultramar/lapis and aged gold may become locally prominent under a medieval illuminated-manuscript system.
+
+### Next phase
+
+A 50-board Universe Expansion program will map the frozen identity across:
+- matter;
+- structures;
+- anatomy-by-analogy;
+- specimens;
+- transformations;
+- Bestiary entities;
+- typography/diagram systems;
+- web/app;
+- editorial/campaign;
+- physical and asset-production systems.
+
+The 50 boards are for **expansion and operationalization**, not renewed aesthetic search.
+
+---
+
+# Seven-board Identity Universe
+
+The working anchor was expanded into a complete bounded visual-universe proof.
+
+All seven boards are **APPROVED**:
+
+1. **Identity DNA / Master Territory**
+2. **Typography & Editorial Voice**
+3. **Color, Material, Texture & Light**
+4. **Image & Illustration Universe**
+5. **Composition, Margins & Graphic Grammar**
+6. **Digital Behavior & Motion**
+7. **Applications, Reduced States & Stress Test**
+
+These boards collectively define the current parent system for future mutations.
+
+Important:
+- generated type suggestions are provisional, not final type selection;
+- generated web/UI is directional evidence, not final product design;
+- exact production colors/tokens remain open;
+- later frozen-master-plan phases still formalize signature, foundations, composition and image-language rules.
+
+---
+
+# Current anti-canon / anti-drift
+
+Do not:
+- reopen free route discovery without explicit human direction;
+- blend complete routes silently;
+- let one mutation change every layer at once;
+- treat generated fonts as final;
+- treat generated mockups as final UI;
+- collapse liturgy into generic moons/stars/occult symbols;
+- use historical ornament as costume;
+- use cyan/neon/dark-tech;
+- use fantasy RPG or generic occult branding;
+- use stock-surreal collage;
+- use graphic anatomical gore;
+- depend on one repeated hero composition.
+
+The identity must survive:
+- reduced state;
+- monochrome;
+- light surface;
+- dark surface;
+- image swap;
+- small/mobile scale;
+- no-hero state;
+- information-dense state.
+
+---
+
+# Capability routing
+
+Decision remains `USE_EXISTING + LOCAL ORCHESTRATION`.
+
+Active methods:
+- Creative Direction;
+- Moodboard Builder;
+- Visual Asset Curation;
+- Superdesign methodology;
+- Taste;
+- Brand Identity;
+- Typography System later for final foundations;
+- Figma as preferred editable visual source of truth when available.
+
+GitHub records meaningful checkpoints, not every generation.
+
+---
+
+# Current gate / immediate next action
+
+**AESTHETIC CORE IS PRE-FROZEN. 50-BOARD UNIVERSE EXPANSION IS THE NEXT GATE.**
+
+Future work uses **DIVINIVID Aesthetic Pre-Freeze v1** as the canonical parent. New outputs extend systems/applications; they do not reopen the core identity unless the owner explicitly lifts the freeze.
+
+Next actions:
+1. derive a compact system-level parameter card;
+2. classify identity variables as `FROZEN / FLEX / OPEN`;
+3. collect the owner's proposed mutation ideas;
+4. convert each idea into a bounded mutation card;
+5. prioritize by information value;
+6. generate one mutation at a time;
+7. compare each child against the full seven-board universe;
+8. promote only meaningful survivors.
+
+Next GitHub checkpoint:
+**after a mutation set yields a promoted survivor or named convergence.**
