@@ -1,6 +1,6 @@
 phase: 5
-state: three_parent_directions_selected
-updated: 2026-09-17
+state: working_identity_universe_approved_mutation_planning_next
+updated: 2026-09-18
 authority: workbench
 source_pr: 26
 
@@ -11,125 +11,83 @@ frozen_master_plan:
 checkpoint:
   route_checkpoint: docs/03-brand/workbench/divinivid/PHASE_5_ROUTE_CHECKPOINT.md
   parent_selection_checkpoint: docs/03-brand/workbench/divinivid/PHASE_5_PARENT_SELECTION_CHECKPOINT.md
-  five_route_result: PASS
+  working_identity_checkpoint: docs/03-brand/workbench/divinivid/PHASE_5_WORKING_IDENTITY_UNIVERSE_CHECKPOINT.md
   approved_routes: 5
-  approved_boards: 10
-  rule: two_approved_boards_per_route_before_convergence
+  approved_route_boards: 10
+  working_identity_universe_boards: 7
+  working_identity_universe_result: PASS
 
-current_method:
-  file: docs/03-brand/workbench/divinivid/PHASE_5_ROUTE_CONVERGENCE_PLAN.md
-  rule: normalize_compare_then_controlled_convergence
+working_identity_anchor:
+  origin_id: R5-D1
+  origin_name: Illuminated Marginalia x Oneiric Displacement
+  status: strongest_current_visual_signal
+  final_brand_direction_selected: false
+  system_parent_rule: R5_D1_plus_seven_approved_identity_universe_boards
 
-selected_parent_directions:
-  P1:
-    route: R4
-    name: Oneiric Anatomy
-    role: PRIMARY_PARENT
-    reason: strongest_current_human_pull_and_highest_visual_fertility
-  P2:
-    route: R1
-    name: Dark Revelation
-    role: PARENT
-    reason: semantic_conceal_reveal_silence_and_reduced_state_strength
-  P3:
-    route: R5
-    name: Illuminated Marginalia
-    role: PARENT
-    reason: structural_liturgical_editorial_logic_and_no_hero_strength
+working_identity_thesis:
+  short_formula: contemporary_manuscript_plus_liturgical_editoriality_plus_oneiric_displacement_plus_narrative_margins_plus_disciplined_surrealism
+  frozen:
+    - page_codex_architecture
+    - active_margins
+    - center_periphery_tension
+    - structured_dream_logic
+    - structural_liturgical_behavior
+    - ivory_black_crimson_aged_gold_material_family
+    - narrative_fragments_and_small_scenes
+    - editorial_seriousness
+    - no_single_mandatory_hero
+  open:
+    - darkness_budget
+    - ornament_budget
+    - final_typography
+    - human_corporeal_presence
+    - digital_density
+    - motion_behavior
+    - final_signature
+    - exact_palette_tokens
+    - historical_visibility
+    - operational_simplification
 
-donor_routes:
-  R2:
-    name: Bestiary of Systems
-    role: DONOR
-    transferable:
-      - information_system_rigor
-      - classification_annotation
-      - editorial_containment
-    forbidden_auto_transfer:
-      - specimen_protagonist
-      - morphology
-      - biotech_surface
-      - full_dossier_composition
-  R3:
-    name: Sacred Corporeal
-    role: DONOR_HOLD
-    transferable:
-      - intact_human_presence
-      - gesture_hands_body_threshold
-      - axial_ceremonial_composition
-      - sacred_materiality
-    forbidden_auto_transfer:
-      - repeated_halo_frontality
-      - human_hero_dependency
-      - literal_anatomy
+identity_universe_boards:
+  B01: {name: Identity DNA / Master Territory, status: approved}
+  B02: {name: Typography & Editorial Voice, status: approved, fonts_final: false}
+  B03: {name: Color Material Texture & Light, status: approved, exact_tokens_final: false}
+  B04: {name: Image & Illustration Universe, status: approved}
+  B05: {name: Composition Margins & Graphic Grammar, status: approved}
+  B06: {name: Digital Behavior & Motion, status: approved, ui_final: false}
+  B07: {name: Applications Reduced States & Stress Test, status: approved}
 
-controls:
-  X1: {label: anatomical_to_symbolic, low: anatomical_evidentiary, high: symbolic_metaphysical}
-  X2: {label: revealed_to_withheld, low: exposed_luminous, high: concealed_delayed_revelation}
-  X3: {label: grotesque_intensity, low: absent, high: prohibited_extreme, working_ceiling: 75}
-  X4: {label: rational_to_oneiric, low: physically_coherent, high: dream_logical}
-  X5: {label: scientific_to_ritual, low: scientific_treatise, high: ceremonial_iconic}
-  X6: {label: editorial_to_pictorial, low: information_structure, high: image_atmosphere}
-  X7: {label: silent_to_dramatic, low: restrained, high: confrontational}
-  X8: {label: system_to_hero, low: repeatable_system, high: singular_hero}
-  X9: {label: human_to_specimen, low: human_threshold, high: classified_specimen}
-
-identity_layers:
-  L1: image_illustration_language
-  L2: composition
-  L3: darkness_illumination
-  L4: liturgical_historical_structure
-  L5: typography_behavior
-  L6: color_material
-  L7: information_system_behavior
-
-mutation_round:
-  child_count: 6
-  one_primary_mechanism_per_child: true
-  order:
-    - R4-D1
-    - R4-D2
-    - R1-D1
-    - R1-D2
-    - R5-D1
-    - R5-D2
-  hypotheses:
-    R4-D1: oneiric_anatomy_plus_dark_revelation_semantic_conceal_reveal
-    R4-D2: oneiric_anatomy_plus_illuminated_marginalia_structural_liturgical_page_logic
-    R1-D1: dark_revelation_plus_oneiric_dream_logical_displacement
-    R1-D2: dark_revelation_plus_bestiary_information_annotation_rigor_only
-    R5-D1: illuminated_marginalia_plus_oneiric_surreal_displacement
-    R5-D2: illuminated_marginalia_plus_dark_revelation_semantic_darkness_reveal
-  required_card_fields:
-    - parent
-    - donor_mechanism
-    - changed
-    - frozen
-    - expected_learning
-    - failure_risk
-    - no_leak
-
-negative_evidence:
-  - repeated_or_cosmetic_variation_is_invalid
-  - route_contamination_from_mixed_prompts_is_forbidden
-  - literal_graphic_anatomy_is_not_required_and_caused_safety_failures
-  - full_identity_generation_in_one_pass_is_killed
-  - generated_typography_is_provisional_only
-  - web_fragments_are_evidence_not_final_interface
+anti_drift:
+  - no_free_route_discovery
+  - no_silent_complete_route_blending
+  - declared_mutation_dimensions_only
+  - generated_type_is_provisional
+  - generated_web_is_directional_evidence_not_final_ui
+  - no_historical_costume
+  - liturgy_structural_not_pasted_ornament
+  - surrealism_meaningful_and_controlled
+  - no_cyan_neon_dark_tech
+  - no_fantasy_rpg_or_occult_branding
+  - no_stock_surreal
+  - no_graphic_anatomical_gore
+  - preserve_reduced_light_monochrome_no_hero_identity
 
 next_actions:
-  - prepare_R4_D1_control_card
-  - generate_and_review_R4_D1_independently
-  - repeat_for_remaining_five_children
-  - select_three_mutation_survivors
+  - derive_system_level_parameter_card
+  - classify_variables_as_FROZEN_FLEX_OPEN
+  - collect_owner_mutation_ideas
+  - translate_ideas_into_bounded_mutation_cards
+  - order_mutations_by_information_value
+  - generate_independently_from_working_identity_packet
+  - compare_against_full_seven_board_universe
 
 repository_cadence:
   write_after_every_generation: false
-  current_checkpoint_recorded: three_parents_selected
-  next_checkpoint: three_mutation_survivors_selected
+  current_checkpoint_recorded: working_identity_universe_7_of_7
+  next_checkpoint: promoted_mutation_survivor_or_named_convergence
 
 merge_policy:
   pr26_remains_draft: true
   merge_only_after:
-    - corrected_route_convergence_method_proves_stable
+    - mutation_method_proves_stable_from_working_identity_system
     - meaningful_phase5_promotion_checkpoint_reached
