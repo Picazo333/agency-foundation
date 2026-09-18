@@ -13,6 +13,7 @@ depends_on:
   - PHASE_5_PARENT_SELECTION_CHECKPOINT.md
   - PHASE_5_WORKING_IDENTITY_UNIVERSE_CHECKPOINT.md
   - PHASE_5_WORKING_BASE_V2_CHECKPOINT.md
+  - DIVINIVID_VISUAL_BASE_V1.md
   - PHASE_5_NEGATIVE_EVIDENCE_LEDGER.md
 ---
 
@@ -63,7 +64,7 @@ Develop DIVINIVID as a contemporary identity combining surrealism, liturgical/ed
 **CLOSED / PASS.**
 
 ## Phase 5 — Original Visual Hypotheses / Convergence
-**ACTIVE — WORKING BASE V2 PROMOTED / MUTATION REFINEMENT.**
+**PASS — CORE AESTHETIC SELECTED / VISUAL BASE V1 LOCKED.**
 
 ---
 
@@ -93,51 +94,38 @@ Parent-selection checkpoint promoted:
 
 ---
 
-# Strongest current convergence signal
+# Selected visual base
 
-## Working Base v2 — Surgical Living Codex
+## DIVINIVID Visual Base v1 — APPROVED
 
-The currently promoted visual parent is:
+The owner confirmed that the intended DIVINIVID aesthetic has been reached.
 
-`WB2 — Surgical Living Codex`
+The active canonical direction is now defined by the approved WB2 lineage plus the latest structural/application mutations and consolidated into:
 
-Exact generated evidence:
-- generation ID: `92964af8-6381-4120-ae44-999584cdfc87`;
-- conversation file: `a_wide_detailed_high_resolution_dark_editorial_c.png`.
+`docs/03-brand/workbench/divinivid/DIVINIVID_VISUAL_BASE_V1.md`
 
-The owner explicitly preferred this penultimate board over the later MUT-C output and promoted WB2 as the new base for all further iterations.
+### Canonical formula
 
-### Current formula
+`LIVING DARKNESS + LIVING CRIMSON + SURGICAL CODEX + CONTROLLED ONEIRISM + ANATOMY BY ANALOGY + TRANSFORMATION ACROSS SCALES`
 
-`LIVING DARKNESS + LIVING CRIMSON MATTER + CONTEMPORARY CODEX + SURGICAL EDITORIAL DISCIPLINE + CONTROLLED ONEIRISM`
+The latest pieces are no longer treated as competing visual routes. They are application systems of one selected identity.
 
-### Interpretation
+### Approved canonical systems
 
-R5-D1 remains the lineage root and the seven Identity Universe boards remain valid system evidence, but WB2 now outranks the previous single-image anchor for mutation work.
+- Master Canon
+- Typography & Editorial Voice
+- Color / Material / Texture / Light
+- Image Universe
+- Surgical Codex Grammar
+- Medullary Landscapes
+- Specimen Vessels
+- Transformative Morphologies
+- Bestiary Entity System
+- Application Systems
 
-WB2 is valued for:
-- darkness behaving as absorbent living material;
-- crimson behaving as living matter rather than flat accent;
-- severe editorial clarity;
-- scientific/surgical presentation discipline;
-- reduced ornamental noise;
-- controlled surrealism;
-- state-of-matter / transformation logic;
-- contrast between deep creative imagery and precise explanatory form.
+### Bestiary subsystem exception
 
-### Derived-system ideas approved for later exploration
-
-- **Motion:** micro-cellular form → condensation → crimson disc → red moon.
-- **Bestiary Entity System:** medieval-illustration brand entities / mascot catalog; subsystem, not master aesthetic.
-- **Scientific/Surgical Display Framework:** precise presentation language for app/product, research, case studies and system states.
-- **Living Darkness:** absorb / conceal / invade / contain / reveal.
-- **Living Crimson:** emerge / pulse / condense / disperse / transform.
-
-### Immediate mutation target
-
-`WB2-M1 — More Oneiric Tension`
-
-Increase oneiric intensity slightly while preserving surgical clarity, living-material depth, codex structure and editorial control.
+The Bestiary may use ultramar/lapis + aged gold + ivory + black with restrained crimson, and should be strongly marked by medieval illuminated-manuscript illustration. This palette exception belongs to the entity subsystem only and does not replace the master DIVINIVID palette.
 
 ---
 
@@ -213,9 +201,9 @@ GitHub records meaningful checkpoints, not every generation.
 
 # Current gate / immediate next action
 
-**WORKING BASE V2 IS PROMOTED. CONTROLLED MUTATION REFINEMENT CONTINUES.**
+**CORE AESTHETIC IS SELECTED. SYSTEM FORMALIZATION AND APPLICATION DEVELOPMENT BEGIN.**
 
-Future mutations use **WB2 + the seven approved Identity Universe boards + the retained R5-D1 lineage rules** as the parent packet.
+Future work uses **DIVINIVID Visual Base v1** as the canonical parent. New outputs should be treated as systems/applications unless the owner explicitly reopens aesthetic exploration.
 
 Next actions:
 1. derive a compact system-level parameter card;
