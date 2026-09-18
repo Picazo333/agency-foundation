@@ -1,5 +1,5 @@
 phase: 5
-state: visual_base_v1_locked_system_formalization_next
+state: aesthetic_pre_freeze_v1_universe_expansion_planning
 updated: 2026-09-18
 authority: workbench
 source_pr: 26
@@ -14,6 +14,7 @@ checkpoint:
   working_identity_checkpoint: docs/03-brand/workbench/divinivid/PHASE_5_WORKING_IDENTITY_UNIVERSE_CHECKPOINT.md
   working_base_v2_checkpoint: docs/03-brand/workbench/divinivid/PHASE_5_WORKING_BASE_V2_CHECKPOINT.md
   visual_base_v1: docs/03-brand/workbench/divinivid/DIVINIVID_VISUAL_BASE_V1.md
+  aesthetic_pre_freeze_v1: docs/03-brand/workbench/divinivid/DIVINIVID_AESTHETIC_PRE_FREEZE_V1.md
   approved_routes: 5
   approved_route_boards: 10
   working_identity_universe_boards: 7
@@ -99,18 +100,16 @@ anti_drift:
   - preserve_reduced_light_monochrome_no_hero_identity
 
 next_actions:
-  - formalize_canonical_visual_spec
-  - develop_bestiary_entity_system_in_depth
-  - formalize_transformative_morphology_motion
-  - formalize_scientific_surgical_display_framework
-  - translate_identity_to_web_and_app_systems
-  - finalize_signature_typography_color_tokens_and_assets
-  - stress_test_real_deliverables
+  - approve_detailed_50_moodboard_universe_expansion_plan
+  - execute_10_rounds_of_5_boards
+  - review_each_round_before_next
+  - derive_asset_factory_families_from_approved_boards
+  - assemble_final_brandbook_after_universe_expansion
 
 repository_cadence:
   write_after_every_generation: false
-  current_checkpoint_recorded: visual_base_v1_locked
-  next_checkpoint: first_formalized_application_system
+  current_checkpoint_recorded: aesthetic_pre_freeze_v1
+  next_checkpoint: universe_expansion_plan_approved
 
 merge_policy:
   pr26_remains_draft: true
