@@ -14,6 +14,7 @@ depends_on:
   - PHASE_5_WORKING_IDENTITY_UNIVERSE_CHECKPOINT.md
   - PHASE_5_WORKING_BASE_V2_CHECKPOINT.md
   - DIVINIVID_VISUAL_BASE_V1.md
+  - DIVINIVID_AESTHETIC_PRE_FREEZE_V1.md
   - PHASE_5_NEGATIVE_EVIDENCE_LEDGER.md
 ---
 
@@ -64,7 +65,7 @@ Develop DIVINIVID as a contemporary identity combining surrealism, liturgical/ed
 **CLOSED / PASS.**
 
 ## Phase 5 — Original Visual Hypotheses / Convergence
-**PASS — CORE AESTHETIC SELECTED / VISUAL BASE V1 LOCKED.**
+**PASS — AESTHETIC CORE PRE-FROZEN / UNIVERSE EXPANSION OPEN.**
 
 ---
 
@@ -94,38 +95,52 @@ Parent-selection checkpoint promoted:
 
 ---
 
-# Selected visual base
+# Aesthetic pre-freeze
 
-## DIVINIVID Visual Base v1 — APPROVED
+## DIVINIVID Aesthetic Pre-Freeze v1 — ACTIVE
 
-The owner confirmed that the intended DIVINIVID aesthetic has been reached.
+The owner has now explicitly approved the core aesthetic for pre-freeze.
 
-The active canonical direction is now defined by the approved WB2 lineage plus the latest structural/application mutations and consolidated into:
+Canonical source:
+`docs/03-brand/workbench/divinivid/DIVINIVID_AESTHETIC_PRE_FREEZE_V1.md`
 
-`docs/03-brand/workbench/divinivid/DIVINIVID_VISUAL_BASE_V1.md`
+### State
+
+- **Core identity DNA:** frozen.
+- **Application universe:** open for structured expansion.
+- **Final production brandbook/tokens:** not frozen yet.
 
 ### Canonical formula
 
 `LIVING DARKNESS + LIVING CRIMSON + SURGICAL CODEX + CONTROLLED ONEIRISM + ANATOMY BY ANALOGY + TRANSFORMATION ACROSS SCALES`
 
-The latest pieces are no longer treated as competing visual routes. They are application systems of one selected identity.
+### Frozen selective-accent rule
 
-### Approved canonical systems
+- black contains;
+- ivory reveals;
+- crimson lives / transforms;
+- aged gold measures / consecrates;
+- ultramar alters / transcends.
 
-- Master Canon
-- Typography & Editorial Voice
-- Color / Material / Texture / Light
-- Image Universe
-- Surgical Codex Grammar
-- Medullary Landscapes
-- Specimen Vessels
-- Transformative Morphologies
-- Bestiary Entity System
-- Application Systems
+**Ultramar and aged gold do not expand the master palette; they signal events.**
 
-### Bestiary subsystem exception
+The Bestiary remains the sanctioned exception where ultramar/lapis and aged gold may become locally prominent under a medieval illuminated-manuscript system.
 
-The Bestiary may use ultramar/lapis + aged gold + ivory + black with restrained crimson, and should be strongly marked by medieval illuminated-manuscript illustration. This palette exception belongs to the entity subsystem only and does not replace the master DIVINIVID palette.
+### Next phase
+
+A 50-board Universe Expansion program will map the frozen identity across:
+- matter;
+- structures;
+- anatomy-by-analogy;
+- specimens;
+- transformations;
+- Bestiary entities;
+- typography/diagram systems;
+- web/app;
+- editorial/campaign;
+- physical and asset-production systems.
+
+The 50 boards are for **expansion and operationalization**, not renewed aesthetic search.
 
 ---
 
@@ -201,9 +216,9 @@ GitHub records meaningful checkpoints, not every generation.
 
 # Current gate / immediate next action
 
-**CORE AESTHETIC IS SELECTED. SYSTEM FORMALIZATION AND APPLICATION DEVELOPMENT BEGIN.**
+**AESTHETIC CORE IS PRE-FROZEN. 50-BOARD UNIVERSE EXPANSION IS THE NEXT GATE.**
 
-Future work uses **DIVINIVID Visual Base v1** as the canonical parent. New outputs should be treated as systems/applications unless the owner explicitly reopens aesthetic exploration.
+Future work uses **DIVINIVID Aesthetic Pre-Freeze v1** as the canonical parent. New outputs extend systems/applications; they do not reopen the core identity unless the owner explicitly lifts the freeze.
 
 Next actions:
 1. derive a compact system-level parameter card;
