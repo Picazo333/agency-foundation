@@ -1,5 +1,5 @@
 phase: 5
-state: working_identity_universe_approved_mutation_planning_next
+state: working_base_v2_promoted_more_oneiric_mutation_next
 updated: 2026-09-18
 authority: workbench
 source_pr: 26
@@ -12,6 +12,7 @@ checkpoint:
   route_checkpoint: docs/03-brand/workbench/divinivid/PHASE_5_ROUTE_CHECKPOINT.md
   parent_selection_checkpoint: docs/03-brand/workbench/divinivid/PHASE_5_PARENT_SELECTION_CHECKPOINT.md
   working_identity_checkpoint: docs/03-brand/workbench/divinivid/PHASE_5_WORKING_IDENTITY_UNIVERSE_CHECKPOINT.md
+  working_base_v2_checkpoint: docs/03-brand/workbench/divinivid/PHASE_5_WORKING_BASE_V2_CHECKPOINT.md
   approved_routes: 5
   approved_route_boards: 10
   working_identity_universe_boards: 7
@@ -20,9 +21,33 @@ checkpoint:
 working_identity_anchor:
   origin_id: R5-D1
   origin_name: Illuminated Marginalia x Oneiric Displacement
-  status: strongest_current_visual_signal
+  status: lineage_root_retained
   final_brand_direction_selected: false
-  system_parent_rule: R5_D1_plus_seven_approved_identity_universe_boards
+  system_parent_rule: WB2_plus_seven_approved_identity_universe_boards_plus_R5_D1_lineage_rules
+
+working_base_v2:
+  id: WB2
+  name: Surgical Living Codex
+  alias: Living Matter Atlas / Between Matter and Meaning
+  generation_id: 92964af8-6381-4120-ae44-999584cdfc87
+  conversation_file: a_wide_detailed_high_resolution_dark_editorial_c.png
+  status: strongest_current_working_base
+  final_brand_direction_selected: false
+  short_formula: living_darkness_plus_living_crimson_matter_plus_contemporary_codex_plus_surgical_editorial_discipline_plus_controlled_oneirism
+  frozen:
+    - absorbent_living_darkness
+    - crimson_as_living_matter
+    - contemporary_codex_archive_logic
+    - surgical_editorial_hierarchy
+    - controlled_surrealism
+    - reduced_ornamental_noise
+    - tactile_material_depth
+    - black_ivory_crimson_restrained_aged_gold
+  derived_systems_later:
+    - red_cell_to_red_moon_motion_motif
+    - medieval_bestiary_entity_catalog
+    - scientific_surgical_app_display_framework
+  next_mutation: WB2_M1_more_oneiric_tension
 
 working_identity_thesis:
   short_formula: contemporary_manuscript_plus_liturgical_editoriality_plus_oneiric_displacement_plus_narrative_margins_plus_disciplined_surrealism
@@ -73,17 +98,14 @@ anti_drift:
   - preserve_reduced_light_monochrome_no_hero_identity
 
 next_actions:
-  - derive_system_level_parameter_card
-  - classify_variables_as_FROZEN_FLEX_OPEN
-  - collect_owner_mutation_ideas
-  - translate_ideas_into_bounded_mutation_cards
-  - order_mutations_by_information_value
-  - generate_independently_from_working_identity_packet
-  - compare_against_full_seven_board_universe
+  - generate_WB2_M1_more_oneiric_tension
+  - compare_against_WB2_and_full_seven_board_universe
+  - keep_surgical_clarity_and_living_material_depth_frozen
+  - promote_or_reject_with_explicit_learning
 
 repository_cadence:
   write_after_every_generation: false
-  current_checkpoint_recorded: working_identity_universe_7_of_7
+  current_checkpoint_recorded: working_base_v2_promoted
   next_checkpoint: promoted_mutation_survivor_or_named_convergence
 
 merge_policy:
