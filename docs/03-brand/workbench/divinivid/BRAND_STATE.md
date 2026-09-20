@@ -1,7 +1,7 @@
 ---
 status: approved
 owner: brand
-updated: 2026-09-16
+updated: 2026-09-20
 authority: workbench
 depends_on:
   - ../../../08-plans/workstreams/DIVINIVID_VISUAL_IDENTITY_MASTER_PLAN.md
@@ -11,7 +11,17 @@ depends_on:
 # DIVINIVID — Brand State
 
 ## Purpose
-This file is the current human-readable state checkpoint for DIVINIVID. It prevents agents from reconstructing the Brand from stale branches, old moodboards or chat memory.
+This file records DIVINIVID Brand state and historical visual-phase context. It prevents agents from reconstructing the Brand from stale branches, old moodboards or chat memory.
+
+## 2026-09-20 transition checkpoint
+Subsequent human-guided work materially advanced beyond the 2026-09-16 Phase 3 gate and established a coherent visual baseline.
+
+For **current execution state**, use:
+1. `VISUAL_UNIVERSE_CHECKPOINT_2026-09-20.md`;
+2. `../../../08-plans/master/DIVINIVID_VISUAL_UNIVERSE_META_PLAN_V2.md`;
+3. ADR-0013.
+
+The older Phase 1–3 material below remains valid as historical research/process evidence unless explicitly superseded, but the “Phase 3 Reference Atlas” section no longer defines the active execution gate.
 
 ## Current hierarchy
 - **Brand under identity exploration:** `DIVINIVID`
@@ -96,9 +106,9 @@ Recurring failure signatures to guard against:
 - generator asked to solve art, logo, typography, UI and layout simultaneously;
 - five boards that were cosmetic variations of one idea.
 
-## Current gate
-**Phase 3 — Reference Atlas.**
+## Historical gate recorded 2026-09-16
+**Phase 3 — Reference Atlas (superseded as active execution gate by ADR-0013).**
 
 Required next action: curate five source-only boards plus the Anti-Atlas in Figma from the Clean Reference Canon and Phase 2 research. Each positive board must cut broad sourcing down to 8–16 unique references, preserve source/provenance records, and pass human review.
 
-Do **not** start Route 01 generated identity production before the Phase 3 Atlas gate passes.
+Do not use this historical sentence as the current execution gate. Current generation/production authority is governed by ADR-0013 and the Visual Universe Meta-Plan V2.
