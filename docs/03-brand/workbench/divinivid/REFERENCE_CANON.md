@@ -1,13 +1,15 @@
 ---
 status: approved
 owner: brand
-updated: 2026-09-16
+updated: 2026-09-20
 authority: workbench
 depends_on:
   - BRAND_STATE.md
   - ../../../08-plans/workstreams/DIVINIVID_VISUAL_IDENTITY_MASTER_PLAN.md
 ---
 # DIVINIVID — Clean Reference Canon
+
+> This document remains the authority for **external/source references**. The generated visual system promoted after Archive V1 is governed separately by `VISUAL_CANON_V1.md` and the archive registries. Source references and generated visual canon must not be conflated.
 
 ## Purpose
 This document restores the **human-approved source preferences** to the front of the visual process and prevents generated project material from rewriting the user's taste by repetition.
