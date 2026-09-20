@@ -66,6 +66,15 @@ sources_of_truth:
   reference_canon:
     scheme: repo
     locator: docs/03-brand/workbench/divinivid/REFERENCE_CANON.md
+  visual_canon_v1:
+    scheme: repo
+    locator: docs/03-brand/workbench/divinivid/VISUAL_CANON_V1.md
+  visual_canon_registry_v1:
+    scheme: repo
+    locator: docs/03-brand/workbench/divinivid/archive/VISUAL_CANON_REGISTRY_V1.csv
+  visual_lineage_registry_v1:
+    scheme: repo
+    locator: docs/03-brand/workbench/divinivid/archive/VISUAL_LINEAGE_REGISTRY_V1.csv
   anti_canon:
     scheme: repo
     locator: docs/03-brand/workbench/divinivid/ANTI_CANON.md
@@ -124,6 +133,7 @@ context:
         - repo://docs/08-plans/master/DIVINIVID_VISUAL_UNIVERSE_META_PLAN_V2.md
         - repo://docs/03-brand/workbench/divinivid/VISUAL_UNIVERSE_CHECKPOINT_2026-09-20.md
         - repo://docs/03-brand/workbench/divinivid/archive/VISUAL_ARCHIVE_V1_INVENTORY.md
+        - repo://docs/03-brand/workbench/divinivid/VISUAL_CANON_V1.md
 
 quality_claims:
   - contract-conformance

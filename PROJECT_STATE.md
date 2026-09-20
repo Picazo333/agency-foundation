@@ -22,7 +22,7 @@ Build DIVINIVID as a serious agency and operating system from research -> decisi
 
 ## Current active work
 
-### 1. Visual Universe — Archive V1 complete / Canon-Lineage next
+### 1. Visual Universe — Canon/Lineage V1 complete / 100-board specification next
 The human owner has approved a coherent DIVINIVID visual baseline after extensive iterative exploration.
 
 The project is no longer searching for a fundamentally different aesthetic.
@@ -33,11 +33,14 @@ Completed:
 3. post-protocol meta-plan verification completed;
 4. Visual Archive V1 inventory completed: 277 image files + 4 legacy HTML artifacts, with failures/duplicates/experiments preserved.
 
+Completed:
+5. Phase 2 human review approved;
+6. Visual Canon V1 + Lineage Registry finalized: 19 CANON, 193 APPROVED_SUPPORT, 39 EXPERIMENT, 18 NEGATIVE_CANON, 6 SUPERSEDED_DUPLICATE, 2 EVIDENCE_ONLY.
+
 Current work:
-1. build the durable Canon + Lineage Registry from Archive V1;
-2. specify the 100-board expansion program;
-3. execute only approved/non-redundant expansion studies;
-4. audit coverage before industrial asset production.
+1. specify the 100-board `VISUAL_UNIVERSE_EXPANSION` program in full before generating any new board;
+2. execute only approved/non-redundant expansion studies;
+3. audit coverage before industrial asset production.
 
 Authority:
 - `docs/03-brand/workbench/divinivid/VISUAL_UNIVERSE_CHECKPOINT_2026-09-20.md`
@@ -95,7 +98,7 @@ Current approved working DNA includes:
 - Dramatic/Revelatory (A), Abyssal/Subtle (B) and Hybrid (H) intensity modes;
 - motion as behavior rather than decoration.
 
-Archive V1 now establishes the exact current file inventory: **277 image files + 4 legacy HTML artifacts**. Exact canon membership remains pending Phase 2 Canon/Lineage review; do not infer approval from filename or polish.
+Archive V1 establishes **277 image files + 4 legacy HTML artifacts**. Visual Canon V1 now establishes exact current authority classes. Do not infer future canon promotion from filename or polish.
 
 ## Frozen / approved process decisions
 - Repo-first source of truth.
@@ -113,7 +116,6 @@ Archive V1 now establishes the exact current file inventory: **277 image files +
 
 ## Open decisions
 - final commercial/legal clearance of DIVINIVID;
-- exact canonical promotion of the Archive V1 image corpus;
 - detailed 100-board specification;
 - any targeted gap boards justified by the later Coverage Audit;
 - production executor adapter details after the golden-set pilot;
@@ -121,7 +123,9 @@ Archive V1 now establishes the exact current file inventory: **277 image files +
 - business-model/ICP/positioning/pricing decisions still gated by real validation evidence.
 
 ## Next exact gate
-**Phase 2 — Canon Promotion + Lineage Registry.**
+**Phase 3 — 100-board VISUAL_UNIVERSE_EXPANSION specification.**
+
+No new moodboard generation begins until all 100 study contracts exist and pass the specification gate.
 
 Current sequence:
-`Canon/Lineage -> 100-board Specification -> 100-board Execution -> Coverage Audit -> Production Specification -> Golden-set Pilot -> Asset Factory -> Brandbook -> Final QA/Release`.
+`100-board Specification -> 100-board Execution -> Coverage Audit -> Production Specification -> Golden-set Pilot -> Asset Factory -> Brandbook -> Final QA/Release`.
