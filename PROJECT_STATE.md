@@ -22,17 +22,22 @@ Build DIVINIVID as a serious agency and operating system from research -> decisi
 
 ## Current active work
 
-### 1. Visual Universe — protocol reconciliation
+### 1. Visual Universe — Archive V1 complete / Canon-Lineage next
 The human owner has approved a coherent DIVINIVID visual baseline after extensive iterative exploration.
 
-The project is no longer searching for a fundamentally different aesthetic. Current work is to:
-1. apply Noema RC0 selectively;
-2. route reusable pipeline lessons through Skill Foundry;
-3. verify the meta-plan after those two protocol passes;
-4. inventory/archive all generated visual evidence;
-5. build the durable canon/lineage registry;
-6. specify and execute the 100-board expansion program;
-7. audit coverage before industrial asset production.
+The project is no longer searching for a fundamentally different aesthetic.
+
+Completed:
+1. Noema RC0 selective adoption merged;
+2. Skill Foundry G0-G7 candidate architecture approved and merged;
+3. post-protocol meta-plan verification completed;
+4. Visual Archive V1 inventory completed: 277 image files + 4 legacy HTML artifacts, with failures/duplicates/experiments preserved.
+
+Current work:
+1. build the durable Canon + Lineage Registry from Archive V1;
+2. specify the 100-board expansion program;
+3. execute only approved/non-redundant expansion studies;
+4. audit coverage before industrial asset production.
 
 Authority:
 - `docs/03-brand/workbench/divinivid/VISUAL_UNIVERSE_CHECKPOINT_2026-09-20.md`
@@ -40,7 +45,7 @@ Authority:
 - ADR-0013.
 
 ### 2. Noema adoption
-Selective RC0 migration is in progress. The project now declares:
+Selective RC0 migration is merged and active. The project now declares:
 - explicit domain authority;
 - progressive context routing;
 - quality claims;
@@ -50,10 +55,16 @@ Selective RC0 migration is in progress. The project now declares:
 Noema does not own or approve DIVINIVID visual canon.
 
 ### 3. Skill Foundry handoff
-A high-signal Project Harvest record captures the visual-exploration -> specification -> factory pipeline for Foundry G0-G5 overlap analysis.
+G0-G7 is complete and merged for candidate `sf-cand-20260920-divinivid-visual-production-system`.
 
-No new Skill is assumed. Foundry must apply its normal precedence:
-`REUSE -> EXTEND -> MODE -> DEPENDENT_SKILL -> NEW_SKILL -> NO_SKILL`.
+Approved reusable architecture:
+- `brand-visual-direction:VISUAL_UNIVERSE_EXPANSION`;
+- `brand-quality-auditor:VISUAL_SYSTEM_COVERAGE`;
+- `brand-identity-system:PRODUCTION_SPECIFICATION`;
+- reuse `brand-book-builder` and `brand-skill-orchestrator`;
+- no dedicated DIVINIVID or Gemini factory Skill.
+
+G8-G10 implementation/publish can proceed independently; project progress does not require pretending those modes are already published.
 
 ### 4. Asset Factory
 Generator-agnostic architecture remains integrated but **mass production is not yet authorized**.
@@ -84,7 +95,7 @@ Current approved working DNA includes:
 - Dramatic/Revelatory (A), Abyssal/Subtle (B) and Hybrid (H) intensity modes;
 - motion as behavior rather than decoration.
 
-Exact visual-file count and exact canon membership remain pending Archive Phase 1. Do not infer them from chat memory.
+Archive V1 now establishes the exact current file inventory: **277 image files + 4 legacy HTML artifacts**. Exact canon membership remains pending Phase 2 Canon/Lineage review; do not infer approval from filename or polish.
 
 ## Frozen / approved process decisions
 - Repo-first source of truth.
@@ -102,8 +113,7 @@ Exact visual-file count and exact canon membership remain pending Archive Phase 
 
 ## Open decisions
 - final commercial/legal clearance of DIVINIVID;
-- post-Noema/Skill Foundry verification of the Visual Universe Meta-Plan V2;
-- exact canonical promotion of the generated image corpus;
+- exact canonical promotion of the Archive V1 image corpus;
 - detailed 100-board specification;
 - any targeted gap boards justified by the later Coverage Audit;
 - production executor adapter details after the golden-set pilot;
@@ -111,7 +121,7 @@ Exact visual-file count and exact canon membership remain pending Archive Phase 
 - business-model/ICP/positioning/pricing decisions still gated by real validation evidence.
 
 ## Next exact gate
-**Skill Foundry G0-G5 handoff + post-protocol meta-plan verification.**
+**Phase 2 — Canon Promotion + Lineage Registry.**
 
-After human approval of any resulting deltas:
-`Archive/Inventory -> Canon/Lineage -> 100-board Specification -> 100-board Execution -> Coverage Audit -> Production Specification -> Golden-set Pilot -> Asset Factory -> Brandbook -> Final QA/Release`.
+Current sequence:
+`Canon/Lineage -> 100-board Specification -> 100-board Execution -> Coverage Audit -> Production Specification -> Golden-set Pilot -> Asset Factory -> Brandbook -> Final QA/Release`.
