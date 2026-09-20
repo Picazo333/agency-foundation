@@ -1,7 +1,7 @@
 ---
 status: approved
 owner: meta
-updated: 2026-09-16
+updated: 2026-09-20
 authority: canon
 depends_on:
   []
@@ -21,6 +21,8 @@ depends_on:
 | ADR-0009 | Defer any pricing freeze until willingness-to-pay evidence exists | **PROPOSED** |
 | ADR-0010 | AI is a delivery mechanism, never the category | **PROPOSED** |
 | ADR-0011 | Adopt the neutral technical foundation baseline and experimental-lab boundaries | APPROVED |
+| ADR-0012 | Adopt DIVINIVID as project display name and plan repository slug rename while preserving stable Noema ID | APPROVED |
+| ADR-0013 | Move DIVINIVID from visual discovery into controlled universe expansion before Asset Factory production | APPROVED |
 
 `PROPOSED` ADRs are recommendations from the Claude/CoWork Agency Master Plan workstream
 (GitHub Issue #2) awaiting human decision. They are not canon until approved
