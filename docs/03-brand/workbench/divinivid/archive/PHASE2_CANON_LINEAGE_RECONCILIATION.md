@@ -1,5 +1,5 @@
 ---
-status: review
+status: approved
 owner: brand
 updated: 2026-09-20
 authority: workbench
@@ -128,3 +128,58 @@ PASS only when:
 ## Next handoff
 After Phase 2 PASS:
 `VISUAL_UNIVERSE_EXPANSION` specification of the 100-board program.
+
+
+---
+
+# Human decision — 2026-09-20
+
+The human owner approved the Phase 2 review sheets.
+
+Interpretation applied:
+- sheets 01–09: promote all non-negative, non-duplicate candidate material to `APPROVED_SUPPORT`;
+- sheet 10: approval confirms retention/classification of experiments and drift candidates, but does **not** convert drift/experimental material into positive support;
+- explicit failures remain `NEGATIVE_CANON`;
+- duplicate copies remain `SUPERSEDED_DUPLICATE`.
+
+A compact principle-level Canon was then selected from the approved support corpus. This is intentionally much smaller than the support library.
+
+## Final Phase 2 counts
+
+| Final state | Count |
+|---|---:|
+| `APPROVED_SUPPORT` | 193 |
+| `CANON` | 19 |
+| `EXPERIMENT` | 39 |
+| `NEGATIVE_CANON` | 18 |
+| `SUPERSEDED_DUPLICATE` | 6 |
+| `EVIDENCE_ONLY` | 2 |
+
+## Canon-set rule
+
+The 19 Canon artifacts are not "the only good images." They are the smallest current evidence set that anchors principle-level behavior across:
+- identity mother / invisible-world grammar;
+- Living Darkness;
+- color semantics;
+- anatomy-by-analogy;
+- specimen duality;
+- transformative structure;
+- medieval Bestiary;
+- infernal and harlequin/liminal families;
+- living environments;
+- impossible geometry;
+- digital application;
+- Abyssal intensity;
+- motion;
+- typographic motion;
+- annotation and measurement;
+- typography;
+- Asset Factory family map.
+
+The larger `APPROVED_SUPPORT` corpus remains available for breadth, application detail and future production references.
+
+## Phase 2 verdict
+
+**PASS.**
+
+The archive can now seed the 100-board specification without requiring chat-history reconstruction.
