@@ -60,6 +60,9 @@ sources_of_truth:
   visual_universe_checkpoint:
     scheme: repo
     locator: docs/03-brand/workbench/divinivid/VISUAL_UNIVERSE_CHECKPOINT_2026-09-20.md
+  visual_archive_v1_inventory:
+    scheme: repo
+    locator: docs/03-brand/workbench/divinivid/archive/VISUAL_ARCHIVE_V1_INVENTORY.md
   reference_canon:
     scheme: repo
     locator: docs/03-brand/workbench/divinivid/REFERENCE_CANON.md
@@ -120,6 +123,7 @@ context:
       optional:
         - repo://docs/08-plans/master/DIVINIVID_VISUAL_UNIVERSE_META_PLAN_V2.md
         - repo://docs/03-brand/workbench/divinivid/VISUAL_UNIVERSE_CHECKPOINT_2026-09-20.md
+        - repo://docs/03-brand/workbench/divinivid/archive/VISUAL_ARCHIVE_V1_INVENTORY.md
 
 quality_claims:
   - contract-conformance
