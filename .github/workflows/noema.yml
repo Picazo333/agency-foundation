@@ -1,0 +1,14 @@
+name: Noema Conformance
+
+on:
+  push:
+    branches:
+      - main
+      - meta/divinivid-noema-visual-universe
+  pull_request:
+
+jobs:
+  noema:
+    uses: Picazo333/noema/.github/workflows/reusable-conformance.yml@a7d8e5ee8fcc308cdf8673e373026e0743413296
+    with:
+      project_root: "."
