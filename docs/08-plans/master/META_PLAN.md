@@ -1,7 +1,7 @@
 ---
 status: approved
 owner: meta
-updated: 2026-09-16
+updated: 2026-09-20
 authority: canon
 depends_on:
   []
@@ -10,6 +10,14 @@ depends_on:
 
 ## Goal
 Parallelize high-value work without allowing tools to make conflicting decisions or contaminate each other's domains.
+
+## 2026-09-20 DIVINIVID visual-program update
+The detailed Brand visual-universe -> Asset Factory sequence is now governed by:
+`docs/08-plans/master/DIVINIVID_VISUAL_UNIVERSE_META_PLAN_V2.md`.
+
+ADR-0013 supersedes the older visual-phase sequencing only for the DIVINIVID visual workstream. Business validation, repo-first governance, capability-first execution and the existing Asset Factory architecture remain in force.
+
+Noema provides cross-project governance/conformance and Skill Foundry may consume high-signal Project Harvest candidates; neither system owns DIVINIVID domain canon.
 
 ## Cross-cutting sidecar — Project Harvest
 Across all waves, meaningful PRs, ADRs, milestones, experiments, incidents, and deliveries may produce a lightweight Project Harvest record for reusable organizational knowledge.
@@ -70,11 +78,11 @@ Test whether name, personality and visual system fit the business model/ICP/pric
 ## Wave 2 — Strategic convergence
 Freeze serious agency structure while marking unresolved field-validation dependencies.
 
-## Wave 3 — Full Brand System V1
-Start in a clean brand-system workstream/conversation using approved business strategy + Brand V0.
+## Wave 3 — Full Brand System / Visual Universe industrialization
+DIVINIVID follows the Visual Universe Meta-Plan V2: archive and classify the explored corpus, build the visual canon/lineage registry, execute the contracted expansion program, audit coverage, then translate the universe into production specifications.
 
 ## Wave 4 — Asset Factory activation
-Activate the approved Asset Factory architecture using Brand V1. The generation provider is selected at execution time; Gemini is an option, not a dependency.
+Activate the approved Asset Factory architecture only after the Visual Spec/Matrix/Ontology exist and the golden-set factory pilot passes. The generation provider is selected at execution time; Gemini is the intended first executor, not a dependency.
 
 ## Wave 5 — Implementation
 Parallel spines:
