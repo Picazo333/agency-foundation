@@ -1,0 +1,151 @@
+noema:
+  protocol: "0.1.0-rc.0"
+  contracts:
+    project_manifest: 1
+
+project:
+  id: agency-foundation
+  name: DIVINIVID
+  type: delivery-system
+  status: active
+
+traits:
+  - creative
+  - agentic
+  - research-heavy
+  - customer-facing
+  - human-gated
+  - reusable
+  - visual
+  - external-effects
+
+authority:
+  owns:
+    - agency-strategy-and-delivery-canon
+    - divinivid-brand-canon
+    - divinivid-visual-universe
+    - brand-workbench-and-human-gates
+    - asset-factory-contracts
+    - field-validation-evidence
+    - project-harvest-records
+    - agency-local-asset-lifecycle
+  does_not_own:
+    - noema-protocol
+    - skill-foundry-taxonomy
+    - skill-foundry-ontology
+    - skill-foundry-registry
+    - external-executor-runtime
+    - secrets
+    - future-cross-project-media-storage
+
+sources_of_truth:
+  governance:
+    scheme: repo
+    locator: docs/00-meta/source-of-truth.md
+  operating_model:
+    scheme: repo
+    locator: docs/00-meta/operating-model.md
+  project_state:
+    scheme: repo
+    locator: PROJECT_STATE.md
+  meta_plan:
+    scheme: repo
+    locator: docs/08-plans/master/META_PLAN.md
+  visual_universe_meta_plan:
+    scheme: repo
+    locator: docs/08-plans/master/DIVINIVID_VISUAL_UNIVERSE_META_PLAN_V2.md
+  brand_state:
+    scheme: repo
+    locator: docs/03-brand/workbench/divinivid/BRAND_STATE.md
+  visual_universe_checkpoint:
+    scheme: repo
+    locator: docs/03-brand/workbench/divinivid/VISUAL_UNIVERSE_CHECKPOINT_2026-09-20.md
+  reference_canon:
+    scheme: repo
+    locator: docs/03-brand/workbench/divinivid/REFERENCE_CANON.md
+  anti_canon:
+    scheme: repo
+    locator: docs/03-brand/workbench/divinivid/ANTI_CANON.md
+  asset_factory_brand_pack:
+    scheme: repo
+    locator: asset-factory/spec/01-brand-pack-contract.md
+  harvest_protocol:
+    scheme: repo
+    locator: docs/10-knowledge-harvest/PROJECT_HARVEST_PROTOCOL.md
+
+context:
+  entrypoint: AGENTS.md
+  default_mode: recover
+  modes:
+    patch:
+      required:
+        - repo://docs/00-meta/source-of-truth.md
+      optional:
+        - repo://docs/00-meta/operating-model.md
+        - repo://docs/07-decisions/index.md
+    build:
+      required:
+        - repo://docs/00-meta/operating-model.md
+      optional:
+        - repo://docs/00-meta/source-of-truth.md
+        - repo://docs/00-meta/capability-governance.md
+        - repo://asset-factory/spec/01-brand-pack-contract.md
+    audit:
+      required:
+        - repo://docs/00-meta/source-of-truth.md
+        - repo://docs/00-meta/definitions-of-done.md
+      optional:
+        - repo://PROJECT_STATE.md
+        - repo://docs/03-brand/workbench/divinivid/ANTI_CANON.md
+        - repo://docs/10-knowledge-harvest/PROJECT_HARVEST_PROTOCOL.md
+    research:
+      required:
+        - repo://docs/00-meta/source-of-truth.md
+      optional:
+        - repo://docs/03-brand/workbench/divinivid/REFERENCE_CANON.md
+        - repo://docs/03-brand/workbench/divinivid/reference-research/PHASE_2_REFERENCE_RESEARCH.md
+    architect:
+      required:
+        - repo://docs/00-meta/source-of-truth.md
+        - repo://docs/00-meta/operating-model.md
+        - repo://docs/08-plans/master/DIVINIVID_VISUAL_UNIVERSE_META_PLAN_V2.md
+      optional:
+        - repo://docs/00-meta/dependency-map.md
+        - repo://docs/07-decisions/index.md
+        - repo://asset-factory/spec/01-brand-pack-contract.md
+        - repo://asset-factory/spec/04-metadata-provenance-schema.md
+    recover:
+      required:
+        - repo://PROJECT_STATE.md
+      optional:
+        - repo://docs/08-plans/master/DIVINIVID_VISUAL_UNIVERSE_META_PLAN_V2.md
+        - repo://docs/03-brand/workbench/divinivid/VISUAL_UNIVERSE_CHECKPOINT_2026-09-20.md
+
+quality_claims:
+  - contract-conformance
+  - delivery-integrity
+  - research-groundedness
+  - visual-coherence
+  - provenance
+  - context-efficiency
+  - security-boundaries
+  - recoverability
+
+relations:
+  - type: conforms-to
+    target: project:noema
+  - type: consumes-capabilities-from
+    target: project:skill-foundry
+  - type: may-publish-harvest-to
+    target: project:skill-foundry
+  - type: may-publish-harvest-to
+    target: project:noema
+
+exceptions: []
+
+extensions:
+  x-brand-system-authority: human-approved-divinivid-canon
+  x-noema-adoption: selective-rc0-migration
+  x-stable-project-id: agency-foundation
+  x-project-display-name: DIVINIVID
+  x-planned-repository-slug: divinivid
