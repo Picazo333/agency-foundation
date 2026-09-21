@@ -90,6 +90,9 @@ sources_of_truth:
   generation_state:
     scheme: repo
     locator: docs/03-brand/workbench/divinivid/generation/CURRENT_GENERATION_STATE.yaml
+  saturation_checkpoint_20_v1:
+    scheme: repo
+    locator: docs/03-brand/workbench/divinivid/generation/SATURATION_CHECKPOINT_20_V1.md
   canon_anchor_set_v1:
     scheme: repo
     locator: docs/03-brand/workbench/divinivid/generation/CANON_ANCHOR_SET_V1.md
