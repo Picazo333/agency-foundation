@@ -93,6 +93,12 @@ sources_of_truth:
   canon_anchor_set_v1:
     scheme: repo
     locator: docs/03-brand/workbench/divinivid/generation/CANON_ANCHOR_SET_V1.md
+  execution_style_anchor_set_v1:
+    scheme: repo
+    locator: docs/03-brand/workbench/divinivid/generation/EXECUTION_STYLE_ANCHOR_SET_V1.md
+  surface_lock_v1:
+    scheme: repo
+    locator: docs/03-brand/workbench/divinivid/generation/SURFACE_LOCK_V1.md
   asset_factory_brand_pack:
     scheme: repo
     locator: asset-factory/spec/01-brand-pack-contract.md
@@ -146,6 +152,8 @@ context:
         - repo://docs/03-brand/workbench/divinivid/generation/CURRENT_GENERATION_STATE.yaml
         - repo://docs/03-brand/workbench/divinivid/generation/DIVINIVID_MOODBOARD_CONTRACTS_V1.yaml
         - repo://docs/03-brand/workbench/divinivid/generation/GENERATION_RUNTIME_LOCK_V1.md
+        - repo://docs/03-brand/workbench/divinivid/generation/EXECUTION_STYLE_ANCHOR_SET_V1.md
+        - repo://docs/03-brand/workbench/divinivid/generation/SURFACE_LOCK_V1.md
         - repo://docs/03-brand/workbench/divinivid/VISUAL_CANON_V1.md
         - repo://docs/03-brand/workbench/divinivid/generation/CANON_ANCHOR_SET_V1.md
         - repo://docs/03-brand/workbench/divinivid/ANTI_CANON.md

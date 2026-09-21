@@ -39,17 +39,18 @@ Completed:
 
 Completed:
 7. 100/100 moodboard contracts recovered into the repository and human Plan Lock recorded;
-8. Generation Runtime Lock V1 installed to prevent self-referential aesthetic drift.
+8. Generation Runtime Lock V1 installed to prevent self-referential aesthetic drift;
+9. Execution Style Anchor Set V1 + Surface Lock V1 installed after a second drift incident; approved A11–A15 are now the explicit surface/style anchors.
 
 Current execution state:
 - last human-accepted cursor: `A15`;
 - next allowed round: `A16-A20`;
-- latest A16-A20 attempt: `AESTHETIC_DRIFT` / quarantine / do not reference;
+- both A16-A20 attempts: quarantined; latest classified `AESTHETIC_DRIFT_AND_CONTRACT_MISMATCH` / do not reference;
 - off-plan web/mobile generations: `EXPERIMENT` / do not substitute for locked IDs;
 - generation must use the `visual_generation` Noema context mode.
 
 Current work:
-1. regenerate A16-A20 from exact contracts + Canon Anchor Set;
+1. regenerate A16-A20 from exact contracts + A11–A15 Execution Style Anchors + Surface Lock + contract-specific Canon anchors;
 2. perform pre-display QA before presenting them as valid candidates;
 3. after human acceptance of A20, run saturation checkpoint 20/100;
 4. continue the locked 100-board execution without off-plan substitutions.
@@ -134,7 +135,7 @@ Archive V1 establishes **277 image files + 4 legacy HTML artifacts**. Visual Can
 - business-model/ICP/positioning/pricing decisions still gated by real validation evidence.
 
 ## Next exact gate
-**Phase 4 — regenerate and human-review A16-A20 under Generation Runtime Lock V1.**
+**Phase 4 — regenerate and human-review A16-A20 under Generation Runtime Lock V1 + Execution Style Anchor Set V1 + Surface Lock V1.**
 
 The 100-board specification gate is complete. Generation is authorized only through the locked cursor and exact contracts.
 

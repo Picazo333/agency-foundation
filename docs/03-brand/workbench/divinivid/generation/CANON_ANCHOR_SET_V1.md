@@ -2,19 +2,25 @@
 status: approved
 owner: brand
 updated: 2026-09-21
-authority: execution-reference
+authority: semantic-execution-reference
 depends_on:
   - ../VISUAL_CANON_V1.md
   - ../archive/PRINCIPLE_CANON_V1.csv
+  - EXECUTION_STYLE_ANCHOR_SET_V1.md
+  - SURFACE_LOCK_V1.md
 ---
 # DIVINIVID — Canon Anchor Set V1
 
 ## Purpose
-Provide a compact positive-reference set for generation so the executor does not infer style from recent outputs.
+Provide compact **principle/semantic** references for generation.
 
-These are **anchors, not ingredients that must all appear in every board**.
+This file no longer carries primary responsibility for the current surface appearance. Surface treatment is governed by:
+- `EXECUTION_STYLE_ANCHOR_SET_V1.md`;
+- `SURFACE_LOCK_V1.md`.
 
-## Core anchors — load by default
+This distinction prevents older exploratory/Canon imagery from reintroducing a lighter or obsolete execution aesthetic.
+
+## Semantic core anchors
 
 | ID | Role | Artifact | What to preserve |
 |---|---|---|---|
@@ -26,8 +32,7 @@ These are **anchors, not ingredients that must all appear in every board**.
 | DVV-VIS-0241 | DIGITAL_APPLICATION | `tablero_de_interfaz_cósmica_divinivid.png` | contemporary application without tech/cyberpunk drift |
 
 ## Optional contract-specific anchors
-Load only when required.
-
+Load only when the exact contract needs them:
 - DVV-VIS-0075 — TRANSFORMATIVE_STRUCTURE
 - DVV-VIS-0089 — SPECIMEN_DUALITY
 - DVV-VIS-0129 — MEDIEVAL_BESTIARY
@@ -43,20 +48,25 @@ Load only when required.
 - DVV-VIS-0198 — ASSET_FAMILY_MAP
 
 ## Reference budget
-Default:
-- six core anchors;
-- one to three optional anchors.
+Per board:
+- 2–3 execution-style anchors from A11–A15;
+- 2–4 semantic/contract anchors from this file.
 
-Do not load the complete approved-support corpus by default.
+Do not load the whole approved-support corpus.
+
+## Authority split
+When two positive references differ:
+- **semantic meaning / role** → Visual Canon + this file;
+- **current surface treatment / tonal gravity / background dominance** → Execution Style Anchor Set + Surface Lock.
 
 ## Explicitly not positive references
 - rejected/composite generations;
 - current-round outputs before human approval;
-- conversation-only experimental web/mobile generations;
-- A16–A20 generations from 2026-09-21 that exhibited visual drift;
-- any material classified EXPERIMENT, AESTHETIC_DRIFT, NEGATIVE_CANON or SUPERSEDED_DUPLICATE.
+- off-plan web/mobile experiments;
+- both A16–A20 drift attempts from 2026-09-21;
+- EXPERIMENT, AESTHETIC_DRIFT, NEGATIVE_CANON or SUPERSEDED_DUPLICATE material.
 
 ## Critical rule
-**Recency has zero authority.**
+**Recency has zero authority; human-approved execution state has authority.**
 
-A recent board is not more authoritative than an older Canon anchor.
+A recent board cannot override A11–A15 style anchors unless it is individually approved and deliberately promoted.

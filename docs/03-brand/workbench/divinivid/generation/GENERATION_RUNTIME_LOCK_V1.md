@@ -9,6 +9,8 @@ depends_on:
   - DIVINIVID_100_MOODBOARD_EXPANSION_SPEC_V1.md
   - DIVINIVID_MOODBOARD_CONTRACTS_V1.yaml
   - CANON_ANCHOR_SET_V1.md
+  - EXECUTION_STYLE_ANCHOR_SET_V1.md
+  - SURFACE_LOCK_V1.md
   - CURRENT_GENERATION_STATE.yaml
 ---
 # DIVINIVID — Generation Runtime Lock V1
@@ -22,7 +24,7 @@ The core failure this lock prevents is:
 `generated output -> implicit positive reference -> next generation -> compounded drift`.
 
 Generation must instead run:
-`CURRENT STATE -> EXACT CONTRACT -> VISUAL CANON -> ANCHOR SET -> ANTI-CANON -> GENERATE -> QA -> HUMAN GATE -> STATE UPDATE`.
+`CURRENT STATE -> EXACT CONTRACT -> EXECUTION STYLE ANCHORS -> SURFACE LOCK -> VISUAL CANON -> SEMANTIC ANCHORS -> ANTI-CANON -> GENERATE -> QA -> HUMAN GATE -> STATE UPDATE`.
 
 ## 1. Absolute source hierarchy
 
@@ -30,11 +32,13 @@ For every expansion moodboard, authority order is:
 
 1. `CURRENT_GENERATION_STATE.yaml` — exact cursor and allowed next IDs.
 2. `DIVINIVID_MOODBOARD_CONTRACTS_V1.yaml` — exact board contract.
-3. `VISUAL_CANON_V1.md` — visual semantics and principle authority.
-4. `CANON_ANCHOR_SET_V1.md` — compact positive-reference set.
-5. `ANTI_CANON.md` — binding exclusions.
-6. `DIVINIVID_100_MOODBOARD_EXPANSION_SPEC_V1.md` — human-readable program context.
-7. Approved Support only when the exact contract requires additional evidence.
+3. `EXECUTION_STYLE_ANCHOR_SET_V1.md` — latest human-approved execution appearance; controls tonal gravity and rendering character.
+4. `SURFACE_LOCK_V1.md` — explicit dark-surface constraints.
+5. `VISUAL_CANON_V1.md` — semantic and principle authority.
+6. `CANON_ANCHOR_SET_V1.md` — principle/semantic positive references.
+7. `ANTI_CANON.md` — binding exclusions.
+8. `DIVINIVID_100_MOODBOARD_EXPANSION_SPEC_V1.md` — human-readable program context.
+9. Approved Support only when the exact contract requires additional evidence.
 
 No lower-authority source may override a higher-authority source.
 
@@ -83,7 +87,12 @@ Examples:
 
 ## 4. Positive image-reference policy
 
-Default positive image context is the compact Canon Anchor Set.
+Default positive image context is **not** the full Canon Anchor Set.
+
+For appearance, load 2–3 images from `EXECUTION_STYLE_ANCHOR_SET_V1.md`.
+For semantics/content, add only the Canon anchors required by the exact contract.
+
+If the image tool supports explicit reference selection, explicitly pass only those approved style anchors plus contract-specific Canon anchors. Do not rely on recent conversation imagery.
 
 Add board-specific visual references only when:
 - they are CANON or explicitly approved support;
@@ -91,8 +100,9 @@ Add board-specific visual references only when:
 - they do not displace the Style Lock.
 
 Maximum default reference load:
-- 6 core anchors;
-- plus 1–3 board-specific anchors.
+- 2–3 execution-style anchors;
+- 2–4 principle/semantic Canon anchors;
+- never the quarantined recent outputs.
 
 Do not inject the entire archive into a generation request.
 
@@ -182,6 +192,8 @@ Do not present a generated board as a valid round result until it passes:
 
 ### Gate B — Visual Canon fidelity
 - Style Lock preserved;
+- Surface Lock passes: first-glance canvas remains dark-dominant unless the exact contract explicitly authorizes a light study;
+- tonal/rendering character remains compatible with approved A11–A15 execution anchors without copying their content;
 - board topic did not become a new art direction;
 - Living Darkness/ivory/crimson/gold/ultramar roles remain semantic;
 - anatomy/entity/environment use is justified;
@@ -193,8 +205,19 @@ Check every hard warning in section 5.
 ### Gate D — Self-reference scan
 Confirm no unapproved recent generation influenced the board.
 
-### Gate E — Cardinality
+### Gate E — Surface fidelity
+Run `SURFACE_LOCK_V1.md`:
+- dark-dominant thumbnail test;
+- ivory takeover test;
+- human/statue shortcut test;
+- architecture/celestial shortcut test;
+- semantic color test.
+
+### Gate F — Cardinality
 Five contracts = five distinct files. A composite fails automatically.
+
+### Gate G — Tool isolation
+For a five-board round, use five independent generation calls inside the same execution turn when the generator cannot bind different contracts reliably inside one multi-output call. Each call must carry its own exact ID/contract and the same approved style anchor set.
 
 Possible internal result:
 - `PASS_TO_HUMAN`
@@ -226,7 +249,9 @@ A future agent must be able to resume generation by reading:
 1. this file;
 2. `CURRENT_GENERATION_STATE.yaml`;
 3. exact contracts;
-4. Canon Anchor Set;
-5. Visual Canon + Anti-Canon.
+4. Execution Style Anchor Set;
+5. Surface Lock;
+6. Canon Anchor Set;
+7. Visual Canon + Anti-Canon.
 
 The originating chat must not be required.
