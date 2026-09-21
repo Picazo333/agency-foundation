@@ -12,25 +12,53 @@ plan:
   specification_status: PLAN_LOCKED
 
 cursor:
-  last_human_accepted_id: A15
-  accepted_count: 15
-  next_round_id: R04
-  next_allowed_ids:
+  contiguous_contracts_accepted_through: A10
+  contiguous_accepted_count: 10
+  next_required_round_id: R03_RECOVERY
+  next_required_ids:
+    - A11
+    - A12
+    - A13
+    - A14
+    - A15
+  saturation_checkpoint_20_status: BLOCKED_CONTRACT_INTEGRITY
+  b01_b05_authorized: false
+
+human_approved_visual_evidence:
+  style_anchors:
+    - STYLE-S01
+    - STYLE-S02
+    - STYLE-S03
+    - STYLE-S04
+    - STYLE-S05
+  latest_round_visual_approval:
     - A16
     - A17
     - A18
     - A19
     - A20
-  saturation_checkpoint_after_acceptance: A20
+
+contract_validation:
+  A11: MISSING
+  A12: MISSING
+  A13: MISSING
+  A14: MISSING
+  A15: MISSING
+  A16: HOLD_PARTIAL_CONTRACT
+  A17: PASS_WITH_TRACEABILITY_CHECK
+  A18: HOLD_PARTIAL_CONTRACT
+  A19: HOLD_PARTIAL_CONTRACT
+  A20: HOLD_DEPENDENCY_BLOCKED
 
 current_round:
-  status: NEEDS_REGENERATION
+  status: RECOVERY_REQUIRED
   reason: >
-    Two A16-A20 attempts failed the execution-style/surface gate. The second attempt
-    remained visually competent but drifted toward exploratory ivory editorial surfaces
-    and also showed contract-ID/content mismatch. Neither attempt is approved.
+    Saturation audit found that the dark boards historically labeled A11-A15 are
+    approved execution-style evidence but do not match the locked contractual A11-A15.
+    Latest A16-A20 restored the approved surface, but several require targeted contract
+    completion and A20 cannot become authoritative until A11-A19 are reconciled.
   generation_authority: EXACT_CONTRACTS_PLUS_STYLE_SURFACE_LOCKS
-  positive_reference_policy: EXECUTION_STYLE_ANCHORS_A11_A15_PLUS_CONTRACT_SPECIFIC_CANON
+  positive_reference_policy: STYLE_S01_S05_PLUS_CONTRACT_SPECIFIC_CANON
   recent_unapproved_outputs_are_references: false
   generator_execution_mode: FIVE_INDEPENDENT_CALLS_ONE_ROUND
   default_surface: DARK_DOMINANT
@@ -38,34 +66,23 @@ current_round:
 approved_execution_style_anchor_library:
   path: /DIVINIVID/visual-generation/style-anchors-v1
   anchors:
-    A11: libfile_401f0ffcfc1081918a3cc1626f67c13e
-    A12: libfile_7b5095997a98819195d494905488dde6
-    A13: libfile_43f95a129c748191b9cf63973cc87419
-    A14: libfile_8f3654c044488191a64ffd989c7b893d
-    A15: libfile_3af4a1ead9d081918e312368a3569212
+    STYLE-S01: libfile_401f0ffcfc1081918a3cc1626f67c13e
+    STYLE-S02: libfile_7b5095997a98819195d494905488dde6
+    STYLE-S03: libfile_43f95a129c748191b9cf63973cc87419
+    STYLE-S04: libfile_8f3654c044488191a64ffd989c7b893d
+    STYLE-S05: libfile_3af4a1ead9d081918e312368a3569212
 
 quarantine:
   policy: DO_NOT_REFERENCE
   groups:
     - id: A16_A20_ATTEMPT_1_2026-09-21
       classification: AESTHETIC_DRIFT
-      reason: >
-        Ivory/white dominance, generic sacred-premium human/statue language,
-        halos/arches and topic-driven art-direction changes.
     - id: A16_A20_ATTEMPT_2_2026-09-21
       classification: AESTHETIC_DRIFT_AND_CONTRACT_MISMATCH
-      reason: >
-        Visually usable exploration, but surface remained too ivory/editorial relative
-        to the approved final dark execution style; board titles/content also did not
-        reliably bind to the exact A16-A20 contracts.
     - id: OFF_PLAN_WEB_MOBILE_EXPLORATIONS_2026-09-21
       classification: EXPERIMENT
-      reason: >
-        Useful application evidence but generated outside the locked 100-board cursor;
-        cannot substitute for contract IDs or become positive style anchors automatically.
     - id: FAILED_COMPOSITES_R02_R04
       classification: COMPOSITE_FAILURE
-      reason: five requested boards collapsed into one or repeated prior-round content.
 
 checkpoint_protocol:
   checkpoint_1: SHOW_EXACT_NEXT_5_IDS_AND_OBJECTIVES
@@ -82,6 +99,15 @@ pre_display_qa:
     - SELF_REFERENCE_SCAN
     - TOOL_ISOLATION
     - CARDINALITY_5_FILES
+
+recovery_sequence:
+  - GENERATE_CONTRACTUAL_A11_A15
+  - HUMAN_REVIEW_A11_A15
+  - COMPLETE_A16_A18_A19_CONTRACT_GAPS
+  - CONFIRM_A17_TRACEABILITY
+  - RECONCILE_A20
+  - RERUN_SATURATION_CHECKPOINT_20
+  - AUTHORIZE_B01_B05_ONLY_ON_PASS
 
 promotion:
   generated_default_status: EVIDENCE_PENDING
