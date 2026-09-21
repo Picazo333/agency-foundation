@@ -43,17 +43,20 @@ Completed:
 9. Execution Style Anchor Set V1 + Surface Lock V1 installed after a second drift incident; approved A11–A15 are now the explicit surface/style anchors.
 
 Current execution state:
-- last human-accepted cursor: `A15`;
-- next allowed round: `A16-A20`;
-- both A16-A20 attempts: quarantined; latest classified `AESTHETIC_DRIFT_AND_CONTRACT_MISMATCH` / do not reference;
-- off-plan web/mobile generations: `EXPERIMENT` / do not substitute for locked IDs;
+- Saturation Checkpoint 20/100 audit found a contract-lineage defect.
+- contiguous contract-valid cursor is currently `A10`;
+- five human-approved dark boards previously labeled A11-A15 are retained as execution-style anchors `STYLE-S01-S05`, not as program-contract completions;
+- latest A16-A20 have human visual approval, but A16/A18/A19 need targeted contract completion and A20 is dependency-blocked;
+- contractual A11-A15 must be generated before the 20/100 checkpoint can PASS;
+- B01-B05 are not yet authorized;
 - generation must use the `visual_generation` Noema context mode.
 
 Current work:
-1. regenerate A16-A20 from exact contracts + A11–A15 Execution Style Anchors + Surface Lock + contract-specific Canon anchors;
-2. perform pre-display QA before presenting them as valid candidates;
-3. after human acceptance of A20, run saturation checkpoint 20/100;
-4. continue the locked 100-board execution without off-plan substitutions.
+1. generate the actual contractual A11-A15 from exact contracts using STYLE-S01-S05 + Surface Lock;
+2. preserve the latest A16-A20 visual compositions while completing contract gaps in A16/A18/A19;
+3. reconcile A20 only after A11-A19 are contract-complete;
+4. rerun Saturation Checkpoint 20/100;
+5. authorize B01-B05 only on checkpoint PASS.
 
 Authority:
 - `docs/03-brand/workbench/divinivid/VISUAL_UNIVERSE_CHECKPOINT_2026-09-20.md`
@@ -135,9 +138,9 @@ Archive V1 establishes **277 image files + 4 legacy HTML artifacts**. Visual Can
 - business-model/ICP/positioning/pricing decisions still gated by real validation evidence.
 
 ## Next exact gate
-**Phase 4 — regenerate and human-review A16-A20 under Generation Runtime Lock V1 + Execution Style Anchor Set V1 + Surface Lock V1.**
+**Phase 4 — repair contract lineage and complete A11-A20 under Generation Runtime Lock V1 + Execution Style Anchor Set V1 + Surface Lock V1.**
 
 The 100-board specification gate is complete. Generation is authorized only through the locked cursor and exact contracts.
 
 Current sequence:
-`A16-A20 regeneration -> human acceptance -> saturation checkpoint 20/100 -> remaining 100-board execution -> Coverage Audit -> Production Specification -> Golden-set Pilot -> Asset Factory -> Brandbook -> Final QA/Release`.
+`contractual A11-A15 -> targeted A16/A18/A19 completion -> A20 reconciliation -> saturation checkpoint 20/100 -> B01-B05 -> remaining 100-board execution -> Coverage Audit -> Production Specification -> Golden-set Pilot -> Asset Factory -> Brandbook -> Final QA/Release`.
