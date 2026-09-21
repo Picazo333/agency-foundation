@@ -19,22 +19,24 @@ The execution-style anchors define **how the approved universe is currently rend
 
 ## Approved execution anchors
 
-These five boards were the last accepted dark execution family before the drift became material:
+These five boards were the last accepted dark execution family before the drift became material.
 
-| Program position | Artifact | Persistent Library locator | Role |
+**Important lineage correction (2026-09-21):** the conversation originally labeled these images A11-A15, but those labels collide with different locked program contracts. They are execution-style anchors only and are now assigned non-contract IDs STYLE-S01 through STYLE-S05. The underlying Library filenames are preserved for provenance.
+
+| Style anchor ID | Artifact | Persistent Library locator | Role |
 |---|---|---|---|
-| A11 | `canon_de_la_herencia_cósmica.png` | `/DIVINIVID/visual-generation/style-anchors-v1/A11_canon_de_la_herencia_cosmica.png` | dark master composition / family lineage |
-| A12 | `ecología_de_umbrales_y_portales.png` | `/DIVINIVID/visual-generation/style-anchors-v1/A12_ecologia_de_umbrales_y_portales.png` | dark thresholds / spatial depth |
-| A13 | `atlas_gótico_de_reliquias_y_contenedores.png` | `/DIVINIVID/visual-generation/style-anchors-v1/A13_atlas_reliquias_y_contenedores.png` | contained objects / dark material field |
-| A14 | `anatomía_geología_y_arquitectura_un_mismo_cuerpo.png` | `/DIVINIVID/visual-generation/style-anchors-v1/A14_anatomia_geologia_arquitectura.png` | anatomy-by-analogy / dark editorial field |
-| A15 | `continuidad_celular_luna_eclipse_y_mundo.png` | `/DIVINIVID/visual-generation/style-anchors-v1/A15_continuidad_celular_luna_eclipse_mundo.png` | dark celestial-material continuity |
+| STYLE-S01 | `canon_de_la_herencia_cósmica.png` | `/DIVINIVID/visual-generation/style-anchors-v1/A11_canon_de_la_herencia_cosmica.png` | dark master composition / family lineage |
+| STYLE-S02 | `ecología_de_umbrales_y_portales.png` | `/DIVINIVID/visual-generation/style-anchors-v1/A12_ecologia_de_umbrales_y_portales.png` | dark thresholds / spatial depth |
+| STYLE-S03 | `atlas_gótico_de_reliquias_y_contenedores.png` | `/DIVINIVID/visual-generation/style-anchors-v1/A13_atlas_reliquias_y_contenedores.png` | contained objects / dark material field |
+| STYLE-S04 | `anatomía_geología_y_arquitectura_un_mismo_cuerpo.png` | `/DIVINIVID/visual-generation/style-anchors-v1/A14_anatomia_geologia_arquitectura.png` | anatomy-by-analogy / dark editorial field |
+| STYLE-S05 | `continuidad_celular_luna_eclipse_y_mundo.png` | `/DIVINIVID/visual-generation/style-anchors-v1/A15_continuidad_celular_luna_eclipse_mundo.png` | dark celestial-material continuity |
 
 Stable Library backing IDs:
-- A11: `libfile_401f0ffcfc1081918a3cc1626f67c13e`
-- A12: `libfile_7b5095997a98819195d494905488dde6`
-- A13: `libfile_43f95a129c748191b9cf63973cc87419`
-- A14: `libfile_8f3654c044488191a64ffd989c7b893d`
-- A15: `libfile_3af4a1ead9d081918e312368a3569212`
+- STYLE-S01: `libfile_401f0ffcfc1081918a3cc1626f67c13e`
+- STYLE-S02: `libfile_7b5095997a98819195d494905488dde6`
+- STYLE-S03: `libfile_43f95a129c748191b9cf63973cc87419`
+- STYLE-S04: `libfile_8f3654c044488191a64ffd989c7b893d`
+- STYLE-S05: `libfile_3af4a1ead9d081918e312368a3569212`
 
 ## What these anchors lock
 
@@ -70,6 +72,6 @@ For each board:
 If the generation system supports explicit image references, pass only approved execution-style anchors + exact contract-specific Canon anchors. Do not rely on recent conversation imagery.
 
 ## Critical rule
-**Latest approved execution style outranks older positive references for surface treatment.**
+**Latest approved execution style outranks older positive references for surface treatment. STYLE-S01-S05 are not program-contract IDs and must never advance the 100-board cursor.**
 
 Older Canon anchors retain semantic authority, but they may not reintroduce an obsolete or exploratory surface treatment into the current execution phase.
