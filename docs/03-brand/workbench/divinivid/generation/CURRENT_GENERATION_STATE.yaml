@@ -1,5 +1,7 @@
 program_id: DIVINIVID-VUE-100-V1
 runtime_lock: GENERATION_RUNTIME_LOCK_V1
+surface_lock: SURFACE_LOCK_V1
+execution_style_anchors: EXECUTION_STYLE_ANCHOR_SET_V1
 updated: 2026-09-21
 human_authority: required
 
@@ -24,20 +26,38 @@ cursor:
 current_round:
   status: NEEDS_REGENERATION
   reason: >
-    Latest A16-A20 outputs were individually structured but introduced material
-    aesthetic drift away from the approved visual canon.
-  generation_authority: EXACT_CONTRACTS_ONLY
-  positive_reference_policy: CANON_ANCHOR_SET_ONLY_PLUS_CONTRACT_SPECIFIC_CANON
+    Two A16-A20 attempts failed the execution-style/surface gate. The second attempt
+    remained visually competent but drifted toward exploratory ivory editorial surfaces
+    and also showed contract-ID/content mismatch. Neither attempt is approved.
+  generation_authority: EXACT_CONTRACTS_PLUS_STYLE_SURFACE_LOCKS
+  positive_reference_policy: EXECUTION_STYLE_ANCHORS_A11_A15_PLUS_CONTRACT_SPECIFIC_CANON
   recent_unapproved_outputs_are_references: false
+  generator_execution_mode: FIVE_INDEPENDENT_CALLS_ONE_ROUND
+  default_surface: DARK_DOMINANT
+
+approved_execution_style_anchor_library:
+  path: /DIVINIVID/visual-generation/style-anchors-v1
+  anchors:
+    A11: libfile_401f0ffcfc1081918a3cc1626f67c13e
+    A12: libfile_7b5095997a98819195d494905488dde6
+    A13: libfile_43f95a129c748191b9cf63973cc87419
+    A14: libfile_8f3654c044488191a64ffd989c7b893d
+    A15: libfile_3af4a1ead9d081918e312368a3569212
 
 quarantine:
   policy: DO_NOT_REFERENCE
   groups:
-    - id: A16_A20_2026-09-21_DRIFT
+    - id: A16_A20_ATTEMPT_1_2026-09-21
       classification: AESTHETIC_DRIFT
       reason: >
-        Increased ivory/white dominance, generic sacred-premium human/statue language,
+        Ivory/white dominance, generic sacred-premium human/statue language,
         halos/arches and topic-driven art-direction changes.
+    - id: A16_A20_ATTEMPT_2_2026-09-21
+      classification: AESTHETIC_DRIFT_AND_CONTRACT_MISMATCH
+      reason: >
+        Visually usable exploration, but surface remained too ivory/editorial relative
+        to the approved final dark execution style; board titles/content also did not
+        reliably bind to the exact A16-A20 contracts.
     - id: OFF_PLAN_WEB_MOBILE_EXPLORATIONS_2026-09-21
       classification: EXPERIMENT
       reason: >
@@ -49,15 +69,18 @@ quarantine:
 
 checkpoint_protocol:
   checkpoint_1: SHOW_EXACT_NEXT_5_IDS_AND_OBJECTIVES
-  checkpoint_2: SHOW_FULL_TECHNICAL_CONTRACTS
-  checkpoint_3: GENERATE_EXACTLY_5_INDEPENDENT_BOARDS_AFTER_MANUAL_TRIGGER
+  checkpoint_2: SHOW_FULL_TECHNICAL_CONTRACTS_PLUS_STYLE_SURFACE_LOCK
+  checkpoint_3: GENERATE_5_INDEPENDENT_BOARDS_AFTER_MANUAL_TRIGGER
 
 pre_display_qa:
   required:
     - CONTRACT_FIDELITY
+    - EXECUTION_STYLE_ANCHOR_FIDELITY
+    - SURFACE_LOCK
     - VISUAL_CANON_FIDELITY
     - ANTI_CANON_SCAN
     - SELF_REFERENCE_SCAN
+    - TOOL_ISOLATION
     - CARDINALITY_5_FILES
 
 promotion:
