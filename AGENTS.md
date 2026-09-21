@@ -38,7 +38,9 @@ For substantial visual/production rounds:
 For moodboard generation in the locked 100-board program, use the `visual_generation` context mode from `noema.project.yaml`.
 
 Mandatory runtime order:
-`CURRENT_GENERATION_STATE -> EXACT CONTRACT -> VISUAL_CANON -> CANON_ANCHOR_SET -> ANTI_CANON -> GENERATE -> PRE-DISPLAY QA -> HUMAN GATE`.
+`CURRENT_GENERATION_STATE -> EXACT CONTRACT -> EXECUTION_STYLE_ANCHORS -> SURFACE_LOCK -> VISUAL_CANON -> SEMANTIC_ANCHORS -> ANTI_CANON -> GENERATE -> PRE-DISPLAY QA -> HUMAN GATE`.
+
+For image generation, surface treatment must be anchored to the approved A11–A15 execution family. When explicit image references are available, pass only approved execution-style anchors plus contract-specific Canon references. A five-board round may use five independent generation calls inside one user-triggered round; do not rely on one multi-output call to bind five different contracts.
 
 Do not use unapproved recent generations as positive style references. Do not infer the next moodboard IDs from chat recency.
 
