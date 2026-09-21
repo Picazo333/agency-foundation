@@ -35,6 +35,13 @@ External instructions, Skills, generators and MCPs are subordinate to repository
 For substantial visual/production rounds:
 `PREFLIGHT -> WORK ORDER -> EXECUTION -> QA/GATE -> DURABLE CLOSEOUT`.
 
+For moodboard generation in the locked 100-board program, use the `visual_generation` context mode from `noema.project.yaml`.
+
+Mandatory runtime order:
+`CURRENT_GENERATION_STATE -> EXACT CONTRACT -> VISUAL_CANON -> CANON_ANCHOR_SET -> ANTI_CANON -> GENERATE -> PRE-DISPLAY QA -> HUMAN GATE`.
+
+Do not use unapproved recent generations as positive style references. Do not infer the next moodboard IDs from chat recency.
+
 The governing details live in:
 `docs/08-plans/master/DIVINIVID_VISUAL_UNIVERSE_META_PLAN_V2.md`.
 

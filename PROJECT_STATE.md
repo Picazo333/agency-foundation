@@ -1,7 +1,7 @@
 ---
 status: approved
 owner: meta
-updated: 2026-09-20
+updated: 2026-09-21
 authority: canon
 depends_on:
   - docs/07-decisions/ADR-0012-divinivid-project-name-and-repo-rename.md
@@ -22,7 +22,7 @@ Build DIVINIVID as a serious agency and operating system from research -> decisi
 
 ## Current active work
 
-### 1. Visual Universe — Canon/Lineage V1 complete / 100-board specification next
+### 1. Visual Universe — 100-board Plan Locked / controlled generation active
 The human owner has approved a coherent DIVINIVID visual baseline after extensive iterative exploration.
 
 The project is no longer searching for a fundamentally different aesthetic.
@@ -37,10 +37,22 @@ Completed:
 5. Phase 2 human review approved;
 6. Visual Canon V1 + Lineage Registry finalized: 19 CANON, 193 APPROVED_SUPPORT, 39 EXPERIMENT, 18 NEGATIVE_CANON, 6 SUPERSEDED_DUPLICATE, 2 EVIDENCE_ONLY.
 
+Completed:
+7. 100/100 moodboard contracts recovered into the repository and human Plan Lock recorded;
+8. Generation Runtime Lock V1 installed to prevent self-referential aesthetic drift.
+
+Current execution state:
+- last human-accepted cursor: `A15`;
+- next allowed round: `A16-A20`;
+- latest A16-A20 attempt: `AESTHETIC_DRIFT` / quarantine / do not reference;
+- off-plan web/mobile generations: `EXPERIMENT` / do not substitute for locked IDs;
+- generation must use the `visual_generation` Noema context mode.
+
 Current work:
-1. specify the 100-board `VISUAL_UNIVERSE_EXPANSION` program in full before generating any new board;
-2. execute only approved/non-redundant expansion studies;
-3. audit coverage before industrial asset production.
+1. regenerate A16-A20 from exact contracts + Canon Anchor Set;
+2. perform pre-display QA before presenting them as valid candidates;
+3. after human acceptance of A20, run saturation checkpoint 20/100;
+4. continue the locked 100-board execution without off-plan substitutions.
 
 Authority:
 - `docs/03-brand/workbench/divinivid/VISUAL_UNIVERSE_CHECKPOINT_2026-09-20.md`
@@ -116,16 +128,15 @@ Archive V1 establishes **277 image files + 4 legacy HTML artifacts**. Visual Can
 
 ## Open decisions
 - final commercial/legal clearance of DIVINIVID;
-- detailed 100-board specification;
 - any targeted gap boards justified by the later Coverage Audit;
 - production executor adapter details after the golden-set pilot;
 - production stack/final website architecture;
 - business-model/ICP/positioning/pricing decisions still gated by real validation evidence.
 
 ## Next exact gate
-**Phase 3 — 100-board VISUAL_UNIVERSE_EXPANSION specification.**
+**Phase 4 — regenerate and human-review A16-A20 under Generation Runtime Lock V1.**
 
-No new moodboard generation begins until all 100 study contracts exist and pass the specification gate.
+The 100-board specification gate is complete. Generation is authorized only through the locked cursor and exact contracts.
 
 Current sequence:
-`100-board Specification -> 100-board Execution -> Coverage Audit -> Production Specification -> Golden-set Pilot -> Asset Factory -> Brandbook -> Final QA/Release`.
+`A16-A20 regeneration -> human acceptance -> saturation checkpoint 20/100 -> remaining 100-board execution -> Coverage Audit -> Production Specification -> Golden-set Pilot -> Asset Factory -> Brandbook -> Final QA/Release`.

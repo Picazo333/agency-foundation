@@ -78,6 +78,21 @@ sources_of_truth:
   anti_canon:
     scheme: repo
     locator: docs/03-brand/workbench/divinivid/ANTI_CANON.md
+  moodboard_expansion_spec_v1:
+    scheme: repo
+    locator: docs/03-brand/workbench/divinivid/generation/DIVINIVID_100_MOODBOARD_EXPANSION_SPEC_V1.md
+  moodboard_contracts_v1:
+    scheme: repo
+    locator: docs/03-brand/workbench/divinivid/generation/DIVINIVID_MOODBOARD_CONTRACTS_V1.yaml
+  generation_runtime_lock_v1:
+    scheme: repo
+    locator: docs/03-brand/workbench/divinivid/generation/GENERATION_RUNTIME_LOCK_V1.md
+  generation_state:
+    scheme: repo
+    locator: docs/03-brand/workbench/divinivid/generation/CURRENT_GENERATION_STATE.yaml
+  canon_anchor_set_v1:
+    scheme: repo
+    locator: docs/03-brand/workbench/divinivid/generation/CANON_ANCHOR_SET_V1.md
   asset_factory_brand_pack:
     scheme: repo
     locator: asset-factory/spec/01-brand-pack-contract.md
@@ -126,6 +141,18 @@ context:
         - repo://docs/07-decisions/index.md
         - repo://asset-factory/spec/01-brand-pack-contract.md
         - repo://asset-factory/spec/04-metadata-provenance-schema.md
+    visual_generation:
+      required:
+        - repo://docs/03-brand/workbench/divinivid/generation/CURRENT_GENERATION_STATE.yaml
+        - repo://docs/03-brand/workbench/divinivid/generation/DIVINIVID_MOODBOARD_CONTRACTS_V1.yaml
+        - repo://docs/03-brand/workbench/divinivid/generation/GENERATION_RUNTIME_LOCK_V1.md
+        - repo://docs/03-brand/workbench/divinivid/VISUAL_CANON_V1.md
+        - repo://docs/03-brand/workbench/divinivid/generation/CANON_ANCHOR_SET_V1.md
+        - repo://docs/03-brand/workbench/divinivid/ANTI_CANON.md
+      optional:
+        - repo://docs/03-brand/workbench/divinivid/generation/DIVINIVID_100_MOODBOARD_EXPANSION_SPEC_V1.md
+        - repo://docs/03-brand/workbench/divinivid/archive/VISUAL_CANON_REGISTRY_V1.csv
+        - repo://docs/03-brand/workbench/divinivid/archive/VISUAL_LINEAGE_REGISTRY_V1.csv
     recover:
       required:
         - repo://PROJECT_STATE.md

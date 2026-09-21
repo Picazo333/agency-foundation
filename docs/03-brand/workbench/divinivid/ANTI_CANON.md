@@ -1,7 +1,7 @@
 ---
 status: approved
 owner: brand
-updated: 2026-09-16
+updated: 2026-09-21
 authority: workbench
 depends_on:
   - BRAND_STATE.md
@@ -124,3 +124,32 @@ The Phase 3 Anti-Atlas should include carefully chosen real examples or syntheti
 10. modern medical anatomy branding.
 
 The Anti-Atlas exists to sharpen decisions, not to ridicule other styles.
+
+
+---
+
+# 6. 2026-09-21 drift incident — explicit hard warnings
+
+The A16–A20 generation attempt exposed a repeated generator drift toward a separate "sacred luxury editorial" aesthetic.
+
+Treat the following as **hard warnings unless the exact contract + Canon require the element semantically**:
+
+- generic skull;
+- decorative skeleton;
+- classical / Greco-Roman bust;
+- generic premium statue;
+- decorative halo;
+- angelic sculpture as sacred shorthand;
+- Gothic cathedral or arch used only for atmosphere;
+- moon/eclipse used only as dark ambience;
+- generic cloaked figure used only for solemnity;
+- anatomical bust/cutaway used only to signal "body";
+- ivory/white editorial takeover caused by a technical/audit topic.
+
+## Why this matters
+A technically themed board (accessibility, factory readiness, constraints, governance, etc.) is still a DIVINIVID board. The topic may change the **content**, but it must not silently create a new visual direction.
+
+## Positive-reference isolation
+Anti-Canon imagery must not be mixed into the positive generation reference set. Use Anti-Canon primarily as textual exclusions or in isolated QA comparison tasks.
+
+Unapproved recent generated boards are never style references.
