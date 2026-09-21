@@ -1,0 +1,28 @@
+harvest_id: harvest-20260921-divinivid-generation-authority-drift
+project_id: agency-foundation
+finding: >-
+  Generative visual systems need typed positive-reference authority: semantic canon,
+  latest approved execution-style anchors, and quarantined negative evidence must be
+  separated. Technical board content must not silently rewrite surface style, and
+  multi-contract generation should isolate contract binding when one call cannot do so reliably.
+evidence_refs:
+  - scheme: github
+    locator: Picazo333/agency-foundation/pull/30
+  - scheme: github
+    locator: Picazo333/agency-foundation/pull/31
+  - scheme: repo
+    locator: docs/03-brand/workbench/divinivid/generation/GENERATION_RUNTIME_LOCK_V1.md
+  - scheme: repo
+    locator: docs/03-brand/workbench/divinivid/generation/EXECUTION_STYLE_ANCHOR_SET_V1.md
+  - scheme: repo
+    locator: docs/03-brand/workbench/divinivid/generation/SURFACE_LOCK_V1.md
+scope: >-
+  Cross-project governance and reusable visual-production capability pattern; specific
+  DIVINIVID palette/surface thresholds remain project-local.
+confidence: high
+routes:
+  - noema
+  - skill-foundry
+  - eval
+confidentiality: INTERNAL
+status: CANDIDATE
