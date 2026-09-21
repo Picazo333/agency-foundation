@@ -1,0 +1,4059 @@
+program_id: DIVINIVID-VUE-100-V1
+status: PLAN_LOCKED
+date: '2026-09-20'
+authority_inputs:
+  visual_canon: VISUAL_CANON_V1.md
+  canon_registry: VISUAL_CANON_REGISTRY_V1.csv
+  lineage_registry: VISUAL_LINEAGE_REGISTRY_V1.csv
+  anti_canon: ANTI_CANON.md
+  metaplan: DIVINIVID_VISUAL_UNIVERSE_META_PLAN_V2.md
+  skill_mode: brand-visual-direction:VISUAL_UNIVERSE_EXPANSION
+global_contract:
+  format: one independent 16:9 moodboard; never a five-board composite
+  visual_authority: VISUAL_CANON_V1 + APPROVED_SUPPORT; NEGATIVE_CANON is binding anti-reference
+  base_palette: &id001
+  - near-absolute black
+  - ivory
+  - living crimson
+  conditional_palette: &id002
+    aged_gold: instrumentation, hierarchy, measurement, liturgical order
+    ultramar: selective; may become materially stronger only in medieval/bestiary/celestial systems
+  forbidden_drift: &id003
+  - generic dark academia
+  - parchment-everywhere treatment
+  - generic occult/tarot branding
+  - videogame dark-fantasy concept art
+  - cyan/neon
+  - grid-as-spectacle modernism
+  - AI-slop collage
+  - gore as shortcut for anatomy
+  - five requested boards collapsed into one composite
+  approval_logic: accepted only if the board adds declared new coverage; cosmetic variation does not count
+  lineage: every accepted board must declare canonical refs and downstream asset families unlocked
+  human_gate: material aesthetic promotion remains human-authoritative
+execution:
+  rounds: 20
+  boards_per_round: 5
+  generation_rule: Generate exactly five independent 16:9 boards per round.
+  acceptance: Only accepted boards count toward 100.
+  saturation_checkpoints_after:
+  - 20
+  - 40
+  - 60
+  - 80
+  saturation_metrics:
+  - accepted-new-coverage ratio
+  - redundancy/rejection trend
+  - overrepresented families
+  - underrepresented coverage cells
+  - remaining high-priority gaps
+  post_100: VISUAL_SYSTEM_COVERAGE audit; generate only justified gap boards.
+boards:
+- study_id: A01
+  title: Asset Ontology — First Principles
+  purpose: Define the full visual-family hierarchy from principle to reusable asset.
+  canonical_refs:
+  - DVV-VIS-0198
+  - DVV-VIS-0150
+  required_content:
+  - family tree covering structural, typographic, symbolic, specimen, entity, environment, motion and application assets
+  - parent/child inheritance markers
+  - which families are canonical versus support-derived
+  - shared semantic roles across families
+  - clear distinction between asset family, variant, state and application
+  - examples of one family instantiated at 3 scales
+  composition: large central taxonomy with peripheral exemplars; surgical labels; strong negative space
+  intensity_mode: H
+  target_media: system
+  anatomical_abstraction: selective
+  oneiric_intensity: controlled-high
+  motion_implication: implicit where relevant
+  outputs_unlocked: &id004
+  - asset ontology seed
+  - family IDs
+  - inheritance rules
+  exclusions:
+  - no decorative family names without production meaning
+  - no asset examples lacking taxonomy position
+  acceptance_criteria:
+  - all major visual families represented
+  - no duplicate sibling families
+  - hierarchy readable at a glance
+  sequence: 1
+  macrofamily: Asset Family Master Map
+  round: R01
+  format: one independent 16:9 moodboard; never a five-board composite
+  palette: *id001
+  conditional_palette: *id002
+  forbidden_drift: *id003
+  human_gate: material aesthetic promotion remains human-authoritative
+  status: SPECIFIED
+  required_new_coverage: *id004
+- study_id: A02
+  title: Semantic Role Matrix
+  purpose: Map what each family means, not merely what it looks like.
+  canonical_refs:
+  - DVV-VIS-0220
+  - DVV-VIS-0141
+  - DVV-VIS-0198
+  required_content:
+  - 'semantic roles: reveal, conceal, measure, sanctify, disturb, transform, classify, navigate, contain'
+  - visual family-to-role matrix
+  - primary versus secondary role
+  - illegal role/family combinations
+  - examples of one role expressed by multiple families
+  - examples of one family changing behavior by role
+  composition: matrix-first editorial board with restrained exemplars
+  intensity_mode: B/H
+  target_media: system
+  anatomical_abstraction: selective
+  oneiric_intensity: controlled-high
+  motion_implication: implicit where relevant
+  outputs_unlocked: &id005
+  - semantic tags
+  - asset metadata roles
+  - generation constraints
+  exclusions:
+  - no subjective adjectives as roles
+  - no role defined only by color
+  acceptance_criteria:
+  - roles are operational
+  - at least 8 roles
+  - illegal combinations explicitly shown
+  sequence: 2
+  macrofamily: Asset Family Master Map
+  round: R01
+  format: one independent 16:9 moodboard; never a five-board composite
+  palette: *id001
+  conditional_palette: *id002
+  forbidden_drift: *id003
+  human_gate: material aesthetic promotion remains human-authoritative
+  status: SPECIFIED
+  required_new_coverage: *id005
+- study_id: A03
+  title: Family Inheritance & Variant Logic
+  purpose: Define how child assets inherit rules without becoming clones.
+  canonical_refs:
+  - DVV-VIS-0198
+  - DVV-VIS-0220
+  required_content:
+  - base family → subtype → variant → state chain
+  - inherited palette/material constraints
+  - override rules
+  - 'variant axes: scale, density, state, medium, intensity'
+  - examples of permitted divergence
+  - examples of forbidden mutation
+  composition: genealogy diagrams plus 4 specimen family case studies
+  intensity_mode: H
+  target_media: system
+  anatomical_abstraction: selective
+  oneiric_intensity: controlled-high
+  motion_implication: implicit where relevant
+  outputs_unlocked: &id006
+  - variant-generation schema
+  - inheritance constraints
+  - naming logic
+  exclusions:
+  - no arbitrary variants
+  - no medium-specific rule embedded as universal rule
+  acceptance_criteria:
+  - inheritance and overrides are unambiguous
+  - at least 4 families tested
+  sequence: 3
+  macrofamily: Asset Family Master Map
+  round: R01
+  format: one independent 16:9 moodboard; never a five-board composite
+  palette: *id001
+  conditional_palette: *id002
+  forbidden_drift: *id003
+  human_gate: material aesthetic promotion remains human-authoritative
+  status: SPECIFIED
+  required_new_coverage: *id006
+- study_id: A04
+  title: Cross-Family Affinity Map
+  purpose: Show which families naturally combine and which should remain separate.
+  canonical_refs:
+  - DVV-VIS-0150
+  - DVV-VIS-0129
+  - DVV-VIS-0088
+  - DVV-VIS-0141
+  required_content:
+  - affinity graph across entities, specimens, environments, symbols, typography, annotation, UI
+  - strong, conditional and weak affinities
+  - three high-value composite recipes
+  - three combinations that create aesthetic drift
+  - relationship of sacred order to anomaly
+  - relationship of science layer to oneiric layer
+  composition: 'network map anchored by two poles: sacred order / living anomaly'
+  intensity_mode: H
+  target_media: system
+  anatomical_abstraction: selective
+  oneiric_intensity: controlled-high
+  motion_implication: implicit where relevant
+  outputs_unlocked: &id007
+  - composition recipes
+  - cross-family compatibility rules
+  exclusions:
+  - no every-family-connects-to-everything graph
+  - no generic moodboard clustering
+  acceptance_criteria:
+  - at least 10 meaningful relations
+  - anti-affinities explicit
+  - composite recipes production-useful
+  sequence: 4
+  macrofamily: Asset Family Master Map
+  round: R01
+  format: one independent 16:9 moodboard; never a five-board composite
+  palette: *id001
+  conditional_palette: *id002
+  forbidden_drift: *id003
+  human_gate: material aesthetic promotion remains human-authoritative
+  status: SPECIFIED
+  required_new_coverage: *id007
+- study_id: A05
+  title: Family Coverage Baseline
+  purpose: Create the pre-expansion map of what is already rich, shallow or missing.
+  canonical_refs:
+  - DVV-VIS-0198
+  required_content:
+  - current-family inventory from Canon/Support
+  - 'depth markers: rich / moderate / shallow'
+  - current medium coverage
+  - current state/variant coverage
+  - known negative evidence per family
+  - high-priority expansion targets for A06–A20
+  composition: audit-like atlas with evidence thumbnails and coverage bars
+  intensity_mode: B
+  target_media: system
+  anatomical_abstraction: selective
+  oneiric_intensity: controlled-high
+  motion_implication: implicit where relevant
+  outputs_unlocked: &id008
+  - coverage baseline
+  - expansion priority map
+  exclusions:
+  - no inference from file count alone
+  - no green status without evidence
+  acceptance_criteria:
+  - every major family receives depth status
+  - priority rationale explicit
+  sequence: 5
+  macrofamily: Asset Family Master Map
+  round: R01
+  format: one independent 16:9 moodboard; never a five-board composite
+  palette: *id001
+  conditional_palette: *id002
+  forbidden_drift: *id003
+  human_gate: material aesthetic promotion remains human-authoritative
+  status: SPECIFIED
+  required_new_coverage: *id008
+- study_id: A06
+  title: State Systems Across Families
+  purpose: Define dormant, active, selected, transformed, archived and exceptional states across asset classes.
+  canonical_refs:
+  - DVV-VIS-0135
+  - DVV-VIS-0241
+  - DVV-VIS-0129
+  required_content:
+  - state vocabulary shared across UI, entities, specimens and symbols
+  - visual deltas by state
+  - state inheritance rules
+  - static and motion expression
+  - reduced-motion equivalent
+  - invalid state combinations
+  composition: horizontal state sequences for 5 asset families
+  intensity_mode: H
+  target_media: system
+  anatomical_abstraction: selective
+  oneiric_intensity: controlled-high
+  motion_implication: implicit where relevant
+  outputs_unlocked: &id009
+  - state taxonomy
+  - state-variant production orders
+  exclusions:
+  - no motion-only state meaning
+  - no unexplained color-only state
+  acceptance_criteria:
+  - states remain legible statically
+  - cross-family semantics consistent
+  sequence: 6
+  macrofamily: Asset Family Master Map
+  round: R02
+  format: one independent 16:9 moodboard; never a five-board composite
+  palette: *id001
+  conditional_palette: *id002
+  forbidden_drift: *id003
+  human_gate: material aesthetic promotion remains human-authoritative
+  status: SPECIFIED
+  required_new_coverage: *id009
+- study_id: A07
+  title: A/B/H Intensity Translation Atlas
+  purpose: Formalize Dramatic, Abyssal and Hybrid intensity across all major families.
+  canonical_refs:
+  - DVV-VIS-0242
+  - DVV-VIS-0150
+  - DVV-VIS-0220
+  required_content:
+  - same asset family in A, B and H
+  - changes in scale, density, image load, crimson, gold, motion and negative space
+  - intensity rules for UI versus illustration
+  - when H switches toward A or B
+  - 'anti-pattern: B becoming generic minimalism'
+  - 'anti-pattern: A becoming ornamental overload'
+  composition: three-column A/B/H comparative atlas
+  intensity_mode: A/B/H
+  target_media: system
+  anatomical_abstraction: selective
+  oneiric_intensity: controlled-high
+  motion_implication: implicit where relevant
+  outputs_unlocked: &id010
+  - intensity tokens
+  - family-specific intensity rules
+  exclusions:
+  - no three unrelated art directions
+  - no ceding identity in B mode
+  acceptance_criteria:
+  - same DNA visible in all three modes
+  - differences operationally specified
+  sequence: 7
+  macrofamily: Asset Family Master Map
+  round: R02
+  format: one independent 16:9 moodboard; never a five-board composite
+  palette: *id001
+  conditional_palette: *id002
+  forbidden_drift: *id003
+  human_gate: material aesthetic promotion remains human-authoritative
+  status: SPECIFIED
+  required_new_coverage: *id010
+- study_id: A08
+  title: Material Behavior Atlas
+  purpose: Map black, ivory, crimson, gold, ultramar and physical material behaviors across families.
+  canonical_refs:
+  - DVV-VIS-0220
+  - DVV-VIS-0136
+  required_content:
+  - black as absorption/void
+  - ivory as field/revelation
+  - crimson as matter/signal
+  - gold as instrument/order
+  - ultramar as selective celestial/manuscript domain
+  - stone, paper, vellum, metal, cloth translations
+  - digital equivalents without fake-vintage filter
+  composition: material swatches + macro visual exemplars + usage matrix
+  intensity_mode: H
+  target_media: system
+  anatomical_abstraction: selective
+  oneiric_intensity: controlled-high
+  motion_implication: implicit where relevant
+  outputs_unlocked: &id011
+  - material tokens
+  - surface behaviors
+  - print/digital translation rules
+  exclusions:
+  - no texture pasted indiscriminately
+  - no ultramar as universal accent
+  acceptance_criteria:
+  - each material has semantic role and usage limit
+  sequence: 8
+  macrofamily: Asset Family Master Map
+  round: R02
+  format: one independent 16:9 moodboard; never a five-board composite
+  palette: *id001
+  conditional_palette: *id002
+  forbidden_drift: *id003
+  human_gate: material aesthetic promotion remains human-authoritative
+  status: SPECIFIED
+  required_new_coverage: *id011
+- study_id: A09
+  title: Scale Translation System
+  purpose: Define how families survive from micro-icon to environmental scale.
+  canonical_refs:
+  - DVV-VIS-0145
+  - DVV-VIS-0241
+  - DVV-VIS-0093
+  required_content:
+  - micro / component / page / environment scale bands
+  - detail reduction rules
+  - stroke and texture simplification
+  - entity silhouette thresholds
+  - annotation density by scale
+  - negative-space compensation
+  - physical viewing-distance examples
+  composition: scale ladder with same motifs repeated at 4–5 scales
+  intensity_mode: H
+  target_media: system
+  anatomical_abstraction: selective
+  oneiric_intensity: controlled-high
+  motion_implication: implicit where relevant
+  outputs_unlocked: &id012
+  - responsive asset variants
+  - minimum-detail rules
+  - environmental variants
+  exclusions:
+  - no tiny ornate assets that collapse
+  - no scaling by percentage alone
+  acceptance_criteria:
+  - meaning preserved across scales
+  - simplification explicit
+  sequence: 9
+  macrofamily: Asset Family Master Map
+  round: R02
+  format: one independent 16:9 moodboard; never a five-board composite
+  palette: *id001
+  conditional_palette: *id002
+  forbidden_drift: *id003
+  human_gate: material aesthetic promotion remains human-authoritative
+  status: SPECIFIED
+  required_new_coverage: *id012
+- study_id: A10
+  title: Transformation Grammar Between Families
+  purpose: 'Define sanctioned morphs: cell→moon, bone→landscape, vessel→world, symbol→portal.'
+  canonical_refs:
+  - DVV-VIS-0075
+  - DVV-VIS-0088
+  - DVV-VIS-0213
+  required_content:
+  - at least 8 sanctioned transformation pairs
+  - semantic reason for each transform
+  - intermediate-state logic
+  - static keyframes
+  - motion compatibility
+  - transformations explicitly forbidden
+  - rules preventing arbitrary surreal morphing
+  composition: transformation atlas with before/intermediate/after triptychs
+  intensity_mode: A/H
+  target_media: system
+  anatomical_abstraction: selective
+  oneiric_intensity: controlled-high
+  motion_implication: implicit where relevant
+  outputs_unlocked: &id013
+  - transformation recipes
+  - motion-ready asset pairings
+  exclusions:
+  - no arbitrary morph because visually interesting
+  - no gore literalism
+  acceptance_criteria:
+  - each morph carries meaning
+  - intermediate states plausible within DIVINIVID logic
+  sequence: 10
+  macrofamily: Asset Family Master Map
+  round: R02
+  format: one independent 16:9 moodboard; never a five-board composite
+  palette: *id001
+  conditional_palette: *id002
+  forbidden_drift: *id003
+  human_gate: material aesthetic promotion remains human-authoritative
+  status: SPECIFIED
+  required_new_coverage: *id013
+- study_id: A11
+  title: Motion Affordance by Asset Family
+  purpose: Define what can move, how much, and why.
+  canonical_refs:
+  - DVV-VIS-0135
+  - DVV-VIS-0185
+  required_content:
+  - motion affordance levels for structural, symbolic, entity, specimen, environment, typography assets
+  - allowed verbs per family
+  - amplitude limits
+  - idle versus event-driven behavior
+  - reduced-motion mapping
+  - motion anti-patterns
+  composition: matrix + six short storyboard strips
+  intensity_mode: H
+  target_media: system
+  anatomical_abstraction: selective
+  oneiric_intensity: controlled-high
+  motion_implication: implicit where relevant
+  outputs_unlocked: &id014
+  - motion metadata
+  - family motion constraints
+  exclusions:
+  - no continuous ambient motion everywhere
+  - no motion without semantic trigger
+  acceptance_criteria:
+  - family-specific verbs and limits explicit
+  sequence: 11
+  macrofamily: Asset Family Master Map
+  round: R03
+  format: one independent 16:9 moodboard; never a five-board composite
+  palette: *id001
+  conditional_palette: *id002
+  forbidden_drift: *id003
+  human_gate: material aesthetic promotion remains human-authoritative
+  status: SPECIFIED
+  required_new_coverage: *id014
+- study_id: A12
+  title: Lifecycle & Version States
+  purpose: Show asset birth, approval, use, mutation, deprecation and supersession visually.
+  canonical_refs:
+  - DVV-VIS-0198
+  - DVV-VIS-0141
+  required_content:
+  - candidate → approved → canonical/support → superseded → deprecated
+  - visual distinction in registries and brandbook
+  - variant version labels
+  - lineage arrows
+  - deprecation without deletion
+  - negative-evidence preservation
+  composition: archival/process atlas styled as DIVINIVID instrumentation
+  intensity_mode: B
+  target_media: system
+  anatomical_abstraction: selective
+  oneiric_intensity: controlled-high
+  motion_implication: implicit where relevant
+  outputs_unlocked: &id015
+  - asset lifecycle schema
+  - version-label system
+  - archive UI assets
+  exclusions:
+  - no confusing workflow status with visual state
+  acceptance_criteria:
+  - every lifecycle state distinct and non-destructive
+  sequence: 12
+  macrofamily: Asset Family Master Map
+  round: R03
+  format: one independent 16:9 moodboard; never a five-board composite
+  palette: *id001
+  conditional_palette: *id002
+  forbidden_drift: *id003
+  human_gate: material aesthetic promotion remains human-authoritative
+  status: SPECIFIED
+  required_new_coverage: *id015
+- study_id: A13
+  title: Provenance & Rights Visualization
+  purpose: Create a visual grammar for source, generated, derivative, licensed and restricted assets.
+  canonical_refs:
+  - DVV-VIS-0141
+  - DVV-VIS-0145
+  required_content:
+  - provenance badges
+  - source-chain diagrams
+  - rights status
+  - human approval marker
+  - generator/executor marker
+  - derivative lineage
+  - restricted/no-export state
+  - brandbook representation
+  composition: technical codex with badges and lineage traces
+  intensity_mode: B
+  target_media: system
+  anatomical_abstraction: selective
+  oneiric_intensity: controlled-high
+  motion_implication: implicit where relevant
+  outputs_unlocked: &id016
+  - provenance UI
+  - rights metadata icons
+  - asset registry visuals
+  exclusions:
+  - no decorative legal symbols
+  - no implied rights clearance
+  acceptance_criteria:
+  - status readable without color alone
+  - provenance chain unambiguous
+  sequence: 13
+  macrofamily: Asset Family Master Map
+  round: R03
+  format: one independent 16:9 moodboard; never a five-board composite
+  palette: *id001
+  conditional_palette: *id002
+  forbidden_drift: *id003
+  human_gate: material aesthetic promotion remains human-authoritative
+  status: SPECIFIED
+  required_new_coverage: *id016
+- study_id: A14
+  title: Negative Canon Atlas
+  purpose: Turn failures into reusable anti-pattern evidence.
+  canonical_refs:
+  - DVV-VIS-0150
+  - DVV-VIS-0135
+  required_content:
+  - five-in-one composite failure
+  - dark-academia/parchment drift
+  - generic fantasy
+  - overcompressed documentation
+  - AI-slop collage
+  - gore shortcut
+  - grid spectacle
+  - before/after corrected examples
+  - failure signature and prevention rule
+  composition: anti-canon specimen wall with redacted/rejected stamps and corrected counterpart
+  intensity_mode: B/H
+  target_media: system
+  anatomical_abstraction: selective
+  oneiric_intensity: controlled-high
+  motion_implication: implicit where relevant
+  outputs_unlocked: &id017
+  - negative-evidence cards
+  - QA anti-pattern library
+  exclusions:
+  - do not glorify rejected style
+  - no new negative styles invented
+  acceptance_criteria:
+  - each failure maps to prevention rule
+  - corrected counterpart shown where available
+  sequence: 14
+  macrofamily: Asset Family Master Map
+  round: R03
+  format: one independent 16:9 moodboard; never a five-board composite
+  palette: *id001
+  conditional_palette: *id002
+  forbidden_drift: *id003
+  human_gate: material aesthetic promotion remains human-authoritative
+  status: SPECIFIED
+  required_new_coverage: *id017
+- study_id: A15
+  title: Family Dependency DAG
+  purpose: Map which families depend on typography, color, symbols, structure, illustration or motion.
+  canonical_refs:
+  - DVV-VIS-0198
+  - DVV-VIS-0227
+  required_content:
+  - dependency graph
+  - hard versus soft dependencies
+  - production ordering constraints
+  - shared primitives
+  - circular dependency traps
+  - minimum viable inputs for each family
+  - factory-wave implications
+  composition: clean dependency DAG with evidence thumbnails at nodes
+  intensity_mode: B
+  target_media: system
+  anatomical_abstraction: selective
+  oneiric_intensity: controlled-high
+  motion_implication: implicit where relevant
+  outputs_unlocked: &id018
+  - production dependency graph
+  - wave-planning inputs
+  exclusions:
+  - no cycles hidden by layout
+  - no executor-specific dependencies
+  acceptance_criteria:
+  - DAG valid
+  - factory ordering actionable
+  sequence: 15
+  macrofamily: Asset Family Master Map
+  round: R03
+  format: one independent 16:9 moodboard; never a five-board composite
+  palette: *id001
+  conditional_palette: *id002
+  forbidden_drift: *id003
+  human_gate: material aesthetic promotion remains human-authoritative
+  status: SPECIFIED
+  required_new_coverage: *id018
+- study_id: A16
+  title: Accessibility by Family
+  purpose: Define accessibility obligations at the asset-family level.
+  canonical_refs:
+  - DVV-VIS-0241
+  - DVV-VIS-0220
+  - DVV-VIS-0135
+  required_content:
+  - contrast implications
+  - non-color state encoding
+  - alt-text class
+  - decorative versus informative assets
+  - reduced-motion alternatives
+  - small-size legibility
+  - text-in-image prohibition rules
+  - screen-reader relationship for complex visuals
+  composition: accessibility matrix with visual examples
+  intensity_mode: B
+  target_media: system
+  anatomical_abstraction: selective
+  oneiric_intensity: controlled-high
+  motion_implication: implicit where relevant
+  outputs_unlocked: &id019
+  - accessibility metadata
+  - family QA rules
+  exclusions:
+  - no accessibility as afterthought
+  - no WCAG-only checkbox aesthetic
+  acceptance_criteria:
+  - each digital family has concrete obligation
+  sequence: 16
+  macrofamily: Asset Family Master Map
+  round: R04
+  format: one independent 16:9 moodboard; never a five-board composite
+  palette: *id001
+  conditional_palette: *id002
+  forbidden_drift: *id003
+  human_gate: material aesthetic promotion remains human-authoritative
+  status: SPECIFIED
+  required_new_coverage: *id019
+- study_id: A17
+  title: Cross-Family Composition Recipes
+  purpose: Create repeatable high-quality recipes for combining 2–4 families.
+  canonical_refs:
+  - DVV-VIS-0150
+  - DVV-VIS-0088
+  - DVV-VIS-0129
+  - DVV-VIS-0141
+  required_content:
+  - hero recipe
+  - editorial spread recipe
+  - UI ritual-state recipe
+  - data/diagram recipe
+  - physical artifact recipe
+  - foreground/background hierarchy
+  - color role limits
+  - density balance
+  - A/B/H variants
+  composition: five large recipes with exploded layer diagrams
+  intensity_mode: H
+  target_media: system
+  anatomical_abstraction: selective
+  oneiric_intensity: controlled-high
+  motion_implication: implicit where relevant
+  outputs_unlocked: &id020
+  - composition templates
+  - layer stacks
+  - brief templates
+  exclusions:
+  - no decorative stacking
+  - no more than four major visual voices per recipe
+  acceptance_criteria:
+  - recipes repeatable across content
+  - hierarchy survives content substitution
+  sequence: 17
+  macrofamily: Asset Family Master Map
+  round: R04
+  format: one independent 16:9 moodboard; never a five-board composite
+  palette: *id001
+  conditional_palette: *id002
+  forbidden_drift: *id003
+  human_gate: material aesthetic promotion remains human-authoritative
+  status: SPECIFIED
+  required_new_coverage: *id020
+- study_id: A18
+  title: Constraint & Exception Atlas
+  purpose: Define where canonical rules may bend and how exceptions are recorded.
+  canonical_refs:
+  - DVV-VIS-0150
+  - DVV-VIS-0220
+  required_content:
+  - hard invariants
+  - bounded variables
+  - contextual exceptions
+  - one-off campaign exception
+  - physical-production exception
+  - accessibility exception
+  - what requires human approval
+  - what may be automated
+  composition: rule hierarchy board with exception case studies
+  intensity_mode: B/H
+  target_media: system
+  anatomical_abstraction: selective
+  oneiric_intensity: controlled-high
+  motion_implication: implicit where relevant
+  outputs_unlocked: &id021
+  - governance rules
+  - exception schema
+  exclusions:
+  - no loophole that allows full aesthetic reset
+  acceptance_criteria:
+  - hard/soft rules visually distinct
+  - authority explicit
+  sequence: 18
+  macrofamily: Asset Family Master Map
+  round: R04
+  format: one independent 16:9 moodboard; never a five-board composite
+  palette: *id001
+  conditional_palette: *id002
+  forbidden_drift: *id003
+  human_gate: material aesthetic promotion remains human-authoritative
+  status: SPECIFIED
+  required_new_coverage: *id021
+- study_id: A19
+  title: Factory Readiness by Family
+  purpose: Assess what each family needs before independent SVG/vector production.
+  canonical_refs:
+  - DVV-VIS-0198
+  - DVV-VIS-0145
+  required_content:
+  - vector suitability
+  - raster/texture dependencies
+  - layer requirements
+  - variant count
+  - motion readiness
+  - responsive simplification
+  - QA type
+  - human review risk
+  - pilot priority
+  composition: production-readiness matrix with risk markers
+  intensity_mode: B
+  target_media: system
+  anatomical_abstraction: selective
+  oneiric_intensity: controlled-high
+  motion_implication: implicit where relevant
+  outputs_unlocked: &id022
+  - factory planning matrix
+  - pilot candidate shortlist
+  exclusions:
+  - no claim of readiness from moodboard quality alone
+  acceptance_criteria:
+  - every family gets production requirements and risk level
+  sequence: 19
+  macrofamily: Asset Family Master Map
+  round: R04
+  format: one independent 16:9 moodboard; never a five-board composite
+  palette: *id001
+  conditional_palette: *id002
+  forbidden_drift: *id003
+  human_gate: material aesthetic promotion remains human-authoritative
+  status: SPECIFIED
+  required_new_coverage: *id022
+- study_id: A20
+  title: Asset Family Master Atlas V2
+  purpose: Synthesize A01–A19 into the authoritative family universe map.
+  canonical_refs:
+  - DVV-VIS-0198
+  - DVV-VIS-0150
+  required_content:
+  - final ontology
+  - semantic roles
+  - intensity
+  - material
+  - scale
+  - state
+  - motion
+  - dependency
+  - accessibility
+  - production readiness
+  - negative-evidence hooks
+  - visual examples for each top-level family
+  composition: monumental master atlas; central system map plus tightly edited supporting panels
+  intensity_mode: H
+  target_media: system
+  anatomical_abstraction: selective
+  oneiric_intensity: controlled-high
+  motion_implication: implicit where relevant
+  outputs_unlocked: &id023
+  - Asset Family Master Map V2
+  - handoff to Structural and Illustration libraries
+  exclusions:
+  - no new family introduced without evidence
+  - no unresolved duplicate taxonomy
+  acceptance_criteria:
+  - all A-series insights reconciled
+  - usable as single orientation board
+  sequence: 20
+  macrofamily: Asset Family Master Map
+  round: R04
+  format: one independent 16:9 moodboard; never a five-board composite
+  palette: *id001
+  conditional_palette: *id002
+  forbidden_drift: *id003
+  human_gate: material aesthetic promotion remains human-authoritative
+  status: SPECIFIED
+  required_new_coverage: *id023
+- study_id: B01
+  title: Frame & Border Families
+  purpose: Define reusable frames from surgical/editorial to liturgical/organic.
+  canonical_refs:
+  - DVV-VIS-0141
+  - DVV-VIS-0145
+  required_content:
+  - thin instrument frame
+  - ivory field frame
+  - aged-gold liturgical frame
+  - organic membrane frame
+  - crimson fracture frame
+  - corner behaviors
+  - open/closed variants
+  - A/B/H density variants
+  composition: specimen-sheet of frame families with dimension callouts
+  intensity_mode: H
+  target_media: system
+  anatomical_abstraction: selective
+  oneiric_intensity: controlled-high
+  motion_implication: implicit where relevant
+  outputs_unlocked: &id024
+  - SVG frame families
+  - responsive frame variants
+  exclusions:
+  - no ornamental border for ornament's sake
+  - no medieval decoration on all frames
+  acceptance_criteria:
+  - at least 5 distinct functional families
+  - corners and joins defined
+  sequence: 21
+  macrofamily: Structural Asset Library
+  round: R05
+  format: one independent 16:9 moodboard; never a five-board composite
+  palette: *id001
+  conditional_palette: *id002
+  forbidden_drift: *id003
+  human_gate: material aesthetic promotion remains human-authoritative
+  status: SPECIFIED
+  required_new_coverage: *id024
+- study_id: B02
+  title: Grid & Spatial Skeletons
+  purpose: Build invisible support grids that preserve tension without becoming modernist spectacle.
+  canonical_refs:
+  - DVV-VIS-0227
+  - DVV-VIS-0241
+  required_content:
+  - editorial asymmetry grid
+  - scientific plate grid
+  - web hero grid
+  - mobile grid
+  - dense atlas grid
+  - grid-breaking rules
+  - negative-space zones
+  - A/B/H spacing behavior
+  composition: overlay diagrams on representative compositions
+  intensity_mode: B/H
+  target_media: system
+  anatomical_abstraction: selective
+  oneiric_intensity: controlled-high
+  motion_implication: implicit where relevant
+  outputs_unlocked: &id025
+  - layout grids
+  - CSS/grid tokens
+  - print grid templates
+  exclusions:
+  - no visible-grid aesthetic
+  - no rigid symmetry as default
+  acceptance_criteria:
+  - grids support hierarchy and tension
+  - break rules explicit
+  sequence: 22
+  macrofamily: Structural Asset Library
+  round: R05
+  format: one independent 16:9 moodboard; never a five-board composite
+  palette: *id001
+  conditional_palette: *id002
+  forbidden_drift: *id003
+  human_gate: material aesthetic promotion remains human-authoritative
+  status: SPECIFIED
+  required_new_coverage: *id025
+- study_id: B03
+  title: Thresholds, Portals & Openings
+  purpose: Systematize structural openings as reusable composition assets.
+  canonical_refs:
+  - DVV-VIS-0093
+  - DVV-VIS-0213
+  required_content:
+  - arch/portal families
+  - circular aperture
+  - membrane opening
+  - split/reveal slit
+  - eclipse portal
+  - depth layers
+  - interaction/motion states
+  - small/large scale versions
+  composition: portal atlas with section cuts and front views
+  intensity_mode: A/H
+  target_media: system
+  anatomical_abstraction: selective
+  oneiric_intensity: controlled-high
+  motion_implication: implicit where relevant
+  outputs_unlocked: &id026
+  - portal SVGs
+  - transition masks
+  - section dividers
+  exclusions:
+  - no generic gothic arches as shortcut
+  acceptance_criteria:
+  - each threshold has structural and semantic purpose
+  sequence: 23
+  macrofamily: Structural Asset Library
+  round: R05
+  format: one independent 16:9 moodboard; never a five-board composite
+  palette: *id001
+  conditional_palette: *id002
+  forbidden_drift: *id003
+  human_gate: material aesthetic promotion remains human-authoritative
+  status: SPECIFIED
+  required_new_coverage: *id026
+- study_id: B04
+  title: Dividers, Rules & Fracture Lines
+  purpose: Create line systems for order, rupture and transition.
+  canonical_refs:
+  - DVV-VIS-0145
+  - DVV-VIS-0220
+  required_content:
+  - ivory editorial rules
+  - gold measurement rules
+  - crimson fracture lines
+  - organic capillary dividers
+  - section separators
+  - responsive shortening/stacking
+  - motion draw-on behavior
+  composition: horizontal/vertical line library with application snippets
+  intensity_mode: B/H
+  target_media: system
+  anatomical_abstraction: selective
+  oneiric_intensity: controlled-high
+  motion_implication: implicit where relevant
+  outputs_unlocked: &id027
+  - divider SVGs
+  - rule tokens
+  - motion line assets
+  exclusions:
+  - no ornamental squiggles
+  - no random blood-like splashes
+  acceptance_criteria:
+  - line family meanings clear
+  - works at micro and page scale
+  sequence: 24
+  macrofamily: Structural Asset Library
+  round: R05
+  format: one independent 16:9 moodboard; never a five-board composite
+  palette: *id001
+  conditional_palette: *id002
+  forbidden_drift: *id003
+  human_gate: material aesthetic promotion remains human-authoritative
+  status: SPECIFIED
+  required_new_coverage: *id027
+- study_id: B05
+  title: Margins, Marginalia & Edge Zones
+  purpose: Define how secondary information and creatures inhabit edges.
+  canonical_refs:
+  - DVV-VIS-0129
+  - DVV-VIS-0141
+  required_content:
+  - clean editorial margin
+  - annotated scientific margin
+  - illuminated manuscript margin
+  - liminal-creature margin
+  - edge overflow rules
+  - safe zones
+  - mobile adaptation
+  - physical print bleed behavior
+  composition: page-edge studies, not central compositions
+  intensity_mode: H
+  target_media: system
+  anatomical_abstraction: selective
+  oneiric_intensity: controlled-high
+  motion_implication: implicit where relevant
+  outputs_unlocked: &id028
+  - margin templates
+  - marginalia placement rules
+  - print edge assets
+  exclusions:
+  - no cluttering every edge
+  - no default parchment
+  acceptance_criteria:
+  - central hierarchy remains primary
+  - edge behavior repeatable
+  sequence: 25
+  macrofamily: Structural Asset Library
+  round: R05
+  format: one independent 16:9 moodboard; never a five-board composite
+  palette: *id001
+  conditional_palette: *id002
+  forbidden_drift: *id003
+  human_gate: material aesthetic promotion remains human-authoritative
+  status: SPECIFIED
+  required_new_coverage: *id028
+- study_id: B06
+  title: Containers, Chambers & Vessels
+  purpose: Turn specimen containment into reusable structural UI/editorial assets.
+  canonical_refs:
+  - DVV-VIS-0089
+  - DVV-VIS-0088
+  required_content:
+  - circle/plate
+  - capsule
+  - dual chamber
+  - vial
+  - hourglass
+  - irregular vessel
+  - content-safe zones
+  - label attachment
+  - state variants
+  - motion-ready internal layer
+  composition: container library with exploded construction diagrams
+  intensity_mode: H
+  target_media: system
+  anatomical_abstraction: selective
+  oneiric_intensity: controlled-high
+  motion_implication: implicit where relevant
+  outputs_unlocked: &id029
+  - SVG containers
+  - content masks
+  - specimen components
+  exclusions:
+  - no literal lab UI aesthetic
+  - no arbitrary glassmorphism
+  acceptance_criteria:
+  - containers support content and imagery
+  - geometry edit-friendly
+  sequence: 26
+  macrofamily: Structural Asset Library
+  round: R06
+  format: one independent 16:9 moodboard; never a five-board composite
+  palette: *id001
+  conditional_palette: *id002
+  forbidden_drift: *id003
+  human_gate: material aesthetic promotion remains human-authoritative
+  status: SPECIFIED
+  required_new_coverage: *id029
+- study_id: B07
+  title: Cards, Panels & Content Shells
+  purpose: Translate DIVINIVID into repeatable digital content containers.
+  canonical_refs:
+  - DVV-VIS-0241
+  - DVV-VIS-0242
+  required_content:
+  - quiet abyssal card
+  - dramatic specimen card
+  - annotation card
+  - entity card
+  - metric/data card
+  - hover/selected/expanded states
+  - responsive stacking
+  - density modes
+  composition: UI component atlas on black field
+  intensity_mode: A/B/H
+  target_media: system
+  anatomical_abstraction: selective
+  oneiric_intensity: controlled-high
+  motion_implication: implicit where relevant
+  outputs_unlocked: &id030
+  - card component specs
+  - Figma/CSS shells
+  exclusions:
+  - no generic SaaS cards
+  - no neon hover
+  acceptance_criteria:
+  - brand remains present in B mode
+  - states clear without animation
+  sequence: 27
+  macrofamily: Structural Asset Library
+  round: R06
+  format: one independent 16:9 moodboard; never a five-board composite
+  palette: *id001
+  conditional_palette: *id002
+  forbidden_drift: *id003
+  human_gate: material aesthetic promotion remains human-authoritative
+  status: SPECIFIED
+  required_new_coverage: *id030
+- study_id: B08
+  title: Navigation & Wayfinding Structures
+  purpose: Define menus, indices, tabs, chapter maps and spatial wayfinding.
+  canonical_refs:
+  - DVV-VIS-0241
+  - DVV-VIS-0141
+  required_content:
+  - web primary nav
+  - mobile nav
+  - chapter/index nav
+  - atlas navigation
+  - physical signage logic
+  - active/current state
+  - deep hierarchy
+  - breadcrumb alternative
+  - A/B/H treatments
+  composition: navigation map plus component specimens
+  intensity_mode: B/H
+  target_media: system
+  anatomical_abstraction: selective
+  oneiric_intensity: controlled-high
+  motion_implication: implicit where relevant
+  outputs_unlocked: &id031
+  - navigation components
+  - wayfinding family
+  exclusions:
+  - no sci-fi HUD
+  - no over-instrumentation
+  acceptance_criteria:
+  - navigation remains usable before decorative layer
+  sequence: 28
+  macrofamily: Structural Asset Library
+  round: R06
+  format: one independent 16:9 moodboard; never a five-board composite
+  palette: *id001
+  conditional_palette: *id002
+  forbidden_drift: *id003
+  human_gate: material aesthetic promotion remains human-authoritative
+  status: SPECIFIED
+  required_new_coverage: *id031
+- study_id: B09
+  title: Editorial Page Archetypes
+  purpose: Create reusable editorial skeletons for long-form DIVINIVID publications.
+  canonical_refs:
+  - DVV-VIS-0227
+  - DVV-VIS-0141
+  required_content:
+  - cover
+  - chapter opener
+  - essay page
+  - image plate
+  - specimen spread
+  - data spread
+  - index
+  - notes/references
+  - caption behavior
+  - page-number/folio system
+  composition: eight page archetypes in a coherent publication sequence
+  intensity_mode: B/H
+  target_media: system
+  anatomical_abstraction: selective
+  oneiric_intensity: controlled-high
+  motion_implication: implicit where relevant
+  outputs_unlocked: &id032
+  - InDesign/Figma page templates
+  - brandbook page system
+  exclusions:
+  - no coffee-table-book-only layouts
+  - no tiny illegible text
+  acceptance_criteria:
+  - reading order obvious
+  - dense and sparse pages both represented
+  sequence: 29
+  macrofamily: Structural Asset Library
+  round: R06
+  format: one independent 16:9 moodboard; never a five-board composite
+  palette: *id001
+  conditional_palette: *id002
+  forbidden_drift: *id003
+  human_gate: material aesthetic promotion remains human-authoritative
+  status: SPECIFIED
+  required_new_coverage: *id032
+- study_id: B10
+  title: Data, Table & Diagram Structures
+  purpose: Create structural shells for information-heavy content.
+  canonical_refs:
+  - DVV-VIS-0141
+  - DVV-VIS-0145
+  required_content:
+  - table shell
+  - comparison matrix
+  - timeline
+  - network diagram
+  - scale bar
+  - process flow
+  - taxonomy tree
+  - callout legend
+  - dense data card
+  - dark/ivory surface variants
+  composition: scientific editorial board emphasizing legibility
+  intensity_mode: B
+  target_media: system
+  anatomical_abstraction: selective
+  oneiric_intensity: controlled-high
+  motion_implication: implicit where relevant
+  outputs_unlocked: &id033
+  - data-viz templates
+  - diagram primitives
+  - table styles
+  exclusions:
+  - no decorative data ink
+  - no textures that obscure values
+  acceptance_criteria:
+  - information hierarchy passes first-glance test
+  sequence: 30
+  macrofamily: Structural Asset Library
+  round: R06
+  format: one independent 16:9 moodboard; never a five-board composite
+  palette: *id001
+  conditional_palette: *id002
+  forbidden_drift: *id003
+  human_gate: material aesthetic promotion remains human-authoritative
+  status: SPECIFIED
+  required_new_coverage: *id033
+- study_id: B11
+  title: Motion Structural States
+  purpose: Define how structural assets open, collapse, reveal and reconcile.
+  canonical_refs:
+  - DVV-VIS-0135
+  - DVV-VIS-0241
+  required_content:
+  - frame draw/reveal
+  - panel absorb/reveal
+  - portal open/close
+  - divider grow
+  - container expand
+  - page transition shell
+  - reduced-motion alternative
+  - timing classes
+  composition: static storyboard rows tied to structural components
+  intensity_mode: H
+  target_media: system
+  anatomical_abstraction: selective
+  oneiric_intensity: controlled-high
+  motion_implication: implicit where relevant
+  outputs_unlocked: &id034
+  - motion-ready structural SVG layers
+  - transition shells
+  exclusions:
+  - no motion-only meaning
+  - no constant breathing UI
+  acceptance_criteria:
+  - each motion has trigger and static equivalent
+  sequence: 31
+  macrofamily: Structural Asset Library
+  round: R07
+  format: one independent 16:9 moodboard; never a five-board composite
+  palette: *id001
+  conditional_palette: *id002
+  forbidden_drift: *id003
+  human_gate: material aesthetic promotion remains human-authoritative
+  status: SPECIFIED
+  required_new_coverage: *id034
+- study_id: B12
+  title: Responsive Structural Transformation
+  purpose: Show how complex structures adapt across desktop, tablet, mobile and narrow print.
+  canonical_refs:
+  - DVV-VIS-0241
+  - DVV-VIS-0145
+  required_content:
+  - grid collapse
+  - frame simplification
+  - margin relocation
+  - annotation reflow
+  - portal crop
+  - card stack
+  - typographic density adjustment
+  - asset simplification at breakpoints
+  composition: four-width comparative system board
+  intensity_mode: B/H
+  target_media: system
+  anatomical_abstraction: selective
+  oneiric_intensity: controlled-high
+  motion_implication: implicit where relevant
+  outputs_unlocked: &id035
+  - responsive rules
+  - breakpoint asset variants
+  exclusions:
+  - no simply scaling desktop down
+  acceptance_criteria:
+  - each archetype has explicit transformation logic
+  sequence: 32
+  macrofamily: Structural Asset Library
+  round: R07
+  format: one independent 16:9 moodboard; never a five-board composite
+  palette: *id001
+  conditional_palette: *id002
+  forbidden_drift: *id003
+  human_gate: material aesthetic promotion remains human-authoritative
+  status: SPECIFIED
+  required_new_coverage: *id035
+- study_id: B13
+  title: Spatial / Exhibition Structures
+  purpose: Translate the structural language into rooms, walls and installation systems.
+  canonical_refs:
+  - DVV-VIS-0093
+  - DVV-VIS-0145
+  required_content:
+  - entry threshold
+  - gallery wall
+  - specimen vitrine
+  - annotation plaque
+  - projection field
+  - floor/wall wayfinding
+  - lighting zones
+  - material junctions
+  - visitor-scale hierarchy
+  composition: plan/elevation/perspective triads
+  intensity_mode: A/H
+  target_media: system
+  anatomical_abstraction: selective
+  oneiric_intensity: controlled-high
+  motion_implication: implicit where relevant
+  outputs_unlocked: &id036
+  - environmental graphics system
+  - exhibition modules
+  exclusions:
+  - no theme-park gothic set
+  - no unsafe/illegible signage
+  acceptance_criteria:
+  - spatial hierarchy and wayfinding work before atmosphere
+  sequence: 33
+  macrofamily: Structural Asset Library
+  round: R07
+  format: one independent 16:9 moodboard; never a five-board composite
+  palette: *id001
+  conditional_palette: *id002
+  forbidden_drift: *id003
+  human_gate: material aesthetic promotion remains human-authoritative
+  status: SPECIFIED
+  required_new_coverage: *id036
+- study_id: B14
+  title: Packaging Structural System
+  purpose: Define box, sleeve, label, insert and seal structures.
+  canonical_refs:
+  - DVV-VIS-0198
+  - DVV-VIS-0141
+  required_content:
+  - rigid box
+  - folio/sleeve
+  - specimen vial label
+  - book wrap
+  - seal/tamper mark
+  - insert card
+  - production dieline zones
+  - A/B/H surfaces
+  - material options
+  composition: packaging family board with dieline-like technical views
+  intensity_mode: H
+  target_media: system
+  anatomical_abstraction: selective
+  oneiric_intensity: controlled-high
+  motion_implication: implicit where relevant
+  outputs_unlocked: &id037
+  - packaging templates
+  - label/seal components
+  exclusions:
+  - no luxury black-gold cliché
+  - no impossible print finishes as default
+  acceptance_criteria:
+  - structure manufacturable
+  - brand semantics preserved
+  sequence: 34
+  macrofamily: Structural Asset Library
+  round: R07
+  format: one independent 16:9 moodboard; never a five-board composite
+  palette: *id001
+  conditional_palette: *id002
+  forbidden_drift: *id003
+  human_gate: material aesthetic promotion remains human-authoritative
+  status: SPECIFIED
+  required_new_coverage: *id037
+- study_id: B15
+  title: Presentation & Proposal Structures
+  purpose: Build slide/deck archetypes as structural assets.
+  canonical_refs:
+  - DVV-VIS-0227
+  - DVV-VIS-0241
+  required_content:
+  - title slide
+  - agenda
+  - section divider
+  - problem/insight
+  - diagram
+  - case study
+  - metric
+  - quote
+  - closing
+  - dark/ivory alternation
+  - dramatic and abyssal variants
+  composition: 9-slide miniature system with structural annotations
+  intensity_mode: A/B/H
+  target_media: system
+  anatomical_abstraction: selective
+  oneiric_intensity: controlled-high
+  motion_implication: implicit where relevant
+  outputs_unlocked: &id038
+  - deck master layouts
+  - proposal templates
+  exclusions:
+  - no cinematic illegibility
+  - no one-off art posters as slides
+  acceptance_criteria:
+  - business information remains scannable
+  sequence: 35
+  macrofamily: Structural Asset Library
+  round: R07
+  format: one independent 16:9 moodboard; never a five-board composite
+  palette: *id001
+  conditional_palette: *id002
+  forbidden_drift: *id003
+  human_gate: material aesthetic promotion remains human-authoritative
+  status: SPECIFIED
+  required_new_coverage: *id038
+- study_id: B16
+  title: Instrument & Annotation Components
+  purpose: Expand rulers, brackets, labels, coordinates, callouts and section marks into a full library.
+  canonical_refs:
+  - DVV-VIS-0141
+  - DVV-VIS-0145
+  required_content:
+  - leader lines
+  - brackets
+  - dimension ticks
+  - coordinates
+  - specimen IDs
+  - section arrows
+  - index markers
+  - legend keys
+  - status seals
+  - microcopy placement
+  composition: technical parts catalog with exact alignment examples
+  intensity_mode: B
+  target_media: system
+  anatomical_abstraction: selective
+  oneiric_intensity: controlled-high
+  motion_implication: implicit where relevant
+  outputs_unlocked: &id039
+  - SVG instrument primitives
+  - annotation component library
+  exclusions:
+  - no faux-science gibberish
+  acceptance_criteria:
+  - components align to type scale and grid
+  - meaning consistent
+  sequence: 36
+  macrofamily: Structural Asset Library
+  round: R08
+  format: one independent 16:9 moodboard; never a five-board composite
+  palette: *id001
+  conditional_palette: *id002
+  forbidden_drift: *id003
+  human_gate: material aesthetic promotion remains human-authoritative
+  status: SPECIFIED
+  required_new_coverage: *id039
+- study_id: B17
+  title: Impossible Structural Primitives
+  purpose: Convert impossible geometry into reusable frames, masks and transitions.
+  canonical_refs:
+  - DVV-VIS-0213
+  - DVV-VIS-0093
+  required_content:
+  - recursive frame
+  - non-Euclidean corridor
+  - toroidal window
+  - inside/outside inversion
+  - impossible staircase crop
+  - looping border
+  - perspective contradiction
+  - safe simplification for UI
+  composition: geometry construction studies plus application snippets
+  intensity_mode: A/H
+  target_media: system
+  anatomical_abstraction: selective
+  oneiric_intensity: controlled-high
+  motion_implication: implicit where relevant
+  outputs_unlocked: &id040
+  - impossible-geometry structural SVGs
+  - transition masks
+  exclusions:
+  - no Escher imitation as the whole identity
+  - no impossible geometry harming usability
+  acceptance_criteria:
+  - paradox survives simplification
+  - application remains legible
+  sequence: 37
+  macrofamily: Structural Asset Library
+  round: R08
+  format: one independent 16:9 moodboard; never a five-board composite
+  palette: *id001
+  conditional_palette: *id002
+  forbidden_drift: *id003
+  human_gate: material aesthetic promotion remains human-authoritative
+  status: SPECIFIED
+  required_new_coverage: *id040
+- study_id: B18
+  title: Surface & Texture Structures
+  purpose: Create controlled material surfaces that can be generated/repeated without vintage-filter drift.
+  canonical_refs:
+  - DVV-VIS-0220
+  - DVV-VIS-0136
+  required_content:
+  - absorptive black
+  - ivory fiber
+  - aged-gold particulate
+  - crimson organic veining
+  - stone
+  - aged metal
+  - cloth
+  - histological/bone texture
+  - repeat tile behavior
+  - opacity/density ranges
+  composition: macro texture atlas with digital/print application swatches
+  intensity_mode: H
+  target_media: system
+  anatomical_abstraction: selective
+  oneiric_intensity: controlled-high
+  motion_implication: implicit where relevant
+  outputs_unlocked: &id041
+  - texture tiles
+  - material shaders/patterns
+  - print swatches
+  exclusions:
+  - no uniform grunge overlay
+  - no fake aged paper everywhere
+  acceptance_criteria:
+  - texture has semantic role and bounded density
+  sequence: 38
+  macrofamily: Structural Asset Library
+  round: R08
+  format: one independent 16:9 moodboard; never a five-board composite
+  palette: *id001
+  conditional_palette: *id002
+  forbidden_drift: *id003
+  human_gate: material aesthetic promotion remains human-authoritative
+  status: SPECIFIED
+  required_new_coverage: *id041
+- study_id: B19
+  title: Density & Silence Structures
+  purpose: Define how the same structural system behaves from sparse to dense without losing identity.
+  canonical_refs:
+  - DVV-VIS-0242
+  - DVV-VIS-0150
+  required_content:
+  - ultra-sparse abyssal composition
+  - balanced hybrid
+  - dense atlas/editorial composition
+  - maximum ceremonial density
+  - negative-space quotas
+  - annotation density
+  - image-to-type ratio
+  - where density must never increase
+  composition: four-level density ladder using same content
+  intensity_mode: A/B/H
+  target_media: system
+  anatomical_abstraction: selective
+  oneiric_intensity: controlled-high
+  motion_implication: implicit where relevant
+  outputs_unlocked: &id042
+  - density tokens
+  - layout presets
+  exclusions:
+  - no density equated to quality
+  - no B mode collapsing into generic minimalism
+  acceptance_criteria:
+  - hierarchy stable at all density levels
+  sequence: 39
+  macrofamily: Structural Asset Library
+  round: R08
+  format: one independent 16:9 moodboard; never a five-board composite
+  palette: *id001
+  conditional_palette: *id002
+  forbidden_drift: *id003
+  human_gate: material aesthetic promotion remains human-authoritative
+  status: SPECIFIED
+  required_new_coverage: *id042
+- study_id: B20
+  title: Structural Asset Library Master Board
+  purpose: Synthesize B01–B19 into a production-oriented structural system.
+  canonical_refs:
+  - DVV-VIS-0198
+  - DVV-VIS-0241
+  - DVV-VIS-0227
+  required_content:
+  - families and IDs
+  - construction principles
+  - responsive behavior
+  - motion readiness
+  - A/B/H variants
+  - physical/digital coverage
+  - annotation integration
+  - production priorities
+  - negative patterns
+  composition: master library index with representative components and dependency map
+  intensity_mode: H
+  target_media: system
+  anatomical_abstraction: selective
+  oneiric_intensity: controlled-high
+  motion_implication: implicit where relevant
+  outputs_unlocked: &id043
+  - structural library production backlog
+  - golden-set candidates
+  exclusions:
+  - no unresolved duplicate component families
+  acceptance_criteria:
+  - all structural categories indexed
+  - ready to seed factory specs
+  sequence: 40
+  macrofamily: Structural Asset Library
+  round: R08
+  format: one independent 16:9 moodboard; never a five-board composite
+  palette: *id001
+  conditional_palette: *id002
+  forbidden_drift: *id003
+  human_gate: material aesthetic promotion remains human-authoritative
+  status: SPECIFIED
+  required_new_coverage: *id043
+- study_id: C01
+  title: Anatomy-by-Analogy Family Atlas
+  purpose: Expand non-literal anatomy metaphors into a reusable illustration family.
+  canonical_refs:
+  - DVV-VIS-0088
+  - DVV-VIS-0075
+  required_content:
+  - bone↔mountain
+  - marrow↔river
+  - cavity↔chamber
+  - membrane↔veil
+  - nerve↔root/network
+  - organ↔architecture
+  - surface↔skin/stone
+  - approved abstraction levels
+  - literalism boundary
+  composition: paired analogies with intermediate forms
+  intensity_mode: A/H
+  target_media: system
+  anatomical_abstraction: selective
+  oneiric_intensity: controlled-high
+  motion_implication: implicit where relevant
+  outputs_unlocked: &id044
+  - anatomical metaphor illustration families
+  - transform pairs
+  exclusions:
+  - no gore
+  - no medical stock illustration
+  acceptance_criteria:
+  - at least 8 metaphors remain legible without captions
+  sequence: 41
+  macrofamily: Illustration & Entity Asset Library
+  round: R09
+  format: one independent 16:9 moodboard; never a five-board composite
+  palette: *id001
+  conditional_palette: *id002
+  forbidden_drift: *id003
+  human_gate: material aesthetic promotion remains human-authoritative
+  status: SPECIFIED
+  required_new_coverage: *id044
+- study_id: C02
+  title: Specimen Vessel Family
+  purpose: Deepen the vessel/containment universe.
+  canonical_refs:
+  - DVV-VIS-0089
+  - DVV-VIS-0088
+  required_content:
+  - sphere
+  - capsule
+  - vial
+  - dual chamber
+  - plate
+  - hourglass
+  - polyhedron
+  - irregular vessel
+  - empty/latent/active/transformed states
+  - label zones
+  - silhouette variants
+  composition: taxonomic specimen plate
+  intensity_mode: H
+  target_media: system
+  anatomical_abstraction: selective
+  oneiric_intensity: controlled-high
+  motion_implication: implicit where relevant
+  outputs_unlocked: &id045
+  - vessel SVG families
+  - specimen container variants
+  exclusions:
+  - no glassmorphism
+  - no modern lab-stock look
+  acceptance_criteria:
+  - each vessel has distinct silhouette and function
+  sequence: 42
+  macrofamily: Illustration & Entity Asset Library
+  round: R09
+  format: one independent 16:9 moodboard; never a five-board composite
+  palette: *id001
+  conditional_palette: *id002
+  forbidden_drift: *id003
+  human_gate: material aesthetic promotion remains human-authoritative
+  status: SPECIFIED
+  required_new_coverage: *id045
+- study_id: C03
+  title: Petri / Dual-Field Organisms
+  purpose: Build organisms and symbolic dualities inside plates/fields.
+  canonical_refs:
+  - DVV-VIS-0089
+  - DVV-VIS-0075
+  required_content:
+  - attract/repel
+  - divide/fuse
+  - contaminate/purify
+  - mirror/invert
+  - yin-yang-like balance without literal symbol
+  - paired specimens
+  - crimson/ivory material behaviors
+  - measurement overlay
+  composition: large plate studies with sectional closeups
+  intensity_mode: A/H
+  target_media: system
+  anatomical_abstraction: selective
+  oneiric_intensity: controlled-high
+  motion_implication: implicit where relevant
+  outputs_unlocked: &id046
+  - Petri compositions
+  - dual-field organisms
+  - motion pairs
+  exclusions: []
+  acceptance_criteria:
+  - dual systems feel alive and measured
+  sequence: 43
+  macrofamily: Illustration & Entity Asset Library
+  round: R09
+  format: one independent 16:9 moodboard; never a five-board composite
+  palette: *id001
+  conditional_palette: *id002
+  forbidden_drift: *id003
+  human_gate: material aesthetic promotion remains human-authoritative
+  status: SPECIFIED
+  required_new_coverage: *id046
+- study_id: C04
+  title: Medullary Landscape Family
+  purpose: Expand landscapes whose geology implies anatomy.
+  canonical_refs:
+  - DVV-VIS-0088
+  - DVV-VIS-0136
+  required_content:
+  - fractured mountain
+  - marrow canyon
+  - vascular river
+  - bone cliff
+  - cavity cave
+  - vertebral ridge
+  - ivory/crimson strata
+  - night/void versions
+  - scale figures optional
+  composition: cinematic landscape atlas with geological annotations
+  intensity_mode: A/H
+  target_media: system
+  anatomical_abstraction: selective
+  oneiric_intensity: controlled-high
+  motion_implication: implicit where relevant
+  outputs_unlocked: &id047
+  - landscape illustrations
+  - hero backgrounds
+  - motion morph pairs
+  exclusions: []
+  acceptance_criteria:
+  - geology implies anatomy without explicit gore
+  sequence: 44
+  macrofamily: Illustration & Entity Asset Library
+  round: R09
+  format: one independent 16:9 moodboard; never a five-board composite
+  palette: *id001
+  conditional_palette: *id002
+  forbidden_drift: *id003
+  human_gate: material aesthetic promotion remains human-authoritative
+  status: SPECIFIED
+  required_new_coverage: *id047
+- study_id: C05
+  title: Celestial Anthropomorphism
+  purpose: Expand anthropomorphic sun/moon/cell/celestial bodies.
+  canonical_refs:
+  - DVV-VIS-0075
+  - DVV-VIS-0129
+  required_content:
+  - sun face
+  - moon face
+  - eclipse entity
+  - cell→moon
+  - ocular planet
+  - haloed disk
+  - phase expressions
+  - medieval iconographic treatment
+  - ultramar/gold permissions
+  composition: illuminated celestial atlas
+  intensity_mode: A
+  target_media: system
+  anatomical_abstraction: selective
+  oneiric_intensity: controlled-high
+  motion_implication: implicit where relevant
+  outputs_unlocked: &id048
+  - celestial entity family
+  - phase/state variants
+  - motion-ready orbs
+  exclusions: []
+  acceptance_criteria:
+  - medieval/celestial logic intact
+  sequence: 45
+  macrofamily: Illustration & Entity Asset Library
+  round: R09
+  format: one independent 16:9 moodboard; never a five-board composite
+  palette: *id001
+  conditional_palette: *id002
+  forbidden_drift: *id003
+  human_gate: material aesthetic promotion remains human-authoritative
+  status: SPECIFIED
+  required_new_coverage: *id048
+- study_id: C06
+  title: Angelic Hierarchies
+  purpose: Produce a coherent reusable angelic family by hierarchy.
+  canonical_refs:
+  - DVV-VIS-0129
+  - DVV-VIS-0220
+  required_content:
+  - seraphim
+  - cherubim
+  - thrones
+  - dominions
+  - virtues
+  - powers
+  - principalities
+  - archangels
+  - angels
+  - distinct silhouette logic
+  - wing/eye/halo grammar
+  - ultramar/gold depth
+  composition: medieval bestiary hierarchy plate
+  intensity_mode: A/H
+  target_media: system
+  anatomical_abstraction: selective
+  oneiric_intensity: controlled-high
+  motion_implication: implicit where relevant
+  outputs_unlocked: &id049
+  - angelic SVG/illustration families
+  - silhouettes
+  - motion states
+  exclusions: []
+  acceptance_criteria:
+  - hierarchies distinct and production-usable
+  sequence: 46
+  macrofamily: Illustration & Entity Asset Library
+  round: R10
+  format: one independent 16:9 moodboard; never a five-board composite
+  palette: *id001
+  conditional_palette: *id002
+  forbidden_drift: *id003
+  human_gate: material aesthetic promotion remains human-authoritative
+  status: SPECIFIED
+  required_new_coverage: *id049
+- study_id: C07
+  title: Infernal Orders
+  purpose: Expand demon families as symbolic anomalies within sacred cosmology.
+  canonical_refs:
+  - DVV-VIS-0130
+  - DVV-VIS-0129
+  required_content:
+  - abyssal orders
+  - hybrid anatomy
+  - crowned/veiled types
+  - serpentine types
+  - architectural demons
+  - non-photoreal treatment
+  - symbolic roles
+  - black/crimson/gold behavior
+  composition: illuminated infernal taxonomy with restrained darkness
+  intensity_mode: A/H
+  target_media: system
+  anatomical_abstraction: selective
+  oneiric_intensity: controlled-high
+  motion_implication: implicit where relevant
+  outputs_unlocked: &id050
+  - infernal entity families
+  - silhouette/state variants
+  exclusions: []
+  acceptance_criteria:
+  - infernal forms remain symbolic not gamer-fantasy
+  sequence: 47
+  macrofamily: Illustration & Entity Asset Library
+  round: R10
+  format: one independent 16:9 moodboard; never a five-board composite
+  palette: *id001
+  conditional_palette: *id002
+  forbidden_drift: *id003
+  human_gate: material aesthetic promotion remains human-authoritative
+  status: SPECIFIED
+  required_new_coverage: *id050
+- study_id: C08
+  title: Harlequins & Liminal Figures
+  purpose: Build the ambiguous theatrical/liminal family.
+  canonical_refs:
+  - DVV-VIS-0122
+  - DVV-VIS-0129
+  required_content:
+  - masked herald
+  - split-face
+  - mirror twin
+  - ribbon-jointed figure
+  - shadow lag entity
+  - jester/arlequin without circus cliché
+  - gesture states
+  - ivory/crimson/gold/black balance
+  composition: liminal figure procession with mask studies
+  intensity_mode: A/H
+  target_media: system
+  anatomical_abstraction: selective
+  oneiric_intensity: controlled-high
+  motion_implication: implicit where relevant
+  outputs_unlocked: &id051
+  - harlequin families
+  - mask library
+  - motion behaviors
+  exclusions: []
+  acceptance_criteria:
+  - liminal ambiguity strong without circus drift
+  sequence: 48
+  macrofamily: Illustration & Entity Asset Library
+  round: R10
+  format: one independent 16:9 moodboard; never a five-board composite
+  palette: *id001
+  conditional_palette: *id002
+  forbidden_drift: *id003
+  human_gate: material aesthetic promotion remains human-authoritative
+  status: SPECIFIED
+  required_new_coverage: *id051
+- study_id: C09
+  title: Abstract Organisms / Bad-Trip Life
+  purpose: Create non-figurative living systems that remain DIVINIVID rather than psychedelic slop.
+  canonical_refs:
+  - DVV-VIS-0093
+  - DVV-VIS-0075
+  required_content:
+  - folding membranes
+  - orbital colonies
+  - impossible organs
+  - symmetrical-but-wrong organisms
+  - recursive growth
+  - eyes implied rather than literal
+  - environment-organism ambiguity
+  - controlled crimson activity
+  composition: abstract organism atlas with specimen labels
+  intensity_mode: A
+  target_media: system
+  anatomical_abstraction: selective
+  oneiric_intensity: controlled-high
+  motion_implication: implicit where relevant
+  outputs_unlocked: &id052
+  - abstract organism families
+  - procedural-form references
+  exclusions: []
+  acceptance_criteria:
+  - abstract life remains canon-aligned not random psychedelic
+  sequence: 49
+  macrofamily: Illustration & Entity Asset Library
+  round: R10
+  format: one independent 16:9 moodboard; never a five-board composite
+  palette: *id001
+  conditional_palette: *id002
+  forbidden_drift: *id003
+  human_gate: material aesthetic promotion remains human-authoritative
+  status: SPECIFIED
+  required_new_coverage: *id052
+- study_id: C10
+  title: Living Environments as Entities
+  purpose: Deepen rooms, walls, gardens and sanctuaries that behave as organisms.
+  canonical_refs:
+  - DVV-VIS-0093
+  - DVV-VIS-0088
+  required_content:
+  - breathing wall
+  - root basilica
+  - heart nave
+  - listening garden
+  - memory chamber
+  - veiled sanctum
+  - environment states
+  - user-presence reaction
+  - static equivalent
+  composition: architecture/entity hybrid atlas
+  intensity_mode: A/H
+  target_media: system
+  anatomical_abstraction: selective
+  oneiric_intensity: controlled-high
+  motion_implication: implicit where relevant
+  outputs_unlocked: &id053
+  - environment illustrations
+  - interactive background assets
+  exclusions: []
+  acceptance_criteria:
+  - environment/entity boundary productively blurred
+  sequence: 50
+  macrofamily: Illustration & Entity Asset Library
+  round: R10
+  format: one independent 16:9 moodboard; never a five-board composite
+  palette: *id001
+  conditional_palette: *id002
+  forbidden_drift: *id003
+  human_gate: material aesthetic promotion remains human-authoritative
+  status: SPECIFIED
+  required_new_coverage: *id053
+- study_id: C11
+  title: Impossible Geometry Entities
+  purpose: Turn paradoxical geometry into living or quasi-living forms.
+  canonical_refs:
+  - DVV-VIS-0213
+  - DVV-VIS-0093
+  required_content:
+  - toroidal organism
+  - recursive staircase entity
+  - inside-out polyhedron
+  - hyperbolic flower
+  - non-Euclidean reliquary
+  - looped corridor creature
+  - scale ambiguity
+  - motion behavior
+  composition: impossible geometry bestiary
+  intensity_mode: A
+  target_media: system
+  anatomical_abstraction: selective
+  oneiric_intensity: controlled-high
+  motion_implication: implicit where relevant
+  outputs_unlocked: &id054
+  - geometry-entity SVGs
+  - motion loops
+  - hero illustrations
+  exclusions: []
+  acceptance_criteria:
+  - paradoxical living forms remain readable
+  sequence: 51
+  macrofamily: Illustration & Entity Asset Library
+  round: R11
+  format: one independent 16:9 moodboard; never a five-board composite
+  palette: *id001
+  conditional_palette: *id002
+  forbidden_drift: *id003
+  human_gate: material aesthetic promotion remains human-authoritative
+  status: SPECIFIED
+  required_new_coverage: *id054
+- study_id: C12
+  title: Liturgical Flora & Micobotanical Life
+  purpose: Develop plants, fungi, flowers and root systems within the canon.
+  canonical_refs:
+  - DVV-VIS-0129
+  - DVV-VIS-0088
+  required_content:
+  - ivory/crimson flower
+  - reliquary fungus
+  - root halo
+  - spore constellation
+  - bone-stem flora
+  - ultramar manuscript flora
+  - botanical plate annotations
+  - simplified silhouettes
+  composition: historic botanical plate meets surreal specimen atlas
+  intensity_mode: H
+  target_media: system
+  anatomical_abstraction: selective
+  oneiric_intensity: controlled-high
+  motion_implication: implicit where relevant
+  outputs_unlocked: &id055
+  - flora asset families
+  - pattern motifs
+  - border/marginalia assets
+  exclusions: []
+  acceptance_criteria:
+  - flora expands universe without diluting core
+  sequence: 52
+  macrofamily: Illustration & Entity Asset Library
+  round: R11
+  format: one independent 16:9 moodboard; never a five-board composite
+  palette: *id001
+  conditional_palette: *id002
+  forbidden_drift: *id003
+  human_gate: material aesthetic promotion remains human-authoritative
+  status: SPECIFIED
+  required_new_coverage: *id055
+- study_id: C13
+  title: Relics, Artifacts & Impossible Objects
+  purpose: Create physical objects that feel excavated from the DIVINIVID universe.
+  canonical_refs:
+  - DVV-VIS-0198
+  - DVV-VIS-0213
+  required_content:
+  - reliquary
+  - instrument
+  - sealed book
+  - impossible vessel
+  - ritual key
+  - measurement object
+  - fragment
+  - specimen capsule
+  - aged metal/stone/ivory materials
+  - object labels
+  composition: museum/reliquary catalog board
+  intensity_mode: H
+  target_media: system
+  anatomical_abstraction: selective
+  oneiric_intensity: controlled-high
+  motion_implication: implicit where relevant
+  outputs_unlocked: &id056
+  - object illustrations
+  - 3D/physical reference families
+  - packaging motifs
+  exclusions: []
+  acceptance_criteria:
+  - objects feel excavated and system-native
+  sequence: 53
+  macrofamily: Illustration & Entity Asset Library
+  round: R11
+  format: one independent 16:9 moodboard; never a five-board composite
+  palette: *id001
+  conditional_palette: *id002
+  forbidden_drift: *id003
+  human_gate: material aesthetic promotion remains human-authoritative
+  status: SPECIFIED
+  required_new_coverage: *id056
+- study_id: C14
+  title: Masks, Faces & Ocular Systems
+  purpose: Define controlled facial/ocular motifs across entities.
+  canonical_refs:
+  - DVV-VIS-0122
+  - DVV-VIS-0129
+  required_content:
+  - human-like mask
+  - split mask
+  - moon face
+  - many-eye celestial
+  - blindfold/veil
+  - single ocular specimen
+  - mask-to-symbol simplification
+  - expression limits
+  - avoid horror-mask cliché
+  composition: face/mask taxonomy with silhouette and detail tiers
+  intensity_mode: H
+  target_media: system
+  anatomical_abstraction: selective
+  oneiric_intensity: controlled-high
+  motion_implication: implicit where relevant
+  outputs_unlocked: &id057
+  - mask family
+  - face-state variants
+  - icon simplifications
+  exclusions: []
+  acceptance_criteria:
+  - face motifs controlled and reusable
+  sequence: 54
+  macrofamily: Illustration & Entity Asset Library
+  round: R11
+  format: one independent 16:9 moodboard; never a five-board composite
+  palette: *id001
+  conditional_palette: *id002
+  forbidden_drift: *id003
+  human_gate: material aesthetic promotion remains human-authoritative
+  status: SPECIFIED
+  required_new_coverage: *id057
+- study_id: C15
+  title: Cosmological Diagram Illustration
+  purpose: Build celestial maps, orbits and sacred-scientific diagrams as illustration assets.
+  canonical_refs:
+  - DVV-VIS-0220
+  - DVV-VIS-0141
+  - DVV-VIS-0129
+  required_content:
+  - orbit diagrams
+  - eclipse maps
+  - celestial hierarchy wheel
+  - specimen constellation
+  - phase chart
+  - cosmological section
+  - gold instrumentation
+  - ultramar domain
+  - crimson event markers
+  composition: cosmology folio with diagrams and miniature illustrations
+  intensity_mode: H
+  target_media: system
+  anatomical_abstraction: selective
+  oneiric_intensity: controlled-high
+  motion_implication: implicit where relevant
+  outputs_unlocked: &id058
+  - diagram illustrations
+  - background maps
+  - brandbook cosmology assets
+  exclusions: []
+  acceptance_criteria:
+  - diagrams feel both sacred and measured
+  sequence: 55
+  macrofamily: Illustration & Entity Asset Library
+  round: R11
+  format: one independent 16:9 moodboard; never a five-board composite
+  palette: *id001
+  conditional_palette: *id002
+  forbidden_drift: *id003
+  human_gate: material aesthetic promotion remains human-authoritative
+  status: SPECIFIED
+  required_new_coverage: *id058
+- study_id: C16
+  title: Entity State & Motion Atlas
+  purpose: Show each major entity family across dormant/aware/active/withdrawn states.
+  canonical_refs:
+  - DVV-VIS-0135
+  - DVV-VIS-0129
+  - DVV-VIS-0130
+  - DVV-VIS-0122
+  required_content:
+  - angelic state sequence
+  - infernal state sequence
+  - harlequin state sequence
+  - abstract organism sequence
+  - celestial body sequence
+  - static keyframes
+  - reduced-motion representation
+  - amplitude differences by family
+  composition: five horizontal state strips
+  intensity_mode: H
+  target_media: system
+  anatomical_abstraction: selective
+  oneiric_intensity: controlled-high
+  motion_implication: implicit where relevant
+  outputs_unlocked: &id059
+  - entity state variants
+  - motion-ready layers
+  exclusions: []
+  acceptance_criteria:
+  - state behavior distinct by family
+  sequence: 56
+  macrofamily: Illustration & Entity Asset Library
+  round: R12
+  format: one independent 16:9 moodboard; never a five-board composite
+  palette: *id001
+  conditional_palette: *id002
+  forbidden_drift: *id003
+  human_gate: material aesthetic promotion remains human-authoritative
+  status: SPECIFIED
+  required_new_coverage: *id059
+- study_id: C17
+  title: Medieval Polychromy Deep System
+  purpose: Explore full controlled ultramar/gold/carmine/ivory application within the medieval subset only.
+  canonical_refs:
+  - DVV-VIS-0129
+  - DVV-VIS-0220
+  required_content:
+  - ultramar field
+  - aged-gold leaf logic
+  - carmine/crimson figure
+  - ivory parchment-like field without faux-aging
+  - border illumination
+  - central miniature
+  - modern black integration
+  - digital translation
+  composition: five manuscript-derived compositions with contemporary DIVINIVID framing
+  intensity_mode: A/H
+  target_media: system
+  anatomical_abstraction: selective
+  oneiric_intensity: controlled-high
+  motion_implication: implicit where relevant
+  outputs_unlocked: &id060
+  - polychrome bestiary variants
+  - illuminated borders
+  - print references
+  exclusions: []
+  acceptance_criteria:
+  - polychromy stays bounded to medieval/celestial domain
+  sequence: 57
+  macrofamily: Illustration & Entity Asset Library
+  round: R12
+  format: one independent 16:9 moodboard; never a five-board composite
+  palette: *id001
+  conditional_palette: *id002
+  forbidden_drift: *id003
+  human_gate: material aesthetic promotion remains human-authoritative
+  status: SPECIFIED
+  required_new_coverage: *id060
+- study_id: C18
+  title: Silhouette / Monochrome Simplification
+  purpose: Prove complex illustrations survive severe simplification.
+  canonical_refs:
+  - DVV-VIS-0129
+  - DVV-VIS-0130
+  - DVV-VIS-0213
+  required_content:
+  - full-detail → line art → silhouette → micro mark
+  - angel
+  - demon
+  - harlequin
+  - specimen
+  - flora
+  - impossible object
+  - black-on-ivory and ivory-on-black
+  - small-size thresholds
+  composition: four-detail-tier comparative atlas
+  intensity_mode: B/H
+  target_media: system
+  anatomical_abstraction: selective
+  oneiric_intensity: controlled-high
+  motion_implication: implicit where relevant
+  outputs_unlocked: &id061
+  - logo-like marks
+  - icons
+  - small-scale entity assets
+  exclusions: []
+  acceptance_criteria:
+  - small-scale simplifications remain recognizable
+  sequence: 58
+  macrofamily: Illustration & Entity Asset Library
+  round: R12
+  format: one independent 16:9 moodboard; never a five-board composite
+  palette: *id001
+  conditional_palette: *id002
+  forbidden_drift: *id003
+  human_gate: material aesthetic promotion remains human-authoritative
+  status: SPECIFIED
+  required_new_coverage: *id061
+- study_id: C19
+  title: Detail & Scale Ladder for Illustration
+  purpose: Define production detail tiers for hero, editorial, card and icon contexts.
+  canonical_refs:
+  - DVV-VIS-0145
+  - DVV-VIS-0129
+  required_content:
+  - hero 4K/detail tier
+  - editorial half-page
+  - card/thumbnail
+  - icon/micro
+  - line density rules
+  - texture reduction
+  - annotation compatibility
+  - responsive crop rules
+  composition: same 5 families shown at 4 detail tiers
+  intensity_mode: B/H
+  target_media: system
+  anatomical_abstraction: selective
+  oneiric_intensity: controlled-high
+  motion_implication: implicit where relevant
+  outputs_unlocked: &id062
+  - illustration LOD system
+  - export variants
+  exclusions: []
+  acceptance_criteria:
+  - detail reduction is explicit and reusable
+  sequence: 59
+  macrofamily: Illustration & Entity Asset Library
+  round: R12
+  format: one independent 16:9 moodboard; never a five-board composite
+  palette: *id001
+  conditional_palette: *id002
+  forbidden_drift: *id003
+  human_gate: material aesthetic promotion remains human-authoritative
+  status: SPECIFIED
+  required_new_coverage: *id062
+- study_id: C20
+  title: Illustration & Entity Master Atlas V2
+  purpose: Synthesize C01–C19 into the authoritative illustration universe map.
+  canonical_refs:
+  - DVV-VIS-0129
+  - DVV-VIS-0088
+  - DVV-VIS-0093
+  - DVV-VIS-0213
+  required_content:
+  - family tree
+  - representative entities
+  - anatomical transformations
+  - environment families
+  - polychromy
+  - detail tiers
+  - motion/state
+  - silhouette simplification
+  - production priorities
+  - negative-evidence reminders
+  composition: large bestiary/atlas index with editorial discipline
+  intensity_mode: H
+  target_media: system
+  anatomical_abstraction: selective
+  oneiric_intensity: controlled-high
+  motion_implication: implicit where relevant
+  outputs_unlocked: &id063
+  - Illustration & Entity Asset Library master map
+  - factory backlog seed
+  exclusions: []
+  acceptance_criteria:
+  - illustration universe complete and navigable
+  sequence: 60
+  macrofamily: Illustration & Entity Asset Library
+  round: R12
+  format: one independent 16:9 moodboard; never a five-board composite
+  palette: *id001
+  conditional_palette: *id002
+  forbidden_drift: *id003
+  human_gate: material aesthetic promotion remains human-authoritative
+  status: SPECIFIED
+  required_new_coverage: *id063
+- study_id: D01
+  title: Web — Dramatic Landing Page Stress Test
+  purpose: Push A-mode to a real high-impact agency landing without losing usability.
+  canonical_refs:
+  - DVV-VIS-0241
+  - DVV-VIS-0150
+  - DVV-VIS-0088
+  required_content:
+  - hero
+  - services
+  - proof/case section
+  - CTA
+  - footer
+  - dramatic transformation
+  - living darkness
+  - responsive crop notes
+  - performance-aware image allocation
+  composition: full-page web storyboard with desktop keyframes
+  intensity_mode: A
+  target_media: web
+  anatomical_abstraction: selective
+  oneiric_intensity: controlled-high
+  motion_implication: implicit where relevant
+  outputs_unlocked: &id064
+  - web hero asset requirements
+  - A-mode web templates
+  exclusions:
+  - no art-film site that hides navigation
+  - no unreadable hero
+  acceptance_criteria:
+  - conversion hierarchy intact
+  - brand drama controlled
+  sequence: 61
+  macrofamily: Cross-Medium Stress Test
+  round: R13
+  format: one independent 16:9 moodboard; never a five-board composite
+  palette: *id001
+  conditional_palette: *id002
+  forbidden_drift: *id003
+  human_gate: material aesthetic promotion remains human-authoritative
+  status: SPECIFIED
+  required_new_coverage: *id064
+- study_id: D02
+  title: Web — Abyssal Service / Information Page
+  purpose: Prove B-mode can carry dense business information elegantly.
+  canonical_refs:
+  - DVV-VIS-0242
+  - DVV-VIS-0227
+  - DVV-VIS-0141
+  required_content:
+  - service detail
+  - process
+  - deliverables
+  - FAQ
+  - pricing/engagement placeholder
+  - CTA
+  - subtle imagery
+  - large black fields
+  - precise annotation
+  - responsive notes
+  composition: long-form service page with sparse visual punctuations
+  intensity_mode: B
+  target_media: web
+  anatomical_abstraction: selective
+  oneiric_intensity: controlled-high
+  motion_implication: implicit where relevant
+  outputs_unlocked: &id065
+  - B-mode web templates
+  - service-page components
+  exclusions:
+  - no generic luxury minimalism
+  acceptance_criteria:
+  - information density high but calm
+  - DIVINIVID remains recognizable
+  sequence: 62
+  macrofamily: Cross-Medium Stress Test
+  round: R13
+  format: one independent 16:9 moodboard; never a five-board composite
+  palette: *id001
+  conditional_palette: *id002
+  forbidden_drift: *id003
+  human_gate: material aesthetic promotion remains human-authoritative
+  status: SPECIFIED
+  required_new_coverage: *id065
+- study_id: D03
+  title: Mobile App — Core Navigation & Home
+  purpose: Translate the identity into a functional mobile product shell.
+  canonical_refs:
+  - DVV-VIS-0241
+  - DVV-VIS-0242
+  required_content:
+  - home
+  - navigation
+  - cards
+  - search
+  - notifications
+  - selected state
+  - empty state
+  - modal/sheet
+  - safe-area behavior
+  - reduced visual density
+  composition: mobile screen sequence, 6–8 frames
+  intensity_mode: B/H
+  target_media: mobile
+  anatomical_abstraction: selective
+  oneiric_intensity: controlled-high
+  motion_implication: implicit where relevant
+  outputs_unlocked: &id066
+  - mobile UI component requirements
+  - app shell
+  exclusions:
+  - no poster-style screens
+  - no tiny ornaments
+  acceptance_criteria:
+  - thumb-scale usability
+  - brand hierarchy survives
+  sequence: 63
+  macrofamily: Cross-Medium Stress Test
+  round: R13
+  format: one independent 16:9 moodboard; never a five-board composite
+  palette: *id001
+  conditional_palette: *id002
+  forbidden_drift: *id003
+  human_gate: material aesthetic promotion remains human-authoritative
+  status: SPECIFIED
+  required_new_coverage: *id066
+- study_id: D04
+  title: Dashboard / Data Product
+  purpose: Stress dense operational data, tables, charts and filters.
+  canonical_refs:
+  - DVV-VIS-0141
+  - DVV-VIS-0145
+  - DVV-VIS-0241
+  required_content:
+  - dashboard overview
+  - table
+  - chart
+  - filter
+  - drill-down
+  - alert
+  - empty/loading
+  - comparison
+  - dark/ivory chart contrast
+  - bone/histological texture only where informative
+  composition: desktop dashboard system board
+  intensity_mode: B/H
+  target_media: web app
+  anatomical_abstraction: selective
+  oneiric_intensity: controlled-high
+  motion_implication: implicit where relevant
+  outputs_unlocked: &id067
+  - data-viz tokens
+  - dashboard components
+  exclusions:
+  - no decorative charts
+  - no sci-fi HUD
+  acceptance_criteria:
+  - data first; brand second but unmistakable
+  sequence: 64
+  macrofamily: Cross-Medium Stress Test
+  round: R13
+  format: one independent 16:9 moodboard; never a five-board composite
+  palette: *id001
+  conditional_palette: *id002
+  forbidden_drift: *id003
+  human_gate: material aesthetic promotion remains human-authoritative
+  status: SPECIFIED
+  required_new_coverage: *id067
+- study_id: D05
+  title: Interaction State System
+  purpose: Stress all common digital feedback states.
+  canonical_refs:
+  - DVV-VIS-0241
+  - DVV-VIS-0135
+  required_content:
+  - hover
+  - focus
+  - pressed
+  - selected
+  - disabled
+  - loading
+  - success
+  - warning
+  - error
+  - offline
+  - syncing
+  - locked
+  - keyboard focus
+  - reduced-motion
+  - non-color signals
+  composition: component-state grid
+  intensity_mode: B/H
+  target_media: digital
+  anatomical_abstraction: selective
+  oneiric_intensity: controlled-high
+  motion_implication: implicit where relevant
+  outputs_unlocked: &id068
+  - interaction-state assets
+  - accessibility state rules
+  exclusions:
+  - no crimson-only errors
+  - no animated-only feedback
+  acceptance_criteria:
+  - states legible and consistent
+  sequence: 65
+  macrofamily: Cross-Medium Stress Test
+  round: R13
+  format: one independent 16:9 moodboard; never a five-board composite
+  palette: *id001
+  conditional_palette: *id002
+  forbidden_drift: *id003
+  human_gate: material aesthetic promotion remains human-authoritative
+  status: SPECIFIED
+  required_new_coverage: *id068
+- study_id: D06
+  title: Motion / Title Sequence
+  purpose: Translate DIVINIVID into a 20–30 second cinematic title language.
+  canonical_refs:
+  - DVV-VIS-0135
+  - DVV-VIS-0136
+  - DVV-VIS-0075
+  required_content:
+  - opening void
+  - reveal
+  - anatomical/cosmic transformation
+  - typographic emergence
+  - entity glimpse
+  - reconciliation
+  - timing map
+  - sound-agnostic visual rhythm
+  - reduced-motion/static poster equivalent
+  composition: timecoded storyboard
+  intensity_mode: A
+  target_media: motion
+  anatomical_abstraction: selective
+  oneiric_intensity: controlled-high
+  motion_implication: implicit where relevant
+  outputs_unlocked: &id069
+  - motion title assets
+  - video transition language
+  exclusions:
+  - no trailer cliché
+  - no excessive glitch
+  acceptance_criteria:
+  - sequence follows motion verbs and brand hierarchy
+  sequence: 66
+  macrofamily: Cross-Medium Stress Test
+  round: R14
+  format: one independent 16:9 moodboard; never a five-board composite
+  palette: *id001
+  conditional_palette: *id002
+  forbidden_drift: *id003
+  human_gate: material aesthetic promotion remains human-authoritative
+  status: SPECIFIED
+  required_new_coverage: *id069
+- study_id: D07
+  title: Editorial Report / Whitepaper
+  purpose: Stress long-form research publication.
+  canonical_refs:
+  - DVV-VIS-0227
+  - DVV-VIS-0141
+  - DVV-VIS-0145
+  required_content:
+  - cover
+  - TOC
+  - chapter opener
+  - body
+  - figure
+  - table
+  - footnote
+  - citation
+  - case study
+  - appendix
+  - print/PDF dual use
+  - ES/EN text behavior
+  composition: 12-page miniature report sequence
+  intensity_mode: B/H
+  target_media: editorial
+  anatomical_abstraction: selective
+  oneiric_intensity: controlled-high
+  motion_implication: implicit where relevant
+  outputs_unlocked: &id070
+  - report templates
+  - figure/table styles
+  exclusions:
+  - no coffee-table-book illegibility
+  acceptance_criteria:
+  - reads as serious research document
+  sequence: 67
+  macrofamily: Cross-Medium Stress Test
+  round: R14
+  format: one independent 16:9 moodboard; never a five-board composite
+  palette: *id001
+  conditional_palette: *id002
+  forbidden_drift: *id003
+  human_gate: material aesthetic promotion remains human-authoritative
+  status: SPECIFIED
+  required_new_coverage: *id070
+- study_id: D08
+  title: Proposal / Sales Deck
+  purpose: Stress commercial communication without losing visual rigor.
+  canonical_refs:
+  - DVV-VIS-0227
+  - DVV-VIS-0241
+  required_content:
+  - cover
+  - problem
+  - insight
+  - offer
+  - process
+  - proof
+  - scope
+  - timeline
+  - investment
+  - next step
+  - A/B alternation
+  - data/proof density
+  composition: 10-slide proposal system
+  intensity_mode: B/H
+  target_media: presentation
+  anatomical_abstraction: selective
+  oneiric_intensity: controlled-high
+  motion_implication: implicit where relevant
+  outputs_unlocked: &id071
+  - sales deck templates
+  - proposal assets
+  exclusions:
+  - no art overrides sales clarity
+  acceptance_criteria:
+  - skimmable in presentation context
+  sequence: 68
+  macrofamily: Cross-Medium Stress Test
+  round: R14
+  format: one independent 16:9 moodboard; never a five-board composite
+  palette: *id001
+  conditional_palette: *id002
+  forbidden_drift: *id003
+  human_gate: material aesthetic promotion remains human-authoritative
+  status: SPECIFIED
+  required_new_coverage: *id071
+- study_id: D09
+  title: Social Carousel / Educational Content
+  purpose: Translate the identity into repeatable social education.
+  canonical_refs:
+  - DVV-VIS-0227
+  - DVV-VIS-0141
+  required_content:
+  - cover card
+  - explanation cards
+  - diagram card
+  - quote/data card
+  - CTA
+  - series marker
+  - 1:1 and 4:5 adaptation
+  - B-dominant with selective dramatic frame
+  composition: carousel sequence with grid/crop notes
+  intensity_mode: B/H
+  target_media: social
+  anatomical_abstraction: selective
+  oneiric_intensity: controlled-high
+  motion_implication: implicit where relevant
+  outputs_unlocked: &id072
+  - social template family
+  - series system
+  exclusions:
+  - no meme aesthetic
+  - no unreadable microtype
+  acceptance_criteria:
+  - series repeatable weekly
+  sequence: 69
+  macrofamily: Cross-Medium Stress Test
+  round: R14
+  format: one independent 16:9 moodboard; never a five-board composite
+  palette: *id001
+  conditional_palette: *id002
+  forbidden_drift: *id003
+  human_gate: material aesthetic promotion remains human-authoritative
+  status: SPECIFIED
+  required_new_coverage: *id072
+- study_id: D10
+  title: Launch Campaign System
+  purpose: Create one campaign expressed across teaser, reveal, proof and CTA.
+  canonical_refs:
+  - DVV-VIS-0150
+  - DVV-VIS-0075
+  - DVV-VIS-0135
+  required_content:
+  - teaser
+  - launch hero
+  - poster
+  - social
+  - email header
+  - motion teaser
+  - landing takeover
+  - campaign motif derived from canon
+  - A/B/H deployment by stage
+  composition: campaign ecosystem board
+  intensity_mode: A/H
+  target_media: campaign
+  anatomical_abstraction: selective
+  oneiric_intensity: controlled-high
+  motion_implication: implicit where relevant
+  outputs_unlocked: &id073
+  - campaign asset matrix
+  - launch system
+  exclusions:
+  - no one-off aesthetic outside canon
+  acceptance_criteria:
+  - all media feel like one campaign
+  sequence: 70
+  macrofamily: Cross-Medium Stress Test
+  round: R14
+  format: one independent 16:9 moodboard; never a five-board composite
+  palette: *id001
+  conditional_palette: *id002
+  forbidden_drift: *id003
+  human_gate: material aesthetic promotion remains human-authoritative
+  status: SPECIFIED
+  required_new_coverage: *id073
+- study_id: D11
+  title: Packaging & Unboxing
+  purpose: Stress physical packaging from outer box to inner artifact.
+  canonical_refs:
+  - DVV-VIS-0220
+  - DVV-VIS-0141
+  - DVV-VIS-0198
+  required_content:
+  - outer package
+  - sleeve
+  - seal
+  - insert
+  - label
+  - interior reveal
+  - shipping-friendly variant
+  - material/finish notes
+  - low-cost and premium production paths
+  composition: unboxing sequence + dieline views
+  intensity_mode: H
+  target_media: physical
+  anatomical_abstraction: selective
+  oneiric_intensity: controlled-high
+  motion_implication: implicit where relevant
+  outputs_unlocked: &id074
+  - packaging production references
+  - seal/label assets
+  exclusions:
+  - no impossible premium finish dependency
+  acceptance_criteria:
+  - brand works within realistic production
+  sequence: 71
+  macrofamily: Cross-Medium Stress Test
+  round: R15
+  format: one independent 16:9 moodboard; never a five-board composite
+  palette: *id001
+  conditional_palette: *id002
+  forbidden_drift: *id003
+  human_gate: material aesthetic promotion remains human-authoritative
+  status: SPECIFIED
+  required_new_coverage: *id074
+- study_id: D12
+  title: Stationery / Print Essentials
+  purpose: Stress mundane but necessary print applications.
+  canonical_refs:
+  - DVV-VIS-0227
+  - DVV-VIS-0145
+  required_content:
+  - business card
+  - letterhead
+  - envelope
+  - invoice/quote
+  - folder
+  - notecard
+  - stamp/seal
+  - black-heavy and toner-friendly alternatives
+  - small print detail limits
+  composition: print specimen board
+  intensity_mode: B/H
+  target_media: print
+  anatomical_abstraction: selective
+  oneiric_intensity: controlled-high
+  motion_implication: implicit where relevant
+  outputs_unlocked: &id075
+  - stationery templates
+  - print-safe variants
+  exclusions:
+  - no overdesigned invoice
+  - no gold-foil dependency
+  acceptance_criteria:
+  - operational documents remain practical
+  sequence: 72
+  macrofamily: Cross-Medium Stress Test
+  round: R15
+  format: one independent 16:9 moodboard; never a five-board composite
+  palette: *id001
+  conditional_palette: *id002
+  forbidden_drift: *id003
+  human_gate: material aesthetic promotion remains human-authoritative
+  status: SPECIFIED
+  required_new_coverage: *id075
+- study_id: D13
+  title: Exhibition / Spatial Installation
+  purpose: Stress large-scale environment and visitor flow.
+  canonical_refs:
+  - DVV-VIS-0093
+  - DVV-VIS-0213
+  - DVV-VIS-0141
+  required_content:
+  - entry
+  - main wall
+  - specimen display
+  - projection
+  - wayfinding
+  - label
+  - interactive station
+  - exit
+  - lighting
+  - viewing distance
+  - accessibility route
+  composition: plan/elevation/perspective system
+  intensity_mode: A/H
+  target_media: spatial
+  anatomical_abstraction: selective
+  oneiric_intensity: controlled-high
+  motion_implication: implicit where relevant
+  outputs_unlocked: &id076
+  - exhibition graphics
+  - spatial assets
+  exclusions:
+  - no theme-park set dressing
+  acceptance_criteria:
+  - wayfinding and legibility validated
+  sequence: 73
+  macrofamily: Cross-Medium Stress Test
+  round: R15
+  format: one independent 16:9 moodboard; never a five-board composite
+  palette: *id001
+  conditional_palette: *id002
+  forbidden_drift: *id003
+  human_gate: material aesthetic promotion remains human-authoritative
+  status: SPECIFIED
+  required_new_coverage: *id076
+- study_id: D14
+  title: Signage / Wayfinding
+  purpose: Stress concise information at distance.
+  canonical_refs:
+  - DVV-VIS-0145
+  - DVV-VIS-0227
+  required_content:
+  - directional
+  - room ID
+  - regulatory
+  - map
+  - temporary sign
+  - event marker
+  - accessible sign
+  - day/night contrast
+  - distance legibility
+  - bilingual ES/EN
+  composition: sign family with distance tests
+  intensity_mode: B
+  target_media: spatial
+  anatomical_abstraction: selective
+  oneiric_intensity: controlled-high
+  motion_implication: implicit where relevant
+  outputs_unlocked: &id077
+  - signage system
+  - wayfinding icons
+  exclusions:
+  - no decorative tiny detail
+  acceptance_criteria:
+  - legible before atmosphere
+  sequence: 74
+  macrofamily: Cross-Medium Stress Test
+  round: R15
+  format: one independent 16:9 moodboard; never a five-board composite
+  palette: *id001
+  conditional_palette: *id002
+  forbidden_drift: *id003
+  human_gate: material aesthetic promotion remains human-authoritative
+  status: SPECIFIED
+  required_new_coverage: *id077
+- study_id: D15
+  title: Objects / Merch / Brand Artifacts
+  purpose: Stress collectible and practical objects without generic merch.
+  canonical_refs:
+  - DVV-VIS-0198
+  - DVV-VIS-0129
+  required_content:
+  - pin
+  - patch
+  - notebook
+  - cloth
+  - box
+  - card deck/not tarot
+  - book object
+  - metal/stone token
+  - subtle vs ceremonial branding
+  - small-scale mark use
+  composition: artifact cabinet / product sheet
+  intensity_mode: H
+  target_media: physical
+  anatomical_abstraction: selective
+  oneiric_intensity: controlled-high
+  motion_implication: implicit where relevant
+  outputs_unlocked: &id078
+  - merch/artifact asset variants
+  exclusions:
+  - no generic logo-on-shirt board
+  - no occult-shop merchandise
+  acceptance_criteria:
+  - objects feel native to universe
+  sequence: 75
+  macrofamily: Cross-Medium Stress Test
+  round: R15
+  format: one independent 16:9 moodboard; never a five-board composite
+  palette: *id001
+  conditional_palette: *id002
+  forbidden_drift: *id003
+  human_gate: material aesthetic promotion remains human-authoritative
+  status: SPECIFIED
+  required_new_coverage: *id078
+- study_id: D16
+  title: Print Fidelity / Production Limits
+  purpose: Stress CMYK, grayscale, spot color and low-cost reproduction.
+  canonical_refs:
+  - DVV-VIS-0220
+  - DVV-VIS-0227
+  required_content:
+  - full-color print
+  - 2-color
+  - 1-color
+  - grayscale
+  - newsprint-like low fidelity
+  - laser/office print
+  - gold substitute
+  - ultramar substitute
+  - crimson preservation
+  composition: same compositions across print constraints
+  intensity_mode: B/H
+  target_media: print
+  anatomical_abstraction: selective
+  oneiric_intensity: controlled-high
+  motion_implication: implicit where relevant
+  outputs_unlocked: &id079
+  - print-safe palettes
+  - fallback assets
+  exclusions:
+  - no RGB-only dependency
+  acceptance_criteria:
+  - identity survives reduced production
+  sequence: 76
+  macrofamily: Cross-Medium Stress Test
+  round: R16
+  format: one independent 16:9 moodboard; never a five-board composite
+  palette: *id001
+  conditional_palette: *id002
+  forbidden_drift: *id003
+  human_gate: material aesthetic promotion remains human-authoritative
+  status: SPECIFIED
+  required_new_coverage: *id079
+- study_id: D17
+  title: Accessibility / Reduced Motion / High Contrast
+  purpose: Stress the identity under accessibility constraints.
+  canonical_refs:
+  - DVV-VIS-0241
+  - DVV-VIS-0135
+  - DVV-VIS-0220
+  required_content:
+  - reduced motion
+  - high contrast
+  - keyboard focus
+  - large text
+  - color-blind-safe states
+  - alt-text class
+  - complex SVG accessible description
+  - decorative asset suppression
+  composition: paired normal/accessibility variants
+  intensity_mode: B/H
+  target_media: digital
+  anatomical_abstraction: selective
+  oneiric_intensity: controlled-high
+  motion_implication: implicit where relevant
+  outputs_unlocked: &id080
+  - accessible component variants
+  - motion alternatives
+  exclusions:
+  - no accessibility treated as visual downgrade
+  acceptance_criteria:
+  - same semantic identity preserved
+  sequence: 77
+  macrofamily: Cross-Medium Stress Test
+  round: R16
+  format: one independent 16:9 moodboard; never a five-board composite
+  palette: *id001
+  conditional_palette: *id002
+  forbidden_drift: *id003
+  human_gate: material aesthetic promotion remains human-authoritative
+  status: SPECIFIED
+  required_new_coverage: *id080
+- study_id: D18
+  title: Localization ES/EN / Text Expansion
+  purpose: Stress typography and layouts across bilingual content.
+  canonical_refs:
+  - DVV-VIS-0227
+  - DVV-VIS-0141
+  required_content:
+  - short vs long headings
+  - accented Spanish
+  - English compact copy
+  - button expansion
+  - tables
+  - captions
+  - footnotes
+  - mobile overflow
+  composition: paired ES/EN layout comparisons
+  intensity_mode: B
+  target_media: digital/editorial
+  anatomical_abstraction: selective
+  oneiric_intensity: controlled-high
+  motion_implication: implicit where relevant
+  outputs_unlocked: &id081
+  - localization layout rules
+  - type scale validation
+  exclusions:
+  - no English-only spacing assumptions
+  acceptance_criteria:
+  - no clipping or hierarchy loss
+  sequence: 78
+  macrofamily: Cross-Medium Stress Test
+  round: R16
+  format: one independent 16:9 moodboard; never a five-board composite
+  palette: *id001
+  conditional_palette: *id002
+  forbidden_drift: *id003
+  human_gate: material aesthetic promotion remains human-authoritative
+  status: SPECIFIED
+  required_new_coverage: *id081
+- study_id: D19
+  title: Performance / Low-Bandwidth Degradation
+  purpose: Stress graceful visual reduction when heavy imagery/motion cannot load.
+  canonical_refs:
+  - DVV-VIS-0241
+  - DVV-VIS-0242
+  required_content:
+  - full experience
+  - reduced-image mode
+  - no-video mode
+  - no-webgl mode
+  - low-bandwidth placeholders
+  - CSS-only surfaces
+  - SVG-first alternatives
+  - progressive enhancement
+  composition: degradation ladder
+  intensity_mode: B/H
+  target_media: web
+  anatomical_abstraction: selective
+  oneiric_intensity: controlled-high
+  motion_implication: implicit where relevant
+  outputs_unlocked: &id082
+  - fallback assets
+  - performance tiers
+  exclusions:
+  - no blank experiences without hero media
+  acceptance_criteria:
+  - brand survives without heavy assets
+  sequence: 79
+  macrofamily: Cross-Medium Stress Test
+  round: R16
+  format: one independent 16:9 moodboard; never a five-board composite
+  palette: *id001
+  conditional_palette: *id002
+  forbidden_drift: *id003
+  human_gate: material aesthetic promotion remains human-authoritative
+  status: SPECIFIED
+  required_new_coverage: *id082
+- study_id: D20
+  title: Cross-Medium Convergence Atlas
+  purpose: Prove one campaign/system across web, app, print, spatial, social and motion.
+  canonical_refs:
+  - DVV-VIS-0150
+  - DVV-VIS-0198
+  - DVV-VIS-0135
+  required_content:
+  - single motif across 6+ media
+  - A/B/H allocation
+  - shared assets versus medium-specific variants
+  - scale changes
+  - material changes
+  - motion/static relationship
+  - production handoff points
+  composition: master cross-medium ecosystem map
+  intensity_mode: H
+  target_media: cross-medium
+  anatomical_abstraction: selective
+  oneiric_intensity: controlled-high
+  motion_implication: implicit where relevant
+  outputs_unlocked: &id083
+  - cross-medium rules
+  - brand consistency benchmark
+  exclusions:
+  - no identical copy-paste across media
+  acceptance_criteria:
+  - coherence without uniformity
+  sequence: 80
+  macrofamily: Cross-Medium Stress Test
+  round: R16
+  format: one independent 16:9 moodboard; never a five-board composite
+  palette: *id001
+  conditional_palette: *id002
+  forbidden_drift: *id003
+  human_gate: material aesthetic promotion remains human-authoritative
+  status: SPECIFIED
+  required_new_coverage: *id083
+- study_id: E01
+  title: Brandbook Chapter — Philosophy & Visual Principles
+  purpose: Define the opening visual chapter showing what DIVINIVID is and is not.
+  canonical_refs:
+  - DVV-VIS-0150
+  - DVV-VIS-0136
+  required_content:
+  - core tension
+  - sacred beauty + horror
+  - reveal/disturb/reconcile
+  - Living Darkness
+  - Living Crimson
+  - science/order counterweight
+  - oneiric world
+  - anti-canon examples
+  - A/B/H overview
+  composition: brandbook opening spread system
+  intensity_mode: H
+  target_media: brandbook
+  anatomical_abstraction: selective
+  oneiric_intensity: controlled-high
+  motion_implication: implicit where relevant
+  outputs_unlocked: &id084
+  - brandbook philosophy chapter
+  - training page
+  exclusions:
+  - no manifesto without operational examples
+  acceptance_criteria:
+  - principles paired with visual evidence
+  sequence: 81
+  macrofamily: Brandbook Blueprint / Final Universe System
+  round: R17
+  format: one independent 16:9 moodboard; never a five-board composite
+  palette: *id001
+  conditional_palette: *id002
+  forbidden_drift: *id003
+  human_gate: material aesthetic promotion remains human-authoritative
+  status: SPECIFIED
+  required_new_coverage: *id084
+- study_id: E02
+  title: Brandbook Chapter — Color & Material
+  purpose: Consolidate semantic color/material rules into publication-ready form.
+  canonical_refs:
+  - DVV-VIS-0220
+  - DVV-VIS-0136
+  required_content:
+  - black
+  - ivory
+  - crimson
+  - aged gold
+  - ultramar
+  - secondary historical pigments if allowed
+  - digital/print behavior
+  - ratios
+  - illegal combinations
+  - material analogues
+  composition: swatch + application + do/don't chapter
+  intensity_mode: B/H
+  target_media: brandbook
+  anatomical_abstraction: selective
+  oneiric_intensity: controlled-high
+  motion_implication: implicit where relevant
+  outputs_unlocked: &id085
+  - color chapter
+  - token requirements
+  exclusions:
+  - no final hex invented without spec evidence
+  acceptance_criteria:
+  - semantic role precedes numeric values
+  sequence: 82
+  macrofamily: Brandbook Blueprint / Final Universe System
+  round: R17
+  format: one independent 16:9 moodboard; never a five-board composite
+  palette: *id001
+  conditional_palette: *id002
+  forbidden_drift: *id003
+  human_gate: material aesthetic promotion remains human-authoritative
+  status: SPECIFIED
+  required_new_coverage: *id085
+- study_id: E03
+  title: Brandbook Chapter — Typography
+  purpose: Consolidate type hierarchy, roles, motion and licensing/coverage requirements.
+  canonical_refs:
+  - DVV-VIS-0227
+  - DVV-VIS-0185
+  required_content:
+  - display
+  - editorial serif
+  - body
+  - technical sans
+  - small caps
+  - numerals
+  - captions
+  - ES/EN
+  - motion/reveal
+  - minimum sizes
+  - licensing/fallback requirements
+  composition: type specimen + application spreads
+  intensity_mode: B/H
+  target_media: brandbook
+  anatomical_abstraction: selective
+  oneiric_intensity: controlled-high
+  motion_implication: implicit where relevant
+  outputs_unlocked: &id086
+  - type chapter
+  - font evaluation checklist
+  exclusions:
+  - no typeface frozen merely from moodboard appearance
+  acceptance_criteria:
+  - roles operational and testable
+  sequence: 83
+  macrofamily: Brandbook Blueprint / Final Universe System
+  round: R17
+  format: one independent 16:9 moodboard; never a five-board composite
+  palette: *id001
+  conditional_palette: *id002
+  forbidden_drift: *id003
+  human_gate: material aesthetic promotion remains human-authoritative
+  status: SPECIFIED
+  required_new_coverage: *id086
+- study_id: E04
+  title: Brandbook Chapter — Composition & Density
+  purpose: Explain grids, silence, asymmetry, scale and density.
+  canonical_refs:
+  - DVV-VIS-0150
+  - DVV-VIS-0242
+  required_content:
+  - negative space
+  - monumental scale
+  - dense microdetail
+  - asymmetry
+  - A/B/H density
+  - image/type balance
+  - grid support
+  - edge zones
+  - do/don't
+  composition: composition diagrams + real applications
+  intensity_mode: A/B/H
+  target_media: brandbook
+  anatomical_abstraction: selective
+  oneiric_intensity: controlled-high
+  motion_implication: implicit where relevant
+  outputs_unlocked: &id087
+  - composition chapter
+  - layout rules
+  exclusions:
+  - no grid spectacle
+  acceptance_criteria:
+  - rules recoverable from examples
+  sequence: 84
+  macrofamily: Brandbook Blueprint / Final Universe System
+  round: R17
+  format: one independent 16:9 moodboard; never a five-board composite
+  palette: *id001
+  conditional_palette: *id002
+  forbidden_drift: *id003
+  human_gate: material aesthetic promotion remains human-authoritative
+  status: SPECIFIED
+  required_new_coverage: *id087
+- study_id: E05
+  title: Brandbook Chapter — Materials & Surfaces
+  purpose: Document how physical material logic translates to digital.
+  canonical_refs:
+  - DVV-VIS-0220
+  - DVV-VIS-0136
+  required_content:
+  - paper/vellum
+  - ink
+  - engraving
+  - stone
+  - metal
+  - cloth
+  - gold
+  - histological/bone texture
+  - digital emulation limits
+  - print finishes
+  - fallbacks
+  composition: material chapter with macro details
+  intensity_mode: H
+  target_media: brandbook
+  anatomical_abstraction: selective
+  oneiric_intensity: controlled-high
+  motion_implication: implicit where relevant
+  outputs_unlocked: &id088
+  - material chapter
+  - texture asset checklist
+  exclusions:
+  - no vintage filter
+  acceptance_criteria:
+  - material has mechanism and purpose
+  sequence: 85
+  macrofamily: Brandbook Blueprint / Final Universe System
+  round: R17
+  format: one independent 16:9 moodboard; never a five-board composite
+  palette: *id001
+  conditional_palette: *id002
+  forbidden_drift: *id003
+  human_gate: material aesthetic promotion remains human-authoritative
+  status: SPECIFIED
+  required_new_coverage: *id088
+- study_id: E06
+  title: Brandbook Chapter — Symbols, Seals & Instrumentation
+  purpose: Document symbolic and scientific support systems.
+  canonical_refs:
+  - DVV-VIS-0141
+  - DVV-VIS-0145
+  required_content:
+  - seals
+  - chapter marks
+  - icons
+  - rulers
+  - coordinates
+  - labels
+  - callouts
+  - measurement
+  - state marks
+  - ceremonial/editorial/UI intensity
+  composition: symbol library + application spreads
+  intensity_mode: B/H
+  target_media: brandbook
+  anatomical_abstraction: selective
+  oneiric_intensity: controlled-high
+  motion_implication: implicit where relevant
+  outputs_unlocked: &id089
+  - symbols chapter
+  - SVG checklist
+  exclusions:
+  - no occult-sigil filler
+  acceptance_criteria:
+  - symbols have semantic meaning
+  sequence: 86
+  macrofamily: Brandbook Blueprint / Final Universe System
+  round: R18
+  format: one independent 16:9 moodboard; never a five-board composite
+  palette: *id001
+  conditional_palette: *id002
+  forbidden_drift: *id003
+  human_gate: material aesthetic promotion remains human-authoritative
+  status: SPECIFIED
+  required_new_coverage: *id089
+- study_id: E07
+  title: Brandbook Chapter — Illustration System
+  purpose: Document illustration construction from anatomy to abstract organisms.
+  canonical_refs:
+  - DVV-VIS-0088
+  - DVV-VIS-0075
+  required_content:
+  - analogy
+  - detail tiers
+  - line/texture
+  - silhouette
+  - color
+  - transformation
+  - composition
+  - annotation integration
+  - forbidden literalism
+  composition: illustration chapter with construction breakdowns
+  intensity_mode: H
+  target_media: brandbook
+  anatomical_abstraction: selective
+  oneiric_intensity: controlled-high
+  motion_implication: implicit where relevant
+  outputs_unlocked: &id090
+  - illustration chapter
+  - asset family checklist
+  exclusions:
+  - no photoreal AI fantasy
+  acceptance_criteria:
+  - construction rules explicit
+  sequence: 87
+  macrofamily: Brandbook Blueprint / Final Universe System
+  round: R18
+  format: one independent 16:9 moodboard; never a five-board composite
+  palette: *id001
+  conditional_palette: *id002
+  forbidden_drift: *id003
+  human_gate: material aesthetic promotion remains human-authoritative
+  status: SPECIFIED
+  required_new_coverage: *id090
+- study_id: E08
+  title: Brandbook Chapter — Bestiary & Entity Families
+  purpose: Document celestial, infernal, harlequin, flora and abstract entity systems.
+  canonical_refs:
+  - DVV-VIS-0129
+  - DVV-VIS-0130
+  - DVV-VIS-0122
+  required_content:
+  - hierarchies
+  - silhouettes
+  - polychromy
+  - states
+  - motion
+  - small-scale simplification
+  - symbolic roles
+  - modern application
+  - anti-fantasy rules
+  composition: bestiary folios + taxonomy diagram
+  intensity_mode: A/H
+  target_media: brandbook
+  anatomical_abstraction: selective
+  oneiric_intensity: controlled-high
+  motion_implication: implicit where relevant
+  outputs_unlocked: &id091
+  - bestiary chapter
+  - entity asset checklist
+  exclusions:
+  - no boss-monster taxonomy
+  acceptance_criteria:
+  - historical/codex logic remains legible
+  sequence: 88
+  macrofamily: Brandbook Blueprint / Final Universe System
+  round: R18
+  format: one independent 16:9 moodboard; never a five-board composite
+  palette: *id001
+  conditional_palette: *id002
+  forbidden_drift: *id003
+  human_gate: material aesthetic promotion remains human-authoritative
+  status: SPECIFIED
+  required_new_coverage: *id091
+- study_id: E09
+  title: Brandbook Chapter — Anatomy, Specimens & Vessels
+  purpose: Document specimen, Petri, vessel and medullary systems.
+  canonical_refs:
+  - DVV-VIS-0089
+  - DVV-VIS-0088
+  required_content:
+  - vessel taxonomy
+  - Petri duality
+  - cross-sections
+  - medullary landscapes
+  - labels
+  - states
+  - transformations
+  - non-gore boundary
+  - production outputs
+  composition: scientific plate chapter
+  intensity_mode: H
+  target_media: brandbook
+  anatomical_abstraction: selective
+  oneiric_intensity: controlled-high
+  motion_implication: implicit where relevant
+  outputs_unlocked: &id092
+  - specimen chapter
+  - vessel asset checklist
+  exclusions:
+  - no generic biotech look
+  acceptance_criteria:
+  - scientific layer and oneiric layer balanced
+  sequence: 89
+  macrofamily: Brandbook Blueprint / Final Universe System
+  round: R18
+  format: one independent 16:9 moodboard; never a five-board composite
+  palette: *id001
+  conditional_palette: *id002
+  forbidden_drift: *id003
+  human_gate: material aesthetic promotion remains human-authoritative
+  status: SPECIFIED
+  required_new_coverage: *id092
+- study_id: E10
+  title: Brandbook Chapter — Environments & Impossible Geometry
+  purpose: Document living architecture, portals and paradoxical space.
+  canonical_refs:
+  - DVV-VIS-0093
+  - DVV-VIS-0213
+  required_content:
+  - living environment rules
+  - thresholds
+  - impossible geometry
+  - scale
+  - state
+  - motion
+  - user relation
+  - digital/physical application
+  - anti-theme-park rules
+  composition: environment chapter with sections/perspectives
+  intensity_mode: A/H
+  target_media: brandbook
+  anatomical_abstraction: selective
+  oneiric_intensity: controlled-high
+  motion_implication: implicit where relevant
+  outputs_unlocked: &id093
+  - environment chapter
+  - spatial asset checklist
+  exclusions:
+  - no gratuitous paradox
+  acceptance_criteria:
+  - environment meaning and usability explicit
+  sequence: 90
+  macrofamily: Brandbook Blueprint / Final Universe System
+  round: R18
+  format: one independent 16:9 moodboard; never a five-board composite
+  palette: *id001
+  conditional_palette: *id002
+  forbidden_drift: *id003
+  human_gate: material aesthetic promotion remains human-authoritative
+  status: SPECIFIED
+  required_new_coverage: *id093
+- study_id: E11
+  title: Brandbook Chapter — Motion Master Language
+  purpose: Consolidate verbs, timing, easing, scale and reduced motion.
+  canonical_refs:
+  - DVV-VIS-0135
+  - DVV-VIS-0185
+  required_content:
+  - motion verbs
+  - duration classes
+  - easing
+  - micro/page/environment scale
+  - A/B/H motion intensity
+  - entity motion
+  - structural motion
+  - reduced-motion
+  - anti-patterns
+  composition: motion bible summary board
+  intensity_mode: H
+  target_media: brandbook
+  anatomical_abstraction: selective
+  oneiric_intensity: controlled-high
+  motion_implication: implicit where relevant
+  outputs_unlocked: &id094
+  - motion chapter
+  - motion token checklist
+  exclusions:
+  - no decorative ambient loops
+  acceptance_criteria:
+  - behavioral rationale for motion
+  sequence: 91
+  macrofamily: Brandbook Blueprint / Final Universe System
+  round: R19
+  format: one independent 16:9 moodboard; never a five-board composite
+  palette: *id001
+  conditional_palette: *id002
+  forbidden_drift: *id003
+  human_gate: material aesthetic promotion remains human-authoritative
+  status: SPECIFIED
+  required_new_coverage: *id094
+- study_id: E12
+  title: Brandbook Chapter — Digital Product
+  purpose: Document web/app components, responsive logic and states.
+  canonical_refs:
+  - DVV-VIS-0241
+  - DVV-VIS-0242
+  required_content:
+  - web
+  - mobile
+  - cards
+  - navigation
+  - forms
+  - states
+  - data
+  - responsive
+  - performance
+  - accessibility
+  - A/B/H usage
+  composition: digital system chapter with components and page fragments
+  intensity_mode: B/H
+  target_media: brandbook
+  anatomical_abstraction: selective
+  oneiric_intensity: controlled-high
+  motion_implication: implicit where relevant
+  outputs_unlocked: &id095
+  - digital chapter
+  - component asset checklist
+  exclusions:
+  - no poster-only digital examples
+  acceptance_criteria:
+  - functional UI represented
+  sequence: 92
+  macrofamily: Brandbook Blueprint / Final Universe System
+  round: R19
+  format: one independent 16:9 moodboard; never a five-board composite
+  palette: *id001
+  conditional_palette: *id002
+  forbidden_drift: *id003
+  human_gate: material aesthetic promotion remains human-authoritative
+  status: SPECIFIED
+  required_new_coverage: *id095
+- study_id: E13
+  title: Brandbook Chapter — Editorial & Data
+  purpose: Document publications, reports, annotation and data visualization.
+  canonical_refs:
+  - DVV-VIS-0227
+  - DVV-VIS-0141
+  - DVV-VIS-0145
+  required_content:
+  - page archetypes
+  - tables
+  - charts
+  - figures
+  - captions
+  - footnotes
+  - citations
+  - indices
+  - data motion
+  - print/PDF behavior
+  composition: report/book chapter
+  intensity_mode: B
+  target_media: brandbook
+  anatomical_abstraction: selective
+  oneiric_intensity: controlled-high
+  motion_implication: implicit where relevant
+  outputs_unlocked: &id096
+  - editorial chapter
+  - data template checklist
+  exclusions:
+  - no decorative data visualization
+  acceptance_criteria:
+  - long-form readability proven
+  sequence: 93
+  macrofamily: Brandbook Blueprint / Final Universe System
+  round: R19
+  format: one independent 16:9 moodboard; never a five-board composite
+  palette: *id001
+  conditional_palette: *id002
+  forbidden_drift: *id003
+  human_gate: material aesthetic promotion remains human-authoritative
+  status: SPECIFIED
+  required_new_coverage: *id096
+- study_id: E14
+  title: Brandbook Chapter — Campaign & Communication
+  purpose: Document social, launch, email, poster and campaign behavior.
+  canonical_refs:
+  - DVV-VIS-0150
+  - DVV-VIS-0075
+  required_content:
+  - campaign motif derivation
+  - teaser/reveal/proof/CTA
+  - social series
+  - poster
+  - email
+  - landing takeover
+  - A/B/H allocation
+  - content hierarchy
+  composition: communication ecosystem chapter
+  intensity_mode: A/H
+  target_media: brandbook
+  anatomical_abstraction: selective
+  oneiric_intensity: controlled-high
+  motion_implication: implicit where relevant
+  outputs_unlocked: &id097
+  - campaign chapter
+  - template checklist
+  exclusions:
+  - no campaign resets brand direction
+  acceptance_criteria:
+  - campaign variety remains coherent
+  sequence: 94
+  macrofamily: Brandbook Blueprint / Final Universe System
+  round: R19
+  format: one independent 16:9 moodboard; never a five-board composite
+  palette: *id001
+  conditional_palette: *id002
+  forbidden_drift: *id003
+  human_gate: material aesthetic promotion remains human-authoritative
+  status: SPECIFIED
+  required_new_coverage: *id097
+- study_id: E15
+  title: Brandbook Chapter — Physical & Environmental
+  purpose: Document packaging, stationery, objects, signage and exhibition.
+  canonical_refs:
+  - DVV-VIS-0220
+  - DVV-VIS-0093
+  required_content:
+  - packaging
+  - stationery
+  - artifact
+  - signage
+  - exhibition
+  - material/finish
+  - low-cost fallback
+  - scale/viewing distance
+  - accessibility
+  composition: physical applications chapter
+  intensity_mode: H
+  target_media: brandbook
+  anatomical_abstraction: selective
+  oneiric_intensity: controlled-high
+  motion_implication: implicit where relevant
+  outputs_unlocked: &id098
+  - physical chapter
+  - vendor handoff checklist
+  exclusions:
+  - no premium finish dependency
+  acceptance_criteria:
+  - manufacturable examples
+  sequence: 95
+  macrofamily: Brandbook Blueprint / Final Universe System
+  round: R19
+  format: one independent 16:9 moodboard; never a five-board composite
+  palette: *id001
+  conditional_palette: *id002
+  forbidden_drift: *id003
+  human_gate: material aesthetic promotion remains human-authoritative
+  status: SPECIFIED
+  required_new_coverage: *id098
+- study_id: E16
+  title: Brandbook Chapter — Accessibility & Inclusive Translation
+  purpose: Make accessibility a canonical design behavior.
+  canonical_refs:
+  - DVV-VIS-0241
+  - DVV-VIS-0135
+  - DVV-VIS-0220
+  required_content:
+  - contrast
+  - focus
+  - non-color states
+  - reduced motion
+  - alt text
+  - decorative assets
+  - text scaling
+  - localization
+  - complex SVG description
+  - accessible physical signage
+  composition: paired standard/accessible examples
+  intensity_mode: B/H
+  target_media: brandbook
+  anatomical_abstraction: selective
+  oneiric_intensity: controlled-high
+  motion_implication: implicit where relevant
+  outputs_unlocked: &id099
+  - accessibility chapter
+  - QA checklist
+  exclusions:
+  - no bolt-on appendix mentality
+  acceptance_criteria:
+  - accessibility integrated with identity
+  sequence: 96
+  macrofamily: Brandbook Blueprint / Final Universe System
+  round: R20
+  format: one independent 16:9 moodboard; never a five-board composite
+  palette: *id001
+  conditional_palette: *id002
+  forbidden_drift: *id003
+  human_gate: material aesthetic promotion remains human-authoritative
+  status: SPECIFIED
+  required_new_coverage: *id099
+- study_id: E17
+  title: Brandbook Chapter — Asset Library & Naming
+  purpose: Document how users find, name and choose assets.
+  canonical_refs:
+  - DVV-VIS-0198
+  - DVV-VIS-0145
+  required_content:
+  - family IDs
+  - file naming
+  - variant/state suffixes
+  - detail tiers
+  - format variants
+  - canonical/support status
+  - preview thumbnails
+  - search tags
+  - provenance fields
+  composition: asset-library UI + naming tables
+  intensity_mode: B
+  target_media: brandbook
+  anatomical_abstraction: selective
+  oneiric_intensity: controlled-high
+  motion_implication: implicit where relevant
+  outputs_unlocked: &id100
+  - asset library chapter
+  - naming convention
+  exclusions:
+  - no opaque filenames
+  - no duplicate aliases
+  acceptance_criteria:
+  - external user can locate correct asset
+  sequence: 97
+  macrofamily: Brandbook Blueprint / Final Universe System
+  round: R20
+  format: one independent 16:9 moodboard; never a five-board composite
+  palette: *id001
+  conditional_palette: *id002
+  forbidden_drift: *id003
+  human_gate: material aesthetic promotion remains human-authoritative
+  status: SPECIFIED
+  required_new_coverage: *id100
+- study_id: E18
+  title: Brandbook Chapter — Production Rules & Factory Handoff
+  purpose: Visualize how approved assets move from spec to factory and QA.
+  canonical_refs:
+  - DVV-VIS-0198
+  - DVV-VIS-0141
+  required_content:
+  - production order anatomy
+  - executor-neutral core
+  - adapter layer
+  - deterministic QA
+  - model-assisted QA
+  - human gate
+  - repair loop
+  - golden set
+  - release status
+  composition: production pipeline chapter with sample order
+  intensity_mode: B
+  target_media: brandbook
+  anatomical_abstraction: selective
+  oneiric_intensity: controlled-high
+  motion_implication: implicit where relevant
+  outputs_unlocked: &id101
+  - production chapter
+  - factory onboarding
+  exclusions:
+  - no provider-specific core rule
+  acceptance_criteria:
+  - factory cannot infer aesthetics
+  sequence: 98
+  macrofamily: Brandbook Blueprint / Final Universe System
+  round: R20
+  format: one independent 16:9 moodboard; never a five-board composite
+  palette: *id001
+  conditional_palette: *id002
+  forbidden_drift: *id003
+  human_gate: material aesthetic promotion remains human-authoritative
+  status: SPECIFIED
+  required_new_coverage: *id101
+- study_id: E19
+  title: Brandbook Chapter — Anti-Canon, Governance & Exceptions
+  purpose: Document what is forbidden and how change is governed.
+  canonical_refs:
+  - DVV-VIS-0150
+  - DVV-VIS-0135
+  required_content:
+  - negative canon classes
+  - drift examples
+  - exception workflow
+  - canon/support distinction
+  - versioning
+  - human approval
+  - deprecation
+  - project harvest boundary
+  - do/don't
+  composition: anti-canon wall + governance flow
+  intensity_mode: B/H
+  target_media: brandbook
+  anatomical_abstraction: selective
+  oneiric_intensity: controlled-high
+  motion_implication: implicit where relevant
+  outputs_unlocked: &id102
+  - governance chapter
+  - anti-pattern checklist
+  exclusions:
+  - no vague “don't be generic” statements
+  acceptance_criteria:
+  - each anti-pattern has operational prevention
+  sequence: 99
+  macrofamily: Brandbook Blueprint / Final Universe System
+  round: R20
+  format: one independent 16:9 moodboard; never a five-board composite
+  palette: *id001
+  conditional_palette: *id002
+  forbidden_drift: *id003
+  human_gate: material aesthetic promotion remains human-authoritative
+  status: SPECIFIED
+  required_new_coverage: *id102
+- study_id: E20
+  title: Final Universe Map / Brandbook Blueprint
+  purpose: Assemble the complete visual universe and its production relationships in one final master board.
+  canonical_refs:
+  - DVV-VIS-0150
+  - DVV-VIS-0198
+  - DVV-VIS-0135
+  - DVV-VIS-0129
+  - DVV-VIS-0241
+  required_content:
+  - core principles
+  - family ontology
+  - structural system
+  - illustration/entities
+  - motion
+  - digital
+  - editorial
+  - communication
+  - physical
+  - accessibility
+  - production
+  - governance
+  - A/B/H
+  - lineage and negative evidence
+  - brandbook chapter map
+  - Asset Factory handoff
+  composition: monumental final universe map with chapter spine and production flow
+  intensity_mode: H
+  target_media: brandbook/system
+  anatomical_abstraction: selective
+  oneiric_intensity: controlled-high
+  motion_implication: implicit where relevant
+  outputs_unlocked: &id103
+  - Brandbook Blueprint
+  - final visual-universe orientation map
+  - coverage-audit input
+  exclusions:
+  - no new aesthetic invention
+  - no unresolved contradictions hidden
+  acceptance_criteria:
+  - all 100 boards map into the final system
+  - no orphan family
+  - ready for coverage audit
+  sequence: 100
+  macrofamily: Brandbook Blueprint / Final Universe System
+  round: R20
+  format: one independent 16:9 moodboard; never a five-board composite
+  palette: *id001
+  conditional_palette: *id002
+  forbidden_drift: *id003
+  human_gate: material aesthetic promotion remains human-authoritative
+  status: SPECIFIED
+  required_new_coverage: *id103
