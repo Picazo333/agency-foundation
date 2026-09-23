@@ -291,6 +291,15 @@ Full Figma Production System remains downstream of `DIVINIVID_FINAL_EXPRESSION_L
 
 ## P3 — Hero System Lab
 
+**Execution status: HUMAN APPROVED / CLOSED (2026-09-22).**
+
+The human owner selected **H-B — Editorial / Systemic** after a targeted repair that restored M1-B morphology, P1 typographic force and P2 Minimal / No-Icons discipline.
+
+Lock document:
+`docs/03-brand/workbench/divinivid/generation/P3_HERO_SYSTEM_LOCK_HB_EDITORIAL_SYSTEMIC_V1.md`.
+
+H-A remains ceremonial evidence. H-C remains commercial-stress evidence. Neither is the default hero grammar.
+
 ### Objective
 Determine how the visual universe behaves as a commercial entry point.
 
@@ -317,8 +326,10 @@ A successful hero must preserve DIVINIVID while allowing the viewer to understan
 - what it does.
 
 ### Budget
-- 3 desktop heroes;
-- only the human-selected winner receives a mobile translation.
+- initial three-hero comparison: consumed;
+- targeted repair: consumed and human-approved as H-B;
+- mobile translation is deferred until responsive validation materially requires it;
+- P3 budget closed.
 
 ### Output
 `HERO_SYSTEM_LOCK_CANDIDATE`

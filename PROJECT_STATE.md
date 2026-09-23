@@ -82,10 +82,20 @@ Explicit anti-slop rule:
 The rejected icon catalog and the Figma surrogate remain quarantined as negative/non-canonical evidence.
 
 #### P3 — Hero
-Test:
-- H-A Revelatory;
-- H-B Editorial/Systemic;
-- H-C Commercial Precision.
+**Status: HUMAN APPROVED / CLOSED.**
+
+Selected direction:
+- **H-B — Editorial / Systemic**.
+
+Default behavior:
+- preserve M1-B macro/micro ambiguity;
+- preserve P1 imposing typography;
+- preserve P2 Minimal / No-Icons;
+- balance matter with editorial/systemic structure;
+- avoid both pure atmospheric poster behavior and conventional landing-page flattening.
+
+H-A remains useful for ceremonial/high-intensity contexts.
+H-C remains useful for later commercial stress tests.
 
 #### P4 — Density / Intensity
 Define:
@@ -122,11 +132,11 @@ Consolidate only human-approved module outputs and run:
 - production viability.
 
 ### 3. Current exact gate
-**P3 — Hero System Lab.**
+**P4 — Density / Intensity Scale.**
 
-P1 Typography and P2 Minimal/No-Icons Sign Grammar are closed.
+P1 Typography, P2 Minimal/No-Icons and P3 H-B Hero System are closed.
 
-P3 requires an explicit human trigger and must preserve both.
+P4 requires an explicit human trigger and must preserve all three.
 
 Do not:
 - reopen Core/B1;
@@ -204,7 +214,6 @@ This downstream path is not yet authorized merely by appearing here.
 - no final expression promotion without human gate.
 
 ## Open decisions
-- Hero System Lock;
 - D1–D4 intensity rules;
 - Motion Grammar Lock;
 - Digital Behavior Direction;
@@ -227,4 +236,4 @@ Before final lock, use Figma only when the task materially requires:
 Do not use Figma to invent unresolved iconography, substitute approved visual assets with proxies, or silently replace an approved typographic direction.
 
 ## Next exact gate
-**Human trigger for P3 — Hero System Lab.**
+**Human trigger for P4 — Density / Intensity Scale.**
