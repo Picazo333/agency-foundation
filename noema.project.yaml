@@ -102,6 +102,18 @@ sources_of_truth:
   surface_lock_v1:
     scheme: repo
     locator: docs/03-brand/workbench/divinivid/generation/SURFACE_LOCK_V1.md
+  core_lock_v1:
+    scheme: repo
+    locator: docs/03-brand/workbench/divinivid/generation/DIVINIVID_CORE_LOCK_V1.md
+  primary_expression_base_b1:
+    scheme: repo
+    locator: docs/03-brand/workbench/divinivid/generation/DIVINIVID_BASE_LOCK_B1.md
+  bestiary_base_b0:
+    scheme: repo
+    locator: docs/03-brand/workbench/divinivid/generation/DIVINIVID_BESTIARY_BASE_B0.md
+  targeted_visual_synthesis_plan_v1:
+    scheme: repo
+    locator: docs/08-plans/master/DIVINIVID_TARGETED_VISUAL_SYNTHESIS_PLAN_V1.md
   asset_factory_brand_pack:
     scheme: repo
     locator: asset-factory/spec/01-brand-pack-contract.md
@@ -144,8 +156,11 @@ context:
       required:
         - repo://docs/00-meta/source-of-truth.md
         - repo://docs/00-meta/operating-model.md
-        - repo://docs/08-plans/master/DIVINIVID_VISUAL_UNIVERSE_META_PLAN_V2.md
+        - repo://docs/08-plans/master/DIVINIVID_TARGETED_VISUAL_SYNTHESIS_PLAN_V1.md
       optional:
+        - repo://docs/08-plans/master/DIVINIVID_VISUAL_UNIVERSE_META_PLAN_V2.md
+        - repo://docs/03-brand/workbench/divinivid/generation/DIVINIVID_CORE_LOCK_V1.md
+        - repo://docs/03-brand/workbench/divinivid/generation/DIVINIVID_BASE_LOCK_B1.md
         - repo://docs/00-meta/dependency-map.md
         - repo://docs/07-decisions/index.md
         - repo://asset-factory/spec/01-brand-pack-contract.md
@@ -153,14 +168,16 @@ context:
     visual_generation:
       required:
         - repo://docs/03-brand/workbench/divinivid/generation/CURRENT_GENERATION_STATE.yaml
-        - repo://docs/03-brand/workbench/divinivid/generation/DIVINIVID_MOODBOARD_CONTRACTS_V1.yaml
-        - repo://docs/03-brand/workbench/divinivid/generation/GENERATION_RUNTIME_LOCK_V1.md
-        - repo://docs/03-brand/workbench/divinivid/generation/EXECUTION_STYLE_ANCHOR_SET_V1.md
-        - repo://docs/03-brand/workbench/divinivid/generation/SURFACE_LOCK_V1.md
+        - repo://docs/03-brand/workbench/divinivid/generation/DIVINIVID_CORE_LOCK_V1.md
+        - repo://docs/03-brand/workbench/divinivid/generation/DIVINIVID_BASE_LOCK_B1.md
+        - repo://docs/08-plans/master/DIVINIVID_TARGETED_VISUAL_SYNTHESIS_PLAN_V1.md
         - repo://docs/03-brand/workbench/divinivid/VISUAL_CANON_V1.md
-        - repo://docs/03-brand/workbench/divinivid/generation/CANON_ANCHOR_SET_V1.md
         - repo://docs/03-brand/workbench/divinivid/ANTI_CANON.md
       optional:
+        - repo://docs/03-brand/workbench/divinivid/generation/DIVINIVID_BESTIARY_BASE_B0.md
+        - repo://docs/03-brand/workbench/divinivid/generation/SURFACE_LOCK_V1.md
+        - repo://docs/03-brand/workbench/divinivid/generation/EXECUTION_STYLE_ANCHOR_SET_V1.md
+        - repo://docs/03-brand/workbench/divinivid/generation/DIVINIVID_MOODBOARD_CONTRACTS_V1.yaml
         - repo://docs/03-brand/workbench/divinivid/generation/DIVINIVID_100_MOODBOARD_EXPANSION_SPEC_V1.md
         - repo://docs/03-brand/workbench/divinivid/archive/VISUAL_CANON_REGISTRY_V1.csv
         - repo://docs/03-brand/workbench/divinivid/archive/VISUAL_LINEAGE_REGISTRY_V1.csv
@@ -168,6 +185,10 @@ context:
       required:
         - repo://PROJECT_STATE.md
       optional:
+        - repo://docs/08-plans/master/DIVINIVID_TARGETED_VISUAL_SYNTHESIS_PLAN_V1.md
+        - repo://docs/03-brand/workbench/divinivid/generation/DIVINIVID_CORE_LOCK_V1.md
+        - repo://docs/03-brand/workbench/divinivid/generation/DIVINIVID_BASE_LOCK_B1.md
+        - repo://docs/03-brand/workbench/divinivid/generation/DIVINIVID_BESTIARY_BASE_B0.md
         - repo://docs/08-plans/master/DIVINIVID_VISUAL_UNIVERSE_META_PLAN_V2.md
         - repo://docs/03-brand/workbench/divinivid/VISUAL_UNIVERSE_CHECKPOINT_2026-09-20.md
         - repo://docs/03-brand/workbench/divinivid/archive/VISUAL_ARCHIVE_V1_INVENTORY.md

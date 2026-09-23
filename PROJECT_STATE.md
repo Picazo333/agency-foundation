@@ -1,13 +1,16 @@
 ---
 status: approved
 owner: meta
-updated: 2026-09-21
+updated: 2026-09-22
 authority: canon
 depends_on:
   - docs/07-decisions/ADR-0012-divinivid-project-name-and-repo-rename.md
   - docs/07-decisions/ADR-0013-visual-universe-to-asset-factory-sequencing.md
-  - docs/08-plans/master/DIVINIVID_VISUAL_UNIVERSE_META_PLAN_V2.md
-  - docs/03-brand/workbench/divinivid/VISUAL_UNIVERSE_CHECKPOINT_2026-09-20.md
+  - docs/07-decisions/ADR-0014-targeted-visual-synthesis-and-expression-bases.md
+  - docs/08-plans/master/DIVINIVID_TARGETED_VISUAL_SYNTHESIS_PLAN_V1.md
+  - docs/03-brand/workbench/divinivid/generation/DIVINIVID_CORE_LOCK_V1.md
+  - docs/03-brand/workbench/divinivid/generation/DIVINIVID_BASE_LOCK_B1.md
+  - docs/03-brand/workbench/divinivid/generation/DIVINIVID_BESTIARY_BASE_B0.md
 ---
 # Project State
 
@@ -22,58 +25,101 @@ Build DIVINIVID as a serious agency and operating system from research -> decisi
 
 ## Current active work
 
-### 1. Visual Universe — 100-board Plan Locked / controlled generation active
-The human owner has approved a coherent DIVINIVID visual baseline after extensive iterative exploration.
+### 1. Visual system — Core and expression bases locked; targeted synthesis active
 
-The project is no longer searching for a fundamentally different aesthetic.
+The project has exited mandatory mass moodboard execution.
 
-Completed:
-1. Noema RC0 selective adoption merged;
-2. Skill Foundry G0-G7 candidate architecture approved and merged;
-3. post-protocol meta-plan verification completed;
-4. Visual Archive V1 inventory completed: 277 image files + 4 legacy HTML artifacts, with failures/duplicates/experiments preserved.
+ADR-0014 preserves the historical 100-contract corpus as coverage/specification evidence but removes the requirement to render all 100 moodboards before identity synthesis.
 
-Completed:
-5. Phase 2 human review approved;
-6. Visual Canon V1 + Lineage Registry finalized: 19 CANON, 193 APPROVED_SUPPORT, 39 EXPERIMENT, 18 NEGATIVE_CANON, 6 SUPERSEDED_DUPLICATE, 2 EVIDENCE_ONLY.
+Current human-approved hierarchy:
 
-Completed:
-7. 100/100 moodboard contracts recovered into the repository and human Plan Lock recorded;
-8. Generation Runtime Lock V1 installed to prevent self-referential aesthetic drift;
-9. Execution Style Anchor Set V1 + Surface Lock V1 installed after a second drift incident; approved A11–A15 are now the explicit surface/style anchors.
+1. **`DIVINIVID_CORE_LOCK_V1`** — frozen visual DNA.
+2. **`BASE_LOCK_B1`** — Route 3+4, the principal expression/production base:
+   - Mokuhanga / printed-evidence logic;
+   - Negative Shape / invisible-body logic.
+3. **`BESTIARY_BASE_B0`** — Route 3+5, specialized entity/apparition branch.
 
-Current execution state:
-- Saturation Checkpoint 20/100 audit found a contract-lineage defect.
-- contiguous contract-valid cursor is currently `A10`;
-- five human-approved dark boards previously labeled A11-A15 are retained as execution-style anchors `STYLE-S01-S05`, not as program-contract completions;
-- latest A16-A20 have human visual approval, but A16/A18/A19 need targeted contract completion and A20 is dependency-blocked;
-- contractual A11-A15 must be generated before the 20/100 checkpoint can PASS;
-- B01-B05 are not yet authorized;
-- generation must use the `visual_generation` Noema context mode.
+Canonical visual files are preserved in:
+`/DIVINIVID/visual-generation/locks-v2/`.
 
-Current work:
-1. generate the actual contractual A11-A15 from exact contracts using STYLE-S01-S05 + Surface Lock;
-2. preserve the latest A16-A20 visual compositions while completing contract gaps in A16/A18/A19;
-3. reconcile A20 only after A11-A19 are contract-complete;
-4. rerun Saturation Checkpoint 20/100;
-5. authorize B01-B05 only on checkpoint PASS.
+The primary base is intentionally separated from the bestiary so that entity-heavy imagery does not dominate the commercial/production system.
 
-Authority:
-- `docs/03-brand/workbench/divinivid/VISUAL_UNIVERSE_CHECKPOINT_2026-09-20.md`
-- `docs/08-plans/master/DIVINIVID_VISUAL_UNIVERSE_META_PLAN_V2.md`
-- ADR-0013.
+#### Active visual-development plan
+The next approved sequence is:
 
-### 2. Noema adoption
-Selective RC0 migration is merged and active. The project now declares:
+`M1-A Anatomía Celeste -> M1-B Topografía Orgánica -> human comparison -> optional bounded synthesis -> M2-Soft -> M2-Hard -> human comparison -> MAIN_SYSTEM_B2`.
+
+Nothing after the current lock formalization is automatically authorized merely because it appears in the plan.
+
+#### M1 objective
+Develop B1 into a morphology system where the same structures can support multiple readings across:
+- anatomy / marrow / membrane;
+- planets / celestial bodies;
+- geology / topography;
+- coasts / seas / deltas;
+- mountains / landscapes;
+- specimens / organisms;
+- architecture / cavities.
+
+Literal medical illustration or literal cartography is not the goal.
+
+#### M2 objective
+Increase elegant brutalist discipline in:
+- hierarchy;
+- spatial structure;
+- typographic confidence;
+- grid discipline;
+- architectural clarity;
+
+without erasing:
+- oneiric depth;
+- printed-evidence behavior;
+- negative-space logic;
+- living matter;
+- macro/micro ambiguity.
+
+#### Current exact gate
+**Locks are formalized. The next production action is M1-A only after an explicit human trigger.**
+
+Do not:
+- develop the bestiary branch yet;
+- start full Figma production-system industrialization;
+- start v0 implementation;
+- reopen the Core;
+- resume the old quota-driven moodboard program.
+
+### 2. Historical Visual Universe program
+The previous `DIVINIVID-VUE-100-V1` remains preserved as project history and coverage evidence.
+
+Historical state at supersession:
+- contiguous contract-valid cursor: `A10`;
+- A11-A15 were still missing as exact rendered contracts;
+- A16/A18/A19 had contract gaps;
+- A17 required traceability confirmation;
+- A20 was dependency-blocked.
+
+These states remain evidence but are no longer blocking identity synthesis as mandatory rendered moodboards.
+
+The previous runtime/postmortem lessons remain active:
+- `REFERENCE_AVAILABLE != REFERENCE_BOUND != REFERENCE_EFFECTIVE`;
+- approved roots must be explicitly bound;
+- rejected descendants are quarantined;
+- executor substitutions require capability checks;
+- human approval controls promotion.
+
+### 3. Noema adoption
+Selective RC0 migration remains active.
+
+The project declares:
 - explicit domain authority;
 - progressive context routing;
 - quality claims;
 - Noema/Skill Foundry relations;
-- conformance CI.
+- conformance expectations.
 
 Noema does not own or approve DIVINIVID visual canon.
 
-### 3. Skill Foundry handoff
+### 4. Skill Foundry handoff
 G0-G7 is complete and merged for candidate `sf-cand-20260920-divinivid-visual-production-system`.
 
 Approved reusable architecture:
@@ -81,40 +127,47 @@ Approved reusable architecture:
 - `brand-quality-auditor:VISUAL_SYSTEM_COVERAGE`;
 - `brand-identity-system:PRODUCTION_SPECIFICATION`;
 - reuse `brand-book-builder` and `brand-skill-orchestrator`;
-- no dedicated DIVINIVID or Gemini factory Skill.
+- no dedicated DIVINIVID, Figma, v0 or generator-specific top-level Skill.
 
-G8-G10 implementation/publish can proceed independently; project progress does not require pretending those modes are already published.
+Post-G6 evidence includes:
+- execution-style drift;
+- active reference-binding failure;
+- structured-assembly fallback.
 
-### 4. Asset Factory
-Generator-agnostic architecture remains integrated but **mass production is not yet authorized**.
+### 5. Asset Factory
+Generator-agnostic architecture remains integrated but **mass production is not authorized**.
 
-Production requires:
-- archive/canon registry;
-- coverage audit;
-- Visual Spec + Visual Matrix + Asset Ontology;
-- executable Production Matrix;
+Before industrial asset production, the project still needs:
+- mature identity/production specification;
+- executable production matrix;
 - golden-set factory pilot PASS.
 
-Gemini is the intended first factory executor, not a constitutional dependency.
+The selected executor may change without changing the project constitution.
 
-### 5. Business / field validation
-Field-validation instrumentation exists. It is not buyer evidence. Actual interviews, sales attempts and experiment records remain authoritative for commercial claims and strategy validation.
+### 6. Figma + web path
+Figma remains the planned composition/design-system control layer, with two phases:
+1. Visual Lab / synthesis support;
+2. production design system after the main identity system is mature.
 
-## Visual baseline summary
-Current approved working DNA includes:
+v0 remains a downstream implementation accelerator, not a source of Brand Canon.
+
+The web path after `MAIN_SYSTEM_B2` is expected to progress through:
+`application stress tests -> identity lock -> Figma production system -> website strategy/IA -> Golden Slice -> feasibility spike -> full Figma prototype -> v0/code prototype -> runtime reconciliation -> QA -> brandbook readiness handoff`.
+
+This downstream sequence is not yet authorized for execution.
+
+## Current approved visual DNA
 - absorbent near-absolute Living Darkness;
-- ivory editorial counterform;
+- ivory/bone as revealed evidence and reading surface;
 - Living Crimson as matter/signal/transformation;
-- aged gold for instrument/hierarchy/ritual structure;
-- selective ultramar, especially in medieval/bestiary/celestial systems;
-- surgical/scientific information order contrasted with deep creative/oniric imagery;
-- anatomy by analogy;
-- medieval illustration logic for entity families;
-- living environments and impossible geometry;
-- Dramatic/Revelatory (A), Abyssal/Subtle (B) and Hybrid (H) intensity modes;
-- motion as behavior rather than decoration.
-
-Archive V1 establishes **277 image files + 4 legacy HTML artifacts**. Visual Canon V1 now establishes exact current authority classes. Do not infer future canon promotion from filename or polish.
+- aged gold as measurement/hierarchy/instrumentation;
+- ultramar as residual trace only;
+- living matter and ambiguous morphology;
+- macro/micro duality;
+- editorial authority plus dream logic;
+- entities as apparitions/intelligences/specimens rather than conventional fantasy characters;
+- structures capable of biological/cosmic/architectural/geographic double reading;
+- Japanese influence only through structural/procedural principles where approved, not cliché motifs.
 
 ## Frozen / approved process decisions
 - Repo-first source of truth.
@@ -124,23 +177,23 @@ Archive V1 establishes **277 image files + 4 legacy HTML artifacts**. Visual Can
 - Negative evidence is preserved.
 - Capability contracts outlive executor substitutions.
 - Substantial changes use isolated branch/task scope + review.
-- External capabilities are subordinate to project authority and security gates.
 - Noema conformance != project quality.
 - Skill Foundry does not auto-create Skills from harvest.
-- Mass asset production cannot begin before the golden-set pilot passes.
 - Visual exploration and industrial asset production are separate stages.
+- Full 100-board rendering is no longer a prerequisite.
+- Core and expression-base mutations require explicit human approval.
+- Minimum necessary mutation is the default.
 
 ## Open decisions
+- M1-A vs M1-B outcome;
+- whether one bounded M1 synthesis is justified;
+- M2-Soft vs M2-Hard outcome;
+- final `MAIN_SYSTEM_B2`;
+- later bestiary taxonomy;
 - final commercial/legal clearance of DIVINIVID;
-- any targeted gap boards justified by the later Coverage Audit;
 - production executor adapter details after the golden-set pilot;
 - production stack/final website architecture;
 - business-model/ICP/positioning/pricing decisions still gated by real validation evidence.
 
 ## Next exact gate
-**Phase 4 — repair contract lineage and complete A11-A20 under Generation Runtime Lock V1 + Execution Style Anchor Set V1 + Surface Lock V1.**
-
-The 100-board specification gate is complete. Generation is authorized only through the locked cursor and exact contracts.
-
-Current sequence:
-`contractual A11-A15 -> targeted A16/A18/A19 completion -> A20 reconciliation -> saturation checkpoint 20/100 -> B01-B05 -> remaining 100-board execution -> Coverage Audit -> Production Specification -> Golden-set Pilot -> Asset Factory -> Brandbook -> Final QA/Release`.
+**Human trigger for M1-A — Anatomía Celeste.**
