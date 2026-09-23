@@ -199,7 +199,7 @@ identity_formalization:
   steps:
     R0_RECONCILIATION_AUDIT: COMPLETE_PASS
     R1_SIGNATURE_SYSTEM: COMPLETE_PASS
-    R2_FOUNDATIONS: ACTIVE_R2A_TECHNICAL_VALIDATION
+    R2_FOUNDATIONS: ACTIVE_R2B_HUMAN_REVIEW
     R3_COMPOSITION_GRAMMAR: BLOCKED_BY_R2_CLUSTER_ENTRY
     R4_IMAGE_ILLUSTRATION_LANGUAGE: BLOCKED_BY_R2_CLUSTER_ENTRY
     R5_TEMPORAL_MAPPING_AUDIT: BLOCKED_BY_R2_CLUSTER_ENTRY
@@ -207,7 +207,7 @@ identity_formalization:
     SYSTEM_FORMALIZATION_GATE: BLOCKED_BY_CROSS_CONSISTENCY
 
 r2_foundations:
-  status: ACTIVE_R2A_TECHNICAL_VALIDATION
+  status: R2B_FINALIST_COMPARISON_EVIDENCE_PENDING_HUMAN_GATE
   production_typography_direction: INHERIT_P1
   signature_constraint: INHERIT_R1_SBE
   technical_validation:
@@ -228,7 +228,32 @@ r2_foundations:
       - SEMANTIC_ROLES
       - LIGHT_DARK_SURFACE_BEHAVIOR
       - ACCESSIBILITY
-  figma_finalist_comparison: BLOCKED_UNTIL_R2A_SHORTLIST
+  r2a:
+    status: COMPLETE_PASS
+    evidence_doc: docs/03-brand/workbench/divinivid/generation/R2A_FOUNDATIONS_TECHNICAL_VALIDATION_V1.md
+    typography_shortlist:
+      - NEWSREADER_PLUS_IBM_PLEX_SANS
+      - BODONI_MODA_PLUS_IBM_PLEX_SANS
+      - SOURCE_SERIF_4_PLUS_IBM_PLEX_SANS
+    operational_sans_constant: IBM_PLEX_SANS
+    premium_hold:
+      - CANELA
+  figma_finalist_comparison:
+    status: EVIDENCE_PENDING_HUMAN_GATE
+    file_key: bqcKhEQHs4EEQgnn6lNU8O
+    page_id: "26:2"
+    comparison_root: "26:3"
+    evidence_doc: docs/03-brand/workbench/divinivid/generation/R2B_FOUNDATIONS_FINALIST_COMPARISON_EVIDENCE_V1.md
+  candidate_color_set:
+    darkness_950: "#060604"
+    ivory_100: "#E8DDC9"
+    ivory_200: "#CEB39A"
+    crimson_ui: "#C15B4D"
+    crimson_matter: "#601C16"
+    gold_text: "#BDA16F"
+    gold_instrument: "#856A47"
+    ultramar_ui: "#6984B4"
+    ultramar_matter: "#102139"
 
 formalization_cluster:
   status: BLOCKED_BY_R2
@@ -320,11 +345,11 @@ r1_signature_system:
     survivor_completion: CONSUMED_NORMAL_R1_DOD
 
 active_gate:
-  current: R2A_FOUNDATIONS_TECHNICAL_VALIDATION
+  current: R2B_FOUNDATIONS_FINALIST_HUMAN_REVIEW
   next_authorized_action: >
-    Execute deterministic R2-A technical validation for typography and color foundations.
-    Typography must validate licensing, ES/EN, weights/styles, web/print delivery, variable-font behavior,
-    accessibility/readability and fallback viability before any finalist Figma comparison.
+    Human review of R2 Foundations comparison node 26:3.
+    For typography choose PASS / MUTATE / KILL across A Newsreader, B Bodoni Moda and C Source Serif 4.
+    For color PASS the candidate production mapping or name one concrete token/role failure.
   automatic_next_generation: false
 
 tool_discipline:
@@ -413,5 +438,5 @@ deferred:
   - FINAL_BRANDBOOK
 
 next_exact_gate: >
-  R2-A Foundations Technical Validation. Produce a bounded technically viable typography/color shortlist.
-  Do not start R2-B Figma comparison before R2-A passes.
+  Human review of Figma R2-B comparison node 26:3.
+  Select the production display-serif finalist and approve or identify a bounded failure in the candidate color mapping.
