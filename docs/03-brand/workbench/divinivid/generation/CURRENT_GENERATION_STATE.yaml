@@ -215,11 +215,25 @@ p6_digital_behavior:
     UI structure before Signature, Foundations, Composition Grammar and Image/Illustration Language
     were formally closed.
 
+r1_signature_system:
+  status: PREFLIGHT_READY_HUMAN_GATE
+  preflight_doc: docs/03-brand/workbench/divinivid/generation/R1_SIGNATURE_SYSTEM_PREFLIGHT_V1.md
+  hypotheses:
+    - S-A_PALINDROMIC_AXIS
+    - S-B_BILATERAL_BODY
+    - S-C_SACRED_INSCRIPTION
+    - S-D_MIRRORED_CUT
+    - S-E_CUSTOM_LETTERFORM_LOGIC
+  figma_call_authorized: false
+  figma_budget:
+    initial_comparison: 1
+    targeted_repair: 1
+
 active_gate:
-  current: R1_SIGNATURE_SYSTEM_TEXT_PREFLIGHT
+  current: R1_SIGNATURE_SYSTEM_HUMAN_PREFLIGHT_REVIEW
   next_authorized_action: >
-    Define the exact five R1 signature hypotheses in text and verify meaningful distinction before
-    any Figma write. The first Figma call, if used, must comply with TOOL_EXECUTION_CONTRACTS_V1.
+    Human review of R1_SIGNATURE_SYSTEM_PREFLIGHT_V1.md. Figma remains blocked until the five-up
+    architecture contract is approved or specifically mutated.
   automatic_next_generation: false
 
 tool_discipline:
@@ -303,4 +317,4 @@ deferred:
   - FINAL_BRANDBOOK
 
 next_exact_gate: >
-  R1 Signature System text preflight. Define five distinct signature architectures before any Figma call.
+  Human review of the R1 Signature System five-up preflight. Do not call Figma before approval.
