@@ -7,6 +7,7 @@ depends_on:
   - ../../../08-plans/workstreams/DIVINIVID_VISUAL_IDENTITY_MASTER_PLAN.md
   - ../../../08-plans/master/DIVINIVID_CURRENT_EXECUTION_PLAN_V2.md
   - generation/R1_SIGNATURE_SYSTEM_LOCK_SBE_V1.md
+  - generation/DIVINIVID_FOUNDATIONS_LOCK_V1.md
   - CREATIVE_DIRECTION_BRIEF.md
   - reference-research/PHASE_2_REFERENCE_RESEARCH.md
 ---
