@@ -70,9 +70,11 @@ Use the full T2 contract plus:
 
 If the required tier contract cannot be answered concretely, do not make the call.
 
-## Universal per-call Definition of Done
+## Definition of Done by tier
 
-A material call is complete only when:
+For T1, the declared `DoD` and `VALIDATION` are sufficient when the operation is deterministic, reversible and scope-limited.
+
+For T2/T3, a material call is complete only when:
 
 1. it answers the declared question;
 2. it used the authorized source inputs;
@@ -82,6 +84,8 @@ A material call is complete only when:
 6. a relevant validation check is performed when the tool can fail silently;
 7. the result changes a decision, reduces uncertainty, or creates an approved downstream dependency;
 8. failure does not trigger blind rerolls.
+
+T0 reads require no status artifact unless the read itself discovers a durable state discrepancy.
 
 ## PAID_TOOL_GATE
 
