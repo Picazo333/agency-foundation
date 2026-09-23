@@ -363,7 +363,7 @@ r1_signature_system:
     human_approved: true
     lock_doc: docs/03-brand/workbench/divinivid/generation/R1_SIGNATURE_SYSTEM_LOCK_SBE_V1.md
     figma_node: "22:2"
-    production_font_status: UNRESOLVED_R2_RESPONSIBILITY
+    production_font_status: RESOLVED_R2_NEWSREADER
   figma_budget:
     initial_comparison: 0
     baseline_comparability_repair: 0
