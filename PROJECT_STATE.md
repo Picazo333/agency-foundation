@@ -185,7 +185,19 @@ Consolidate only human-approved module outputs and run:
 - production viability.
 
 ### 3. Current exact gate
-**R2-B — Foundations / Color Mapping Human Review.**
+**R3/R4/R5 — Formalization Cluster ACTIVE.**
+
+R2 Foundations is **HUMAN APPROVED / CLOSED**.
+
+Canonical Foundations lock:
+`docs/03-brand/workbench/divinivid/generation/DIVINIVID_FOUNDATIONS_LOCK_V1.md`.
+
+Production typography:
+- Newsreader;
+- IBM Plex Sans.
+
+Production color mapping:
+- approved after bounded dark/light surface validation.
 
 R0 is complete and passed.
 
@@ -276,7 +288,6 @@ This downstream path is not yet authorized merely by appearing here.
 - no final expression promotion without human gate.
 
 ## Open decisions
-- production typography/foundations;
 - Composition Grammar;
 - Image/Illustration Language;
 - Temporal Identity mapping;
@@ -306,22 +317,22 @@ v0 remains blocked until Final Expression Lock + Website Strategy/IA + approved 
 `docs/08-plans/master/DIVINIVID_CURRENT_EXECUTION_PLAN_V2.md`
 
 ## Next exact gate
-**R2-B — Foundations / Color Mapping Human Review.**
+**R3/R4/R5 — Formalization Cluster.**
 
-Typography is now human-approved:
-- display serif: **Newsreader**;
-- operational sans: **IBM Plex Sans**.
+R2 is locked by:
+`docs/03-brand/workbench/divinivid/generation/DIVINIVID_FOUNDATIONS_LOCK_V1.md`.
 
-Figma evidence:
-node `26:3` on page `R2 — FOUNDATIONS`.
+Active work:
+- R3 Composition Grammar;
+- R4 Image / Illustration Language;
+- R5 Temporal Mapping Audit.
 
-Remaining R2 decision:
-- `PASS` the single candidate production color mapping;
-- or identify one concrete token/role failure for bounded mutation.
+Default:
+`FORMALIZE_EXISTING_APPROVED_EVIDENCE_FIRST`.
 
-Do not reopen typography or create a second aesthetic palette.
+Do not generate new visuals unless a named gap requires them.
 
-On color PASS:
-1. create `DIVINIVID_FOUNDATIONS_LOCK_V1`;
-2. close R2;
-3. enter the R3/R4/R5 Formalization Cluster.
+After the three specifications are ready:
+`CROSS-CONSISTENCY AUDIT -> SYSTEM FORMALIZATION GATE`.
+
+P6 remains blocked until that shared gate passes.
