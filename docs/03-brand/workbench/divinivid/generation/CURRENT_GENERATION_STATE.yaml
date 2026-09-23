@@ -250,6 +250,23 @@ r2_foundations:
     page_id: "26:2"
     comparison_root: "26:3"
     evidence_doc: docs/03-brand/workbench/divinivid/generation/R2B_FOUNDATIONS_FINALIST_COMPARISON_EVIDENCE_V1.md
+  color_role_coverage_repair:
+    status: COMPLETE_READY_FOR_HUMAN_REVIEW
+    reason: >
+      R2-A required light/dark surface behavior but the original measured evidence quantified only
+      Living Darkness. The bounded repair formalizes light-surface roles without changing primitive values.
+    figma_node: "31:2"
+    figma_root: "26:3"
+    evidence_doc: docs/03-brand/workbench/divinivid/generation/R2B_FOUNDATIONS_FINALIST_COMPARISON_EVIDENCE_V1.md
+    primitive_values_changed: false
+    semantic_roles:
+      text_on_light_primary: DARKNESS_950
+      crimson_on_light: CRIMSON_MATTER
+      ultramar_on_light: ULTRAMAR_MATTER
+      gold_text_on_light: RESTRICTED
+      ui_light_variants_on_ivory_normal_text: PROHIBITED
+    human_gate_status: PENDING
+
   candidate_color_set:
     darkness_950: "#060604"
     ivory_100: "#E8DDC9"
