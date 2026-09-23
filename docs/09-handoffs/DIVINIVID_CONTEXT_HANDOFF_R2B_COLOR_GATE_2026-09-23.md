@@ -73,6 +73,26 @@ Figma comparison:
 Evidence:
 `docs/03-brand/workbench/divinivid/generation/R2B_FOUNDATIONS_FINALIST_COMPARISON_EVIDENCE_V1.md`
 
+## Bounded color-role coverage repair
+
+A deterministic R2-B check found that light-surface behavior had not been explicitly quantified even though R2-A required it.
+
+The gap was repaired without changing the palette:
+- no primitive token value changed;
+- no second palette was created;
+- dark-surface UI accents remain dark-surface roles;
+- on ivory surfaces, `darkness/950` is the primary text token;
+- `crimson/matter` and `ultramar/matter` are permitted as high-contrast accent aliases on light;
+- gold/light-surface use is restricted by measured contrast.
+
+Figma bounded repair:
+node `31:2` inside canonical comparison root `26:3`.
+
+Evidence remains:
+`docs/03-brand/workbench/divinivid/generation/R2B_FOUNDATIONS_FINALIST_COMPARISON_EVIDENCE_V1.md`.
+
+The human gate remains open. This repair does **not** constitute color approval.
+
 ## Remaining color gate
 Candidate production mapping:
 - `darkness/950 = #060604`
