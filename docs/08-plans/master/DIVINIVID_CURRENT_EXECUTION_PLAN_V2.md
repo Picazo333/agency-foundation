@@ -9,6 +9,7 @@ depends_on:
   - docs/07-decisions/ADR-0014-targeted-visual-synthesis-and-expression-bases.md
   - docs/07-decisions/ADR-0015-pre-lock-exploration-before-final-expression-lock.md
   - docs/03-brand/workbench/divinivid/evaluations/PLAN_DEVIATION_2026-09-23_PRELOCK_RECONCILIATION.md
+  - docs/03-brand/workbench/divinivid/evaluations/PLAN_DEVIATION_2026-09-23_FORMALIZATION_CLUSTER.md
   - docs/03-brand/workbench/divinivid/generation/TOOL_EXECUTION_CONTRACTS_V1.md
 ---
 # DIVINIVID Current Execution Plan V2
@@ -33,8 +34,14 @@ P1–P5 PRE-LOCK BEHAVIOR EXPLORATION
                 |
         >>> CURRENT ACTIVITY <<<
 IDENTITY FORMALIZATION / SYSTEM COMPLETION
-        R0 -> R1 -> R2 -> R3 -> R4 -> R5
-                |
+        R0 -> R1 -> R2
+                    |
+        R3 / R4 / R5 FORMALIZATION CLUSTER
+                    |
+        CROSS-CONSISTENCY AUDIT
+                    |
+        SYSTEM FORMALIZATION GATE
+                    |
 DIGITAL BRAND SPECIMEN
         P6
                 |
@@ -136,6 +143,15 @@ Figma, image generation, Runway, v0 unless a missing source cannot otherwise be 
 
 ## 4. R1 — Signature System
 
+**Execution status: TARGETED-REPAIR FIVE-UP / HUMAN REVIEW ACTIVE (2026-09-23).**
+
+Current evidence:
+- original comparable five-up: Figma node `15:3`;
+- targeted comparability repair: Figma node `18:2`;
+- current gate: human `PASS / MUTATE / KILL` for S-A through S-E.
+
+The targeted repair corrected insufficient architectural differentiation in the baseline. It did **not** replace the normal survivor-completion work required to close R1.
+
 ### Objective
 Create/validate a distinctive DIVINIVID signature that survives without historical imagery.
 
@@ -156,6 +172,18 @@ Core, B1, M1-B, P1 direction, P2 sign rule.
 ### Variable under test
 Signature architecture only.
 
+### Survivor completion
+After the human PASS/MUTATE/KILL gate:
+- kill rejected architectures;
+- carry only surviving architecture(s);
+- complete reduced treatment only where justified;
+- validate black/reversed one-color;
+- validate 32px and 16px/micro behavior;
+- validate horizontal/vertical behavior only where structurally justified;
+- describe palindrome/mirror logic explicitly.
+
+This is normal R1 completion, not another baseline reroll.
+
 ### Output
 `DIVINIVID_SIGNATURE_SYSTEM_LOCK_CANDIDATE`
 
@@ -173,37 +201,43 @@ Image generation is not the default signature engine.
 ## 5. R2 — Foundations
 
 ### Objective
-Turn approved visual direction into operational foundations.
+Turn approved visual direction into operational foundations without reopening P1 or prematurely building the production design system.
 
-### 5.1 Production typography
-Resolve:
-- actual typeface candidates/families;
-- display/body/system roles;
-- ES/EN support;
-- weights/styles;
-- web delivery;
-- licensing;
-- fallbacks;
-- responsive scale;
-- line-height and measure.
+### 5.1 R2-A — Technical Validation
+
+#### Typography
+Validate before aesthetic comparison:
+1. licensing;
+2. ES/EN language support;
+3. weights/styles;
+4. web delivery;
+5. print delivery;
+6. variable-font behavior where applicable;
+7. accessibility/readability;
+8. fallback viability.
+
+Then create a bounded shortlist.
 
 P1 remains the visual-direction authority; R2 resolves implementation.
 
-### 5.2 Color
-Resolve:
-- Living Darkness;
-- ivory/bone;
-- Living Crimson;
-- residual ultramar;
-- aged-gold/instrumentation role where retained;
-- exact candidate values;
-- semantic roles;
+#### Color
+Validate:
+- production candidate values;
+- tonal behavior/scales;
 - text/background pairings;
-- accessibility measurements.
+- contrast;
+- semantic roles;
+- light/dark surface behavior;
+- accessibility.
+
+### 5.2 R2-B — Aesthetic / Functional Finalist Comparison
+Only shortlisted technically viable typography/color candidates receive deterministic Figma comparison.
+
+The question is implementation fidelity to the already-approved direction, not aesthetic rediscovery.
 
 ### 5.3 Other foundations
 Resolve only what evidence supports:
-- spacing;
+- spacing logic;
 - borders/frames;
 - line/stroke behavior;
 - texture budgets;
@@ -214,11 +248,16 @@ Resolve only what evidence supports:
 `DIVINIVID_FOUNDATIONS_LOCK_CANDIDATE`
 
 ### DoD
-Identity remains recognizable and functional with imagery removed.
+- technically viable typography shortlist validated before Figma comparison;
+- selected typography preserves P1 personality;
+- production color values/roles and measured accessibility pairings exist;
+- minimum operational foundations are explicit;
+- identity remains recognizable and functional with imagery removed;
+- no production component library/design system is built.
 
 ### Tool routing
-Figma: deterministic typography/color comparison and tokens when needed.
-Web research: font licensing/availability.
+Research/executor: technical validation, licensing, availability and coverage.
+Figma: finalists only, for deterministic typography/color comparison.
 No speculative component library.
 
 ## 6. R3 — Composition Grammar
@@ -318,13 +357,46 @@ and identify whether any original behavior is genuinely missing.
 Static reasoning/storyboard evidence first.
 Runway/Figma motion only if timing/continuous behavior becomes the actual unresolved question.
 
+## 8.1 — R3/R4/R5 Formalization Cluster
+
+### Topology
+After R2 PASS, R3 Composition Grammar, R4 Image / Illustration Language and R5 Temporal Mapping remain distinct specifications but may be formalized in parallel or interleaved from the same approved evidence set.
+
+This cluster does **not** authorize new visual exploration by default.
+
+### Default execution rule
+Formalize approved evidence first.
+New generation/tool execution is permitted only when a named unresolved gap cannot be closed from existing authority.
+
+### Cross-Consistency Audit
+Before any of R3/R4/R5 can collectively unlock P6, test:
+- composition <-> image;
+- composition <-> motion;
+- image <-> motion.
+
+Record concrete incompatibilities, not taste disagreements.
+
+### System Formalization Gate
+P6 is authorized only if:
+- R3 specification is usable;
+- R4 family contracts are usable;
+- R5 mapping is usable;
+- cross-consistency has no unresolved critical contradiction;
+- a designer/executor can proceed without inventing missing identity rules.
+
+Outcome:
+`PASS / MUTATE`.
+
 ## 9. P6 — Digital Brand Specimen
 
 ### Authorization condition
-R0-R5 complete or explicitly closed by evidence mapping.
+R0 complete, R1 closed, R2 PASS, and the R3/R4/R5 Formalization Cluster passes the System Formalization Gate.
 
 ### Objective
 Test identity translation to digital surfaces, **not design the actual agency website**.
+
+### Execution model
+Execute P6 as **one Digital Brand Specimen workstream** with multiple representative frames/surfaces and one integrated review cycle.
 
 ### Required five specimen surfaces
 1. Homepage fragment;
@@ -340,7 +412,8 @@ Representative fragments are sufficient:
 - proof/content block;
 - long-form heading/body/figure;
 - structured service explanation;
-- mobile translation.
+- responsive/mobile translation;
+- representative motion/state evidence where needed.
 
 ### Explicit non-goals
 - final IA;
@@ -352,9 +425,14 @@ Representative fragments are sufficient:
 ### DoD
 - identity remains unmistakable;
 - hierarchy usable;
+- navigation legible;
 - responsive behavior survives;
+- information density remains controlled;
+- long-form reading works;
+- service explanation remains clear;
 - accessibility materially acceptable for the test;
-- P5 motion can be represented without spectacle;
+- approved P5 motion/reduced-motion behavior can be represented without spectacle;
+- identity continuity survives across all five surfaces;
 - no generic dark-luxury or textured-SaaS collapse.
 
 ## 10. P7 — Application Stress
@@ -376,8 +454,14 @@ Prove identity elasticity outside ideal presentation.
 - minimal imagery;
 - low-quality reproduction.
 
+### Execution model
+Use **minimum diagnostic fidelity**, not five polished applications.
+
+Each test must declare:
+`constraint -> representative artifact -> failure threshold -> PASS / MUTATE / KILL`.
+
 ### DoD
-DIVINIVID survives without depending on `black + crimson + texture`.
+DIVINIVID survives without depending on `black + crimson + texture`, and each context produces a clear diagnostic result without unnecessary production polish.
 
 ## 11. P8 — Final Pre-Lock Synthesis
 
@@ -465,6 +549,46 @@ Visual diff, performance, accessibility, responsive and component reconciliation
 ### D8 — Brandbook Readiness
 Package the now-proven system for the separate Brandbook conversation.
 
+## 14.1 Operating simplifications adopted after process audit
+
+### Iteration policy
+Do not use iteration count as a quality proxy.
+
+Default loop:
+`CONSTRUCT -> ADVERSARIAL -> CORRECT -> VERIFY -> STOP`.
+
+A new round requires a new named failure mode or material delta.
+
+### Tool-substitution diagnosis
+`FAILED EXECUTION != NEED ANOTHER TOOL`.
+
+Before substituting an executor classify the failure as:
+- specification;
+- input/context;
+- authority;
+- conditioning;
+- deterministic-vs-generative mismatch;
+- executor capability mismatch;
+- runtime/integration.
+
+Only executor capability mismatch justifies changing tool/provider by default.
+
+### State authority
+Use one authoritative cursor per scope rather than a universal state file:
+- project;
+- brand;
+- visual generation / pre-lock.
+
+Historical plans remain evidence but cannot override a newer scope cursor.
+
+### Chat -> Agent crossover
+Do not delegate unresolved visual human gates.
+
+Preferred crossover:
+- after R1 closure: delegate R2-A deterministic technical validation;
+- after R2 PASS: allow agent-heavy R3/R4/R5 formalization under fixed authority and explicit DoDs;
+- retain human review for material visual/system gates.
+
 ## 15. Global stop rules
 
 Stop and diagnose rather than continuing when:
@@ -477,12 +601,20 @@ Stop and diagnose rather than continuing when:
 
 ## 16. Immediate next exact action
 
-`R1 — Signature System text preflight`.
+`R1_SIGNATURE_SYSTEM_TARGETED_REPAIR_HUMAN_REVIEW`.
 
-Before any Figma write:
-1. define the five signature hypotheses in text;
-2. verify that they are structurally distinct;
-3. preserve P1 typographic personality and P2 Minimal / No-Icons;
-4. instantiate the first Figma TOOL_CALL_CONTRACT only after the comparison question is precise.
+Review the repaired five-up at Figma node `18:2`.
 
-No image generation, Runway or v0 call is authorized for this step.
+For each:
+- S-A Palindromic Axis;
+- S-B Bilateral Body;
+- S-C Sacred Inscription;
+- S-D Mirrored Cut;
+- S-E Custom Letterform Logic;
+
+decide:
+`PASS / MUTATE / KILL`.
+
+Do not auto-promote a candidate.
+Do not run another baseline repair unless R1 is explicitly reopened by human authority.
+After the gate, complete only surviving architecture(s) to the normal R1 proof set.
