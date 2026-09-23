@@ -172,12 +172,22 @@ pre_lock_program:
     - P3_HERO_SYSTEM
     - P4_DENSITY_INTENSITY
 
+p6_digital_behavior:
+  status: EVIDENCE_PENDING_HUMAN_GATE
+  figma:
+    file_key: bqcKhEQHs4EEQgnn6lNU8O
+    page: P6 — DIGITAL BEHAVIOR
+    comparison_node: "11:2"
+  evidence_doc: docs/03-brand/workbench/divinivid/generation/P6_DIGITAL_BEHAVIOR_EVIDENCE_V1.md
+  surfaces:
+    editorial: "11:3"
+    functional: "11:25"
+
 active_gate:
-  current: P6_DIGITAL_BEHAVIOR
+  current: P6_DIGITAL_BEHAVIOR_HUMAN_REVIEW
   next_authorized_action: >
-    Execute P6 Digital Behavior Lab only after explicit human trigger.
-    Test one editorial surface and one functional surface while preserving Core + B1 + M1-B +
-    P1 + P2 + P3 H-B + P4 D2 + P5 Registration/Negative-Revelation motion grammar.
+    Human review of the P6 Editorial and Functional surfaces. Do not promote or advance to P7
+    until the owner approves or requests the single targeted P6 repair.
   automatic_next_generation: false
 
 tool_discipline:
@@ -258,4 +268,4 @@ deferred:
   - FINAL_BRANDBOOK
 
 next_exact_gate: >
-  P6 Digital Behavior Lab. Do not execute automatically; wait for explicit human trigger.
+  P6 human review of Figma comparison node 11:2. Approve or request the single targeted repair.
