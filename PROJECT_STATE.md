@@ -171,7 +171,7 @@ Consolidate only human-approved module outputs and run:
 - production viability.
 
 ### 3. Current exact gate
-**R1 — Signature System / human review of survivor completion.**
+**R1 — Signature System / focused final B vs E vs B+E human review.**
 
 R0 is complete and passed.
 
@@ -293,7 +293,7 @@ v0 remains blocked until Final Expression Lock + Website Strategy/IA + approved 
 `docs/08-plans/master/DIVINIVID_CURRENT_EXECUTION_PLAN_V2.md`
 
 ## Next exact gate
-**Human review of the R1 survivor-completion comparison.**
+**Human review of the focused final R1 signature comparison.**
 
 Approved prior gate:
 - S-A Palindromic Axis — `MUTATE`;
@@ -302,19 +302,22 @@ Approved prior gate:
 - S-D Mirrored Cut — `KILL`;
 - S-E Custom Letterform Logic — `PASS`.
 
-Evidence:
+Focused final evidence:
 - Figma page: `R1 — SIGNATURE SYSTEM`;
-- original comparison node: `15:3`;
-- repaired comparison node: `18:2`;
 - survivor-completion node: `21:2`;
-- survivor evidence: `R1_SIGNATURE_SURVIVOR_COMPLETION_EVIDENCE_V1.md`.
+- focused B/E/B+E node: `22:2`;
+- focused evidence: `R1_SIGNATURE_FINAL_BE_COMPARISON_EVIDENCE_V1.md`.
 
-Current survivors:
-- S-A' Palindromic Axis — quieter central hinge;
-- S-B Bilateral Body;
-- S-E Custom Letterform Logic.
+Finalists:
+- S-B — Bilateral Body / pure;
+- S-E — Custom Letterform Logic / pure;
+- S-BE — Bilateral Body + Glyph-Class Logic.
+
+Hybrid mechanism:
+- B controls global bilateral wordmark architecture;
+- E controls repeatable D/I/V/N glyph-class proportions.
 
 Current decision:
-select the final R1 architecture or define a precise combination mechanism where different survivor logics control different variables.
+choose `S-B`, `S-E`, or `S-BE`.
 
-Do not revive S-C or S-D without explicit R1 reopening.
+A further mutation is allowed only when tied to one concrete failure mode. Do not reopen broad signature exploration or revive S-C/S-D.

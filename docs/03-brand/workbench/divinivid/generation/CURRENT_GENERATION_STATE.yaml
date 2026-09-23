@@ -241,7 +241,7 @@ p6_digital_behavior:
     Cross-Consistency Audit and System Formalization Gate PASS.
 
 r1_signature_system:
-  status: SURVIVOR_COMPLETION_EVIDENCE_PENDING_HUMAN_GATE
+  status: FINAL_BE_COMPARISON_EVIDENCE_PENDING_HUMAN_GATE
   preflight_doc: docs/03-brand/workbench/divinivid/generation/R1_SIGNATURE_SYSTEM_PREFLIGHT_V1.md
   hypotheses:
     - S-A_PALINDROMIC_AXIS
@@ -256,9 +256,11 @@ r1_signature_system:
     comparison_root_original: "15:3"
     comparison_root_repair: "18:2"
     comparison_root_survivors: "21:2"
+    comparison_root_final_be: "22:2"
     evidence_doc_original: docs/03-brand/workbench/divinivid/generation/R1_SIGNATURE_FIVEUP_EVIDENCE_V1.md
     evidence_doc_repair: docs/03-brand/workbench/divinivid/generation/R1_SIGNATURE_TARGETED_REPAIR_EVIDENCE_V1.md
     evidence_doc_survivors: docs/03-brand/workbench/divinivid/generation/R1_SIGNATURE_SURVIVOR_COMPLETION_EVIDENCE_V1.md
+    evidence_doc_final_be: docs/03-brand/workbench/divinivid/generation/R1_SIGNATURE_FINAL_BE_COMPARISON_EVIDENCE_V1.md
     construction_substrate: NEWSREADER_SEMIBOLD_NOT_PRODUCTION_FONT
   human_gate_decision:
     S-A_PALINDROMIC_AXIS: MUTATE
@@ -273,16 +275,23 @@ r1_signature_system:
   killed:
     - S-C_SACRED_INSCRIPTION
     - S-D_MIRRORED_CUT
+  focused_finalists:
+    - S-B_BILATERAL_BODY_PURE
+    - S-E_CUSTOM_LETTERFORM_LOGIC_PURE
+    - S-BE_BILATERAL_BODY_PLUS_GLYPH_CLASS_LOGIC
+  hybrid_rule:
+    global_architecture: S-B_BILATERAL_BODY
+    glyph_class_logic: S-E_CUSTOM_LETTERFORM_LOGIC
   figma_budget:
     initial_comparison: 0
     baseline_comparability_repair: 0
     survivor_completion: CONSUMED_NORMAL_R1_DOD
 
 active_gate:
-  current: R1_SURVIVOR_FINAL_COMPARISON_HUMAN_REVIEW
+  current: R1_B_E_BE_FINAL_COMPARISON_HUMAN_REVIEW
   next_authorized_action: >
-    Human review of survivor-completion comparison node 21:2. Compare S-A' / S-B / S-E and decide
-    the final R1 architecture or a precise combination mechanism. Do not revive S-C or S-D.
+    Human review of focused final comparison node 22:2. Choose S-B pure, S-E pure, or S-BE hybrid.
+    A mutation is permitted only if tied to a concrete failure mode. Do not reopen broad signature exploration.
   automatic_next_generation: false
 
 tool_discipline:
@@ -370,5 +379,5 @@ deferred:
   - FINAL_BRANDBOOK
 
 next_exact_gate: >
-  Human review of Figma survivor-completion comparison node 21:2.
-  Choose S-A' / S-B / S-E or define a precise combination mechanism. Do not auto-promote.
+  Human review of Figma focused final comparison node 22:2.
+  Choose S-B / S-E / S-BE or request one narrowly-defined failure-driven mutation. Do not auto-promote.
