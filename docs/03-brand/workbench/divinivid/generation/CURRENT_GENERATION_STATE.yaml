@@ -105,6 +105,21 @@ p3_hero:
     Default hero behavior balances ambiguous living matter with editorial/systemic structure.
     H-A remains ceremonial evidence and H-C remains commercial-stress evidence, but H-B is the default.
 
+p4_density_intensity:
+  status: HUMAN_APPROVED_CLOSED
+  selected_direction:
+    id: D2_CONTROLLED_EXPRESSIVE_MOSAIC
+    artifact:
+      library_path: /DIVINIVID/visual-generation/prelock-v1/P4_D2_CONTROLLED_VARIETY_STRUCTURES_SELECTED.png
+      library_file_id: libfile_5e9a1e98e5c88191947a0e7cb98fba6b
+    comparison_evidence:
+      library_path: /DIVINIVID/visual-generation/prelock-v1/P4_DENSITY_COMPARISON_D1_D4.png
+      library_file_id: libfile_d6139bbf4d948191837966ca5fa042ea
+    lock_doc: docs/03-brand/workbench/divinivid/generation/P4_DENSITY_LOCK_D2_EXPRESSIVE_MOSAIC_V1.md
+  density_rule: >
+    D2 is the default density: controlled editorial structure plus expressive multi-structure
+    mosaic. D1, D3 and D4 remain valid contextual modes, not defaults.
+
 bestiary_branch:
   lock_id: BESTIARY_BASE_B0
   status: FROZEN_HUMAN_APPROVED
@@ -132,12 +147,13 @@ pre_lock_program:
     - P1_TYPOGRAPHY
     - P2_ICONOGRAPHY_SIGN_GRAMMAR
     - P3_HERO_SYSTEM
+    - P4_DENSITY_INTENSITY
 
 active_gate:
-  current: P4_DENSITY_INTENSITY
+  current: P5_MOTION
   next_authorized_action: >
-    Produce P4 Density / Intensity comparison only after explicit human trigger.
-    Preserve Core + B1 + M1-B + approved P1 typography + P2 Minimal/No-Icons + P3 H-B Hero grammar.
+    Execute P5 Motion Lab only after explicit human trigger.
+    Preserve Core + B1 + M1-B + P1 + P2 + P3 H-B + P4 D2 expressive mosaic.
   automatic_next_generation: false
 
 tool_discipline:
@@ -166,8 +182,9 @@ candidate_budgets:
     selected: H-B_EDITORIAL_SYSTEMIC
     mobile_translation: DEFERRED_UNTIL_NEEDED_FOR_RESPONSIVE_VALIDATION
   density:
-    initial: 4_modes_in_one_comparison
-    additional: 1_targeted_repair
+    status: CLOSED
+    selected: D2_CONTROLLED_EXPRESSIVE_MOSAIC
+    targeted_repairs_remaining: 0
   motion:
     initial: 4_microstudies
     additional: 1_targeted_repair_per_concrete_failure
@@ -189,6 +206,7 @@ reference_policy:
     - P1_TYPOGRAPHY_APPROVED_DIRECTION
     - P2_MINIMAL_NO_ICONS_SIGN_GRAMMAR
     - P3_HB_EDITORIAL_SYSTEMIC_HERO
+    - P4_D2_CONTROLLED_EXPRESSIVE_MOSAIC
   bestiary_B0_excluded_from_default_positive_context: true
   rejected_outputs_as_positive_references: false
   figma_p2_surrogate_as_positive_reference: false
@@ -214,4 +232,4 @@ deferred:
   - FINAL_BRANDBOOK
 
 next_exact_gate: >
-  P4 Density / Intensity Scale. Do not generate automatically; wait for explicit human trigger.
+  P5 Motion Lab. Do not execute automatically; wait for explicit human trigger.

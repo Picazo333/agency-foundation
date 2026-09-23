@@ -98,11 +98,18 @@ H-A remains useful for ceremonial/high-intensity contexts.
 H-C remains useful for later commercial stress tests.
 
 #### P4 — Density / Intensity
-Define:
-- D1 Restrained;
-- D2 Controlled;
-- D3 Expressive;
-- D4 Ceremonial.
+**Status: HUMAN APPROVED / CLOSED.**
+
+Selected default:
+- **D2 — Controlled**, refined into an **expressive multi-structure mosaic**.
+
+Core tension:
+- order through editorial structure, hierarchy and framing;
+- creativity through varied structures, asymmetry, scale shifts and material collisions.
+
+D1 remains the restrained/clinical mode.
+D3 remains an expressive escalation.
+D4 remains ceremonial/high-intensity.
 
 #### P5 — Motion
 Test:
@@ -132,11 +139,11 @@ Consolidate only human-approved module outputs and run:
 - production viability.
 
 ### 3. Current exact gate
-**P4 — Density / Intensity Scale.**
+**P5 — Motion Lab.**
 
-P1 Typography, P2 Minimal/No-Icons and P3 H-B Hero System are closed.
+P1 Typography, P2 Minimal/No-Icons, P3 H-B Hero System and P4 D2 Expressive Mosaic are closed.
 
-P4 requires an explicit human trigger and must preserve all three.
+P5 requires an explicit human trigger and must preserve all four.
 
 Do not:
 - reopen Core/B1;
@@ -214,7 +221,6 @@ This downstream path is not yet authorized merely by appearing here.
 - no final expression promotion without human gate.
 
 ## Open decisions
-- D1–D4 intensity rules;
 - Motion Grammar Lock;
 - Digital Behavior Direction;
 - Application Stress outcome;
@@ -236,4 +242,4 @@ Before final lock, use Figma only when the task materially requires:
 Do not use Figma to invent unresolved iconography, substitute approved visual assets with proxies, or silently replace an approved typographic direction.
 
 ## Next exact gate
-**Human trigger for P4 — Density / Intensity Scale.**
+**Human trigger for P5 — Motion Lab.**

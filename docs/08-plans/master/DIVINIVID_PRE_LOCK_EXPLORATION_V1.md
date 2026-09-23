@@ -336,6 +336,15 @@ A successful hero must preserve DIVINIVID while allowing the viewer to understan
 
 ## P4 — Density / Intensity Scale
 
+**Execution status: HUMAN APPROVED / CLOSED (2026-09-22).**
+
+The human owner selected **D2 — Controlled** as the default density and approved its refinement into a more expressive **multi-structure mosaic**: ordered editorial assembly contrasted with varied, ambiguous structures.
+
+Lock document:
+`docs/03-brand/workbench/divinivid/generation/P4_DENSITY_LOCK_D2_EXPRESSIVE_MOSAIC_V1.md`.
+
+D1, D3 and D4 remain valid contextual modes but are not the default.
+
 ### Objective
 Define reproducible intensity modes so applications stop improvising how much DIVINIVID to use.
 
@@ -355,8 +364,9 @@ Each mode should control:
 - motion allowance.
 
 ### Budget
-- one four-mode comparative artifact;
-- maximum one repair.
+- one four-mode comparative artifact: consumed;
+- one D2 refinement: consumed and human-approved;
+- P4 budget closed.
 
 ### Output
 `INTENSITY_SCALE_LOCK_CANDIDATE`
