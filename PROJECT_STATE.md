@@ -171,7 +171,7 @@ Consolidate only human-approved module outputs and run:
 - production viability.
 
 ### 3. Current exact gate
-**R1 — Signature System / human review of targeted-repair five-up.**
+**R1 — Signature System / human review of survivor completion.**
 
 R0 is complete and passed.
 
@@ -293,16 +293,28 @@ v0 remains blocked until Final Expression Lock + Website Strategy/IA + approved 
 `docs/08-plans/master/DIVINIVID_CURRENT_EXECUTION_PLAN_V2.md`
 
 ## Next exact gate
-**Human review of the repaired R1 Figma five-up.**
+**Human review of the R1 survivor-completion comparison.**
+
+Approved prior gate:
+- S-A Palindromic Axis — `MUTATE`;
+- S-B Bilateral Body — `PASS`;
+- S-C Sacred Inscription — `KILL`;
+- S-D Mirrored Cut — `KILL`;
+- S-E Custom Letterform Logic — `PASS`.
 
 Evidence:
 - Figma page: `R1 — SIGNATURE SYSTEM`;
 - original comparison node: `15:3`;
 - repaired comparison node: `18:2`;
-- original evidence: `R1_SIGNATURE_FIVEUP_EVIDENCE_V1.md`;
-- repair evidence: `R1_SIGNATURE_TARGETED_REPAIR_EVIDENCE_V1.md`.
+- survivor-completion node: `21:2`;
+- survivor evidence: `R1_SIGNATURE_SURVIVOR_COMPLETION_EVIDENCE_V1.md`.
 
-The baseline-comparability repair was consumed because S-A/S-B/S-C/S-E were insufficiently differentiated in the initial proof.
-For repaired S-A through S-E decide `PASS / MUTATE / KILL`.
+Current survivors:
+- S-A' Palindromic Axis — quieter central hinge;
+- S-B Bilateral Body;
+- S-E Custom Letterform Logic.
 
-After the gate, only surviving architectures receive normal R1 completion (reduced/micro-size/monochrome/orientation proof where justified). That completion is not another baseline reroll.
+Current decision:
+select the final R1 architecture or define a precise combination mechanism where different survivor logics control different variables.
+
+Do not revive S-C or S-D without explicit R1 reopening.
