@@ -114,6 +114,9 @@ sources_of_truth:
   targeted_visual_synthesis_plan_v1:
     scheme: repo
     locator: docs/08-plans/master/DIVINIVID_TARGETED_VISUAL_SYNTHESIS_PLAN_V1.md
+  pre_lock_exploration_plan_v1:
+    scheme: repo
+    locator: docs/08-plans/master/DIVINIVID_PRE_LOCK_EXPLORATION_V1.md
   asset_factory_brand_pack:
     scheme: repo
     locator: asset-factory/spec/01-brand-pack-contract.md
@@ -156,7 +159,7 @@ context:
       required:
         - repo://docs/00-meta/source-of-truth.md
         - repo://docs/00-meta/operating-model.md
-        - repo://docs/08-plans/master/DIVINIVID_TARGETED_VISUAL_SYNTHESIS_PLAN_V1.md
+        - repo://docs/08-plans/master/DIVINIVID_PRE_LOCK_EXPLORATION_V1.md
       optional:
         - repo://docs/08-plans/master/DIVINIVID_VISUAL_UNIVERSE_META_PLAN_V2.md
         - repo://docs/03-brand/workbench/divinivid/generation/DIVINIVID_CORE_LOCK_V1.md
@@ -170,7 +173,7 @@ context:
         - repo://docs/03-brand/workbench/divinivid/generation/CURRENT_GENERATION_STATE.yaml
         - repo://docs/03-brand/workbench/divinivid/generation/DIVINIVID_CORE_LOCK_V1.md
         - repo://docs/03-brand/workbench/divinivid/generation/DIVINIVID_BASE_LOCK_B1.md
-        - repo://docs/08-plans/master/DIVINIVID_TARGETED_VISUAL_SYNTHESIS_PLAN_V1.md
+        - repo://docs/08-plans/master/DIVINIVID_PRE_LOCK_EXPLORATION_V1.md
         - repo://docs/03-brand/workbench/divinivid/VISUAL_CANON_V1.md
         - repo://docs/03-brand/workbench/divinivid/ANTI_CANON.md
       optional:
@@ -185,6 +188,7 @@ context:
       required:
         - repo://PROJECT_STATE.md
       optional:
+        - repo://docs/08-plans/master/DIVINIVID_PRE_LOCK_EXPLORATION_V1.md
         - repo://docs/08-plans/master/DIVINIVID_TARGETED_VISUAL_SYNTHESIS_PLAN_V1.md
         - repo://docs/03-brand/workbench/divinivid/generation/DIVINIVID_CORE_LOCK_V1.md
         - repo://docs/03-brand/workbench/divinivid/generation/DIVINIVID_BASE_LOCK_B1.md
