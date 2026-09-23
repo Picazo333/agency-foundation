@@ -7,7 +7,9 @@ strategy:
   governing_adr:
     - ADR-0014
     - ADR-0015
-  governing_plan: DIVINIVID_PRE_LOCK_EXPLORATION_V1
+  governing_plan: DIVINIVID_CURRENT_EXECUTION_PLAN_V2
+  inherited_plan: DIVINIVID_PRE_LOCK_EXPLORATION_V1
+  plan_deviation: PLAN_DEVIATION_2026-09-23_PRELOCK_RECONCILIATION
   mandatory_100_board_rendering: false
   minimum_necessary_mutation: true
   generated_default_status: EVIDENCE_PENDING
@@ -152,15 +154,20 @@ bestiary_branch:
   execution_status: DEFERRED_UNTIL_FINAL_EXPRESSION_LOCK
 
 pre_lock_program:
-  status: ACTIVE
+  status: ACTIVE_RECONCILED
   sequence:
     - P1_TYPOGRAPHY
     - P2_ICONOGRAPHY
     - P3_HERO
     - P4_DENSITY_INTENSITY
     - P5_MOTION
-    - P5_MOTION
-    - P6_DIGITAL_BEHAVIOR
+    - R0_RECONCILIATION_AUDIT
+    - R1_SIGNATURE_SYSTEM
+    - R2_FOUNDATIONS
+    - R3_COMPOSITION_GRAMMAR
+    - R4_IMAGE_ILLUSTRATION_LANGUAGE
+    - R5_TEMPORAL_MAPPING_AUDIT
+    - P6_DIGITAL_BRAND_SPECIMEN
     - P7_APPLICATION_STRESS
     - P8_FINAL_SYNTHESIS
     - INDEPENDENT_RED_TEAM
@@ -171,26 +178,46 @@ pre_lock_program:
     - P2_ICONOGRAPHY_SIGN_GRAMMAR
     - P3_HERO_SYSTEM
     - P4_DENSITY_INTENSITY
+    - P5_MOTION
+
+identity_formalization:
+  status: ACTIVE
+  governing_plan: docs/08-plans/master/DIVINIVID_CURRENT_EXECUTION_PLAN_V2.md
+  current_step: R0_RECONCILIATION_AUDIT
+  steps:
+    R0_RECONCILIATION_AUDIT: ACTIVE
+    R1_SIGNATURE_SYSTEM: BLOCKED_BY_R0
+    R2_FOUNDATIONS: BLOCKED_BY_R1
+    R3_COMPOSITION_GRAMMAR: BLOCKED_BY_R2
+    R4_IMAGE_ILLUSTRATION_LANGUAGE: BLOCKED_BY_R3
+    R5_TEMPORAL_MAPPING_AUDIT: BLOCKED_BY_R4
 
 p6_digital_behavior:
-  status: EVIDENCE_PENDING_HUMAN_GATE
+  status: QUARANTINED_STRUCTURAL_PROBE
+  positive_reference_authority: false
   figma:
     file_key: bqcKhEQHs4EEQgnn6lNU8O
     page: P6 — DIGITAL BEHAVIOR
     comparison_node: "11:2"
-  evidence_doc: docs/03-brand/workbench/divinivid/generation/P6_DIGITAL_BEHAVIOR_EVIDENCE_V1.md
-  surfaces:
-    editorial: "11:3"
-    functional: "11:25"
+  original_evidence_doc: docs/03-brand/workbench/divinivid/generation/P6_DIGITAL_BEHAVIOR_EVIDENCE_V1.md
+  reclassification_doc: docs/03-brand/workbench/divinivid/generation/P6_STRUCTURAL_PROBE_V0_NEGATIVE_EVIDENCE.md
+  reason: >
+    Premature downstream probe used low-resolution proxy imagery, proxy typography and mostly static
+    UI structure before Signature, Foundations, Composition Grammar and Image/Illustration Language
+    were formally closed.
 
 active_gate:
-  current: P6_DIGITAL_BEHAVIOR_HUMAN_REVIEW
+  current: R0_RECONCILIATION_AUDIT
   next_authorized_action: >
-    Human review of the P6 Editorial and Functional surfaces. Do not promote or advance to P7
-    until the owner approves or requests the single targeted P6 repair.
+    Audit the frozen Master Plan against approved Core/B1/M1-B/P1-P5 evidence and produce
+    DIVINIVID_R0_REQUIREMENT_MATRIX_V1.md. No new visual generation or Figma build is authorized
+    merely by entering R0.
   automatic_next_generation: false
 
 tool_discipline:
+  governing_contract: docs/03-brand/workbench/divinivid/generation/TOOL_EXECUTION_CONTRACTS_V1.md
+  material_tool_calls_require_purpose_contract: true
+  paid_tool_gate_required: true
   figma_before_final_lock:
     allowed_when:
       - deterministic_composition_is_required
@@ -268,4 +295,4 @@ deferred:
   - FINAL_BRANDBOOK
 
 next_exact_gate: >
-  P6 human review of Figma comparison node 11:2. Approve or request the single targeted repair.
+  R0 Reconciliation Audit. Produce an evidence-backed requirement matrix before any new visual tool call.
