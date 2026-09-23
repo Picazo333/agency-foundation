@@ -156,8 +156,11 @@ context:
       required:
         - repo://docs/00-meta/source-of-truth.md
         - repo://docs/00-meta/operating-model.md
-        - repo://docs/08-plans/master/DIVINIVID_VISUAL_UNIVERSE_META_PLAN_V2.md
+        - repo://docs/08-plans/master/DIVINIVID_TARGETED_VISUAL_SYNTHESIS_PLAN_V1.md
       optional:
+        - repo://docs/08-plans/master/DIVINIVID_VISUAL_UNIVERSE_META_PLAN_V2.md
+        - repo://docs/03-brand/workbench/divinivid/generation/DIVINIVID_CORE_LOCK_V1.md
+        - repo://docs/03-brand/workbench/divinivid/generation/DIVINIVID_BASE_LOCK_B1.md
         - repo://docs/00-meta/dependency-map.md
         - repo://docs/07-decisions/index.md
         - repo://asset-factory/spec/01-brand-pack-contract.md
@@ -182,6 +185,10 @@ context:
       required:
         - repo://PROJECT_STATE.md
       optional:
+        - repo://docs/08-plans/master/DIVINIVID_TARGETED_VISUAL_SYNTHESIS_PLAN_V1.md
+        - repo://docs/03-brand/workbench/divinivid/generation/DIVINIVID_CORE_LOCK_V1.md
+        - repo://docs/03-brand/workbench/divinivid/generation/DIVINIVID_BASE_LOCK_B1.md
+        - repo://docs/03-brand/workbench/divinivid/generation/DIVINIVID_BESTIARY_BASE_B0.md
         - repo://docs/08-plans/master/DIVINIVID_VISUAL_UNIVERSE_META_PLAN_V2.md
         - repo://docs/03-brand/workbench/divinivid/VISUAL_UNIVERSE_CHECKPOINT_2026-09-20.md
         - repo://docs/03-brand/workbench/divinivid/archive/VISUAL_ARCHIVE_V1_INVENTORY.md
