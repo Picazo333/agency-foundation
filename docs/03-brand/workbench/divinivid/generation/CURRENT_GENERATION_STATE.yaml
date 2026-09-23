@@ -216,7 +216,7 @@ p6_digital_behavior:
     were formally closed.
 
 r1_signature_system:
-  status: FIVEUP_EVIDENCE_PENDING_HUMAN_GATE
+  status: TARGETED_REPAIR_EVIDENCE_PENDING_HUMAN_GATE
   preflight_doc: docs/03-brand/workbench/divinivid/generation/R1_SIGNATURE_SYSTEM_PREFLIGHT_V1.md
   hypotheses:
     - S-A_PALINDROMIC_AXIS
@@ -228,18 +228,20 @@ r1_signature_system:
   figma_evidence:
     file_key: bqcKhEQHs4EEQgnn6lNU8O
     page_id: "15:2"
-    comparison_root: "15:3"
-    evidence_doc: docs/03-brand/workbench/divinivid/generation/R1_SIGNATURE_FIVEUP_EVIDENCE_V1.md
+    comparison_root_original: "15:3"
+    comparison_root_repair: "18:2"
+    evidence_doc_original: docs/03-brand/workbench/divinivid/generation/R1_SIGNATURE_FIVEUP_EVIDENCE_V1.md
+    evidence_doc_repair: docs/03-brand/workbench/divinivid/generation/R1_SIGNATURE_TARGETED_REPAIR_EVIDENCE_V1.md
     construction_substrate: NEWSREADER_SEMIBOLD_NOT_PRODUCTION_FONT
   figma_budget:
     initial_comparison: 0
-    targeted_repair: 1
+    targeted_repair: 0
 
 active_gate:
-  current: R1_SIGNATURE_SYSTEM_FIVEUP_HUMAN_REVIEW
+  current: R1_SIGNATURE_SYSTEM_TARGETED_REPAIR_HUMAN_REVIEW
   next_authorized_action: >
-    Human review of R1-FIGMA-01 five-up. For S-A through S-E decide PASS / MUTATE / KILL.
-    One targeted repair remains available only for concrete feedback.
+    Human review of repaired R1 comparison node 18:2. For S-A through S-E decide PASS / MUTATE / KILL.
+    R1 repair budget is exhausted; do not generate another repair unless the human owner explicitly reopens R1.
   automatic_next_generation: false
 
 tool_discipline:
@@ -323,4 +325,4 @@ deferred:
   - FINAL_BRANDBOOK
 
 next_exact_gate: >
-  Human review of Figma comparison node 15:3. Do not auto-promote or consume the targeted repair.
+  Human review of repaired Figma comparison node 18:2. Do not auto-promote.
