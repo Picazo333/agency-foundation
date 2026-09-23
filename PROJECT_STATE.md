@@ -165,18 +165,18 @@ Consolidate only human-approved module outputs and run:
 - production viability.
 
 ### 3. Current exact gate
-**R0 — Reconciliation Audit.**
+**R1 — Signature System / text preflight.**
 
-P1 Typography Direction, P2 Minimal/No-Icons, P3 H-B Hero System, P4 D2 Expressive Mosaic and P5 Motion Grammar are closed as pre-lock evidence.
+R0 is complete and passed.
 
-R0 now audits those approvals against the frozen Master Plan requirements for:
-- Signature System;
-- production Foundations;
-- Composition Grammar;
-- Image / Illustration Language;
-- Temporal Identity.
+R0 found:
+- Signature System — MISSING;
+- Foundations — PARTIAL;
+- Composition Grammar — PARTIAL / HIGH EVIDENCE;
+- Image / Illustration Language — PARTIAL / HIGH EVIDENCE;
+- Temporal Identity — PARTIAL / CLOSE.
 
-R0 may close a requirement by evidence mapping; it must not manufacture work for checklist completion.
+R0 concluded that broad aesthetic rediscovery is unnecessary. The main genuinely new design block is Signature System; later R2-R5 are primarily formalization and validation of already-approved evidence.
 
 Do not:
 - reopen Core/B1/P1-P5 without a specific failure and human approval;
@@ -283,4 +283,6 @@ v0 remains blocked until Final Expression Lock + Website Strategy/IA + approved 
 `docs/08-plans/master/DIVINIVID_CURRENT_EXECUTION_PLAN_V2.md`
 
 ## Next exact gate
-**R0 — Reconciliation Audit.**
+**R1 — Signature System text preflight.**
+
+Before any Figma call, define the five signature architectures in text and confirm that they test meaningfully different structural hypotheses while preserving P1 and P2.
