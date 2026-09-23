@@ -1,0 +1,42 @@
+harvest_id: harvest-20260923-divinivid-tool-phase-boundary-drift
+project_id: agency-foundation
+status: candidate
+source_event_type: INCIDENT
+finding: >-
+  Tool availability and technical execution success do not imply that a capability is
+  authorized or useful at the current project gate. Material external or paid calls benefit
+  from a lightweight purpose contract covering active phase, question, tool advantage,
+  fixed variables, expected output, Definition of Done, budget, failure route and promotion status.
+portable_principles:
+  - AVAILABLE_CAPABILITY != AUTHORIZED_CAPABILITY_FOR_CURRENT_GATE
+  - EXECUTION_SUCCESS != PHASE_SUCCESS
+  - proxy assets require typed status
+  - downstream tools require explicit prerequisite edges
+  - post-call validation checks phase relevance as well as technical success
+noema_candidates:
+  - phase_capability_authorization_relation
+  - tool_call_work_order_schema
+  - evidence_and_proxy_state_typing
+  - cursor_prerequisite_integrity_check
+  - complexity_rent_check
+skill_foundry_candidates:
+  - tool_call_preflight_mode
+  - one_variable_experiment_eval
+  - proxy_quality_eval
+  - phase_boundary_eval
+  - executor_substitution_eval
+  - tool_output_promotion_eval
+  - call_efficacy_benchmark
+recommended_foundry_path:
+  - REUSE
+  - EXTEND
+  - MODE
+  - DEPENDENT_SKILL
+  - NEW_SKILL
+  - NO_SKILL
+current_bias: EXTEND_OR_MODE_EXISTING_VISUAL_PRODUCTION_OR_ORCHESTRATION_CAPABILITY
+project_local_exclusions:
+  - divinivid_palette
+  - divinivid_visual_anchors
+  - divinivid_route_names
+  - provider_specific_aesthetic_rules
