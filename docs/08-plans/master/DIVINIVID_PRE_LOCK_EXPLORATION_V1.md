@@ -151,6 +151,10 @@ Each module must declare:
 
 ## P1 — Typography Lab
 
+**Execution status: HUMAN APPROVED / CLOSED (2026-09-22).**
+
+The approved visual direction is the imposing dual-editorial treatment selected by the human owner. Exact production font-family mapping is deferred to implementation and does not reopen the visual direction.
+
 ### Objective
 Determine a typographic system that increases DIVINIVID identity while remaining usable across editorial, web, agency, clinical/B2B and information-heavy applications.
 
@@ -199,6 +203,12 @@ Evaluate:
 
 ## P2 — Iconography / Sign Grammar Lab
 
+**Execution status: TARGETED REPAIR ACTIVE.**
+
+Attempt 01 is a human-rejected hard fail and is quarantined as negative evidence. A subsequent Figma S1/S2/S3 surrogate is also non-canonical and must not be used for promotion because it substituted both morphology and typography.
+
+Exactly one targeted repair remains. The repair must compare the original hypotheses in-context as finished DIVINIVID applications, not as an icon catalog or generic design-system sheet.
+
 ### Objective
 Determine whether DIVINIVID needs a formal icon system at all, and if so, define only the minimum native grammar.
 
@@ -243,11 +253,30 @@ Reject:
 - ornamental glyph families with no operational meaning.
 
 ### Budget
-- three hypotheses in one sheet;
-- maximum 1 targeted repair.
+- initial three-hypothesis sheet: consumed and rejected;
+- exactly 1 targeted repair remains.
 
 ### Output
 `SIGN_GRAMMAR_LOCK_CANDIDATE`
+
+
+## Tool-use discipline before final expression lock
+
+Figma is a precision/behavior tool, not the default engine for unresolved aesthetic invention.
+
+Use Figma before final lock only when the active question materially requires:
+- deterministic composition;
+- responsive validation;
+- component/state behavior;
+- motion implementation.
+
+Do not use Figma by default to:
+- invent unresolved iconography;
+- replace an approved visual anchor with a surrogate reconstruction;
+- substitute an approved typographic direction with a proxy font;
+- create design-system artifacts before the corresponding visual decision exists.
+
+Full Figma Production System remains downstream of `DIVINIVID_FINAL_EXPRESSION_LOCK_V1`.
 
 ## P3 — Hero System Lab
 

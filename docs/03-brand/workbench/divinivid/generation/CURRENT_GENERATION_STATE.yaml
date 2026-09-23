@@ -46,6 +46,44 @@ m1:
       M1-B is authorized as the working anchor for behavior exploration only.
       Incidental typography, iconography, labels, and layout details are not automatically canonical.
 
+p1_typography:
+  status: HUMAN_APPROVED
+  role: APPROVED_TYPOGRAPHIC_DIRECTION
+  artifact:
+    library_path: /DIVINIVID/visual-generation/prelock-v1/P1_TYPOGRAPHY_WINNER_IMPOSING_DUAL_EDITORIAL.png
+    library_file_id: libfile_b869c1a325488191915ae45613571f53
+  scope:
+    - imposing_editorial_presence
+    - strong_personality_without_extravagance
+    - dual_editorial_logic
+  caveat: >
+    The visual typographic direction is approved. Do not silently substitute a proxy typeface
+    or reopen P1. Exact production font-family mapping may be resolved later as an implementation task.
+
+p2_iconography:
+  status: TARGETED_REPAIR_ACTIVE
+  attempt_01:
+    status: HARD_FAIL_QUARANTINED
+    artifact:
+      library_path: /DIVINIVID/visual-generation/prelock-v1/negative-evidence/P2_ICONOGRAPHY_ATTEMPT_01_AI_SLOP.png
+      library_file_id: libfile_2a22cda1e84881919dddeda8b36f8ebe
+    evidence_doc: docs/03-brand/workbench/divinivid/generation/P2_ICONOGRAPHY_ATTEMPT_01_NEGATIVE_EVIDENCE.md
+  figma_surrogate:
+    status: QUARANTINED_NON_CANONICAL
+    file_key: bqcKhEQHs4EEQgnn6lNU8O
+    frame_id: "3:5"
+    reason: >
+      Used simplified surrogate morphology and proxy typography; not valid evidence for promotion.
+  remaining_budget:
+    targeted_repairs: 1
+  repair_hypotheses:
+    - I-A_MEASUREMENT
+    - I-B_MORPHOLOGICAL_NOTATION
+    - I-C_NO_ICONS_MINIMAL_SIGNS
+  repair_method: >
+    Compare the three hypotheses in-context as finished DIVINIVID applications.
+    Do not present an icon catalog or design-system grid.
+
 bestiary_branch:
   lock_id: BESTIARY_BASE_B0
   status: FROZEN_HUMAN_APPROVED
@@ -69,20 +107,36 @@ pre_lock_program:
     - INDEPENDENT_RED_TEAM
     - HUMAN_FINAL_GATE
   expected_output: DIVINIVID_FINAL_EXPRESSION_LOCK_V1
+  completed:
+    - P1_TYPOGRAPHY
 
 active_gate:
-  current: P1_TYPOGRAPHY
+  current: P2_ICONOGRAPHY_TARGETED_REPAIR
   next_authorized_action: >
-    Produce Typography Lab comparison from Core Lock + B1 + M1-B only after explicit human trigger.
+    Produce the single remaining P2 targeted repair using Core + B1 + M1-B + approved P1 typography.
+    Compare I-A / I-B / I-C in context. No Figma required for visual invention.
   automatic_next_generation: false
+
+tool_discipline:
+  figma_before_final_lock:
+    allowed_when:
+      - deterministic_composition_is_required
+      - responsive_validation_is_required
+      - component_or_state_behavior_is_required
+      - motion_implementation_is_required
+    prohibited_as_default_for:
+      - unresolved_aesthetic_discovery
+      - iconography_invention
+      - proxy_reconstruction_of_approved_visual_assets
+      - arbitrary_typography_substitution
+  full_figma_production_system: DEFERRED_UNTIL_FINAL_EXPRESSION_LOCK
 
 candidate_budgets:
   typography:
-    initial: 3_variants_in_one_comparison
-    additional: 1_challenger_if_material_uncertainty
+    status: CLOSED
   iconography:
-    initial: 3_hypotheses_in_one_comparison
-    additional: 1_targeted_repair
+    initial: CONSUMED_HARD_FAIL
+    targeted_repairs_remaining: 1
   hero:
     initial: 3_desktop_variants
     additional: mobile_only_for_human_selected_winner
@@ -107,8 +161,10 @@ reference_policy:
     - DIVINIVID_CORE_LOCK_V1
     - BASE_LOCK_B1
     - M1-B_TOPOGRAFIA_ORGANICA
+    - P1_TYPOGRAPHY_APPROVED_DIRECTION
   bestiary_B0_excluded_from_default_positive_context: true
   rejected_outputs_as_positive_references: false
+  figma_p2_surrogate_as_positive_reference: false
   recent_unapproved_outputs_as_positive_references: false
   full_archive_default_loading: false
   reference_binding_attestation_required: true
@@ -131,4 +187,4 @@ deferred:
   - FINAL_BRANDBOOK
 
 next_exact_gate: >
-  P1 Typography Lab. Do not generate automatically; wait for explicit human trigger.
+  P2 targeted repair. One remaining repair only. Human approval required before P3.

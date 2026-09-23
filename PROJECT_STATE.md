@@ -50,16 +50,30 @@ Expected terminal artifact:
 `DIVINIVID_FINAL_EXPRESSION_LOCK_V1`.
 
 #### P1 — Typography
-Test:
-- T-A Monumental Serif Dominant;
-- T-B Dual Editorial;
-- T-C Brutalist Inversion.
+**Status: HUMAN APPROVED / CLOSED.**
+
+Approved direction:
+- imposing editorial presence;
+- strong personality without extravagance;
+- dual-editorial logic;
+- exact production font mapping remains an implementation task, not a reason to reopen the visual decision.
+
+Canonical pre-lock typography reference:
+`/DIVINIVID/visual-generation/prelock-v1/P1_TYPOGRAPHY_WINNER_IMPOSING_DUAL_EDITORIAL.png`.
 
 #### P2 — Iconography / Sign Grammar
-Test:
+**Status: TARGETED REPAIR ACTIVE.**
+
+Attempt 01 was explicitly rejected as AI slop and quarantined.
+
+The later Figma S1/S2/S3 surrogate is also non-canonical because it used substitute morphology and proxy typography.
+
+One targeted repair remains. It must compare in-context:
 - I-A Measurement;
 - I-B Morphological Notation;
 - I-C No-Icons / Minimal Signs.
+
+Do not present an icon catalog or generic design-system grid.
 
 #### P3 — Hero
 Test:
@@ -102,10 +116,11 @@ Consolidate only human-approved module outputs and run:
 - production viability.
 
 ### 3. Current exact gate
-**P1 — Typography Lab.**
+**P2 — Iconography / Sign Grammar targeted repair.**
 
-No generation is automatic.
-The next visual action requires an explicit human trigger.
+P1 is closed and must not be silently reopened.
+
+One P2 repair remains. Human approval is required before P3.
 
 Do not:
 - reopen Core/B1;
@@ -183,7 +198,6 @@ This downstream path is not yet authorized merely by appearing here.
 - no final expression promotion without human gate.
 
 ## Open decisions
-- Typography Lock;
 - Sign/Iconography Lock;
 - Hero System Lock;
 - D1–D4 intensity rules;
@@ -196,5 +210,16 @@ This downstream path is not yet authorized merely by appearing here.
 - commercial/legal clearance;
 - business-model/ICP/positioning/pricing decisions still gated by real evidence.
 
+## Figma discipline before final expression lock
+Figma is not the default aesthetic-exploration engine.
+
+Before final lock, use Figma only when the task materially requires:
+- deterministic composition;
+- responsive validation;
+- component/state behavior;
+- motion implementation.
+
+Do not use Figma to invent unresolved iconography, substitute approved visual assets with proxies, or silently replace an approved typographic direction.
+
 ## Next exact gate
-**Human trigger for P1 — Typography Lab.**
+**P2 — targeted repair of Sign/Iconography Grammar.**
