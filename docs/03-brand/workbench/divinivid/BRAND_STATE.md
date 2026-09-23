@@ -28,26 +28,27 @@ The older Visual Universe checkpoint and Meta-Plan remain historical/context evi
 The older Phase 1–3 material below remains valid as historical research/process evidence unless explicitly superseded, but the “Phase 3 Reference Atlas” section no longer defines the active execution gate.
 
 ## Current brand-scope cursor
-**R2-B — Foundations / Color Mapping Human Review**
+**R3/R4/R5 — Formalization Cluster ACTIVE**
 
-R2-A technical validation has passed.
+R2 Foundations is **HUMAN APPROVED / CLOSED**.
 
-Typography is human-approved:
-- **Newsreader** — production display serif;
-- **IBM Plex Sans** — operational sans.
+Canonical lock:
+`generation/DIVINIVID_FOUNDATIONS_LOCK_V1.md`.
 
-Figma evidence:
-node `26:3` on page `R2 — FOUNDATIONS`.
+Locked production foundations:
+- **Newsreader** — display serif;
+- **IBM Plex Sans** — operational sans;
+- one approved production color mapping with bounded dark/light surface roles.
 
-Remaining R2 gate:
-- `PASS` the single candidate production color mapping;
-- or identify one concrete token/role failure for bounded mutation.
+Current work formalizes:
+- R3 Composition Grammar;
+- R4 Image / Illustration Language;
+- R5 Temporal Mapping Audit.
 
-Do not reopen typography.
-Do not add a second palette without material evidence.
+The three specifications may interleave, but none independently unlocks P6.
 
-On color PASS:
-`DIVINIVID_FOUNDATIONS_LOCK_V1` -> R2 CLOSED -> R3/R4/R5 Formalization Cluster.
+Next shared gate:
+`CROSS-CONSISTENCY AUDIT -> SYSTEM FORMALIZATION GATE`.
 
 ## Current Signature System
 **R1 HUMAN APPROVED / CLOSED — 2026-09-23**
@@ -67,7 +68,7 @@ Canonical lock:
 Figma final evidence:
 node `22:2`.
 
-Production font family is deliberately unresolved and moves to R2 Foundations.
+Production font family is resolved by R2 Foundations: Newsreader + IBM Plex Sans.
 
 ## Current hierarchy
 - **Brand under identity exploration:** `DIVINIVID`
