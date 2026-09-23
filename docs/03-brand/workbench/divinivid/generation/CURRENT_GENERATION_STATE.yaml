@@ -9,7 +9,9 @@ strategy:
     - ADR-0015
   governing_plan: DIVINIVID_CURRENT_EXECUTION_PLAN_V2
   inherited_plan: DIVINIVID_PRE_LOCK_EXPLORATION_V1
-  plan_deviation: PLAN_DEVIATION_2026-09-23_PRELOCK_RECONCILIATION
+  plan_deviation:
+    - PLAN_DEVIATION_2026-09-23_PRELOCK_RECONCILIATION
+    - PLAN_DEVIATION_2026-09-23_FORMALIZATION_CLUSTER
   mandatory_100_board_rendering: false
   minimum_necessary_mutation: true
   generated_default_status: EVIDENCE_PENDING
@@ -164,9 +166,9 @@ pre_lock_program:
     - R0_RECONCILIATION_AUDIT
     - R1_SIGNATURE_SYSTEM
     - R2_FOUNDATIONS
-    - R3_COMPOSITION_GRAMMAR
-    - R4_IMAGE_ILLUSTRATION_LANGUAGE
-    - R5_TEMPORAL_MAPPING_AUDIT
+    - R3_R4_R5_FORMALIZATION_CLUSTER
+    - CROSS_CONSISTENCY_AUDIT
+    - SYSTEM_FORMALIZATION_GATE
     - P6_DIGITAL_BRAND_SPECIMEN
     - P7_APPLICATION_STRESS
     - P8_FINAL_SYNTHESIS
@@ -197,12 +199,15 @@ identity_formalization:
     R0_RECONCILIATION_AUDIT: COMPLETE_PASS
     R1_SIGNATURE_SYSTEM: ACTIVE
     R2_FOUNDATIONS: BLOCKED_BY_R1
-    R3_COMPOSITION_GRAMMAR: BLOCKED_BY_R2
-    R4_IMAGE_ILLUSTRATION_LANGUAGE: BLOCKED_BY_R3
-    R5_TEMPORAL_MAPPING_AUDIT: BLOCKED_BY_R4
+    R3_COMPOSITION_GRAMMAR: BLOCKED_BY_R2_CLUSTER_ENTRY
+    R4_IMAGE_ILLUSTRATION_LANGUAGE: BLOCKED_BY_R2_CLUSTER_ENTRY
+    R5_TEMPORAL_MAPPING_AUDIT: BLOCKED_BY_R2_CLUSTER_ENTRY
+    CROSS_CONSISTENCY_AUDIT: BLOCKED_BY_CLUSTER
+    SYSTEM_FORMALIZATION_GATE: BLOCKED_BY_CROSS_CONSISTENCY
 
 p6_digital_behavior:
-  status: QUARANTINED_STRUCTURAL_PROBE
+  status: BLOCKED_PENDING_SYSTEM_FORMALIZATION_GATE
+  prior_probe_status: QUARANTINED_STRUCTURAL_PROBE
   positive_reference_authority: false
   figma:
     file_key: bqcKhEQHs4EEQgnn6lNU8O
@@ -213,7 +218,8 @@ p6_digital_behavior:
   reason: >
     Premature downstream probe used low-resolution proxy imagery, proxy typography and mostly static
     UI structure before Signature, Foundations, Composition Grammar and Image/Illustration Language
-    were formally closed.
+    were formally closed. P6 now requires R1 closure, R2 PASS, the R3/R4/R5 Formalization Cluster,
+    Cross-Consistency Audit and System Formalization Gate PASS.
 
 r1_signature_system:
   status: TARGETED_REPAIR_EVIDENCE_PENDING_HUMAN_GATE
@@ -235,7 +241,8 @@ r1_signature_system:
     construction_substrate: NEWSREADER_SEMIBOLD_NOT_PRODUCTION_FONT
   figma_budget:
     initial_comparison: 0
-    targeted_repair: 0
+    baseline_comparability_repair: 0
+    survivor_completion: NORMAL_R1_DOD_NOT_REROLL
 
 active_gate:
   current: R1_SIGNATURE_SYSTEM_TARGETED_REPAIR_HUMAN_REVIEW
@@ -246,7 +253,11 @@ active_gate:
 
 tool_discipline:
   governing_contract: docs/03-brand/workbench/divinivid/generation/TOOL_EXECUTION_CONTRACTS_V1.md
-  material_tool_calls_require_purpose_contract: true
+  risk_tiers:
+    T0_READ: NO_SPECIAL_CONTRACT
+    T1_DETERMINISTIC_REVERSIBLE: LIGHT_CONTRACT
+    T2_PAID_GENERATIVE_NONDETERMINISTIC: FULL_CONTRACT
+    T3_HIGH_IMPACT_AGENTIC: FULL_CONTRACT_PLUS_ROLLBACK_TESTS_SCOPE_STOP
   paid_tool_gate_required: true
   figma_before_final_lock:
     allowed_when:
@@ -325,4 +336,5 @@ deferred:
   - FINAL_BRANDBOOK
 
 next_exact_gate: >
-  Human review of repaired Figma comparison node 18:2. Do not auto-promote.
+  Human review of repaired Figma comparison node 18:2. Decide PASS / MUTATE / KILL for S-A through S-E.
+  Do not auto-promote. After the human gate, complete only surviving architectures to the normal R1 proof set.
