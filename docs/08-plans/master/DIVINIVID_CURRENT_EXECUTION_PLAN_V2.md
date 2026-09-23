@@ -2,6 +2,7 @@
 status: approved
 owner: brand
 created: 2026-09-23
+updated: 2026-09-23
 authority: active_execution_plan
 human_approved: true
 depends_on:
