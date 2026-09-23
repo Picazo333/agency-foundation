@@ -247,13 +247,13 @@ r2_foundations:
     figma_node: "26:3"
     evidence_doc: docs/03-brand/workbench/divinivid/generation/R2B_FOUNDATIONS_FINALIST_COMPARISON_EVIDENCE_V1.md
   figma_finalist_comparison:
-    status: TYPOGRAPHY_HUMAN_APPROVED_COLOR_PENDING
+    status: COMPLETE_PASS
     file_key: bqcKhEQHs4EEQgnn6lNU8O
     page_id: "26:2"
     comparison_root: "26:3"
     evidence_doc: docs/03-brand/workbench/divinivid/generation/R2B_FOUNDATIONS_FINALIST_COMPARISON_EVIDENCE_V1.md
   color_role_coverage_repair:
-    status: COMPLETE_READY_FOR_HUMAN_REVIEW
+    status: COMPLETE_PASS_HUMAN_APPROVED
     reason: >
       R2-A required light/dark surface behavior but the original measured evidence quantified only
       Living Darkness. The bounded repair formalizes light-surface roles without changing primitive values.
