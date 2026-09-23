@@ -1,17 +1,14 @@
-program_id: DIVINIVID-TARGETED-VISUAL-SYNTHESIS-V1
+program_id: DIVINIVID-PRE-LOCK-EXPLORATION-V1
 updated: 2026-09-22
 human_authority: required
 
 strategy:
-  status: TARGETED_SYNTHESIS_ACTIVE
-  governing_adr: ADR-0014
-  governing_plan: DIVINIVID_TARGETED_VISUAL_SYNTHESIS_PLAN_V1
+  status: PRE_LOCK_EXPLORATION_ACTIVE
+  governing_adr:
+    - ADR-0014
+    - ADR-0015
+  governing_plan: DIVINIVID_PRE_LOCK_EXPLORATION_V1
   mandatory_100_board_rendering: false
-  historical_100_contract_corpus_retained: true
-  historical_100_contract_role:
-    - COVERAGE_REFERENCE
-    - SPECIFICATION_EVIDENCE
-    - GAP_CHECKLIST
   minimum_necessary_mutation: true
   generated_default_status: EVIDENCE_PENDING
 
@@ -24,95 +21,114 @@ core:
 
 primary_expression_base:
   lock_id: BASE_LOCK_B1
+  status: FROZEN_HUMAN_APPROVED
+  role: PRINCIPAL_EXPRESSION_AND_PRODUCTION_BASE
   source_routes:
     - ROUTE_3_MOKUHANGA_PRINTED_EVIDENCE
     - ROUTE_4_NEGATIVE_SHAPE_INVISIBLE_BODY
-  status: FROZEN_HUMAN_APPROVED
-  role: PRINCIPAL_EXPRESSION_AND_PRODUCTION_BASE
   artifact:
     library_path: /DIVINIVID/visual-generation/locks-v2/DIVINIVID_BASE_LOCK_B1_ROUTE_3_PLUS_4.png
     library_file_id: libfile_51dcc53f7bdc8191b3194ccccbecde70
 
+m1:
+  M1-A_ANATOMIA_CELESTE:
+    status: EVIDENCE_ONLY
+    artifact:
+      library_path: /DIVINIVID/visual-generation/prelock-v1/M1-A_ANATOMIA_CELESTE_EVIDENCE.png
+      library_file_id: libfile_0c6a6beadf58819195fa6067e2ee40ba
+  M1-B_TOPOGRAFIA_ORGANICA:
+    status: HUMAN_APPROVED_WORKING_ANCHOR
+    role: PRE_LOCK_WORKING_ANCHOR
+    artifact:
+      library_path: /DIVINIVID/visual-generation/prelock-v1/M1-B_TOPOGRAFIA_ORGANICA_WORKING_ANCHOR.png
+      library_file_id: libfile_e76f5704c1d881918113f90d8bc6a0b6
+    caveat: >
+      M1-B is authorized as the working anchor for behavior exploration only.
+      Incidental typography, iconography, labels, and layout details are not automatically canonical.
+
 bestiary_branch:
   lock_id: BESTIARY_BASE_B0
-  source_routes:
-    - ROUTE_3_MOKUHANGA_PRINTED_EVIDENCE
-    - ROUTE_5_YUGEN_APPARITIONS
   status: FROZEN_HUMAN_APPROVED
   role: SPECIALIZED_ENTITY_AND_APPARITION_BASE
   artifact:
     library_path: /DIVINIVID/visual-generation/locks-v2/DIVINIVID_BESTIARY_BASE_B0_ROUTE_3_PLUS_5.png
     library_file_id: libfile_7303aa98a79c8191ad05e13f8ee0b618
-  execution_status: DEFERRED_UNTIL_MAIN_SYSTEM_B2
+  execution_status: DEFERRED_UNTIL_FINAL_EXPRESSION_LOCK
+
+pre_lock_program:
+  status: ACTIVE
+  sequence:
+    - P1_TYPOGRAPHY
+    - P2_ICONOGRAPHY
+    - P3_HERO
+    - P4_DENSITY_INTENSITY
+    - P5_MOTION
+    - P6_DIGITAL_BEHAVIOR
+    - P7_APPLICATION_STRESS
+    - P8_FINAL_SYNTHESIS
+    - INDEPENDENT_RED_TEAM
+    - HUMAN_FINAL_GATE
+  expected_output: DIVINIVID_FINAL_EXPRESSION_LOCK_V1
+
+active_gate:
+  current: P1_TYPOGRAPHY
+  next_authorized_action: >
+    Produce Typography Lab comparison from Core Lock + B1 + M1-B only after explicit human trigger.
+  automatic_next_generation: false
+
+candidate_budgets:
+  typography:
+    initial: 3_variants_in_one_comparison
+    additional: 1_challenger_if_material_uncertainty
+  iconography:
+    initial: 3_hypotheses_in_one_comparison
+    additional: 1_targeted_repair
+  hero:
+    initial: 3_desktop_variants
+    additional: mobile_only_for_human_selected_winner
+  density:
+    initial: 4_modes_in_one_comparison
+    additional: 1_targeted_repair
+  motion:
+    initial: 4_microstudies
+    additional: 1_targeted_repair_per_concrete_failure
+  digital_behavior:
+    initial: 2_surfaces
+    additional: 1_targeted_repair
+  applications:
+    initial: 5_contexts
+    additional: 1_repair_per_context_if_material
+  final_synthesis:
+    initial: 1
+    additional: 1_targeted_repair
+
+reference_policy:
+  required_positive_authority:
+    - DIVINIVID_CORE_LOCK_V1
+    - BASE_LOCK_B1
+    - M1-B_TOPOGRAFIA_ORGANICA
+  bestiary_B0_excluded_from_default_positive_context: true
+  rejected_outputs_as_positive_references: false
+  recent_unapproved_outputs_as_positive_references: false
+  full_archive_default_loading: false
+  reference_binding_attestation_required: true
+  executor_substitution_requires_capability_check: true
 
 legacy_visual_universe:
   prior_program_id: DIVINIVID-VUE-100-V1
   status: SUPERSEDED_AS_MANDATORY_RENDER_SEQUENCE
-  governing_history:
-    - DIVINIVID_100_MOODBOARD_EXPANSION_SPEC_V1
-    - DIVINIVID_MOODBOARD_CONTRACTS_V1
-    - GENERATION_RUNTIME_LOCK_V1
-    - SATURATION_CHECKPOINT_20_V1
-  historical_contiguous_contract_cursor: A10
-  historical_contract_status:
-    A11: MISSING
-    A12: MISSING
-    A13: MISSING
-    A14: MISSING
-    A15: MISSING
-    A16: HOLD_PARTIAL_CONTRACT
-    A17: PASS_WITH_TRACEABILITY_CHECK
-    A18: HOLD_PARTIAL_CONTRACT
-    A19: HOLD_PARTIAL_CONTRACT
-    A20: HOLD_DEPENDENCY_BLOCKED
-  note: >
-    These historical contract states remain evidence. ADR-0014 removes the requirement
-    to complete them as rendered moodboards before identity synthesis.
-
-active_sequence:
-  current_gate: LOCKS_FORMALIZED
-  next_phase: M1
-  next_candidates:
-    - M1-A_ANATOMIA_CELESTE
-    - M1-B_TOPOGRAFIA_ORGANICA
-  after_m1:
-    human_gate: REQUIRED
-    allowed_outcomes:
-      - SELECT_M1_A
-      - SELECT_M1_B
-      - AUTHORIZE_ONE_BOUNDED_SYNTHESIS
-  phase_m2:
-    candidates:
-      - M2-SOFT_ELEGANT_BRUTALIST_ELEVATION
-      - M2-HARD_ELEGANT_BRUTALIST_ELEVATION
-    human_gate: REQUIRED
-    expected_output: MAIN_SYSTEM_B2
-
-iteration_budgets:
-  M1-A_full_candidates: 1
-  M1-B_full_candidates: 1
-  M1_synthesis_default: 0
-  M2-Soft_full_candidates: 1
-  M2-Hard_full_candidates: 1
-  targeted_repair_per_concrete_defect: 1
-  automatic_full_regeneration_after_approval: false
-
-reference_policy:
-  core_must_be_preserved: true
-  B1_is_default_positive_expression_reference: true
-  B0_is_bestiary_only: true
-  rejected_outputs_as_positive_references: false
-  recent_unapproved_outputs_as_positive_references: false
-  reference_binding_attestation_required: true
-  executor_substitution_requires_capability_check: true
+  historical_100_contract_corpus_retained: true
+  role:
+    - COVERAGE_REFERENCE
+    - SPECIFICATION_EVIDENCE
+    - GAP_CHECKLIST
 
 deferred:
   - BESTIARY_SYSTEM_DEVELOPMENT
   - FULL_FIGMA_PRODUCTION_SYSTEM
   - V0_IMPLEMENTATION
-  - WEBSITE_REDESIGN
-  - MAIN_SYSTEM_B2_DOWNSTREAM_EXECUTION
+  - FULL_WEBSITE_PROTOTYPE
+  - FINAL_BRANDBOOK
 
 next_exact_gate: >
-  Formal lock closeout is complete. Do not generate M1 automatically.
-  The next authorized production action requires a human trigger for M1-A Anatomía Celeste.
+  P1 Typography Lab. Do not generate automatically; wait for explicit human trigger.

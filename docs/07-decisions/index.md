@@ -24,6 +24,7 @@ depends_on:
 | ADR-0012 | Adopt DIVINIVID as project display name and plan repository slug rename while preserving stable Noema ID | APPROVED |
 | ADR-0013 | Move DIVINIVID from visual discovery into controlled universe expansion before Asset Factory production | APPROVED |
 | ADR-0014 | Replace mandatory 100-board rendering with targeted visual synthesis; lock Core, B1 and B0 | APPROVED |
+| ADR-0015 | Insert a bounded Pre-Lock Exploration Program before final expression lock | APPROVED |
 
 `PROPOSED` ADRs are recommendations from the Claude/CoWork Agency Master Plan workstream
 (GitHub Issue #2) awaiting human decision. They are not canon until approved
