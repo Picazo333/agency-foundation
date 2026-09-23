@@ -241,7 +241,7 @@ p6_digital_behavior:
     Cross-Consistency Audit and System Formalization Gate PASS.
 
 r1_signature_system:
-  status: TARGETED_REPAIR_EVIDENCE_PENDING_HUMAN_GATE
+  status: SURVIVOR_COMPLETION_EVIDENCE_PENDING_HUMAN_GATE
   preflight_doc: docs/03-brand/workbench/divinivid/generation/R1_SIGNATURE_SYSTEM_PREFLIGHT_V1.md
   hypotheses:
     - S-A_PALINDROMIC_AXIS
@@ -255,19 +255,34 @@ r1_signature_system:
     page_id: "15:2"
     comparison_root_original: "15:3"
     comparison_root_repair: "18:2"
+    comparison_root_survivors: "21:2"
     evidence_doc_original: docs/03-brand/workbench/divinivid/generation/R1_SIGNATURE_FIVEUP_EVIDENCE_V1.md
     evidence_doc_repair: docs/03-brand/workbench/divinivid/generation/R1_SIGNATURE_TARGETED_REPAIR_EVIDENCE_V1.md
+    evidence_doc_survivors: docs/03-brand/workbench/divinivid/generation/R1_SIGNATURE_SURVIVOR_COMPLETION_EVIDENCE_V1.md
     construction_substrate: NEWSREADER_SEMIBOLD_NOT_PRODUCTION_FONT
+  human_gate_decision:
+    S-A_PALINDROMIC_AXIS: MUTATE
+    S-B_BILATERAL_BODY: PASS
+    S-C_SACRED_INSCRIPTION: KILL
+    S-D_MIRRORED_CUT: KILL
+    S-E_CUSTOM_LETTERFORM_LOGIC: PASS
+  survivors:
+    - S-A_PRIME_PALINDROMIC_AXIS_MUTATED
+    - S-B_BILATERAL_BODY
+    - S-E_CUSTOM_LETTERFORM_LOGIC
+  killed:
+    - S-C_SACRED_INSCRIPTION
+    - S-D_MIRRORED_CUT
   figma_budget:
     initial_comparison: 0
     baseline_comparability_repair: 0
-    survivor_completion: NORMAL_R1_DOD_NOT_REROLL
+    survivor_completion: CONSUMED_NORMAL_R1_DOD
 
 active_gate:
-  current: R1_SIGNATURE_SYSTEM_TARGETED_REPAIR_HUMAN_REVIEW
+  current: R1_SURVIVOR_FINAL_COMPARISON_HUMAN_REVIEW
   next_authorized_action: >
-    Human review of repaired R1 comparison node 18:2. For S-A through S-E decide PASS / MUTATE / KILL.
-    R1 repair budget is exhausted; do not generate another repair unless the human owner explicitly reopens R1.
+    Human review of survivor-completion comparison node 21:2. Compare S-A' / S-B / S-E and decide
+    the final R1 architecture or a precise combination mechanism. Do not revive S-C or S-D.
   automatic_next_generation: false
 
 tool_discipline:
@@ -355,5 +370,5 @@ deferred:
   - FINAL_BRANDBOOK
 
 next_exact_gate: >
-  Human review of repaired Figma comparison node 18:2. Decide PASS / MUTATE / KILL for S-A through S-E.
-  Do not auto-promote. After the human gate, complete only surviving architectures to the normal R1 proof set.
+  Human review of Figma survivor-completion comparison node 21:2.
+  Choose S-A' / S-B / S-E or define a precise combination mechanism. Do not auto-promote.
