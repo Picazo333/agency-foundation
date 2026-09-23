@@ -185,7 +185,7 @@ Consolidate only human-approved module outputs and run:
 - production viability.
 
 ### 3. Current exact gate
-**R2-B — Foundations / Finalist Human Review.**
+**R2-B — Foundations / Color Mapping Human Review.**
 
 R0 is complete and passed.
 
