@@ -1,10 +1,11 @@
 ---
-status: active_handoff
+status: superseded
 owner: brand
 created: 2026-09-23
 updated: 2026-09-23
-authority: recovery_cursor
+authority: historical_recovery_cursor
 supersedes_chat_state: true
+superseded_by: docs/09-handoffs/DIVINIVID_CONTEXT_HANDOFF_R3R4R5_CLUSTER_2026-09-23.md
 ---
 # DIVINIVID Context Handoff — R2-B Color Gate — 2026-09-23
 
@@ -91,7 +92,7 @@ node `31:2` inside canonical comparison root `26:3`.
 Evidence remains:
 `docs/03-brand/workbench/divinivid/generation/R2B_FOUNDATIONS_FINALIST_COMPARISON_EVIDENCE_V1.md`.
 
-The human gate remains open. This repair does **not** constitute color approval.
+The human gate subsequently passed. This handoff is superseded by the R3/R4/R5 cluster handoff.
 
 ## Remaining color gate
 Candidate production mapping:
