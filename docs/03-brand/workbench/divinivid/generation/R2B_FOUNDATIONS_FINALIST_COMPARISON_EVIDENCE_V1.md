@@ -155,6 +155,39 @@ Bodoni Moda and Source Serif 4 remain rejected comparison evidence and are no lo
 
 This closes the typography decision inside R2 but does **not** yet close Foundations.
 
+## Bounded color-role coverage repair — 2026-09-23
+
+A deterministic review found one documentation/proof gap: R2-A required light/dark surface behavior, but the measured table only quantified the palette against `darkness/950`.
+
+This was repaired **without changing any primitive color value and without creating a second palette**.
+
+Figma proof:
+- root remains `26:3`;
+- bounded repair node: `31:2` — `R2B-COLOR-ROLE-PROOF-V1`.
+
+### Measured light-surface behavior
+
+| Token | vs `ivory/100 #E8DDC9` | vs `ivory/200 #CEB39A` | Authorized light-surface behavior |
+|---|---:|---:|---|
+| `darkness/950 #060604` | 15.08:1 | 10.18:1 | primary/default text |
+| `crimson/matter #601C16` | 9.32:1 | 6.29:1 | crimson accent alias on light; not default body copy |
+| `ultramar/matter #102139` | 12.03:1 | 8.12:1 | rare ultramar accent alias on light |
+| `gold/instrument #856A47` | 3.76:1 | 2.54:1 | non-text only on ivory/100; restricted on ivory/200 |
+| `crimson/ui #C15B4D` | 3.21:1 | 2.16:1 | not normal text on ivory surfaces |
+| `gold/text #BDA16F` | 1.84:1 | 1.24:1 | dark-surface text token only |
+| `ultramar/ui #6984B4` | 2.81:1 | 1.90:1 | dark-surface UI/text token only |
+
+Semantic clarification:
+- on Living Darkness, use the existing `*/ui` and `gold/text` roles exactly as already specified;
+- on ivory surfaces, default readable text is `darkness/950`;
+- `crimson/matter` may act as semantic alias `accent/crimson/on-light`;
+- `ultramar/matter` may act as semantic alias `accent/ultramar/on-light`;
+- these aliases add **roles only**, not new primitives;
+- color must never be the sole carrier of meaning.
+
+Repair status:
+`COMPLETE_READY_FOR_HUMAN_REVIEW`.
+
 ## Current remaining human gate
 
 `R2B_COLOR_MAPPING_HUMAN_REVIEW`
