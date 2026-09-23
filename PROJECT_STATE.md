@@ -165,7 +165,7 @@ Consolidate only human-approved module outputs and run:
 - production viability.
 
 ### 3. Current exact gate
-**R1 — Signature System / text preflight.**
+**R1 — Signature System / human review of text preflight.**
 
 R0 is complete and passed.
 
@@ -283,6 +283,13 @@ v0 remains blocked until Final Expression Lock + Website Strategy/IA + approved 
 `docs/08-plans/master/DIVINIVID_CURRENT_EXECUTION_PLAN_V2.md`
 
 ## Next exact gate
-**R1 — Signature System text preflight.**
+**Human review of `R1_SIGNATURE_SYSTEM_PREFLIGHT_V1.md`.**
 
-Before any Figma call, define the five signature architectures in text and confirm that they test meaningfully different structural hypotheses while preserving P1 and P2.
+The five hypotheses are now defined:
+- Palindromic Axis;
+- Bilateral Body;
+- Sacred Inscription;
+- Mirrored Cut;
+- Custom Letterform Logic.
+
+Figma is blocked until the human owner approves or mutates this five-up contract.
