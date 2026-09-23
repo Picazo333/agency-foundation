@@ -11,6 +11,7 @@ depends_on:
   - docs/08-plans/master/DIVINIVID_PRE_LOCK_EXPLORATION_V1.md
   - docs/08-plans/master/DIVINIVID_CURRENT_EXECUTION_PLAN_V2.md
   - docs/03-brand/workbench/divinivid/evaluations/PLAN_DEVIATION_2026-09-23_PRELOCK_RECONCILIATION.md
+  - docs/03-brand/workbench/divinivid/evaluations/PLAN_DEVIATION_2026-09-23_FORMALIZATION_CLUSTER.md
   - docs/03-brand/workbench/divinivid/generation/DIVINIVID_CORE_LOCK_V1.md
   - docs/03-brand/workbench/divinivid/generation/DIVINIVID_BASE_LOCK_B1.md
   - docs/03-brand/workbench/divinivid/generation/DIVINIVID_BESTIARY_BASE_B0.md
@@ -44,11 +45,11 @@ M1-B does not replace the Core or B1. It is the surface used to test how the ide
 ### 2. Approved Pre-Lock Exploration Program
 ADR-0015 inserts `DIVINIVID_PRE_LOCK_EXPLORATION_V1` before final expression lock.
 
-Current sequence after the approved 2026-09-23 reconciliation:
+Current sequence after the approved 2026-09-23 reconciliation and process-audit adoption:
 
-`Typography -> Iconography -> Hero -> Density/Intensity -> Motion -> R0 Reconciliation -> R1 Signature -> R2 Foundations -> R3 Composition Grammar -> R4 Image/Illustration Language -> R5 Temporal Mapping -> Digital Brand Specimen -> Application Stress -> Final Synthesis -> Independent Red Team -> Human Final Gate`.
+`Typography -> Iconography -> Hero -> Density/Intensity -> Motion -> R0 Reconciliation -> R1 Signature -> R2 Foundations -> R3/R4/R5 Formalization Cluster -> Cross-Consistency Audit -> System Formalization Gate -> Digital Brand Specimen -> Application Stress -> Final Synthesis -> Independent Red Team -> Human Final Gate`.
 
-The inserted R0-R5 sequence restores prerequisites from the frozen Visual Identity Master Plan before P6 resumes.
+R3 Composition, R4 Image/Illustration and R5 Temporal Mapping remain separate specifications, but their formalization may interleave after R2 PASS. P6 remains blocked until their Cross-Consistency Audit and System Formalization Gate pass.
 
 Expected terminal artifact:
 `DIVINIVID_FINAL_EXPRESSION_LOCK_V1`.
@@ -140,9 +141,9 @@ The first Figma attempt has been reclassified as `P6_STRUCTURAL_PROBE_V0`:
 - not a positive visual reference;
 - does not close P6.
 
-P6 resumes only after R0-R5 identity formalization.
+P6 resumes only after R1 closes, R2 passes, and the R3/R4/R5 Formalization Cluster passes Cross-Consistency + System Formalization.
 
-Future P6 scope is identity translation, not actual website/product design:
+Future P6 scope is identity translation, not actual website/product design. It runs as one Digital Brand Specimen workstream with one integrated review cycle across:
 - homepage fragment;
 - case-study fragment;
 - research/editorial fragment;
@@ -150,7 +151,12 @@ Future P6 scope is identity translation, not actual website/product design:
 - mobile translation.
 
 #### P7 — Application Stress
-Test:
+Use minimum diagnostic fidelity, not five polished applications.
+
+For each context define:
+`constraint -> representative artifact -> failure threshold -> PASS / MUTATE / KILL`.
+
+Contexts:
 - agency website;
 - proposal/sales deck;
 - case study/editorial;
@@ -179,8 +185,8 @@ R0 found:
 R0 concluded that broad aesthetic rediscovery is unnecessary. The main genuinely new design block is Signature System; later R2-R5 are primarily formalization and validation of already-approved evidence.
 
 Do not:
-- reopen Core/B1/P1-P5 without a specific failure and human approval;
-- start P6 before R0-R5 are closed or explicitly satisfied by evidence;
+- reopen Core/B1/B0/M1-B/P1-P5 without a specific material failure and human approval;
+- start P6 before R1 closes, R2 passes, and the R3/R4/R5 cluster passes its shared formalization gate;
 - develop the bestiary branch yet;
 - build the full Figma production system;
 - start Website Strategy/IA;
@@ -255,7 +261,6 @@ This downstream path is not yet authorized merely by appearing here.
 - no final expression promotion without human gate.
 
 ## Open decisions
-- R0 requirement matrix;
 - Signature System;
 - production typography/foundations;
 - Composition Grammar;
@@ -273,7 +278,11 @@ This downstream path is not yet authorized merely by appearing here.
 All material tool calls now follow:
 `docs/03-brand/workbench/divinivid/generation/TOOL_EXECUTION_CONTRACTS_V1.md`.
 
-A call must have a declared phase, question, tool-specific purpose, fixed variables, expected output, Definition of Done, budget, failure route and promotion rule.
+Tool governance is risk-proportional:
+- T0 READ — no special contract;
+- T1 deterministic/reversible — light contract;
+- T2 paid/generative/nondeterministic — full contract;
+- T3 high-impact agentic — full contract plus rollback, tests, scope limit and stop conditions.
 
 Figma is not the default aesthetic-exploration engine. Before final lock, use it only when a deterministic design question materially requires it. Do not use low-resolution/proxy assets as production-quality evidence, invent unresolved iconography, or silently replace an approved typographic direction.
 
@@ -292,7 +301,7 @@ Evidence:
 - original evidence: `R1_SIGNATURE_FIVEUP_EVIDENCE_V1.md`;
 - repair evidence: `R1_SIGNATURE_TARGETED_REPAIR_EVIDENCE_V1.md`.
 
-The repair was consumed because S-A/S-B/S-C/S-E were insufficiently differentiated in the initial proof.
+The baseline-comparability repair was consumed because S-A/S-B/S-C/S-E were insufficiently differentiated in the initial proof.
 For repaired S-A through S-E decide `PASS / MUTATE / KILL`.
 
-R1 repair budget is exhausted unless the human owner explicitly reopens the phase.
+After the gate, only surviving architectures receive normal R1 completion (reduced/micro-size/monochrome/orientation proof where justified). That completion is not another baseline reroll.
