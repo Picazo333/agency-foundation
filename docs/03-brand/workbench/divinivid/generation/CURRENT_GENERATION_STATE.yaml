@@ -216,7 +216,7 @@ p6_digital_behavior:
     were formally closed.
 
 r1_signature_system:
-  status: PREFLIGHT_READY_HUMAN_GATE
+  status: FIVEUP_EVIDENCE_PENDING_HUMAN_GATE
   preflight_doc: docs/03-brand/workbench/divinivid/generation/R1_SIGNATURE_SYSTEM_PREFLIGHT_V1.md
   hypotheses:
     - S-A_PALINDROMIC_AXIS
@@ -224,16 +224,22 @@ r1_signature_system:
     - S-C_SACRED_INSCRIPTION
     - S-D_MIRRORED_CUT
     - S-E_CUSTOM_LETTERFORM_LOGIC
-  figma_call_authorized: false
+  figma_call_authorized: true
+  figma_evidence:
+    file_key: bqcKhEQHs4EEQgnn6lNU8O
+    page_id: "15:2"
+    comparison_root: "15:3"
+    evidence_doc: docs/03-brand/workbench/divinivid/generation/R1_SIGNATURE_FIVEUP_EVIDENCE_V1.md
+    construction_substrate: NEWSREADER_SEMIBOLD_NOT_PRODUCTION_FONT
   figma_budget:
-    initial_comparison: 1
+    initial_comparison: 0
     targeted_repair: 1
 
 active_gate:
-  current: R1_SIGNATURE_SYSTEM_HUMAN_PREFLIGHT_REVIEW
+  current: R1_SIGNATURE_SYSTEM_FIVEUP_HUMAN_REVIEW
   next_authorized_action: >
-    Human review of R1_SIGNATURE_SYSTEM_PREFLIGHT_V1.md. Figma remains blocked until the five-up
-    architecture contract is approved or specifically mutated.
+    Human review of R1-FIGMA-01 five-up. For S-A through S-E decide PASS / MUTATE / KILL.
+    One targeted repair remains available only for concrete feedback.
   automatic_next_generation: false
 
 tool_discipline:
@@ -317,4 +323,4 @@ deferred:
   - FINAL_BRANDBOOK
 
 next_exact_gate: >
-  Human review of the R1 Signature System five-up preflight. Do not call Figma before approval.
+  Human review of Figma comparison node 15:3. Do not auto-promote or consume the targeted repair.
