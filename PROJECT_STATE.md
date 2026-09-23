@@ -185,7 +185,7 @@ Consolidate only human-approved module outputs and run:
 - production viability.
 
 ### 3. Current exact gate
-**R2-B — Foundations / Finalist Human Review.**
+**R2-B — Foundations / Color Mapping Human Review.**
 
 R0 is complete and passed.
 
@@ -306,32 +306,22 @@ v0 remains blocked until Final Expression Lock + Website Strategy/IA + approved 
 `docs/08-plans/master/DIVINIVID_CURRENT_EXECUTION_PLAN_V2.md`
 
 ## Next exact gate
-**R2-B — Foundations / Finalist Human Review.**
+**R2-B — Foundations / Color Mapping Human Review.**
 
-R2-A technical validation is complete and passed.
-
-Typography finalists:
-- **A — Newsreader + IBM Plex Sans**
-- **B — Bodoni Moda + IBM Plex Sans**
-- **C — Source Serif 4 + IBM Plex Sans**
-
-Fixed variables:
-- S-BE Signature System;
-- IBM Plex Sans operational family;
-- proof content/layout;
-- candidate production color mapping.
+Typography is now human-approved:
+- display serif: **Newsreader**;
+- operational sans: **IBM Plex Sans**.
 
 Figma evidence:
-- page: `R2 — FOUNDATIONS`;
-- comparison node: `26:3`;
-- https://www.figma.com/design/bqcKhEQHs4EEQgnn6lNU8O/?node-id=26-3
+node `26:3` on page `R2 — FOUNDATIONS`.
 
-Evidence:
-- `R2A_FOUNDATIONS_TECHNICAL_VALIDATION_V1.md`;
-- `R2B_FOUNDATIONS_FINALIST_COMPARISON_EVIDENCE_V1.md`.
+Remaining R2 decision:
+- `PASS` the single candidate production color mapping;
+- or identify one concrete token/role failure for bounded mutation.
 
-Human decision:
-- typography: `PASS / MUTATE / KILL` for A/B/C;
-- color: `PASS` candidate production mapping or name one concrete role/token failure.
+Do not reopen typography or create a second aesthetic palette.
 
-Do not add new font families or palettes without material failure evidence.
+On color PASS:
+1. create `DIVINIVID_FOUNDATIONS_LOCK_V1`;
+2. close R2;
+3. enter the R3/R4/R5 Formalization Cluster.
