@@ -1,10 +1,10 @@
 ---
-status: typography_human_approved_color_pending
+status: approved
 owner: brand
 created: 2026-09-23
 updated: 2026-09-23
 authority: evidence
-human_approved: partial
+human_approved: true
 depends_on:
   - docs/03-brand/workbench/divinivid/generation/R2A_FOUNDATIONS_TECHNICAL_VALIDATION_V1.md
   - docs/03-brand/workbench/divinivid/generation/R1_SIGNATURE_SYSTEM_LOCK_SBE_V1.md
@@ -188,9 +188,13 @@ Semantic clarification:
 Repair status:
 `COMPLETE_READY_FOR_HUMAN_REVIEW`.
 
-## Current remaining human gate
+## Human color decision
 
-`R2B_COLOR_MAPPING_HUMAN_REVIEW`
+**PASS — candidate production color mapping approved.**
+
+The human creative owner approved the candidate color mapping after the bounded light-surface role repair.
+
+R2-B is closed.
 
 Review the single candidate production mapping:
 
@@ -204,11 +208,12 @@ Review the single candidate production mapping:
 - `ultramar/ui #6984B4`
 - `ultramar/matter #102139`
 
-Allowed human actions:
-- `PASS`;
-- or identify one concrete role/token failure for bounded mutation.
-
 No second aesthetic palette is authorized by default.
+
+Promotion consequence executed:
+1. `DIVINIVID_FOUNDATIONS_LOCK_V1` created;
+2. R2 marked `COMPLETE_PASS`;
+3. R3/R4/R5 Formalization Cluster entered.
 
 ## Promotion consequence
 
