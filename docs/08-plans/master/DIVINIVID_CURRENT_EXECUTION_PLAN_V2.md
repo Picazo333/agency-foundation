@@ -217,6 +217,20 @@ Turn approved visual direction into operational foundations without reopening P1
 
 ### 5.1 R2-A — Technical Validation
 
+**Execution status: COMPLETE / PASS (2026-09-23).**
+
+Evidence:
+`docs/03-brand/workbench/divinivid/generation/R2A_FOUNDATIONS_TECHNICAL_VALIDATION_V1.md`.
+
+Bounded typography shortlist:
+- Newsreader + IBM Plex Sans;
+- Bodoni Moda + IBM Plex Sans;
+- Source Serif 4 + IBM Plex Sans.
+
+IBM Plex Sans is fixed as the operational sans for R2-B so the display serif is the only major typographic variable.
+
+
+
 #### Typography
 Validate before aesthetic comparison:
 1. licensing;
@@ -243,9 +257,27 @@ Validate:
 - accessibility.
 
 ### 5.2 R2-B — Aesthetic / Functional Finalist Comparison
+
+**Execution status: EVIDENCE PENDING HUMAN GATE (2026-09-23).**
+
+Figma:
+- page `R2 — FOUNDATIONS`;
+- comparison node `26:3`.
+
+Evidence:
+`docs/03-brand/workbench/divinivid/generation/R2B_FOUNDATIONS_FINALIST_COMPARISON_EVIDENCE_V1.md`.
+
 Only shortlisted technically viable typography/color candidates receive deterministic Figma comparison.
 
 The question is implementation fidelity to the already-approved direction, not aesthetic rediscovery.
+
+Current human gate:
+- A Newsreader;
+- B Bodoni Moda;
+- C Source Serif 4;
+- candidate production color mapping.
+
+Use `PASS / MUTATE / KILL` and name a concrete failure for any mutation.
 
 ### 5.3 Other foundations
 Resolve only what evidence supports:
@@ -613,34 +645,26 @@ Stop and diagnose rather than continuing when:
 
 ## 16. Immediate next exact action
 
-`R2A_FOUNDATIONS_TECHNICAL_VALIDATION`.
+`R2B_FOUNDATIONS_FINALIST_HUMAN_REVIEW`.
 
-Execute deterministic technical validation before any new Figma comparison.
+Review Figma comparison node `26:3`.
 
-### Typography
-Validate:
-1. licensing;
-2. ES/EN support;
-3. weights/styles;
-4. web delivery;
-5. print delivery;
-6. variable-font behavior where applicable;
-7. accessibility/readability;
-8. fallback viability.
+Typography:
+- A — Newsreader + IBM Plex Sans;
+- B — Bodoni Moda + IBM Plex Sans;
+- C — Source Serif 4 + IBM Plex Sans.
 
-Produce a bounded technically viable shortlist that preserves:
-- P1 typographic direction;
-- R1 S-BE signature architecture.
+The display serif is the only major typography variable.
 
-### Color
-Validate:
-- production values;
-- tonal behavior;
-- pairings;
-- contrast;
-- semantic roles;
-- light/dark surface behavior;
-- accessibility.
+Color:
+review the single candidate production mapping derived from approved semantics and measured contrast.
 
-Do not build the production design system.
-Do not use Figma for aesthetic finalist comparison until R2-A passes.
+Human gate:
+`PASS / MUTATE / KILL`.
+
+If typography and color pass:
+- create `DIVINIVID_FOUNDATIONS_LOCK_V1`;
+- close R2;
+- enter R3/R4/R5 Formalization Cluster.
+
+Do not start the cluster before this human gate closes R2.
