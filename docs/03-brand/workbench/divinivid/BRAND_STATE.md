@@ -28,9 +28,19 @@ The older Visual Universe checkpoint and Meta-Plan remain historical/context evi
 The older Phase 1–3 material below remains valid as historical research/process evidence unless explicitly superseded, but the “Phase 3 Reference Atlas” section no longer defines the active execution gate.
 
 ## Current brand-scope cursor
-**R2-A — Foundations / Technical Validation**
+**R2-B — Foundations / Finalist Human Review**
 
-R1 Signature System is closed. The brand-scope next action is to validate production typography and color foundations technically before any finalist Figma comparison.
+R2-A technical validation has passed.
+
+Current typography finalists:
+- Newsreader + IBM Plex Sans;
+- Bodoni Moda + IBM Plex Sans;
+- Source Serif 4 + IBM Plex Sans.
+
+Current Figma evidence:
+node `26:3` on page `R2 — FOUNDATIONS`.
+
+The human owner must select the production display-serif finalist and approve or identify a concrete bounded failure in the candidate production color mapping.
 
 ## Current Signature System
 **R1 HUMAN APPROVED / CLOSED — 2026-09-23**

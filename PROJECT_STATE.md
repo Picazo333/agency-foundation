@@ -185,7 +185,7 @@ Consolidate only human-approved module outputs and run:
 - production viability.
 
 ### 3. Current exact gate
-**R2-A — Foundations / Technical Validation.**
+**R2-B — Foundations / Finalist Human Review.**
 
 R0 is complete and passed.
 
@@ -306,34 +306,32 @@ v0 remains blocked until Final Expression Lock + Website Strategy/IA + approved 
 `docs/08-plans/master/DIVINIVID_CURRENT_EXECUTION_PLAN_V2.md`
 
 ## Next exact gate
-**R2-A — Foundations / Technical Validation.**
+**R2-B — Foundations / Finalist Human Review.**
 
-R1 is now human-approved and closed.
+R2-A technical validation is complete and passed.
 
-Selected Signature System:
-- **S-BE — Bilateral Body + Glyph-Class Logic**.
+Typography finalists:
+- **A — Newsreader + IBM Plex Sans**
+- **B — Bodoni Moda + IBM Plex Sans**
+- **C — Source Serif 4 + IBM Plex Sans**
 
-Mechanism:
-- S-B controls global bilateral wordmark architecture;
-- S-E controls repeatable D/I/V/N glyph-class proportions.
-
-Lock:
-`docs/03-brand/workbench/divinivid/generation/R1_SIGNATURE_SYSTEM_LOCK_SBE_V1.md`.
+Fixed variables:
+- S-BE Signature System;
+- IBM Plex Sans operational family;
+- proof content/layout;
+- candidate production color mapping.
 
 Figma evidence:
-- final focused comparison node: `22:2`.
+- page: `R2 — FOUNDATIONS`;
+- comparison node: `26:3`;
+- https://www.figma.com/design/bqcKhEQHs4EEQgnn6lNU8O/?node-id=26-3
 
-Production typography remains unresolved by design. Newsreader was only a construction substrate.
+Evidence:
+- `R2A_FOUNDATIONS_TECHNICAL_VALIDATION_V1.md`;
+- `R2B_FOUNDATIONS_FINALIST_COMPARISON_EVIDENCE_V1.md`.
 
-Immediate R2-A work:
-1. licensing;
-2. ES/EN support;
-3. weights/styles;
-4. web delivery;
-5. print delivery;
-6. variable-font behavior where applicable;
-7. accessibility/readability;
-8. fallback viability;
-9. bounded shortlist.
+Human decision:
+- typography: `PASS / MUTATE / KILL` for A/B/C;
+- color: `PASS` candidate production mapping or name one concrete role/token failure.
 
-Do not begin R2-B finalist Figma comparison until R2-A passes.
+Do not add new font families or palettes without material failure evidence.
