@@ -186,7 +186,7 @@ pre_lock_program:
 identity_formalization:
   status: ACTIVE
   governing_plan: docs/08-plans/master/DIVINIVID_CURRENT_EXECUTION_PLAN_V2.md
-  current_step: R2_FOUNDATIONS
+  current_step: R3_R4_R5_FORMALIZATION_CLUSTER
   r0_audit:
     status: PASS
     artifact: docs/03-brand/workbench/divinivid/generation/DIVINIVID_R0_REQUIREMENT_MATRIX_V1.md
@@ -199,15 +199,17 @@ identity_formalization:
   steps:
     R0_RECONCILIATION_AUDIT: COMPLETE_PASS
     R1_SIGNATURE_SYSTEM: COMPLETE_PASS
-    R2_FOUNDATIONS: ACTIVE_R2B_COLOR_HUMAN_REVIEW
-    R3_COMPOSITION_GRAMMAR: BLOCKED_BY_R2_CLUSTER_ENTRY
-    R4_IMAGE_ILLUSTRATION_LANGUAGE: BLOCKED_BY_R2_CLUSTER_ENTRY
-    R5_TEMPORAL_MAPPING_AUDIT: BLOCKED_BY_R2_CLUSTER_ENTRY
+    R2_FOUNDATIONS: COMPLETE_PASS
+    R3_COMPOSITION_GRAMMAR: ACTIVE_FORMALIZATION
+    R4_IMAGE_ILLUSTRATION_LANGUAGE: ACTIVE_FORMALIZATION
+    R5_TEMPORAL_MAPPING_AUDIT: ACTIVE_FORMALIZATION
     CROSS_CONSISTENCY_AUDIT: BLOCKED_BY_CLUSTER
     SYSTEM_FORMALIZATION_GATE: BLOCKED_BY_CROSS_CONSISTENCY
 
 r2_foundations:
-  status: TYPOGRAPHY_SELECTED_COLOR_PENDING
+  status: COMPLETE_PASS
+  lock_doc: docs/03-brand/workbench/divinivid/generation/DIVINIVID_FOUNDATIONS_LOCK_V1.md
+  human_approved: true
   production_typography_direction: INHERIT_P1
   signature_constraint: INHERIT_R1_SBE
   technical_validation:
@@ -265,7 +267,7 @@ r2_foundations:
       ultramar_on_light: ULTRAMAR_MATTER
       gold_text_on_light: RESTRICTED
       ui_light_variants_on_ivory_normal_text: PROHIBITED
-    human_gate_status: PENDING
+    human_gate_status: PASS
 
   candidate_color_set:
     darkness_950: "#060604"
@@ -279,7 +281,7 @@ r2_foundations:
     ultramar_matter: "#102139"
 
 formalization_cluster:
-  status: BLOCKED_BY_R2
+  status: ACTIVE
   entry_condition: R2_FOUNDATIONS_PASS
   members:
     - R3_COMPOSITION_GRAMMAR
@@ -368,11 +370,11 @@ r1_signature_system:
     survivor_completion: CONSUMED_NORMAL_R1_DOD
 
 active_gate:
-  current: R2B_COLOR_MAPPING_HUMAN_REVIEW
+  current: R3_R4_R5_FORMALIZATION_CLUSTER
   next_authorized_action: >
-    Typography is closed: Newsreader + IBM Plex Sans selected.
-    Review the single candidate production color mapping and either PASS it or identify one concrete token/role failure.
-    Do not add a second palette or reopen typography.
+    Formalize R3 Composition Grammar, R4 Image / Illustration Language and R5 Temporal Mapping
+    from existing approved evidence. New visual generation is prohibited unless a named gap requires it.
+    After all three specifications are ready, run the Cross-Consistency Audit.
   automatic_next_generation: false
 
 tool_discipline:
@@ -461,7 +463,7 @@ deferred:
   - FINAL_BRANDBOOK
 
 next_exact_gate: >
-  R2B_COLOR_MAPPING_HUMAN_REVIEW.
-  Typography is locked to Newsreader + IBM Plex Sans.
-  PASS the candidate color mapping or name one bounded token/role failure.
-  On PASS create DIVINIVID_FOUNDATIONS_LOCK_V1, close R2, and enter the R3/R4/R5 Formalization Cluster.
+  R3_R4_R5_FORMALIZATION_CLUSTER.
+  R2 Foundations is COMPLETE_PASS and locked by DIVINIVID_FOUNDATIONS_LOCK_V1.
+  Formalize Composition Grammar, Image / Illustration Language and Temporal Mapping from approved evidence,
+  then run the Cross-Consistency Audit.
