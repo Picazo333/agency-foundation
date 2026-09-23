@@ -1,7 +1,7 @@
 ---
 status: approved
 owner: brand
-updated: 2026-09-20
+updated: 2026-09-23
 authority: workbench
 depends_on:
   - ../../../08-plans/workstreams/DIVINIVID_VISUAL_IDENTITY_MASTER_PLAN.md
@@ -13,15 +13,37 @@ depends_on:
 ## Purpose
 This file records DIVINIVID Brand state and historical visual-phase context. It prevents agents from reconstructing the Brand from stale branches, old moodboards or chat memory.
 
-## 2026-09-20 transition checkpoint
-Subsequent human-guided work materially advanced beyond the 2026-09-16 Phase 3 gate and established a coherent visual baseline.
+## 2026-09-23 current brand checkpoint
+Subsequent human-guided work materially advanced beyond the historical Visual Universe program and now operates under the reconciled pre-lock execution plan.
 
 For **current execution state**, use:
-1. `VISUAL_UNIVERSE_CHECKPOINT_2026-09-20.md`;
-2. `../../../08-plans/master/DIVINIVID_VISUAL_UNIVERSE_META_PLAN_V2.md`;
-3. ADR-0013.
+1. `generation/CURRENT_GENERATION_STATE.yaml`;
+2. `../../../08-plans/master/DIVINIVID_CURRENT_EXECUTION_PLAN_V2.md`;
+3. `../../../PROJECT_STATE.md`.
+
+The older Visual Universe checkpoint and Meta-Plan remain historical/context evidence, not the current execution cursor.
 
 The older Phase 1–3 material below remains valid as historical research/process evidence unless explicitly superseded, but the “Phase 3 Reference Atlas” section no longer defines the active execution gate.
+
+## Current Signature System
+**R1 HUMAN APPROVED / CLOSED — 2026-09-23**
+
+Selected:
+- **S-BE — Bilateral Body + Glyph-Class Logic**.
+
+System rule:
+- bilateral global architecture and central-spine balance from S-B;
+- repeatable D/I/V/N glyph-class logic from S-E;
+- no decorative monogram or icon by default;
+- palindrome expressed structurally rather than as a visual trick.
+
+Canonical lock:
+`generation/R1_SIGNATURE_SYSTEM_LOCK_SBE_V1.md`.
+
+Figma final evidence:
+node `22:2`.
+
+Production font family is deliberately unresolved and moves to R2 Foundations.
 
 ## Current hierarchy
 - **Brand under identity exploration:** `DIVINIVID`
@@ -54,12 +76,12 @@ Do not reopen naming during visual phases unless a real diligence blocker appear
 Route 01 KIROGRAF tests whether anatomical/knowledge structures can act as the rational skeleton while sacred illumination, grotesque anomaly and tenebrist revelation create controlled tension without collapsing into gore, occult branding, dark luxury or generic historical pastiche.
 
 ## Source-of-truth order
-1. frozen visual-identity master plan;
-2. this Brand State;
-3. Clean Reference Canon + Anti-Canon;
-4. approved Creative Direction Contract;
-5. approved Phase 2 Reference Research + Source Registry;
-6. active route thesis/grammar;
+1. `generation/CURRENT_GENERATION_STATE.yaml` for the visual-generation/pre-lock cursor;
+2. `../../../08-plans/master/DIVINIVID_CURRENT_EXECUTION_PLAN_V2.md` for the governing execution plan;
+3. this Brand State for brand-scope current state;
+4. frozen Visual Identity Master Plan and approved ADRs/PLAN_DEVIATION records;
+5. Clean Reference Canon + Anti-Canon;
+6. approved Creative Direction Contract and research;
 7. human-approved generated artifacts only.
 
 ## Phase 1 status
