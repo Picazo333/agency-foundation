@@ -203,11 +203,21 @@ Evaluate:
 
 ## P2 — Iconography / Sign Grammar Lab
 
-**Execution status: TARGETED REPAIR ACTIVE.**
+**Execution status: HUMAN APPROVED / CLOSED (2026-09-22).**
 
-Attempt 01 is a human-rejected hard fail and is quarantined as negative evidence. A subsequent Figma S1/S2/S3 surrogate is also non-canonical and must not be used for promotion because it substituted both morphology and typography.
+The human owner selected **I-C — Minimal / No-Icons**.
 
-Exactly one targeted repair remains. The repair must compare the original hypotheses in-context as finished DIVINIVID applications, not as an icon catalog or generic design-system sheet.
+Attempt 01 remains quarantined as negative evidence. The later Figma S1/S2/S3 surrogate remains non-canonical technical scratch.
+
+The approved rule is not “never use any mark.” It is:
+- no decorative icon system by default;
+- use signs only when they carry real content-specific function;
+- morphology remains embodied in the visual matter;
+- typography, composition and matter carry most identity load;
+- fake coordinates, arbitrary scales, meaningless crosshairs/tick marks, invented scientific metadata and decorative lines without semantic targets are prohibited as AI slop.
+
+Lock document:
+`docs/03-brand/workbench/divinivid/generation/P2_SIGN_GRAMMAR_LOCK_MINIMAL_V1.md`.
 
 ### Objective
 Determine whether DIVINIVID needs a formal icon system at all, and if so, define only the minimum native grammar.
@@ -254,7 +264,8 @@ Reject:
 
 ### Budget
 - initial three-hypothesis sheet: consumed and rejected;
-- exactly 1 targeted repair remains.
+- targeted repair: consumed and human-approved as I-C Minimal / No-Icons;
+- P2 budget closed.
 
 ### Output
 `SIGN_GRAMMAR_LOCK_CANDIDATE`
