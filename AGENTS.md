@@ -38,30 +38,35 @@ For substantial visual/production rounds:
 
 ### Current visual strategy
 ADR-0014 supersedes mandatory rendering of the full historical 100-board program.
+ADR-0015 inserts a bounded Pre-Lock Exploration Program before final expression lock.
 
-The 100-contract corpus remains coverage/specification evidence, but current visual production follows targeted synthesis.
+The historical 100-contract corpus remains coverage/specification evidence.
 
 Mandatory authority order for current visual work:
 
-`CURRENT_GENERATION_STATE -> CORE_LOCK -> ACTIVE_EXPRESSION_BASE -> TARGETED_PHASE_CONTRACT -> VISUAL_CANON -> ANTI_CANON -> EXECUTION -> QA -> HUMAN_GATE -> DURABLE_CLOSEOUT`.
+`CURRENT_GENERATION_STATE -> CORE_LOCK -> BASE_LOCK_B1 -> M1-B_WORKING_ANCHOR -> CURRENT_MODULE_CONTRACT -> VISUAL_CANON -> ANTI_CANON -> EXECUTION -> QA -> HUMAN_GATE -> DURABLE_CLOSEOUT`.
 
-Current locked hierarchy:
+Current authority hierarchy:
 - `DIVINIVID_CORE_LOCK_V1` — frozen visual DNA;
 - `BASE_LOCK_B1` — Route 3+4, principal expression/production base;
-- `BESTIARY_BASE_B0` — Route 3+5, specialized bestiary/apparition branch.
+- `M1-B_TOPOGRAFIA_ORGANICA` — human-approved pre-lock working anchor;
+- `BESTIARY_BASE_B0` — Route 3+5, specialized bestiary/apparition branch, excluded from default positive context during pre-lock exploration.
 
 Current approved sequence:
-`M1-A Anatomía Celeste -> M1-B Topografía Orgánica -> human comparison -> optional bounded synthesis -> M2-Soft -> M2-Hard -> human comparison -> MAIN_SYSTEM_B2`.
+
+`P1 Typography -> P2 Iconography -> P3 Hero -> P4 Density -> P5 Motion -> P6 Digital Behavior -> P7 Application Stress -> P8 Final Synthesis -> Independent Red Team -> Human Final Gate -> DIVINIVID_FINAL_EXPRESSION_LOCK_V1`.
 
 Do not automatically generate the next candidate. Every material candidate requires an explicit human trigger.
 
-### Visual-generation invariants
-- Bind only approved positive references appropriate to the active phase.
+### Pre-lock invariants
+- Test one system variable at a time.
+- Default context packet is only Core + B1 + M1-B + current module contract.
+- Do not infer typography, iconography, labels or component rules from incidental details in M1-B.
+- Do not use rejected/recent unapproved generations as positive references.
 - Keep `REFERENCE_AVAILABLE != REFERENCE_BOUND != REFERENCE_EFFECTIVE` explicit.
-- Do not use rejected or recent unapproved generations as positive references.
-- Keep the bestiary branch out of the principal B1 evolution until its deferred phase is explicitly opened.
-- Use minimum-necessary mutation: one major development axis per candidate.
-- Do not reopen the Core or silently replace B1/B0.
+- Keep BESTIARY_BASE_B0 out of default pre-lock context unless the active module explicitly requires the bestiary branch.
+- Preserve minimum-necessary mutation.
+- Do not reopen Core/B1 silently.
 - Executor substitution requires a capability check.
 - Generated output remains `EVIDENCE_PENDING` until human approval.
 
@@ -69,11 +74,10 @@ The governing current details live in:
 - `docs/03-brand/workbench/divinivid/generation/CURRENT_GENERATION_STATE.yaml`;
 - `docs/03-brand/workbench/divinivid/generation/DIVINIVID_CORE_LOCK_V1.md`;
 - `docs/03-brand/workbench/divinivid/generation/DIVINIVID_BASE_LOCK_B1.md`;
-- `docs/03-brand/workbench/divinivid/generation/DIVINIVID_BESTIARY_BASE_B0.md`;
-- `docs/08-plans/master/DIVINIVID_TARGETED_VISUAL_SYNTHESIS_PLAN_V1.md`;
-- `docs/07-decisions/ADR-0014-targeted-visual-synthesis-and-expression-bases.md`.
+- `docs/08-plans/master/DIVINIVID_PRE_LOCK_EXPLORATION_V1.md`;
+- `docs/07-decisions/ADR-0015-pre-lock-exploration-before-final-expression-lock.md`.
 
-The older Visual Universe meta-plan, 100-board spec/contracts and runtime-lock artifacts remain historical evidence and reusable coverage material where relevant.
+Historical targeted-synthesis and Visual Universe documents remain reusable evidence but do not define the next active gate.
 
 Do not silently skip preflight, acceptance criteria or human gates.
 
