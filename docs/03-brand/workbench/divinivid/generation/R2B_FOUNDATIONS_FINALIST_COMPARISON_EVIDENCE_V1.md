@@ -1,10 +1,10 @@
 ---
-status: evidence_pending_human_gate
+status: typography_human_approved_color_pending
 owner: brand
 created: 2026-09-23
 updated: 2026-09-23
 authority: evidence
-human_approved: false
+human_approved: partial
 depends_on:
   - docs/03-brand/workbench/divinivid/generation/R2A_FOUNDATIONS_TECHNICAL_VALIDATION_V1.md
   - docs/03-brand/workbench/divinivid/generation/R1_SIGNATURE_SYSTEM_LOCK_SBE_V1.md
@@ -141,25 +141,41 @@ Both were corrected without changing the comparison variables.
 
 The latest screenshot is the valid evidence state.
 
-## Current human gate
+## Human typography decision
 
-`R2B_FOUNDATIONS_FINALIST_HUMAN_REVIEW`
+**A — Newsreader + IBM Plex Sans: PASS / SELECTED**
 
-For typography:
-- `A — Newsreader`
-- `B — Bodoni Moda`
-- `C — Source Serif 4`
+The human creative owner selected Newsreader as the production display-serif direction.
 
-Decision:
-`PASS / MUTATE / KILL`
+Locked typography result inside R2:
+- display serif: `NEWSREADER`;
+- operational sans: `IBM_PLEX_SANS`.
 
-The human owner may select one finalist directly or name one concrete failure mode requiring a bounded mutation.
+Bodoni Moda and Source Serif 4 remain rejected comparison evidence and are no longer active finalists.
 
-For color:
-- `PASS` the candidate production mapping;
-- or identify a specific role/token failure.
+This closes the typography decision inside R2 but does **not** yet close Foundations.
 
-Do not reopen color direction globally.
+## Current remaining human gate
+
+`R2B_COLOR_MAPPING_HUMAN_REVIEW`
+
+Review the single candidate production mapping:
+
+- `darkness/950 #060604`
+- `ivory/100 #E8DDC9`
+- `ivory/200 #CEB39A`
+- `crimson/ui #C15B4D`
+- `crimson/matter #601C16`
+- `gold/text #BDA16F`
+- `gold/instrument #856A47`
+- `ultramar/ui #6984B4`
+- `ultramar/matter #102139`
+
+Allowed human actions:
+- `PASS`;
+- or identify one concrete role/token failure for bounded mutation.
+
+No second aesthetic palette is authorized by default.
 
 ## Promotion consequence
 
