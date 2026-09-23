@@ -132,6 +132,20 @@ Secondary:
 
 The system must avoid glitch, liquid/blob motion, gratuitous parallax, decorative particles, fake scanner behavior and generic motion gimmicks.
 
+#### R1 — Signature System
+**Status: HUMAN APPROVED / CLOSED.**
+
+Selected:
+- **S-BE — Bilateral Body + Glyph-Class Logic**.
+
+Architecture:
+- bilateral global staging and central-spine balance from S-B;
+- repeatable D/I/V/N glyph-class logic from S-E;
+- no decorative monogram or icon by default;
+- palindrome remains structural, not gimmick.
+
+Production font mapping remains an R2 responsibility.
+
 #### P6 — Digital Brand Specimen
 **Status: PAUSED / NOT YET AUTHORIZED.**
 
@@ -171,7 +185,7 @@ Consolidate only human-approved module outputs and run:
 - production viability.
 
 ### 3. Current exact gate
-**R1 — Signature System / focused final B vs E vs B+E human review.**
+**R2-A — Foundations / Technical Validation.**
 
 R0 is complete and passed.
 
@@ -262,7 +276,6 @@ This downstream path is not yet authorized merely by appearing here.
 - no final expression promotion without human gate.
 
 ## Open decisions
-- Signature System;
 - production typography/foundations;
 - Composition Grammar;
 - Image/Illustration Language;
@@ -293,31 +306,34 @@ v0 remains blocked until Final Expression Lock + Website Strategy/IA + approved 
 `docs/08-plans/master/DIVINIVID_CURRENT_EXECUTION_PLAN_V2.md`
 
 ## Next exact gate
-**Human review of the focused final R1 signature comparison.**
+**R2-A — Foundations / Technical Validation.**
 
-Approved prior gate:
-- S-A Palindromic Axis — `MUTATE`;
-- S-B Bilateral Body — `PASS`;
-- S-C Sacred Inscription — `KILL`;
-- S-D Mirrored Cut — `KILL`;
-- S-E Custom Letterform Logic — `PASS`.
+R1 is now human-approved and closed.
 
-Focused final evidence:
-- Figma page: `R1 — SIGNATURE SYSTEM`;
-- survivor-completion node: `21:2`;
-- focused B/E/B+E node: `22:2`;
-- focused evidence: `R1_SIGNATURE_FINAL_BE_COMPARISON_EVIDENCE_V1.md`.
+Selected Signature System:
+- **S-BE — Bilateral Body + Glyph-Class Logic**.
 
-Finalists:
-- S-B — Bilateral Body / pure;
-- S-E — Custom Letterform Logic / pure;
-- S-BE — Bilateral Body + Glyph-Class Logic.
+Mechanism:
+- S-B controls global bilateral wordmark architecture;
+- S-E controls repeatable D/I/V/N glyph-class proportions.
 
-Hybrid mechanism:
-- B controls global bilateral wordmark architecture;
-- E controls repeatable D/I/V/N glyph-class proportions.
+Lock:
+`docs/03-brand/workbench/divinivid/generation/R1_SIGNATURE_SYSTEM_LOCK_SBE_V1.md`.
 
-Current decision:
-choose `S-B`, `S-E`, or `S-BE`.
+Figma evidence:
+- final focused comparison node: `22:2`.
 
-A further mutation is allowed only when tied to one concrete failure mode. Do not reopen broad signature exploration or revive S-C/S-D.
+Production typography remains unresolved by design. Newsreader was only a construction substrate.
+
+Immediate R2-A work:
+1. licensing;
+2. ES/EN support;
+3. weights/styles;
+4. web delivery;
+5. print delivery;
+6. variable-font behavior where applicable;
+7. accessibility/readability;
+8. fallback viability;
+9. bounded shortlist.
+
+Do not begin R2-B finalist Figma comparison until R2-A passes.

@@ -144,14 +144,25 @@ Figma, image generation, Runway, v0 unless a missing source cannot otherwise be 
 
 ## 4. R1 — Signature System
 
-**Execution status: TARGETED-REPAIR FIVE-UP / HUMAN REVIEW ACTIVE (2026-09-23).**
+**Execution status: HUMAN APPROVED / CLOSED (2026-09-23).**
 
-Current evidence:
-- original comparable five-up: Figma node `15:3`;
-- targeted comparability repair: Figma node `18:2`;
-- current gate: human `PASS / MUTATE / KILL` for S-A through S-E.
+Selected architecture:
+- **S-BE — Bilateral Body + Glyph-Class Logic**.
 
-The targeted repair corrected insufficient architectural differentiation in the baseline. It did **not** replace the normal survivor-completion work required to close R1.
+Mechanism:
+- S-B controls global bilateral wordmark architecture;
+- S-E controls repeatable D/I/V/N glyph-class logic.
+
+Evidence:
+- original five-up: Figma node `15:3`;
+- targeted comparability repair: `18:2`;
+- survivor completion: `21:2`;
+- focused final B/E/B+E comparison: `22:2`.
+
+Lock:
+`docs/03-brand/workbench/divinivid/generation/R1_SIGNATURE_SYSTEM_LOCK_SBE_V1.md`.
+
+Newsreader remains a construction substrate only. Production font mapping moves to R2.
 
 ### Objective
 Create/validate a distinctive DIVINIVID signature that survives without historical imagery.
@@ -602,20 +613,34 @@ Stop and diagnose rather than continuing when:
 
 ## 16. Immediate next exact action
 
-`R1_SIGNATURE_SYSTEM_TARGETED_REPAIR_HUMAN_REVIEW`.
+`R2A_FOUNDATIONS_TECHNICAL_VALIDATION`.
 
-Review the repaired five-up at Figma node `18:2`.
+Execute deterministic technical validation before any new Figma comparison.
 
-For each:
-- S-A Palindromic Axis;
-- S-B Bilateral Body;
-- S-C Sacred Inscription;
-- S-D Mirrored Cut;
-- S-E Custom Letterform Logic;
+### Typography
+Validate:
+1. licensing;
+2. ES/EN support;
+3. weights/styles;
+4. web delivery;
+5. print delivery;
+6. variable-font behavior where applicable;
+7. accessibility/readability;
+8. fallback viability.
 
-decide:
-`PASS / MUTATE / KILL`.
+Produce a bounded technically viable shortlist that preserves:
+- P1 typographic direction;
+- R1 S-BE signature architecture.
 
-Do not auto-promote a candidate.
-Do not run another baseline repair unless R1 is explicitly reopened by human authority.
-After the gate, complete only surviving architecture(s) to the normal R1 proof set.
+### Color
+Validate:
+- production values;
+- tonal behavior;
+- pairings;
+- contrast;
+- semantic roles;
+- light/dark surface behavior;
+- accessibility.
+
+Do not build the production design system.
+Do not use Figma for aesthetic finalist comparison until R2-A passes.

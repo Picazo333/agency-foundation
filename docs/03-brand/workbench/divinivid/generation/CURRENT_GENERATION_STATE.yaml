@@ -163,6 +163,7 @@ pre_lock_program:
     - P3_HERO
     - P4_DENSITY_INTENSITY
     - P5_MOTION
+    - R1_SIGNATURE_SYSTEM
     - R0_RECONCILIATION_AUDIT
     - R1_SIGNATURE_SYSTEM
     - R2_FOUNDATIONS
@@ -185,7 +186,7 @@ pre_lock_program:
 identity_formalization:
   status: ACTIVE
   governing_plan: docs/08-plans/master/DIVINIVID_CURRENT_EXECUTION_PLAN_V2.md
-  current_step: R1_SIGNATURE_SYSTEM
+  current_step: R2_FOUNDATIONS
   r0_audit:
     status: PASS
     artifact: docs/03-brand/workbench/divinivid/generation/DIVINIVID_R0_REQUIREMENT_MATRIX_V1.md
@@ -197,13 +198,37 @@ identity_formalization:
       temporal_identity: PARTIAL_CLOSE
   steps:
     R0_RECONCILIATION_AUDIT: COMPLETE_PASS
-    R1_SIGNATURE_SYSTEM: ACTIVE
-    R2_FOUNDATIONS: BLOCKED_BY_R1
+    R1_SIGNATURE_SYSTEM: COMPLETE_PASS
+    R2_FOUNDATIONS: ACTIVE_R2A_TECHNICAL_VALIDATION
     R3_COMPOSITION_GRAMMAR: BLOCKED_BY_R2_CLUSTER_ENTRY
     R4_IMAGE_ILLUSTRATION_LANGUAGE: BLOCKED_BY_R2_CLUSTER_ENTRY
     R5_TEMPORAL_MAPPING_AUDIT: BLOCKED_BY_R2_CLUSTER_ENTRY
     CROSS_CONSISTENCY_AUDIT: BLOCKED_BY_CLUSTER
     SYSTEM_FORMALIZATION_GATE: BLOCKED_BY_CROSS_CONSISTENCY
+
+r2_foundations:
+  status: ACTIVE_R2A_TECHNICAL_VALIDATION
+  production_typography_direction: INHERIT_P1
+  signature_constraint: INHERIT_R1_SBE
+  technical_validation:
+    typography:
+      - LICENSING
+      - ES_EN_LANGUAGE_SUPPORT
+      - WEIGHTS_STYLES
+      - WEB_DELIVERY
+      - PRINT_DELIVERY
+      - VARIABLE_FONT_BEHAVIOR_WHERE_APPLICABLE
+      - ACCESSIBILITY_READABILITY
+      - FALLBACK_VIABILITY
+    color:
+      - PRODUCTION_VALUES
+      - TONAL_BEHAVIOR
+      - PAIRINGS
+      - CONTRAST
+      - SEMANTIC_ROLES
+      - LIGHT_DARK_SURFACE_BEHAVIOR
+      - ACCESSIBILITY
+  figma_finalist_comparison: BLOCKED_UNTIL_R2A_SHORTLIST
 
 formalization_cluster:
   status: BLOCKED_BY_R2
@@ -241,7 +266,7 @@ p6_digital_behavior:
     Cross-Consistency Audit and System Formalization Gate PASS.
 
 r1_signature_system:
-  status: FINAL_BE_COMPARISON_EVIDENCE_PENDING_HUMAN_GATE
+  status: HUMAN_APPROVED_CLOSED
   preflight_doc: docs/03-brand/workbench/divinivid/generation/R1_SIGNATURE_SYSTEM_PREFLIGHT_V1.md
   hypotheses:
     - S-A_PALINDROMIC_AXIS
@@ -249,7 +274,7 @@ r1_signature_system:
     - S-C_SACRED_INSCRIPTION
     - S-D_MIRRORED_CUT
     - S-E_CUSTOM_LETTERFORM_LOGIC
-  figma_call_authorized: true
+  figma_call_authorized: false
   figma_evidence:
     file_key: bqcKhEQHs4EEQgnn6lNU8O
     page_id: "15:2"
@@ -268,6 +293,7 @@ r1_signature_system:
     S-C_SACRED_INSCRIPTION: KILL
     S-D_MIRRORED_CUT: KILL
     S-E_CUSTOM_LETTERFORM_LOGIC: PASS
+  final_human_selection: S-BE_BILATERAL_BODY_PLUS_GLYPH_CLASS_LOGIC
   survivors:
     - S-A_PRIME_PALINDROMIC_AXIS_MUTATED
     - S-B_BILATERAL_BODY
@@ -282,16 +308,23 @@ r1_signature_system:
   hybrid_rule:
     global_architecture: S-B_BILATERAL_BODY
     glyph_class_logic: S-E_CUSTOM_LETTERFORM_LOGIC
+  selected_signature:
+    id: S-BE_BILATERAL_BODY_PLUS_GLYPH_CLASS_LOGIC
+    human_approved: true
+    lock_doc: docs/03-brand/workbench/divinivid/generation/R1_SIGNATURE_SYSTEM_LOCK_SBE_V1.md
+    figma_node: "22:2"
+    production_font_status: UNRESOLVED_R2_RESPONSIBILITY
   figma_budget:
     initial_comparison: 0
     baseline_comparability_repair: 0
     survivor_completion: CONSUMED_NORMAL_R1_DOD
 
 active_gate:
-  current: R1_B_E_BE_FINAL_COMPARISON_HUMAN_REVIEW
+  current: R2A_FOUNDATIONS_TECHNICAL_VALIDATION
   next_authorized_action: >
-    Human review of focused final comparison node 22:2. Choose S-B pure, S-E pure, or S-BE hybrid.
-    A mutation is permitted only if tied to a concrete failure mode. Do not reopen broad signature exploration.
+    Execute deterministic R2-A technical validation for typography and color foundations.
+    Typography must validate licensing, ES/EN, weights/styles, web/print delivery, variable-font behavior,
+    accessibility/readability and fallback viability before any finalist Figma comparison.
   automatic_next_generation: false
 
 tool_discipline:
@@ -354,6 +387,7 @@ reference_policy:
     - P3_HB_EDITORIAL_SYSTEMIC_HERO
     - P4_D2_CONTROLLED_EXPRESSIVE_MOSAIC
     - P5_MB_REGISTRATION_PLUS_MC_NEGATIVE_REVELATION
+    - R1_SBE_BILATERAL_BODY_PLUS_GLYPH_CLASS_LOGIC
   bestiary_B0_excluded_from_default_positive_context: true
   rejected_outputs_as_positive_references: false
   figma_p2_surrogate_as_positive_reference: false
@@ -379,5 +413,5 @@ deferred:
   - FINAL_BRANDBOOK
 
 next_exact_gate: >
-  Human review of Figma focused final comparison node 22:2.
-  Choose S-B / S-E / S-BE or request one narrowly-defined failure-driven mutation. Do not auto-promote.
+  R2-A Foundations Technical Validation. Produce a bounded technically viable typography/color shortlist.
+  Do not start R2-B Figma comparison before R2-A passes.
