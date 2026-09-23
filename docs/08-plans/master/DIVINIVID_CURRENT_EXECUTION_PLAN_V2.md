@@ -258,7 +258,7 @@ Validate:
 
 ### 5.2 R2-B — Aesthetic / Functional Finalist Comparison
 
-**Execution status: EVIDENCE PENDING HUMAN GATE (2026-09-23).**
+**Execution status: TYPOGRAPHY HUMAN-APPROVED / COLOR GATE ACTIVE (2026-09-23).**
 
 Figma:
 - page `R2 — FOUNDATIONS`;
@@ -271,13 +271,16 @@ Only shortlisted technically viable typography/color candidates receive determin
 
 The question is implementation fidelity to the already-approved direction, not aesthetic rediscovery.
 
-Current human gate:
-- A Newsreader;
-- B Bodoni Moda;
-- C Source Serif 4;
+Human typography decision:
+- **A — Newsreader + IBM Plex Sans: PASS / SELECTED**.
+
+Typography is closed inside R2.
+
+Current remaining human gate:
 - candidate production color mapping.
 
-Use `PASS / MUTATE / KILL` and name a concrete failure for any mutation.
+Use `PASS` or name one concrete token/role failure for bounded mutation.
+Do not reopen typography or add a second palette by default.
 
 ### 5.3 Other foundations
 Resolve only what evidence supports:
@@ -645,26 +648,28 @@ Stop and diagnose rather than continuing when:
 
 ## 16. Immediate next exact action
 
-`R2B_FOUNDATIONS_FINALIST_HUMAN_REVIEW`.
+`R2B_COLOR_MAPPING_HUMAN_REVIEW`.
 
-Review Figma comparison node `26:3`.
+Typography is now locked inside R2:
+- display serif: **Newsreader**;
+- operational sans: **IBM Plex Sans**.
 
-Typography:
-- A — Newsreader + IBM Plex Sans;
-- B — Bodoni Moda + IBM Plex Sans;
-- C — Source Serif 4 + IBM Plex Sans.
+Evidence:
+- Figma comparison node `26:3`;
+- `R2B_FOUNDATIONS_FINALIST_COMPARISON_EVIDENCE_V1.md`.
 
-The display serif is the only major typography variable.
-
-Color:
-review the single candidate production mapping derived from approved semantics and measured contrast.
+Review only the existing candidate production color mapping.
 
 Human gate:
-`PASS / MUTATE / KILL`.
+- `PASS`;
+- or identify one concrete role/token failure for bounded mutation.
 
-If typography and color pass:
+Do not reopen typography.
+Do not generate a second aesthetic palette by default.
+
+If color passes:
 - create `DIVINIVID_FOUNDATIONS_LOCK_V1`;
 - close R2;
 - enter R3/R4/R5 Formalization Cluster.
 
-Do not start the cluster before this human gate closes R2.
+Do not start the cluster before this gate closes R2.
