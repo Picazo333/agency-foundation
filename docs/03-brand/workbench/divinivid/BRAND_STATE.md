@@ -5,6 +5,8 @@ updated: 2026-09-23
 authority: workbench
 depends_on:
   - ../../../08-plans/workstreams/DIVINIVID_VISUAL_IDENTITY_MASTER_PLAN.md
+  - ../../../08-plans/master/DIVINIVID_CURRENT_EXECUTION_PLAN_V2.md
+  - generation/R1_SIGNATURE_SYSTEM_LOCK_SBE_V1.md
   - CREATIVE_DIRECTION_BRIEF.md
   - reference-research/PHASE_2_REFERENCE_RESEARCH.md
 ---
@@ -19,11 +21,16 @@ Subsequent human-guided work materially advanced beyond the historical Visual Un
 For **current execution state**, use:
 1. `generation/CURRENT_GENERATION_STATE.yaml`;
 2. `../../../08-plans/master/DIVINIVID_CURRENT_EXECUTION_PLAN_V2.md`;
-3. `../../../PROJECT_STATE.md`.
+3. `../../../../PROJECT_STATE.md`.
 
 The older Visual Universe checkpoint and Meta-Plan remain historical/context evidence, not the current execution cursor.
 
 The older Phase 1–3 material below remains valid as historical research/process evidence unless explicitly superseded, but the “Phase 3 Reference Atlas” section no longer defines the active execution gate.
+
+## Current brand-scope cursor
+**R2-A — Foundations / Technical Validation**
+
+R1 Signature System is closed. The brand-scope next action is to validate production typography and color foundations technically before any finalist Figma comparison.
 
 ## Current Signature System
 **R1 HUMAN APPROVED / CLOSED — 2026-09-23**
