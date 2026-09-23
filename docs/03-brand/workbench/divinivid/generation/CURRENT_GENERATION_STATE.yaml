@@ -183,10 +183,19 @@ pre_lock_program:
 identity_formalization:
   status: ACTIVE
   governing_plan: docs/08-plans/master/DIVINIVID_CURRENT_EXECUTION_PLAN_V2.md
-  current_step: R0_RECONCILIATION_AUDIT
+  current_step: R1_SIGNATURE_SYSTEM
+  r0_audit:
+    status: PASS
+    artifact: docs/03-brand/workbench/divinivid/generation/DIVINIVID_R0_REQUIREMENT_MATRIX_V1.md
+    findings:
+      signature: MISSING
+      foundations: PARTIAL
+      composition_grammar: PARTIAL_HIGH_EVIDENCE
+      image_illustration_language: PARTIAL_HIGH_EVIDENCE
+      temporal_identity: PARTIAL_CLOSE
   steps:
-    R0_RECONCILIATION_AUDIT: ACTIVE
-    R1_SIGNATURE_SYSTEM: BLOCKED_BY_R0
+    R0_RECONCILIATION_AUDIT: COMPLETE_PASS
+    R1_SIGNATURE_SYSTEM: ACTIVE
     R2_FOUNDATIONS: BLOCKED_BY_R1
     R3_COMPOSITION_GRAMMAR: BLOCKED_BY_R2
     R4_IMAGE_ILLUSTRATION_LANGUAGE: BLOCKED_BY_R3
@@ -207,11 +216,10 @@ p6_digital_behavior:
     were formally closed.
 
 active_gate:
-  current: R0_RECONCILIATION_AUDIT
+  current: R1_SIGNATURE_SYSTEM_TEXT_PREFLIGHT
   next_authorized_action: >
-    Audit the frozen Master Plan against approved Core/B1/M1-B/P1-P5 evidence and produce
-    DIVINIVID_R0_REQUIREMENT_MATRIX_V1.md. No new visual generation or Figma build is authorized
-    merely by entering R0.
+    Define the exact five R1 signature hypotheses in text and verify meaningful distinction before
+    any Figma write. The first Figma call, if used, must comply with TOOL_EXECUTION_CONTRACTS_V1.
   automatic_next_generation: false
 
 tool_discipline:
@@ -295,4 +303,4 @@ deferred:
   - FINAL_BRANDBOOK
 
 next_exact_gate: >
-  R0 Reconciliation Audit. Produce an evidence-backed requirement matrix before any new visual tool call.
+  R1 Signature System text preflight. Define five distinct signature architectures before any Figma call.
