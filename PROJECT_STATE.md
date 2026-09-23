@@ -9,6 +9,8 @@ depends_on:
   - docs/07-decisions/ADR-0014-targeted-visual-synthesis-and-expression-bases.md
   - docs/07-decisions/ADR-0015-pre-lock-exploration-before-final-expression-lock.md
   - docs/08-plans/master/DIVINIVID_PRE_LOCK_EXPLORATION_V1.md
+  - docs/08-plans/master/DIVINIVID_CURRENT_EXECUTION_PLAN_V2.md
+  - docs/03-brand/workbench/divinivid/evaluations/PLAN_DEVIATION_2026-09-23_PRELOCK_RECONCILIATION.md
   - docs/03-brand/workbench/divinivid/generation/DIVINIVID_CORE_LOCK_V1.md
   - docs/03-brand/workbench/divinivid/generation/DIVINIVID_BASE_LOCK_B1.md
   - docs/03-brand/workbench/divinivid/generation/DIVINIVID_BESTIARY_BASE_B0.md
@@ -42,9 +44,11 @@ M1-B does not replace the Core or B1. It is the surface used to test how the ide
 ### 2. Approved Pre-Lock Exploration Program
 ADR-0015 inserts `DIVINIVID_PRE_LOCK_EXPLORATION_V1` before final expression lock.
 
-Current sequence:
+Current sequence after the approved 2026-09-23 reconciliation:
 
-`Typography -> Iconography -> Hero -> Density/Intensity -> Motion -> Digital Behavior -> Application Stress -> Final Synthesis -> Independent Red Team -> Human Final Gate`.
+`Typography -> Iconography -> Hero -> Density/Intensity -> Motion -> R0 Reconciliation -> R1 Signature -> R2 Foundations -> R3 Composition Grammar -> R4 Image/Illustration Language -> R5 Temporal Mapping -> Digital Brand Specimen -> Application Stress -> Final Synthesis -> Independent Red Team -> Human Final Gate`.
+
+The inserted R0-R5 sequence restores prerequisites from the frozen Visual Identity Master Plan before P6 resumes.
 
 Expected terminal artifact:
 `DIVINIVID_FINAL_EXPRESSION_LOCK_V1`.
@@ -127,10 +131,23 @@ Secondary:
 
 The system must avoid glitch, liquid/blob motion, gratuitous parallax, decorative particles, fake scanner behavior and generic motion gimmicks.
 
-#### P6 — Digital Behavior
-Test:
-- one editorial surface;
-- one functional surface.
+#### P6 — Digital Brand Specimen
+**Status: PAUSED / NOT YET AUTHORIZED.**
+
+The first Figma attempt has been reclassified as `P6_STRUCTURAL_PROBE_V0`:
+- non-canonical;
+- learning evidence only;
+- not a positive visual reference;
+- does not close P6.
+
+P6 resumes only after R0-R5 identity formalization.
+
+Future P6 scope is identity translation, not actual website/product design:
+- homepage fragment;
+- case-study fragment;
+- research/editorial fragment;
+- service/system-explanation fragment;
+- mobile translation.
 
 #### P7 — Application Stress
 Test:
@@ -148,17 +165,25 @@ Consolidate only human-approved module outputs and run:
 - production viability.
 
 ### 3. Current exact gate
-**P6 — Digital Behavior Lab.**
+**R0 — Reconciliation Audit.**
 
-P1 Typography, P2 Minimal/No-Icons, P3 H-B Hero System, P4 D2 Expressive Mosaic and P5 Motion Grammar are closed.
+P1 Typography Direction, P2 Minimal/No-Icons, P3 H-B Hero System, P4 D2 Expressive Mosaic and P5 Motion Grammar are closed as pre-lock evidence.
 
-P6 requires an explicit human trigger and must preserve all five.
+R0 now audits those approvals against the frozen Master Plan requirements for:
+- Signature System;
+- production Foundations;
+- Composition Grammar;
+- Image / Illustration Language;
+- Temporal Identity.
+
+R0 may close a requirement by evidence mapping; it must not manufacture work for checklist completion.
 
 Do not:
-- reopen Core/B1;
-- promote incidental typography/iconography from M1-B;
+- reopen Core/B1/P1-P5 without a specific failure and human approval;
+- start P6 before R0-R5 are closed or explicitly satisfied by evidence;
 - develop the bestiary branch yet;
 - build the full Figma production system;
+- start Website Strategy/IA;
 - start v0 implementation;
 - start the full website prototype;
 - resume the old quota-driven moodboard program.
@@ -230,7 +255,13 @@ This downstream path is not yet authorized merely by appearing here.
 - no final expression promotion without human gate.
 
 ## Open decisions
-- Digital Behavior Direction;
+- R0 requirement matrix;
+- Signature System;
+- production typography/foundations;
+- Composition Grammar;
+- Image/Illustration Language;
+- Temporal Identity mapping;
+- Digital Brand Specimen;
 - Application Stress outcome;
 - Final Expression Lock;
 - later bestiary taxonomy;
@@ -238,16 +269,18 @@ This downstream path is not yet authorized merely by appearing here.
 - commercial/legal clearance;
 - business-model/ICP/positioning/pricing decisions still gated by real evidence.
 
-## Figma discipline before final expression lock
-Figma is not the default aesthetic-exploration engine.
+## Tool discipline before final expression lock
+All material tool calls now follow:
+`docs/03-brand/workbench/divinivid/generation/TOOL_EXECUTION_CONTRACTS_V1.md`.
 
-Before final lock, use Figma only when the task materially requires:
-- deterministic composition;
-- responsive validation;
-- component/state behavior;
-- motion implementation.
+A call must have a declared phase, question, tool-specific purpose, fixed variables, expected output, Definition of Done, budget, failure route and promotion rule.
 
-Do not use Figma to invent unresolved iconography, substitute approved visual assets with proxies, or silently replace an approved typographic direction.
+Figma is not the default aesthetic-exploration engine. Before final lock, use it only when a deterministic design question materially requires it. Do not use low-resolution/proxy assets as production-quality evidence, invent unresolved iconography, or silently replace an approved typographic direction.
+
+v0 remains blocked until Final Expression Lock + Website Strategy/IA + approved Golden Slice.
+
+## Current governing execution plan
+`docs/08-plans/master/DIVINIVID_CURRENT_EXECUTION_PLAN_V2.md`
 
 ## Next exact gate
-**Human trigger for P6 — Digital Behavior Lab.**
+**R0 — Reconciliation Audit.**
