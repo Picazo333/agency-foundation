@@ -165,7 +165,7 @@ Consolidate only human-approved module outputs and run:
 - production viability.
 
 ### 3. Current exact gate
-**R1 — Signature System / human review of five-up evidence.**
+**R1 — Signature System / human review of targeted-repair five-up.**
 
 R0 is complete and passed.
 
@@ -283,12 +283,16 @@ v0 remains blocked until Final Expression Lock + Website Strategy/IA + approved 
 `docs/08-plans/master/DIVINIVID_CURRENT_EXECUTION_PLAN_V2.md`
 
 ## Next exact gate
-**Human review of the R1 Figma five-up.**
+**Human review of the repaired R1 Figma five-up.**
 
 Evidence:
 - Figma page: `R1 — SIGNATURE SYSTEM`;
-- comparison node: `15:3`;
-- evidence document: `R1_SIGNATURE_FIVEUP_EVIDENCE_V1.md`.
+- original comparison node: `15:3`;
+- repaired comparison node: `18:2`;
+- original evidence: `R1_SIGNATURE_FIVEUP_EVIDENCE_V1.md`;
+- repair evidence: `R1_SIGNATURE_TARGETED_REPAIR_EVIDENCE_V1.md`.
 
-For S-A through S-E decide `PASS / MUTATE / KILL`.
-One targeted repair remains available and must not be consumed without concrete feedback.
+The repair was consumed because S-A/S-B/S-C/S-E were insufficiently differentiated in the initial proof.
+For repaired S-A through S-E decide `PASS / MUTATE / KILL`.
+
+R1 repair budget is exhausted unless the human owner explicitly reopens the phase.
