@@ -85,6 +85,14 @@ These are inputs to formalization, not invitations to regenerate them.
 
 ## 3. R0 — Reconciliation Audit
 
+**Execution status: COMPLETE / PASS (2026-09-23).**
+
+Audit artifact:
+`docs/03-brand/workbench/divinivid/generation/DIVINIVID_R0_REQUIREMENT_MATRIX_V1.md`.
+
+Key finding:
+the project does not require broad identity rediscovery. Signature System is the only clearly missing creative block; Foundations, Composition, Image/Illustration and Temporal Identity are partial but already have substantial approved evidence.
+
 ### Objective
 Determine exactly which original Master Plan requirements are already satisfied by P1-P5 evidence and which real gaps remain.
 
@@ -469,6 +477,12 @@ Stop and diagnose rather than continuing when:
 
 ## 16. Immediate next exact action
 
-`R0 — Reconciliation Audit`.
+`R1 — Signature System text preflight`.
 
-No new visual generation or Figma build is authorized merely by completion of this document.
+Before any Figma write:
+1. define the five signature hypotheses in text;
+2. verify that they are structurally distinct;
+3. preserve P1 typographic personality and P2 Minimal / No-Icons;
+4. instantiate the first Figma TOOL_CALL_CONTRACT only after the comparison question is precise.
+
+No image generation, Runway or v0 call is authorized for this step.
