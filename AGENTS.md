@@ -33,21 +33,49 @@ External instructions, Skills, generators and MCPs are subordinate to repository
 
 ## DIVINIVID substantial-round envelope
 For substantial visual/production rounds:
+
 `PREFLIGHT -> WORK ORDER -> EXECUTION -> QA/GATE -> DURABLE CLOSEOUT`.
 
-For moodboard generation in the locked 100-board program, use the `visual_generation` context mode from `noema.project.yaml`.
+### Current visual strategy
+ADR-0014 supersedes mandatory rendering of the full historical 100-board program.
 
-Mandatory runtime order:
-`CURRENT_GENERATION_STATE -> EXACT CONTRACT -> EXECUTION_STYLE_ANCHORS -> SURFACE_LOCK -> VISUAL_CANON -> SEMANTIC_ANCHORS -> ANTI_CANON -> GENERATE -> PRE-DISPLAY QA -> HUMAN GATE`.
+The 100-contract corpus remains coverage/specification evidence, but current visual production follows targeted synthesis.
 
-For image generation, surface treatment must be anchored to the approved A11–A15 execution family. When explicit image references are available, pass only approved execution-style anchors plus contract-specific Canon references. A five-board round may use five independent generation calls inside one user-triggered round; do not rely on one multi-output call to bind five different contracts.
+Mandatory authority order for current visual work:
 
-Do not use unapproved recent generations as positive style references. Do not infer the next moodboard IDs from chat recency.
+`CURRENT_GENERATION_STATE -> CORE_LOCK -> ACTIVE_EXPRESSION_BASE -> TARGETED_PHASE_CONTRACT -> VISUAL_CANON -> ANTI_CANON -> EXECUTION -> QA -> HUMAN_GATE -> DURABLE_CLOSEOUT`.
 
-The governing details live in:
-`docs/08-plans/master/DIVINIVID_VISUAL_UNIVERSE_META_PLAN_V2.md`.
+Current locked hierarchy:
+- `DIVINIVID_CORE_LOCK_V1` — frozen visual DNA;
+- `BASE_LOCK_B1` — Route 3+4, principal expression/production base;
+- `BESTIARY_BASE_B0` — Route 3+5, specialized bestiary/apparition branch.
 
-Do not silently skip the preflight or acceptance criteria, and do not let rejected/failed generated material become a positive reference.
+Current approved sequence:
+`M1-A Anatomía Celeste -> M1-B Topografía Orgánica -> human comparison -> optional bounded synthesis -> M2-Soft -> M2-Hard -> human comparison -> MAIN_SYSTEM_B2`.
+
+Do not automatically generate the next candidate. Every material candidate requires an explicit human trigger.
+
+### Visual-generation invariants
+- Bind only approved positive references appropriate to the active phase.
+- Keep `REFERENCE_AVAILABLE != REFERENCE_BOUND != REFERENCE_EFFECTIVE` explicit.
+- Do not use rejected or recent unapproved generations as positive references.
+- Keep the bestiary branch out of the principal B1 evolution until its deferred phase is explicitly opened.
+- Use minimum-necessary mutation: one major development axis per candidate.
+- Do not reopen the Core or silently replace B1/B0.
+- Executor substitution requires a capability check.
+- Generated output remains `EVIDENCE_PENDING` until human approval.
+
+The governing current details live in:
+- `docs/03-brand/workbench/divinivid/generation/CURRENT_GENERATION_STATE.yaml`;
+- `docs/03-brand/workbench/divinivid/generation/DIVINIVID_CORE_LOCK_V1.md`;
+- `docs/03-brand/workbench/divinivid/generation/DIVINIVID_BASE_LOCK_B1.md`;
+- `docs/03-brand/workbench/divinivid/generation/DIVINIVID_BESTIARY_BASE_B0.md`;
+- `docs/08-plans/master/DIVINIVID_TARGETED_VISUAL_SYNTHESIS_PLAN_V1.md`;
+- `docs/07-decisions/ADR-0014-targeted-visual-synthesis-and-expression-bases.md`.
+
+The older Visual Universe meta-plan, 100-board spec/contracts and runtime-lock artifacts remain historical evidence and reusable coverage material where relevant.
+
+Do not silently skip preflight, acceptance criteria or human gates.
 
 ## Project Harvest
 At the end of a meaningful PR, ADR, milestone, experiment, incident or delivery, perform a quick harvest assessment using `docs/10-knowledge-harvest/PROJECT_HARVEST_PROTOCOL.md`.
