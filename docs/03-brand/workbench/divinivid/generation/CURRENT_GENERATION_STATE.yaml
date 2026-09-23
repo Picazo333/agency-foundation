@@ -274,7 +274,7 @@ r1_signature_system:
     - S-C_SACRED_INSCRIPTION
     - S-D_MIRRORED_CUT
     - S-E_CUSTOM_LETTERFORM_LOGIC
-  figma_call_authorized: true
+  figma_call_authorized: false
   figma_evidence:
     file_key: bqcKhEQHs4EEQgnn6lNU8O
     page_id: "15:2"
@@ -293,6 +293,7 @@ r1_signature_system:
     S-C_SACRED_INSCRIPTION: KILL
     S-D_MIRRORED_CUT: KILL
     S-E_CUSTOM_LETTERFORM_LOGIC: PASS
+  final_human_selection: S-BE_BILATERAL_BODY_PLUS_GLYPH_CLASS_LOGIC
   survivors:
     - S-A_PRIME_PALINDROMIC_AXIS_MUTATED
     - S-B_BILATERAL_BODY
@@ -386,6 +387,7 @@ reference_policy:
     - P3_HB_EDITORIAL_SYSTEMIC_HERO
     - P4_D2_CONTROLLED_EXPRESSIVE_MOSAIC
     - P5_MB_REGISTRATION_PLUS_MC_NEGATIVE_REVELATION
+    - R1_SBE_BILATERAL_BODY_PLUS_GLYPH_CLASS_LOGIC
   bestiary_B0_excluded_from_default_positive_context: true
   rejected_outputs_as_positive_references: false
   figma_p2_surrogate_as_positive_reference: false
