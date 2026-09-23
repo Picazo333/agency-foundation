@@ -1,5 +1,5 @@
 ---
-status: evidence_pending
+status: quarantined_learning_evidence
 owner: brand
 created: 2026-09-23
 authority: evidence
@@ -10,10 +10,14 @@ depends_on:
 ---
 # P6 Digital Behavior Evidence V1
 
+> **RECLASSIFIED 2026-09-23:** this artifact is not valid positive P6 evidence and does not close P6.
+> See `P6_STRUCTURAL_PROBE_V0_NEGATIVE_EVIDENCE.md`.
+> It is retained only as structural/tool-routing learning evidence.
+
 ## Purpose
 Test whether the approved DIVINIVID visual and motion grammar can behave as a usable digital interface language without collapsing into a generic dark dashboard.
 
-This is **evidence pending human review**. It is not a lock.
+This was originally created as evidence pending review. It is now **quarantined learning evidence** and is not a lock or positive reference.
 
 ## Figma evidence
 - file: `DIVINIVID — PRE-LOCK VISUAL LAB`
@@ -73,4 +77,4 @@ This is an implementation proxy, not a reopening or replacement of the approved 
 5. Is one targeted repair required before P6 can close?
 
 ## Current status
-`EVIDENCE_PENDING_HUMAN_GATE`
+`QUARANTINED_STRUCTURAL_PROBE`
