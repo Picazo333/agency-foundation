@@ -90,6 +90,21 @@ p2_iconography:
     Fake coordinates, meaningless scales, arbitrary scientific marks, random crosshairs,
     decorative plate numbers and lines without semantic targets are prohibited as AI slop.
 
+p3_hero:
+  status: HUMAN_APPROVED_CLOSED
+  selected_direction:
+    id: H-B_EDITORIAL_SYSTEMIC
+    artifact:
+      library_path: /DIVINIVID/visual-generation/prelock-v1/P3_HB_EDITORIAL_SYSTEMIC_SELECTED.png
+      library_file_id: libfile_6fdda6faa75c8191b0ca7065f6a26adb
+    comparison_evidence:
+      library_path: /DIVINIVID/visual-generation/prelock-v1/P3_HERO_REPAIR_COMPARISON.png
+      library_file_id: libfile_d1249069db7481919eef22b59e51c163
+    lock_doc: docs/03-brand/workbench/divinivid/generation/P3_HERO_SYSTEM_LOCK_HB_EDITORIAL_SYSTEMIC_V1.md
+  hero_rule: >
+    Default hero behavior balances ambiguous living matter with editorial/systemic structure.
+    H-A remains ceremonial evidence and H-C remains commercial-stress evidence, but H-B is the default.
+
 bestiary_branch:
   lock_id: BESTIARY_BASE_B0
   status: FROZEN_HUMAN_APPROVED
@@ -116,12 +131,13 @@ pre_lock_program:
   completed:
     - P1_TYPOGRAPHY
     - P2_ICONOGRAPHY_SIGN_GRAMMAR
+    - P3_HERO_SYSTEM
 
 active_gate:
-  current: P3_HERO
+  current: P4_DENSITY_INTENSITY
   next_authorized_action: >
-    Produce P3 Hero System Lab only after explicit human trigger.
-    Preserve Core + B1 + M1-B + approved P1 typography + P2 Minimal/No-Icons grammar.
+    Produce P4 Density / Intensity comparison only after explicit human trigger.
+    Preserve Core + B1 + M1-B + approved P1 typography + P2 Minimal/No-Icons + P3 H-B Hero grammar.
   automatic_next_generation: false
 
 tool_discipline:
@@ -146,8 +162,9 @@ candidate_budgets:
     selected: I-C_NO_ICONS_MINIMAL_SIGNS
     targeted_repairs_remaining: 0
   hero:
-    initial: 3_desktop_variants
-    additional: mobile_only_for_human_selected_winner
+    status: CLOSED
+    selected: H-B_EDITORIAL_SYSTEMIC
+    mobile_translation: DEFERRED_UNTIL_NEEDED_FOR_RESPONSIVE_VALIDATION
   density:
     initial: 4_modes_in_one_comparison
     additional: 1_targeted_repair
@@ -171,6 +188,7 @@ reference_policy:
     - M1-B_TOPOGRAFIA_ORGANICA
     - P1_TYPOGRAPHY_APPROVED_DIRECTION
     - P2_MINIMAL_NO_ICONS_SIGN_GRAMMAR
+    - P3_HB_EDITORIAL_SYSTEMIC_HERO
   bestiary_B0_excluded_from_default_positive_context: true
   rejected_outputs_as_positive_references: false
   figma_p2_surrogate_as_positive_reference: false
@@ -196,4 +214,4 @@ deferred:
   - FINAL_BRANDBOOK
 
 next_exact_gate: >
-  P3 Hero System Lab. Do not generate automatically; wait for explicit human trigger.
+  P4 Density / Intensity Scale. Do not generate automatically; wait for explicit human trigger.
