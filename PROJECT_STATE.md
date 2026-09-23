@@ -1,7 +1,7 @@
 ---
 status: approved
 owner: meta
-updated: 2026-09-22
+updated: 2026-09-23
 authority: canon
 depends_on:
   - docs/07-decisions/ADR-0012-divinivid-project-name-and-repo-rename.md
@@ -112,11 +112,20 @@ D3 remains an expressive escalation.
 D4 remains ceremonial/high-intensity.
 
 #### P5 — Motion
-Test:
-- Breathing Matter;
-- Registration;
-- Negative Revelation;
-- Instrument Response.
+**Status: HUMAN APPROVED / CLOSED.**
+
+Selected grammar:
+- **M-C — Negative Revelation** as the primary reveal behavior;
+- **M-B — Registration** as the structural transition behavior.
+
+Preferred combined choreography:
+`OBSCURE -> MISREGISTER -> REVEAL -> RESOLVE`.
+
+Secondary:
+- M-A Breathing Matter is optional ambient behavior only;
+- M-D Instrument Response is optional functional microinteraction only.
+
+The system must avoid glitch, liquid/blob motion, gratuitous parallax, decorative particles, fake scanner behavior and generic motion gimmicks.
 
 #### P6 — Digital Behavior
 Test:
@@ -139,11 +148,11 @@ Consolidate only human-approved module outputs and run:
 - production viability.
 
 ### 3. Current exact gate
-**P5 — Motion Lab.**
+**P6 — Digital Behavior Lab.**
 
-P1 Typography, P2 Minimal/No-Icons, P3 H-B Hero System and P4 D2 Expressive Mosaic are closed.
+P1 Typography, P2 Minimal/No-Icons, P3 H-B Hero System, P4 D2 Expressive Mosaic and P5 Motion Grammar are closed.
 
-P5 requires an explicit human trigger and must preserve all four.
+P6 requires an explicit human trigger and must preserve all five.
 
 Do not:
 - reopen Core/B1;
@@ -221,7 +230,6 @@ This downstream path is not yet authorized merely by appearing here.
 - no final expression promotion without human gate.
 
 ## Open decisions
-- Motion Grammar Lock;
 - Digital Behavior Direction;
 - Application Stress outcome;
 - Final Expression Lock;
@@ -242,4 +250,4 @@ Before final lock, use Figma only when the task materially requires:
 Do not use Figma to invent unresolved iconography, substitute approved visual assets with proxies, or silently replace an approved typographic direction.
 
 ## Next exact gate
-**Human trigger for P5 — Motion Lab.**
+**Human trigger for P6 — Digital Behavior Lab.**
