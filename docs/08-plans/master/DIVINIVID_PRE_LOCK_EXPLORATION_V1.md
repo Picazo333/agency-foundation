@@ -373,6 +373,20 @@ Each mode should control:
 
 ## P5 — Motion Lab
 
+**Execution status: HUMAN APPROVED / CLOSED (2026-09-23).**
+
+The human owner selected a hybrid grammar:
+- **M-C Negative Revelation** for primary reveals;
+- **M-B Registration** for structural transitions.
+
+Preferred choreography:
+`OBSCURE -> MISREGISTER -> REVEAL -> RESOLVE`.
+
+M-A Breathing Matter remains optional ambient behavior. M-D Instrument Response remains optional functional microinteraction.
+
+Lock document:
+`docs/03-brand/workbench/divinivid/generation/P5_MOTION_GRAMMAR_LOCK_MB_MC_V1.md`.
+
 ### Objective
 Define the native motion grammar.
 
@@ -400,8 +414,9 @@ Motion must:
 Motion must not exist merely to decorate.
 
 ### Budget
-- four short 3–6 second studies;
-- maximum one targeted repair per study when a concrete failure is identified.
+- four comparative motion storyboards: consumed;
+- one M-B + M-C hybrid repair: consumed and human-approved;
+- P5 budget closed.
 
 ### Output
 `MOTION_GRAMMAR_LOCK_CANDIDATE`
