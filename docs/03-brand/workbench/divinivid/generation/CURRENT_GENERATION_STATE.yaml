@@ -61,7 +61,7 @@ p1_typography:
     or reopen P1. Exact production font-family mapping may be resolved later as an implementation task.
 
 p2_iconography:
-  status: TARGETED_REPAIR_ACTIVE
+  status: HUMAN_APPROVED_CLOSED
   attempt_01:
     status: HARD_FAIL_QUARANTINED
     artifact:
@@ -74,15 +74,21 @@ p2_iconography:
     frame_id: "3:5"
     reason: >
       Used simplified surrogate morphology and proxy typography; not valid evidence for promotion.
+  selected_direction:
+    id: I-C_NO_ICONS_MINIMAL_SIGNS
+    artifact:
+      library_path: /DIVINIVID/visual-generation/prelock-v1/P2_MINIMAL_NO_ICONS_SELECTED.png
+      library_file_id: libfile_0c88a3a8c76c8191818838febb660a90
+    comparison_evidence:
+      library_path: /DIVINIVID/visual-generation/prelock-v1/P2_SIGN_GRAMMAR_COMPARISON_TARGETED_REPAIR.png
+      library_file_id: libfile_82e12501e3208191b96164ff9d9a1979
+    lock_doc: docs/03-brand/workbench/divinivid/generation/P2_SIGN_GRAMMAR_LOCK_MINIMAL_V1.md
   remaining_budget:
-    targeted_repairs: 1
-  repair_hypotheses:
-    - I-A_MEASUREMENT
-    - I-B_MORPHOLOGICAL_NOTATION
-    - I-C_NO_ICONS_MINIMAL_SIGNS
-  repair_method: >
-    Compare the three hypotheses in-context as finished DIVINIVID applications.
-    Do not present an icon catalog or design-system grid.
+    targeted_repairs: 0
+  grammar_rule: >
+    Default to no icons. Use signs only when they carry real content-specific function.
+    Fake coordinates, meaningless scales, arbitrary scientific marks, random crosshairs,
+    decorative plate numbers and lines without semantic targets are prohibited as AI slop.
 
 bestiary_branch:
   lock_id: BESTIARY_BASE_B0
@@ -109,12 +115,13 @@ pre_lock_program:
   expected_output: DIVINIVID_FINAL_EXPRESSION_LOCK_V1
   completed:
     - P1_TYPOGRAPHY
+    - P2_ICONOGRAPHY_SIGN_GRAMMAR
 
 active_gate:
-  current: P2_ICONOGRAPHY_TARGETED_REPAIR
+  current: P3_HERO
   next_authorized_action: >
-    Produce the single remaining P2 targeted repair using Core + B1 + M1-B + approved P1 typography.
-    Compare I-A / I-B / I-C in context. No Figma required for visual invention.
+    Produce P3 Hero System Lab only after explicit human trigger.
+    Preserve Core + B1 + M1-B + approved P1 typography + P2 Minimal/No-Icons grammar.
   automatic_next_generation: false
 
 tool_discipline:
@@ -135,8 +142,9 @@ candidate_budgets:
   typography:
     status: CLOSED
   iconography:
-    initial: CONSUMED_HARD_FAIL
-    targeted_repairs_remaining: 1
+    status: CLOSED
+    selected: I-C_NO_ICONS_MINIMAL_SIGNS
+    targeted_repairs_remaining: 0
   hero:
     initial: 3_desktop_variants
     additional: mobile_only_for_human_selected_winner
@@ -162,6 +170,7 @@ reference_policy:
     - BASE_LOCK_B1
     - M1-B_TOPOGRAFIA_ORGANICA
     - P1_TYPOGRAPHY_APPROVED_DIRECTION
+    - P2_MINIMAL_NO_ICONS_SIGN_GRAMMAR
   bestiary_B0_excluded_from_default_positive_context: true
   rejected_outputs_as_positive_references: false
   figma_p2_surrogate_as_positive_reference: false
@@ -187,4 +196,4 @@ deferred:
   - FINAL_BRANDBOOK
 
 next_exact_gate: >
-  P2 targeted repair. One remaining repair only. Human approval required before P3.
+  P3 Hero System Lab. Do not generate automatically; wait for explicit human trigger.

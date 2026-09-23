@@ -62,18 +62,24 @@ Canonical pre-lock typography reference:
 `/DIVINIVID/visual-generation/prelock-v1/P1_TYPOGRAPHY_WINNER_IMPOSING_DUAL_EDITORIAL.png`.
 
 #### P2 — Iconography / Sign Grammar
-**Status: TARGETED REPAIR ACTIVE.**
+**Status: HUMAN APPROVED / CLOSED.**
 
-Attempt 01 was explicitly rejected as AI slop and quarantined.
+Selected direction:
+- **I-C — Minimal / No-Icons**.
 
-The later Figma S1/S2/S3 surrogate is also non-canonical because it used substitute morphology and proxy typography.
+Default rule:
+- no icon system unless a real function requires one;
+- matter, morphology, typography and composition carry the identity;
+- signs remain subordinate and functional.
 
-One targeted repair remains. It must compare in-context:
-- I-A Measurement;
-- I-B Morphological Notation;
-- I-C No-Icons / Minimal Signs.
+Explicit anti-slop rule:
+- no fake coordinates;
+- no arbitrary scales;
+- no meaningless crosshairs/tick marks;
+- no invented scientific metadata;
+- no decorative lines without a real semantic target.
 
-Do not present an icon catalog or generic design-system grid.
+The rejected icon catalog and the Figma surrogate remain quarantined as negative/non-canonical evidence.
 
 #### P3 — Hero
 Test:
@@ -116,11 +122,11 @@ Consolidate only human-approved module outputs and run:
 - production viability.
 
 ### 3. Current exact gate
-**P2 — Iconography / Sign Grammar targeted repair.**
+**P3 — Hero System Lab.**
 
-P1 is closed and must not be silently reopened.
+P1 Typography and P2 Minimal/No-Icons Sign Grammar are closed.
 
-One P2 repair remains. Human approval is required before P3.
+P3 requires an explicit human trigger and must preserve both.
 
 Do not:
 - reopen Core/B1;
@@ -198,7 +204,6 @@ This downstream path is not yet authorized merely by appearing here.
 - no final expression promotion without human gate.
 
 ## Open decisions
-- Sign/Iconography Lock;
 - Hero System Lock;
 - D1–D4 intensity rules;
 - Motion Grammar Lock;
@@ -222,4 +227,4 @@ Before final lock, use Figma only when the task materially requires:
 Do not use Figma to invent unresolved iconography, substitute approved visual assets with proxies, or silently replace an approved typographic direction.
 
 ## Next exact gate
-**P2 — targeted repair of Sign/Iconography Grammar.**
+**Human trigger for P3 — Hero System Lab.**
