@@ -258,7 +258,7 @@ Validate:
 
 ### 5.2 R2-B — Aesthetic / Functional Finalist Comparison
 
-**Execution status: TYPOGRAPHY HUMAN-APPROVED / COLOR GATE ACTIVE (2026-09-23).**
+**Execution status: COMPLETE / HUMAN APPROVED / CLOSED (2026-09-23).**
 
 Figma:
 - page `R2 — FOUNDATIONS`;
@@ -276,11 +276,13 @@ Human typography decision:
 
 Typography is closed inside R2.
 
-Current remaining human gate:
-- candidate production color mapping.
+Human color decision:
+- **PASS — candidate production color mapping approved**.
 
-Use `PASS` or name one concrete token/role failure for bounded mutation.
-Do not reopen typography or add a second palette by default.
+R2 lock:
+`docs/03-brand/workbench/divinivid/generation/DIVINIVID_FOUNDATIONS_LOCK_V1.md`.
+
+R2 is closed. The active execution cursor is now the R3/R4/R5 Formalization Cluster.
 
 ### 5.3 Other foundations
 Resolve only what evidence supports:
@@ -308,6 +310,10 @@ Figma: finalists only, for deterministic typography/color comparison.
 No speculative component library.
 
 ## 6. R3 — Composition Grammar
+
+**Cluster status: ACTIVE (2026-09-23).**
+
+R3 is one member of the active R3/R4/R5 Formalization Cluster. Work may interleave with R4 and R5, but this specification retains independent ownership and DoD.
 
 ### Objective
 Convert H-B + D2 + approved visual anchors into reproducible composition rules.
