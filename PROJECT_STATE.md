@@ -15,6 +15,7 @@ depends_on:
   - docs/03-brand/workbench/divinivid/generation/DIVINIVID_CORE_LOCK_V1.md
   - docs/03-brand/workbench/divinivid/generation/DIVINIVID_BASE_LOCK_B1.md
   - docs/03-brand/workbench/divinivid/generation/DIVINIVID_BESTIARY_BASE_B0.md
+  - docs/03-brand/workbench/divinivid/generation/DIVINIVID_FOUNDATIONS_LOCK_V1.md
 ---
 # Project State
 
@@ -144,7 +145,7 @@ Architecture:
 - no decorative monogram or icon by default;
 - palindrome remains structural, not gimmick.
 
-Production font mapping remains an R2 responsibility.
+Production font mapping was resolved in R2 Foundations: Newsreader + IBM Plex Sans.
 
 #### P6 — Digital Brand Specimen
 **Status: PAUSED / NOT YET AUTHORIZED.**
