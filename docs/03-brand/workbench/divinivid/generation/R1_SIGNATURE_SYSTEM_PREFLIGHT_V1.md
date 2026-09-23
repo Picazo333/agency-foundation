@@ -1,5 +1,5 @@
 ---
-status: evidence_pending_human_gate
+status: human_approved
 owner: brand
 created: 2026-09-23
 authority: preflight
@@ -340,4 +340,4 @@ If a construction substrate is required, its selection is itself a bounded techn
 - [x] paid-tool budget bounded;
 - [x] no Figma call executed before human review.
 
-**STATUS: READY FOR HUMAN GATE**
+**STATUS: HUMAN APPROVED / R1-FIGMA-01 AUTHORIZED**

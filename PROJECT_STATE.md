@@ -165,7 +165,7 @@ Consolidate only human-approved module outputs and run:
 - production viability.
 
 ### 3. Current exact gate
-**R1 — Signature System / human review of text preflight.**
+**R1 — Signature System / human review of five-up evidence.**
 
 R0 is complete and passed.
 
@@ -283,13 +283,12 @@ v0 remains blocked until Final Expression Lock + Website Strategy/IA + approved 
 `docs/08-plans/master/DIVINIVID_CURRENT_EXECUTION_PLAN_V2.md`
 
 ## Next exact gate
-**Human review of `R1_SIGNATURE_SYSTEM_PREFLIGHT_V1.md`.**
+**Human review of the R1 Figma five-up.**
 
-The five hypotheses are now defined:
-- Palindromic Axis;
-- Bilateral Body;
-- Sacred Inscription;
-- Mirrored Cut;
-- Custom Letterform Logic.
+Evidence:
+- Figma page: `R1 — SIGNATURE SYSTEM`;
+- comparison node: `15:3`;
+- evidence document: `R1_SIGNATURE_FIVEUP_EVIDENCE_V1.md`.
 
-Figma is blocked until the human owner approves or mutates this five-up contract.
+For S-A through S-E decide `PASS / MUTATE / KILL`.
+One targeted repair remains available and must not be consumed without concrete feedback.
