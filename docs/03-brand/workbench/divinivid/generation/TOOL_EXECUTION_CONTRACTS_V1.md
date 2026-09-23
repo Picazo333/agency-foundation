@@ -2,6 +2,7 @@
 status: approved
 owner: meta
 created: 2026-09-23
+updated: 2026-09-23
 authority: execution_policy
 human_approved: true
 depends_on:
@@ -18,14 +19,40 @@ Every material call to an external tool, plugin, paid service or generative exec
 
 The objective is not to minimize tool use at all costs. It is to ensure every call buys information, quality, reproducibility or implementation value.
 
-## Global TOOL_CALL_CONTRACT
+## Risk-proportional execution tiers
 
-Before a material call, the executor must be able to state:
+Classify calls by:
+`NONDETERMINISM x BLAST_RADIUS x IRREVERSIBILITY x VARIABLE_COST`.
 
+Provider name does not determine the tier.
+
+### T0 — READ
+Examples:
+- repository/file reads;
+- deterministic inspection;
+- metadata lookup.
+
+No special call contract is required.
+
+### T1 — DETERMINISTIC / REVERSIBLE
+Examples:
+- bounded Figma edits with known geometry;
+- reversible repository/document updates;
+- deterministic assembly or validation.
+
+Minimum contract:
+- `QUESTION`
+- `INPUT`
+- `OUTPUT`
+- `DoD`
+- `VALIDATION`
+
+### T2 — PAID / GENERATIVE / NONDETERMINISTIC
+Use the full contract:
 - `CALL_ID`
 - `ACTIVE_PHASE`
-- `QUESTION` — the uncertainty the call resolves
-- `WHY_THIS_TOOL` — why this capability is materially better than a lighter available option
+- `QUESTION`
+- `WHY_THIS_TOOL`
 - `SOURCE_OF_TRUTH`
 - `VARIABLE_UNDER_TEST`
 - `FIXED_VARIABLES`
@@ -35,11 +62,20 @@ Before a material call, the executor must be able to state:
 - `FAILURE_ROUTE`
 - `PROMOTION_RULE`
 
-If these cannot be answered concretely, do not make the call.
+### T3 — HIGH-IMPACT AGENTIC
+Use the full T2 contract plus:
+- `ROLLBACK`
+- `TEST_PLAN`
+- `SCOPE_LIMIT`
+- `STOP_CONDITIONS`
 
-## Universal per-call Definition of Done
+If the required tier contract cannot be answered concretely, do not make the call.
 
-A material call is complete only when:
+## Definition of Done by tier
+
+For T1, the declared `DoD` and `VALIDATION` are sufficient when the operation is deterministic, reversible and scope-limited.
+
+For T2/T3, a material call is complete only when:
 
 1. it answers the declared question;
 2. it used the authorized source inputs;
@@ -49,6 +85,8 @@ A material call is complete only when:
 6. a relevant validation check is performed when the tool can fail silently;
 7. the result changes a decision, reduces uncertainty, or creates an approved downstream dependency;
 8. failure does not trigger blind rerolls.
+
+T0 reads require no status artifact unless the read itself discovers a durable state discrepancy.
 
 ## PAID_TOOL_GATE
 
@@ -282,7 +320,20 @@ A new capability needs:
 
 ## Executor substitution contract
 
-Changing provider/tool midstream requires a compatibility check covering:
+`FAILED EXECUTION != NEED ANOTHER TOOL`.
+
+Before changing provider/tool, classify the failure:
+- specification;
+- input/context;
+- authority;
+- conditioning;
+- deterministic-vs-generative mismatch;
+- executor capability mismatch;
+- runtime/integration.
+
+Only `executor capability mismatch` justifies changing tool/provider by default.
+
+If substitution is justified, perform a compatibility check covering:
 - input modalities;
 - reference conditioning;
 - supported controls;
@@ -304,3 +355,15 @@ Meaningful paid/high-risk calls should be reconstructable from:
 - whether a repair was consumed.
 
 The project does not require bureaucratic logging for trivial reads. Governance depth must remain proportional to risk and cost.
+
+
+## Iteration policy
+
+Iteration count alone is not quality evidence.
+
+Default loop:
+`CONSTRUCT -> ADVERSARIAL -> CORRECT -> VERIFY -> STOP`.
+
+A new round must name the new failure mode or material delta it is trying to falsify.
+
+Do not continue merely because a numeric iteration target remains.

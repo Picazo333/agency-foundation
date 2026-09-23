@@ -2,6 +2,7 @@
 status: frozen
 owner: brand
 created: 2026-09-22
+updated: 2026-09-23
 authority: canon
 human_approved: true
 depends_on:
