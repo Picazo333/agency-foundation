@@ -7,7 +7,8 @@ depends_on:
   - docs/07-decisions/ADR-0012-divinivid-project-name-and-repo-rename.md
   - docs/07-decisions/ADR-0013-visual-universe-to-asset-factory-sequencing.md
   - docs/07-decisions/ADR-0014-targeted-visual-synthesis-and-expression-bases.md
-  - docs/08-plans/master/DIVINIVID_TARGETED_VISUAL_SYNTHESIS_PLAN_V1.md
+  - docs/07-decisions/ADR-0015-pre-lock-exploration-before-final-expression-lock.md
+  - docs/08-plans/master/DIVINIVID_PRE_LOCK_EXPLORATION_V1.md
   - docs/03-brand/workbench/divinivid/generation/DIVINIVID_CORE_LOCK_V1.md
   - docs/03-brand/workbench/divinivid/generation/DIVINIVID_BASE_LOCK_B1.md
   - docs/03-brand/workbench/divinivid/generation/DIVINIVID_BESTIARY_BASE_B0.md
@@ -25,175 +26,175 @@ Build DIVINIVID as a serious agency and operating system from research -> decisi
 
 ## Current active work
 
-### 1. Visual system — Core and expression bases locked; targeted synthesis active
+### 1. Visual system — Pre-Lock Exploration active
+The project has:
+- frozen `DIVINIVID_CORE_LOCK_V1`;
+- frozen `BASE_LOCK_B1` (Route 3+4) as the primary expression/production base;
+- frozen `BESTIARY_BASE_B0` (Route 3+5) as a specialized entity/apparition branch;
+- exited mandatory 100-board rendering under ADR-0014.
 
-The project has exited mandatory mass moodboard execution.
+Subsequent M1 exploration produced two high-signal artifacts:
+- `M1-A Anatomía Celeste` — retained as evidence;
+- `M1-B Topografía Orgánica` — human-approved as the current **pre-lock working anchor**.
 
-ADR-0014 preserves the historical 100-contract corpus as coverage/specification evidence but removes the requirement to render all 100 moodboards before identity synthesis.
+M1-B does not replace the Core or B1. It is the surface used to test how the identity behaves before final expression lock.
 
-Current human-approved hierarchy:
+### 2. Approved Pre-Lock Exploration Program
+ADR-0015 inserts `DIVINIVID_PRE_LOCK_EXPLORATION_V1` before final expression lock.
 
-1. **`DIVINIVID_CORE_LOCK_V1`** — frozen visual DNA.
-2. **`BASE_LOCK_B1`** — Route 3+4, the principal expression/production base:
-   - Mokuhanga / printed-evidence logic;
-   - Negative Shape / invisible-body logic.
-3. **`BESTIARY_BASE_B0`** — Route 3+5, specialized entity/apparition branch.
+Current sequence:
 
-Canonical visual files are preserved in:
-`/DIVINIVID/visual-generation/locks-v2/`.
+`Typography -> Iconography -> Hero -> Density/Intensity -> Motion -> Digital Behavior -> Application Stress -> Final Synthesis -> Independent Red Team -> Human Final Gate`.
 
-The primary base is intentionally separated from the bestiary so that entity-heavy imagery does not dominate the commercial/production system.
+Expected terminal artifact:
+`DIVINIVID_FINAL_EXPRESSION_LOCK_V1`.
 
-#### Active visual-development plan
-The next approved sequence is:
+#### P1 — Typography
+Test:
+- T-A Monumental Serif Dominant;
+- T-B Dual Editorial;
+- T-C Brutalist Inversion.
 
-`M1-A Anatomía Celeste -> M1-B Topografía Orgánica -> human comparison -> optional bounded synthesis -> M2-Soft -> M2-Hard -> human comparison -> MAIN_SYSTEM_B2`.
+#### P2 — Iconography / Sign Grammar
+Test:
+- I-A Measurement;
+- I-B Morphological Notation;
+- I-C No-Icons / Minimal Signs.
 
-Nothing after the current lock formalization is automatically authorized merely because it appears in the plan.
+#### P3 — Hero
+Test:
+- H-A Revelatory;
+- H-B Editorial/Systemic;
+- H-C Commercial Precision.
 
-#### M1 objective
-Develop B1 into a morphology system where the same structures can support multiple readings across:
-- anatomy / marrow / membrane;
-- planets / celestial bodies;
-- geology / topography;
-- coasts / seas / deltas;
-- mountains / landscapes;
-- specimens / organisms;
-- architecture / cavities.
+#### P4 — Density / Intensity
+Define:
+- D1 Restrained;
+- D2 Controlled;
+- D3 Expressive;
+- D4 Ceremonial.
 
-Literal medical illustration or literal cartography is not the goal.
+#### P5 — Motion
+Test:
+- Breathing Matter;
+- Registration;
+- Negative Revelation;
+- Instrument Response.
 
-#### M2 objective
-Increase elegant brutalist discipline in:
-- hierarchy;
-- spatial structure;
-- typographic confidence;
-- grid discipline;
-- architectural clarity;
+#### P6 — Digital Behavior
+Test:
+- one editorial surface;
+- one functional surface.
 
-without erasing:
-- oneiric depth;
-- printed-evidence behavior;
-- negative-space logic;
-- living matter;
-- macro/micro ambiguity.
+#### P7 — Application Stress
+Test:
+- agency website;
+- proposal/sales deck;
+- case study/editorial;
+- social/campaign;
+- clinical/B2B-sensitive context.
 
-#### Current exact gate
-**Locks are formalized. The next production action is M1-A only after an explicit human trigger.**
+#### P8 — Final synthesis
+Consolidate only human-approved module outputs and run:
+- identity integrity;
+- elasticity;
+- commercial viability;
+- production viability.
+
+### 3. Current exact gate
+**P1 — Typography Lab.**
+
+No generation is automatic.
+The next visual action requires an explicit human trigger.
 
 Do not:
+- reopen Core/B1;
+- promote incidental typography/iconography from M1-B;
 - develop the bestiary branch yet;
-- start full Figma production-system industrialization;
+- build the full Figma production system;
 - start v0 implementation;
-- reopen the Core;
+- start the full website prototype;
 - resume the old quota-driven moodboard program.
 
-### 2. Historical Visual Universe program
-The previous `DIVINIVID-VUE-100-V1` remains preserved as project history and coverage evidence.
+### 4. Historical Visual Universe program
+The prior `DIVINIVID-VUE-100-V1` remains retained as history, coverage/reference evidence and negative-learning infrastructure.
 
-Historical state at supersession:
-- contiguous contract-valid cursor: `A10`;
-- A11-A15 were still missing as exact rendered contracts;
-- A16/A18/A19 had contract gaps;
-- A17 required traceability confirmation;
-- A20 was dependency-blocked.
+Historical contract status is no longer a mandatory blocker for identity synthesis.
 
-These states remain evidence but are no longer blocking identity synthesis as mandatory rendered moodboards.
-
-The previous runtime/postmortem lessons remain active:
+Persistent lessons remain active:
 - `REFERENCE_AVAILABLE != REFERENCE_BOUND != REFERENCE_EFFECTIVE`;
 - approved roots must be explicitly bound;
-- rejected descendants are quarantined;
+- rejected descendants remain quarantined;
 - executor substitutions require capability checks;
 - human approval controls promotion.
 
-### 3. Noema adoption
+### 5. Noema adoption
 Selective RC0 migration remains active.
 
-The project declares:
-- explicit domain authority;
-- progressive context routing;
-- quality claims;
-- Noema/Skill Foundry relations;
-- conformance expectations.
+Noema governs context/conformance boundaries but does not own DIVINIVID visual canon.
 
-Noema does not own or approve DIVINIVID visual canon.
-
-### 4. Skill Foundry handoff
-G0-G7 is complete and merged for candidate `sf-cand-20260920-divinivid-visual-production-system`.
-
-Approved reusable architecture:
+### 6. Skill Foundry relationship
+Approved reusable architecture remains:
 - `brand-visual-direction:VISUAL_UNIVERSE_EXPANSION`;
 - `brand-quality-auditor:VISUAL_SYSTEM_COVERAGE`;
 - `brand-identity-system:PRODUCTION_SPECIFICATION`;
-- reuse `brand-book-builder` and `brand-skill-orchestrator`;
-- no dedicated DIVINIVID, Figma, v0 or generator-specific top-level Skill.
+- reuse `brand-book-builder` and `brand-skill-orchestrator`.
 
-Post-G6 evidence includes:
-- execution-style drift;
-- active reference-binding failure;
-- structured-assembly fallback.
+No dedicated DIVINIVID/Figma/v0/provider-specific top-level Skill is authorized.
 
-### 5. Asset Factory
-Generator-agnostic architecture remains integrated but **mass production is not authorized**.
+### 7. Asset Factory
+Mass production remains blocked until:
+- final expression/identity specification is mature;
+- executable production matrix exists;
+- golden-set factory pilot passes.
 
-Before industrial asset production, the project still needs:
-- mature identity/production specification;
-- executable production matrix;
-- golden-set factory pilot PASS.
+### 8. Figma + web path
+Figma remains the planned composition/design-system control layer after final expression lock.
 
-The selected executor may change without changing the project constitution.
+Expected downstream sequence:
 
-### 6. Figma + web path
-Figma remains the planned composition/design-system control layer, with two phases:
-1. Visual Lab / synthesis support;
-2. production design system after the main identity system is mature.
+`Final Expression Lock -> Figma Production System -> Website Strategy/IA -> Golden Slice -> Technical Feasibility Spike -> Full Figma Prototype -> v0/code implementation -> Runtime Reconciliation -> Final QA -> Brandbook Readiness Package`.
 
-v0 remains a downstream implementation accelerator, not a source of Brand Canon.
-
-The web path after `MAIN_SYSTEM_B2` is expected to progress through:
-`application stress tests -> identity lock -> Figma production system -> website strategy/IA -> Golden Slice -> feasibility spike -> full Figma prototype -> v0/code prototype -> runtime reconciliation -> QA -> brandbook readiness handoff`.
-
-This downstream sequence is not yet authorized for execution.
+This downstream path is not yet authorized merely by appearing here.
 
 ## Current approved visual DNA
-- absorbent near-absolute Living Darkness;
-- ivory/bone as revealed evidence and reading surface;
+- Living Darkness;
+- ivory/bone evidence;
 - Living Crimson as matter/signal/transformation;
-- aged gold as measurement/hierarchy/instrumentation;
-- ultramar as residual trace only;
-- living matter and ambiguous morphology;
+- aged-gold instrumentation;
+- residual ultramar only;
+- ambiguous living matter;
 - macro/micro duality;
-- editorial authority plus dream logic;
-- entities as apparitions/intelligences/specimens rather than conventional fantasy characters;
-- structures capable of biological/cosmic/architectural/geographic double reading;
-- Japanese influence only through structural/procedural principles where approved, not cliché motifs.
+- editorial authority + dream logic;
+- printed-evidence behavior;
+- negative-shape logic;
+- biological/cosmic/geographic/architectural multi-reading;
+- Japanese influence through process/space/print logic, not cliché motifs.
 
-## Frozen / approved process decisions
-- Repo-first source of truth.
-- Research != decision.
-- Workbench != canon.
-- Generated != approved.
-- Negative evidence is preserved.
-- Capability contracts outlive executor substitutions.
-- Substantial changes use isolated branch/task scope + review.
-- Noema conformance != project quality.
-- Skill Foundry does not auto-create Skills from harvest.
-- Visual exploration and industrial asset production are separate stages.
-- Full 100-board rendering is no longer a prerequisite.
-- Core and expression-base mutations require explicit human approval.
-- Minimum necessary mutation is the default.
+## Frozen process decisions
+- repo-first source of truth;
+- research != decision;
+- generated != approved;
+- negative evidence is preserved;
+- minimum-necessary mutation;
+- context loading is progressive;
+- full 100-board rendering is no longer required;
+- bestiary and primary production language remain separate;
+- no final expression promotion without human gate.
 
 ## Open decisions
-- M1-A vs M1-B outcome;
-- whether one bounded M1 synthesis is justified;
-- M2-Soft vs M2-Hard outcome;
-- final `MAIN_SYSTEM_B2`;
+- Typography Lock;
+- Sign/Iconography Lock;
+- Hero System Lock;
+- D1–D4 intensity rules;
+- Motion Grammar Lock;
+- Digital Behavior Direction;
+- Application Stress outcome;
+- Final Expression Lock;
 - later bestiary taxonomy;
-- final commercial/legal clearance of DIVINIVID;
-- production executor adapter details after the golden-set pilot;
-- production stack/final website architecture;
-- business-model/ICP/positioning/pricing decisions still gated by real validation evidence.
+- final production stack and website architecture;
+- commercial/legal clearance;
+- business-model/ICP/positioning/pricing decisions still gated by real evidence.
 
 ## Next exact gate
-**Human trigger for M1-A — Anatomía Celeste.**
+**Human trigger for P1 — Typography Lab.**
