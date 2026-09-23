@@ -256,6 +256,7 @@ This downstream path is not yet authorized merely by appearing here.
 - negative evidence is preserved;
 - minimum-necessary mutation;
 - context loading is progressive;
+- one authoritative cursor per scope; historical/current documents cannot compete for the same cursor;
 - full 100-board rendering is no longer required;
 - bestiary and primary production language remain separate;
 - no final expression promotion without human gate.
