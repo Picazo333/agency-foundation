@@ -186,7 +186,7 @@ Consolidate only human-approved module outputs and run:
 - production viability.
 
 ### 3. Current exact gate
-**R3/R4/R5 — Formalization Cluster ACTIVE.**
+**SYSTEM FORMALIZATION GATE — HUMAN REVIEW.**
 
 R2 Foundations is **HUMAN APPROVED / CLOSED**.
 
@@ -318,22 +318,22 @@ v0 remains blocked until Final Expression Lock + Website Strategy/IA + approved 
 `docs/08-plans/master/DIVINIVID_CURRENT_EXECUTION_PLAN_V2.md`
 
 ## Next exact gate
-**R3/R4/R5 — Formalization Cluster.**
+**SYSTEM FORMALIZATION GATE — HUMAN REVIEW.**
 
 R2 is locked by:
 `docs/03-brand/workbench/divinivid/generation/DIVINIVID_FOUNDATIONS_LOCK_V1.md`.
 
-Active work:
-- R3 Composition Grammar;
-- R4 Image / Illustration Language;
-- R5 Temporal Mapping Audit.
+Formalization completed:
+- R3 Composition Grammar — specification complete;
+- R4 Image / Illustration Language — specification complete;
+- R5 Temporal Identity — specification complete;
+- Cross-Consistency Audit — PASS, 0 critical/material unresolved contradictions.
 
-Default:
-`FORMALIZE_EXISTING_APPROVED_EVIDENCE_FIRST`.
+Gate artifact:
+`docs/03-brand/workbench/divinivid/evaluations/DIVINIVID_SYSTEM_FORMALIZATION_GATE_V1.md`.
 
-Do not generate new visuals unless a named gap requires them.
+Human action:
+- `PASS` to authorize P6 Digital Brand Specimen;
+- or name one specific R3/R4/R5 contract failure for bounded mutation.
 
-After the three specifications are ready:
-`CROSS-CONSISTENCY AUDIT -> SYSTEM FORMALIZATION GATE`.
-
-P6 remains blocked until that shared gate passes.
+P6 remains blocked until human PASS.
