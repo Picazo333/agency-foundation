@@ -29,7 +29,7 @@ The older Visual Universe checkpoint and Meta-Plan remain historical/context evi
 The older Phase 1–3 material below remains valid as historical research/process evidence unless explicitly superseded, but the “Phase 3 Reference Atlas” section no longer defines the active execution gate.
 
 ## Current brand-scope cursor
-**SYSTEM FORMALIZATION GATE — HUMAN REVIEW**
+**P6 — DIGITAL BRAND SPECIMEN ACTIVE**
 
 R2 Foundations is **HUMAN APPROVED / CLOSED**.
 
@@ -47,10 +47,13 @@ Formalization status:
 - R5 Temporal Identity — complete specification;
 - Cross-Consistency Audit — PASS.
 
-Current gate:
-`DIVINIVID_SYSTEM_FORMALIZATION_GATE_V1`.
+System Formalization Gate:
+`PASS / HUMAN APPROVED`.
 
-P6 remains blocked pending human `PASS` or a bounded `MUTATE` decision.
+Current work:
+`P6_DIGITAL_BRAND_SPECIMEN`.
+
+P6 tests translation of the locked system; it does not create new Brand canon or define final Website IA.
 
 ## Current Signature System
 **R1 HUMAN APPROVED / CLOSED — 2026-09-23**
