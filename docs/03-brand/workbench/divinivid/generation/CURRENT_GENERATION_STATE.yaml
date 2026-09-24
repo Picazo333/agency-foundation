@@ -1,5 +1,5 @@
 program_id: DIVINIVID-PRE-LOCK-EXPLORATION-V1
-updated: 2026-09-23
+updated: 2026-09-24
 human_authority: required
 
 strategy:
@@ -305,13 +305,15 @@ formalization_cluster:
   system_formalization_gate: docs/03-brand/workbench/divinivid/evaluations/DIVINIVID_SYSTEM_FORMALIZATION_GATE_V1.md
 
 p6_digital_behavior:
-  status: BLOCKED_RUNTIME_ASSET_BINDING
+  status: READY_FOR_HUMAN_REVIEW
   execution_evidence: docs/03-brand/workbench/divinivid/generation/P6_DIGITAL_BRAND_SPECIMEN_EVIDENCE_V1.md
   current_specimen_root: "34:2"
   structural_validation: PASS
-  asset_binding_status: BLOCKED_RUNTIME_INTEGRATION
+  visual_qa_status: PASS_INTERNAL
+  human_review_gate: docs/03-brand/workbench/divinivid/evaluations/DIVINIVID_P6_HUMAN_REVIEW_GATE_V1.md
+  asset_binding_status: COMPLETE_PASS
   prior_probe_status: QUARANTINED_STRUCTURAL_PROBE
-  positive_reference_authority: PENDING_NEW_VALID_P6_EVIDENCE
+  positive_reference_authority: PENDING_HUMAN_REVIEW
   figma:
     file_key: bqcKhEQHs4EEQgnn6lNU8O
     page: P6 — DIGITAL BEHAVIOR
@@ -379,10 +381,10 @@ r1_signature_system:
     survivor_completion: CONSUMED_NORMAL_R1_DOD
 
 active_gate:
-  current: P6_CANONICAL_ASSET_BINDING_BLOCKER
+  current: P6_HUMAN_REVIEW_GATE
   next_authorized_action: >
-    Bind the canonical B1, M1-B and Core PNG assets to Figma nodes 34:48, 34:69 and 34:75,
-    reuse B1 on 34:129, then resume screenshot-based visual QA. Do not substitute proxies or generated lookalikes.
+    Human creative owner reviews Figma specimen root 34:2 and returns PASS or MUTATE with one concrete
+    P6 translation failure. P7 Application Stress remains blocked until human PASS.
   automatic_next_generation: false
 
 tool_discipline:
@@ -471,7 +473,7 @@ deferred:
   - FINAL_BRANDBOOK
 
 next_exact_gate: >
-  P6_DIGITAL_BRAND_SPECIMEN.
-  System Formalization Gate is COMPLETE_PASS.
-  Build and validate the five required specimen surfaces as one integrated workstream.
-  On P6 completion, move to the P6 human review gate before P7.
+  P6_HUMAN_REVIEW_GATE.
+  P6 implementation and internal QA are complete.
+  Human owner must PASS the integrated specimen or name one bounded P6 translation failure.
+  On PASS, authorize P7 Application Stress.
