@@ -1,10 +1,13 @@
 ---
-status: active_handoff
+status: superseded
 owner: brand
 created: 2026-09-23
 updated: 2026-09-23
-authority: recovery_cursor
+authority: historical_recovery_cursor
 supersedes_chat_state: true
+superseded_by:
+  - docs/09-handoffs/DIVINIVID_CONTEXT_HANDOFF_VISUAL_EXECUTION_P6_2026-09-24.md
+  - docs/09-handoffs/DIVINIVID_CHECKPOINT_PRE_NOEMA_VNEXT_2026-09-24.md
 supersedes:
   - docs/09-handoffs/DIVINIVID_CONTEXT_HANDOFF_SYSTEM_FORMALIZATION_GATE_2026-09-23.md
 ---
@@ -62,7 +65,7 @@ New P6 must use:
 ## Current runtime blocker
 
 Status:
-`BLOCKED_RUNTIME_ASSET_BINDING`
+`RESOLVED / SUPERSEDED`
 
 Figma root:
 `34:2`
