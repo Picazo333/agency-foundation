@@ -1,10 +1,11 @@
 ---
-status: active_handoff
+status: superseded
 owner: brand
 created: 2026-09-23
 updated: 2026-09-23
-authority: recovery_cursor
+authority: historical_recovery_cursor
 supersedes_chat_state: true
+superseded_by: docs/09-handoffs/DIVINIVID_CONTEXT_HANDOFF_P6_DIGITAL_BRAND_SPECIMEN_2026-09-23.md
 supersedes:
   - docs/09-handoffs/DIVINIVID_CONTEXT_HANDOFF_R3R4R5_CLUSTER_2026-09-23.md
 ---
