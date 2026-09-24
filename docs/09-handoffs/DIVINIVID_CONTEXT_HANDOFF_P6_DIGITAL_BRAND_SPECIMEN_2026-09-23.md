@@ -59,6 +59,35 @@ New P6 must use:
 - new image family;
 - new signature.
 
+## Current runtime blocker
+
+Status:
+`BLOCKED_RUNTIME_ASSET_BINDING`
+
+Figma root:
+`34:2`
+
+Built and structurally validated:
+- Homepage `34:18`;
+- Case Study `34:50`;
+- Research/Editorial `34:72`;
+- Service/System `34:86`;
+- Mobile `34:117`;
+- Temporal/Accessibility `34:138`.
+
+Canonical asset targets:
+- B1 -> `34:48` and later reuse on `34:129`;
+- M1-B -> `34:69`;
+- Core -> `34:75`.
+
+Cause:
+the active container cannot POST raw bytes to Figma's short-lived asset upload endpoints.
+
+Do not use the quarantined proxy assets to bypass this.
+
+Execution evidence:
+`docs/03-brand/workbench/divinivid/generation/P6_DIGITAL_BRAND_SPECIMEN_EVIDENCE_V1.md`.
+
 ## Next gate
 After valid specimen evidence:
 `P6_HUMAN_REVIEW_GATE`.
