@@ -186,7 +186,7 @@ Consolidate only human-approved module outputs and run:
 - production viability.
 
 ### 3. Current exact gate
-**SYSTEM FORMALIZATION GATE — HUMAN REVIEW.**
+**P6 — DIGITAL BRAND SPECIMEN ACTIVE.**
 
 R2 Foundations is **HUMAN APPROVED / CLOSED**.
 
@@ -318,7 +318,7 @@ v0 remains blocked until Final Expression Lock + Website Strategy/IA + approved 
 `docs/08-plans/master/DIVINIVID_CURRENT_EXECUTION_PLAN_V2.md`
 
 ## Next exact gate
-**SYSTEM FORMALIZATION GATE — HUMAN REVIEW.**
+**P6 — DIGITAL BRAND SPECIMEN ACTIVE.**
 
 R2 is locked by:
 `docs/03-brand/workbench/divinivid/generation/DIVINIVID_FOUNDATIONS_LOCK_V1.md`.
@@ -329,11 +329,9 @@ Formalization completed:
 - R5 Temporal Identity — specification complete;
 - Cross-Consistency Audit — PASS, 0 critical/material unresolved contradictions.
 
-Gate artifact:
-`docs/03-brand/workbench/divinivid/evaluations/DIVINIVID_SYSTEM_FORMALIZATION_GATE_V1.md`.
+System Formalization Gate:
+`PASS / HUMAN APPROVED`.
 
-Human action:
-- `PASS` to authorize P6 Digital Brand Specimen;
-- or name one specific R3/R4/R5 contract failure for bounded mutation.
+P6 is now authorized as an identity-translation test across five representative digital surfaces.
 
-P6 remains blocked until human PASS.
+P6 remains explicitly separate from final Website Strategy/IA and full website design.
