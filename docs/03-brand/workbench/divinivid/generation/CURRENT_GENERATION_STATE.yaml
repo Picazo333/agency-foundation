@@ -186,7 +186,7 @@ pre_lock_program:
 identity_formalization:
   status: ACTIVE
   governing_plan: docs/08-plans/master/DIVINIVID_CURRENT_EXECUTION_PLAN_V2.md
-  current_step: P6_DIGITAL_BRAND_SPECIMEN
+  current_step: P6_HUMAN_REVIEW_GATE
   r0_audit:
     status: PASS
     artifact: docs/03-brand/workbench/divinivid/generation/DIVINIVID_R0_REQUIREMENT_MATRIX_V1.md
