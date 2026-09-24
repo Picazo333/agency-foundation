@@ -233,7 +233,14 @@ Persistent lessons remain active:
 - human approval controls promotion.
 
 ### 5. Noema adoption
-Selective RC0 migration remains active.
+Selective RC0 migration remains historical/current baseline until the upcoming Noema vNext transversal migration is executed.
+
+Pre-vNext migration checkpoint:
+`docs/09-handoffs/DIVINIVID_CHECKPOINT_PRE_NOEMA_VNEXT_2026-09-24.md`.
+
+Split recovery contexts:
+- General Program: `docs/09-handoffs/DIVINIVID_CONTEXT_HANDOFF_GENERAL_PROGRAM_2026-09-24.md`;
+- Visual Execution: `docs/09-handoffs/DIVINIVID_CONTEXT_HANDOFF_VISUAL_EXECUTION_P6_2026-09-24.md`.
 
 Noema governs context/conformance boundaries but does not own DIVINIVID visual canon.
 
@@ -288,11 +295,10 @@ This downstream path is not yet authorized merely by appearing here.
 - no final expression promotion without human gate.
 
 ## Open decisions
-- Composition Grammar;
-- Image/Illustration Language;
-- Temporal Identity mapping;
-- Digital Brand Specimen;
+- P6 Human Review outcome;
 - Application Stress outcome;
+- Final Pre-Lock Synthesis outcome;
+- Independent Red Team findings;
 - Final Expression Lock;
 - later bestiary taxonomy;
 - final production stack and website architecture;
