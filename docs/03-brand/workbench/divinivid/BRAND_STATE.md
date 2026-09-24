@@ -29,7 +29,7 @@ The older Visual Universe checkpoint and Meta-Plan remain historical/context evi
 The older Phase 1–3 material below remains valid as historical research/process evidence unless explicitly superseded, but the “Phase 3 Reference Atlas” section no longer defines the active execution gate.
 
 ## Current brand-scope cursor
-**R3/R4/R5 — Formalization Cluster ACTIVE**
+**SYSTEM FORMALIZATION GATE — HUMAN REVIEW**
 
 R2 Foundations is **HUMAN APPROVED / CLOSED**.
 
@@ -41,15 +41,16 @@ Locked production foundations:
 - **IBM Plex Sans** — operational sans;
 - one approved production color mapping with bounded dark/light surface roles.
 
-Current work formalizes:
-- R3 Composition Grammar;
-- R4 Image / Illustration Language;
-- R5 Temporal Mapping Audit.
+Formalization status:
+- R3 Composition Grammar — complete specification;
+- R4 Image / Illustration Language — complete specification;
+- R5 Temporal Identity — complete specification;
+- Cross-Consistency Audit — PASS.
 
-The three specifications may interleave, but none independently unlocks P6.
+Current gate:
+`DIVINIVID_SYSTEM_FORMALIZATION_GATE_V1`.
 
-Next shared gate:
-`CROSS-CONSISTENCY AUDIT -> SYSTEM FORMALIZATION GATE`.
+P6 remains blocked pending human `PASS` or a bounded `MUTATE` decision.
 
 ## Current Signature System
 **R1 HUMAN APPROVED / CLOSED — 2026-09-23**
