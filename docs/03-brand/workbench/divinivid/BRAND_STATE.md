@@ -1,7 +1,7 @@
 ---
 status: approved
 owner: brand
-updated: 2026-09-23
+updated: 2026-09-24
 authority: workbench
 depends_on:
   - ../../../08-plans/workstreams/DIVINIVID_VISUAL_IDENTITY_MASTER_PLAN.md
@@ -29,7 +29,7 @@ The older Visual Universe checkpoint and Meta-Plan remain historical/context evi
 The older Phase 1–3 material below remains valid as historical research/process evidence unless explicitly superseded, but the “Phase 3 Reference Atlas” section no longer defines the active execution gate.
 
 ## Current brand-scope cursor
-**P6 — DIGITAL BRAND SPECIMEN ACTIVE**
+**P6 — HUMAN REVIEW GATE**
 
 R2 Foundations is **HUMAN APPROVED / CLOSED**.
 
@@ -50,10 +50,16 @@ Formalization status:
 System Formalization Gate:
 `PASS / HUMAN APPROVED`.
 
-Current work:
-`P6_DIGITAL_BRAND_SPECIMEN`.
+P6 implementation:
+- complete integrated specimen at Figma root `34:2`;
+- canonical asset lineage verified;
+- structural QA PASS;
+- internal visual QA PASS.
 
-P6 tests translation of the locked system; it does not create new Brand canon or define final Website IA.
+Current gate:
+`P6_HUMAN_REVIEW_GATE`.
+
+P6 remains evidence rather than promoted Brand authority until human PASS. It does not define final Website IA.
 
 ## Current Signature System
 **R1 HUMAN APPROVED / CLOSED — 2026-09-23**
