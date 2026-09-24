@@ -441,7 +441,7 @@ Before any of R3/R4/R5 can collectively unlock P6, test:
 Record concrete incompatibilities, not taste disagreements.
 
 ### System Formalization Gate
-**Execution status: READY FOR HUMAN REVIEW (2026-09-23).**
+**Execution status: COMPLETE / HUMAN APPROVED / PASS (2026-09-23).**
 
 Gate artifact:
 `docs/03-brand/workbench/divinivid/evaluations/DIVINIVID_SYSTEM_FORMALIZATION_GATE_V1.md`.
@@ -457,6 +457,8 @@ Outcome:
 `PASS / MUTATE`.
 
 ## 9. P6 — Digital Brand Specimen
+
+**Execution status: ACTIVE / AUTHORIZED (2026-09-23).**
 
 ### Authorization condition
 R0 complete, R1 closed, R2 PASS, and the R3/R4/R5 Formalization Cluster passes the System Formalization Gate.
@@ -670,18 +672,20 @@ Stop and diagnose rather than continuing when:
 
 ## 16. Immediate next exact action
 
-`SYSTEM_FORMALIZATION_GATE_HUMAN_REVIEW`.
+`P6_DIGITAL_BRAND_SPECIMEN`.
 
-Completed:
-- R3 Composition Grammar specification;
-- R4 Image / Illustration Language specification;
-- R5 Temporal Identity mapping;
-- Cross-Consistency Audit: PASS.
+System Formalization Gate:
+`COMPLETE_PASS / HUMAN_APPROVED`.
 
-Human gate:
-- `PASS` — authorize P6 Digital Brand Specimen;
-- or `MUTATE: <specific R3/R4/R5 contract failure>` — bounded correction only.
+Build one integrated specimen across:
+1. homepage fragment;
+2. case-study fragment;
+3. research/editorial fragment;
+4. service/system-explanation fragment;
+5. mobile translation.
 
-P6 remains blocked until human PASS.
+Use locked R1-R5 authority.
+Do not design final Website IA, full site, production component library or v0/code.
 
-Do not reopen R1/R2 or generate new visual families by default.
+After validated P6 evidence:
+`P6_HUMAN_REVIEW_GATE`.
