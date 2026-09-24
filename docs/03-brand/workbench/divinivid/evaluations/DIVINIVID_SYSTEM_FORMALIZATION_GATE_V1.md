@@ -1,11 +1,11 @@
 ---
-status: ready_for_human_review
+status: approved
 owner: brand
 created: 2026-09-23
 updated: 2026-09-23
 authority: system_formalization_gate
-human_approved: false
-outcome: PENDING_HUMAN_PASS_OR_MUTATE
+human_approved: true
+outcome: PASS
 depends_on:
   - docs/03-brand/workbench/divinivid/generation/DIVINIVID_COMPOSITION_GRAMMAR_V1.md
   - docs/03-brand/workbench/divinivid/generation/DIVINIVID_IMAGE_ILLUSTRATION_LANGUAGE_V1.md
@@ -119,6 +119,16 @@ Allowed outcomes:
 
 No broad reroll is justified by the current evidence.
 
+## Human decision
+
+**PASS — approved by the human creative owner on 2026-09-23.**
+
+Consequence:
+- R3/R4/R5 formalization is promoted as sufficient for digital translation;
+- P6 Digital Brand Specimen is authorized;
+- prior locks remain frozen;
+- no new Brand canon may be invented inside P6.
+
 ## Current outcome
 
-`PENDING_HUMAN_PASS_OR_MUTATE`
+`PASS`
