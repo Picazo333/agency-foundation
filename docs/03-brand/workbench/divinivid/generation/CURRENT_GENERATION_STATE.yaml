@@ -186,7 +186,7 @@ pre_lock_program:
 identity_formalization:
   status: ACTIVE
   governing_plan: docs/08-plans/master/DIVINIVID_CURRENT_EXECUTION_PLAN_V2.md
-  current_step: SYSTEM_FORMALIZATION_GATE
+  current_step: P6_DIGITAL_BRAND_SPECIMEN
   r0_audit:
     status: PASS
     artifact: docs/03-brand/workbench/divinivid/generation/DIVINIVID_R0_REQUIREMENT_MATRIX_V1.md
@@ -204,7 +204,7 @@ identity_formalization:
     R4_IMAGE_ILLUSTRATION_LANGUAGE: COMPLETE_SPECIFICATION
     R5_TEMPORAL_MAPPING_AUDIT: COMPLETE_SPECIFICATION
     CROSS_CONSISTENCY_AUDIT: COMPLETE_PASS
-    SYSTEM_FORMALIZATION_GATE: READY_FOR_HUMAN_REVIEW
+    SYSTEM_FORMALIZATION_GATE: COMPLETE_PASS
 
 r2_foundations:
   status: COMPLETE_PASS
@@ -281,7 +281,7 @@ r2_foundations:
     ultramar_matter: "#102139"
 
 formalization_cluster:
-  status: COMPLETE_READY_FOR_SYSTEM_GATE
+  status: COMPLETE_PASS
   entry_condition: R2_FOUNDATIONS_PASS
   members:
     - R3_COMPOSITION_GRAMMAR
@@ -305,9 +305,9 @@ formalization_cluster:
   system_formalization_gate: docs/03-brand/workbench/divinivid/evaluations/DIVINIVID_SYSTEM_FORMALIZATION_GATE_V1.md
 
 p6_digital_behavior:
-  status: BLOCKED_PENDING_SYSTEM_FORMALIZATION_GATE
+  status: ACTIVE
   prior_probe_status: QUARANTINED_STRUCTURAL_PROBE
-  positive_reference_authority: false
+  positive_reference_authority: PENDING_NEW_VALID_P6_EVIDENCE
   figma:
     file_key: bqcKhEQHs4EEQgnn6lNU8O
     page: P6 — DIGITAL BEHAVIOR
@@ -375,10 +375,11 @@ r1_signature_system:
     survivor_completion: CONSUMED_NORMAL_R1_DOD
 
 active_gate:
-  current: SYSTEM_FORMALIZATION_GATE_HUMAN_REVIEW
+  current: P6_DIGITAL_BRAND_SPECIMEN
   next_authorized_action: >
-    Human owner reviews DIVINIVID_SYSTEM_FORMALIZATION_GATE_V1 and returns PASS or
-    MUTATE with one specific R3/R4/R5 contract failure. P6 remains blocked until PASS.
+    Build one integrated Digital Brand Specimen across homepage, case-study, research/editorial,
+    service/system-explanation and mobile surfaces using locked R1-R5 authority and production foundations.
+    Validate responsive translation, hierarchy, long-form reading, controlled density, accessibility and representative motion/reduced-motion behavior.
   automatic_next_generation: false
 
 tool_discipline:
@@ -467,7 +468,7 @@ deferred:
   - FINAL_BRANDBOOK
 
 next_exact_gate: >
-  SYSTEM_FORMALIZATION_GATE_HUMAN_REVIEW.
-  R3, R4 and R5 specifications are complete and the Cross-Consistency Audit is PASS.
-  Human owner must PASS or name one specific contract failure for bounded mutation.
-  P6 Digital Brand Specimen remains blocked until PASS.
+  P6_DIGITAL_BRAND_SPECIMEN.
+  System Formalization Gate is COMPLETE_PASS.
+  Build and validate the five required specimen surfaces as one integrated workstream.
+  On P6 completion, move to the P6 human review gate before P7.
