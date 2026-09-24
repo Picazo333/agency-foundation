@@ -148,22 +148,21 @@ Architecture:
 Production font mapping was resolved in R2 Foundations: Newsreader + IBM Plex Sans.
 
 #### P6 — Digital Brand Specimen
-**Status: PAUSED / NOT YET AUTHORIZED.**
+**Status: IMPLEMENTATION COMPLETE / INTERNAL QA PASS / HUMAN REVIEW PENDING.**
 
-The first Figma attempt has been reclassified as `P6_STRUCTURAL_PROBE_V0`:
-- non-canonical;
-- learning evidence only;
-- not a positive visual reference;
-- does not close P6.
+The first Figma attempt remains quarantined as `P6_STRUCTURAL_PROBE_V0`.
 
-P6 resumes only after R1 closes, R2 passes, and the R3/R4/R5 Formalization Cluster passes Cross-Consistency + System Formalization.
+The valid P6 specimen is now:
+- Figma root `34:2`;
+- canonical B1/M1-B/Core assets bound;
+- five required surfaces complete;
+- temporal/reduced-motion proof complete;
+- structural QA PASS;
+- internal visual QA PASS.
 
-Future P6 scope is identity translation, not actual website/product design. It runs as one Digital Brand Specimen workstream with one integrated review cycle across:
-- homepage fragment;
-- case-study fragment;
-- research/editorial fragment;
-- service/system-explanation fragment;
-- mobile translation.
+P6 now waits only for the human review gate.
+
+P6 remains identity translation, not actual website/product design.
 
 #### P7 — Application Stress
 Use minimum diagnostic fidelity, not five polished applications.
@@ -186,7 +185,7 @@ Consolidate only human-approved module outputs and run:
 - production viability.
 
 ### 3. Current exact gate
-**P6 — DIGITAL BRAND SPECIMEN ACTIVE.**
+**P6 — HUMAN REVIEW GATE.**
 
 R2 Foundations is **HUMAN APPROVED / CLOSED**.
 
@@ -212,8 +211,8 @@ R0 found:
 R0 concluded that broad aesthetic rediscovery is unnecessary. The main genuinely new design block is Signature System; later R2-R5 are primarily formalization and validation of already-approved evidence.
 
 Do not:
-- reopen Core/B1/B0/M1-B/P1-P5 without a specific material failure and human approval;
-- start P6 before R1 closes, R2 passes, and the R3/R4/R5 cluster passes its shared formalization gate;
+- reopen Core/B1/B0/M1-B/P1-P5/R1-R5 without a specific material failure and human approval;
+- bypass the P6 human review gate;
 - develop the bestiary branch yet;
 - build the full Figma production system;
 - start Website Strategy/IA;
@@ -318,7 +317,7 @@ v0 remains blocked until Final Expression Lock + Website Strategy/IA + approved 
 `docs/08-plans/master/DIVINIVID_CURRENT_EXECUTION_PLAN_V2.md`
 
 ## Next exact gate
-**P6 — DIGITAL BRAND SPECIMEN ACTIVE.**
+**P6 — HUMAN REVIEW GATE.**
 
 R2 is locked by:
 `docs/03-brand/workbench/divinivid/generation/DIVINIVID_FOUNDATIONS_LOCK_V1.md`.
@@ -332,6 +331,12 @@ Formalization completed:
 System Formalization Gate:
 `PASS / HUMAN APPROVED`.
 
-P6 is now authorized as an identity-translation test across five representative digital surfaces.
+P6 implementation and internal QA are complete.
+
+Human review artifact:
+`docs/03-brand/workbench/divinivid/evaluations/DIVINIVID_P6_HUMAN_REVIEW_GATE_V1.md`.
+
+On human PASS:
+`P7_APPLICATION_STRESS`.
 
 P6 remains explicitly separate from final Website Strategy/IA and full website design.
