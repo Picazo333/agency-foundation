@@ -305,7 +305,11 @@ formalization_cluster:
   system_formalization_gate: docs/03-brand/workbench/divinivid/evaluations/DIVINIVID_SYSTEM_FORMALIZATION_GATE_V1.md
 
 p6_digital_behavior:
-  status: ACTIVE
+  status: BLOCKED_RUNTIME_ASSET_BINDING
+  execution_evidence: docs/03-brand/workbench/divinivid/generation/P6_DIGITAL_BRAND_SPECIMEN_EVIDENCE_V1.md
+  current_specimen_root: "34:2"
+  structural_validation: PASS
+  asset_binding_status: BLOCKED_RUNTIME_INTEGRATION
   prior_probe_status: QUARANTINED_STRUCTURAL_PROBE
   positive_reference_authority: PENDING_NEW_VALID_P6_EVIDENCE
   figma:
@@ -375,11 +379,10 @@ r1_signature_system:
     survivor_completion: CONSUMED_NORMAL_R1_DOD
 
 active_gate:
-  current: P6_DIGITAL_BRAND_SPECIMEN
+  current: P6_CANONICAL_ASSET_BINDING_BLOCKER
   next_authorized_action: >
-    Build one integrated Digital Brand Specimen across homepage, case-study, research/editorial,
-    service/system-explanation and mobile surfaces using locked R1-R5 authority and production foundations.
-    Validate responsive translation, hierarchy, long-form reading, controlled density, accessibility and representative motion/reduced-motion behavior.
+    Bind the canonical B1, M1-B and Core PNG assets to Figma nodes 34:48, 34:69 and 34:75,
+    reuse B1 on 34:129, then resume screenshot-based visual QA. Do not substitute proxies or generated lookalikes.
   automatic_next_generation: false
 
 tool_discipline:
