@@ -1,8 +1,8 @@
 ---
-status: build_in_progress_blocked_asset_binding
+status: ready_for_human_review
 owner: brand
 created: 2026-09-23
-updated: 2026-09-23
+updated: 2026-09-24
 authority: p6_execution_evidence
 human_approved: false
 phase: P6_DIGITAL_BRAND_SPECIMEN
@@ -17,15 +17,13 @@ depends_on:
 
 ## Current status
 
-`BUILD_IN_PROGRESS / BLOCKED_RUNTIME_ASSET_BINDING`
+`IMPLEMENTATION_COMPLETE / INTERNAL_QA_PASS / PENDING_HUMAN_REVIEW`
 
-The deterministic Figma composition is built and structurally valid.
+The integrated Digital Brand Specimen is built with canonical assets, production typography and the locked R1–R5 system.
 
-P6 is **not** complete and is **not** ready for human visual PASS until the canonical raster assets are actually bound and post-binding visual QA passes.
+P6 is not promoted to positive Brand authority until the human creative owner passes the P6 review gate.
 
-No proxy image may be used to bypass this block.
-
-## Figma
+## Figma authority
 
 File:
 `bqcKhEQHs4EEQgnn6lNU8O`
@@ -39,140 +37,149 @@ Current specimen root:
 Root size:
 `2784 × 2658`
 
-### Required surfaces
+Direct review URL:
+`https://www.figma.com/design/bqcKhEQHs4EEQgnn6lNU8O/?node-id=34-2`
+
+## Required surfaces
 
 | Surface | Node | Status |
 |---|---|---|
-| Homepage fragment | `34:18` | BUILT |
-| Case-study fragment | `34:50` | BUILT |
-| Research/editorial fragment | `34:72` | BUILT |
-| Service/system-explanation fragment | `34:86` | BUILT |
-| Mobile translation | `34:117` | BUILT |
-| Temporal + accessibility proof | `34:138` | BUILT |
+| Homepage fragment | `34:18` | COMPLETE |
+| Case-study fragment | `34:50` | COMPLETE |
+| Research/editorial fragment | `34:72` | COMPLETE |
+| Service/system-explanation fragment | `34:86` | COMPLETE |
+| Mobile translation | `34:117` | COMPLETE |
+| Temporal + accessibility proof | `34:138` | COMPLETE |
 
 ## Locked implementation inputs actually used
 
 Typography:
-- Newsreader Regular / SemiBold;
-- IBM Plex Sans Regular / Medium / SemiBold.
+- Newsreader;
+- IBM Plex Sans.
 
 Structural signature:
-- exact clone of selected S-BE Figma construction from R1 node `22:99`;
+- exact clone of selected S-BE Figma construction from R1;
 - no reconstructed or approximate logo.
 
 Color:
 - only R2 locked production values.
 
-No third font family or palette primitive was introduced.
+No third font family, second palette or new image family was introduced.
 
-## Structural validation
+## Canonical asset binding — final verified state
 
-Read-back audit after composition:
+### Homepage
+Target:
+`34:48 — P6/IMG/HOME/B1`
 
-- text nodes: `101`;
-- font families present: exactly `Newsreader` and `IBM Plex Sans`;
-- invalid/nonpositive text bounds: `0`;
-- text wider than parent: `0`;
-- detected vertical text overflow: `0`;
-- all six required proof surfaces are present;
-- service/system-explanation intentionally proves zero-image dependency;
-- temporal proof includes `OBSCURE -> MISREGISTER -> REVEAL -> RESOLVE`;
-- reduced-motion state preserves resolved hierarchy and content availability.
+Asset:
+`BASE_LOCK_B1 Route 3+4`
+
+Verified source dimensions:
+`1672 × 941`
+
+Verified image hash:
+`6bd7451eb0900c36f22e56f3b6d2ea9c9b53e198`
+
+### Case Study
+Target:
+`34:69 — P6/IMG/CASE/M1B`
+
+Asset:
+`M1-B Topografía Orgánica`
+
+Verified source dimensions:
+`1145 × 1374`
+
+Verified image hash:
+`a695b8f827fa3bc867495ce2b72aa6e12b0becbb`
+
+### Research / Editorial
+Target:
+`34:75 — P6/IMG/RESEARCH/CORE`
+
+Asset:
+`DIVINIVID_CORE_LOCK_V1`
+
+Verified source dimensions:
+`1672 × 941`
+
+Verified image hash:
+`5d6063850b9799112a725bc7f009c59dcd1f0602`
+
+### Mobile
+Target:
+`34:129 — P6/IMG/MOBILE/B1`
+
+Asset:
+`BASE_LOCK_B1 Route 3+4`
+
+Verified image hash:
+`6bd7451eb0900c36f22e56f3b6d2ea9c9b53e198`
+
+Homepage and Mobile therefore reuse the same canonical B1 source.
+
+## Resolved placement defect
+
+The manual asset-placement pass initially caused:
+- M1-B to appear in the Homepage slot;
+- a duplicate M1-B node to be inserted directly into the Case Study auto-layout;
+- the intended Case image target to remain empty;
+- the original Case visual container to be pushed outside its intended width.
+
+Bounded repair:
+1. rebound canonical B1 to Homepage;
+2. rebound M1-B to the intended Case target;
+3. removed only the stray duplicate node;
+4. restored Case Body to exactly two intended children: Copy + Visual.
+
+No typography, text, color, layout contract or prior lock was reopened.
+
+## Final deterministic QA
+
+Read-back after repair:
+
+- four intended raster image nodes inside the specimen;
+- Homepage asset = B1;
+- Case asset = M1-B;
+- Research asset = Core;
+- Mobile asset = same B1 as Homepage;
+- font families present = exactly Newsreader + IBM Plex Sans;
+- invalid/nonpositive text bounds = 0;
+- horizontal text overflow = 0;
+- vertical text overflow = 0;
+- Case Body children = only `Case / Copy` + `Case / Visual`;
+- no stray raster node remains inside the specimen.
 
 Structural result:
 `PASS`.
 
-## Canonical assets selected for binding
+Visual inspection result:
+`PASS_INTERNAL`.
 
-### Homepage + mobile
-`BASE_LOCK_B1 Route 3+4`
+The integrated screenshot shows:
+- no Case Study horizontal spill;
+- stable desktop hierarchy across dark and ivory surfaces;
+- image-independent Service/System surface;
+- mobile identity continuity;
+- temporal/reduced-motion proof preserved;
+- no generic dashboard/product semantics;
+- no obvious dark-luxury collapse.
 
-Library:
-- `/DIVINIVID/visual-generation/locks-v2/DIVINIVID_BASE_LOCK_B1_ROUTE_3_PLUS_4.png`
-- library_file_id: `libfile_51dcc53f7bdc8191b3194ccccbecde70`
-- source size: `1672 × 941`
+## Historical runtime blocker
 
-Target nodes:
-- homepage: `34:48`
-- mobile: `34:129`
+The prior `BLOCKED_RUNTIME_ASSET_BINDING` state is resolved.
 
-### Case study
-`M1-B Topografía Orgánica`
-
-Library:
-- `/DIVINIVID/visual-generation/prelock-v1/M1-B_TOPOGRAFIA_ORGANICA_WORKING_ANCHOR.png`
-- library_file_id: `libfile_e76f5704c1d881918113f90d8bc6a0b6`
-- source size: `1145 × 1374`
-
-Target:
-- `34:69`
-
-### Research/editorial
-`DIVINIVID_CORE_LOCK_V1`
-
-Library:
-- `/DIVINIVID/visual-generation/locks-v2/DIVINIVID_CORE_LOCK_V1.png`
-- library_file_id: `libfile_278d9c1a6e0481919c7966d0b0c88060`
-- source size: `1672 × 941`
-
-Target:
-- `34:75`
-
-## Current blocker classification
-
-`RUNTIME / INTEGRATION`
-
-Not:
-- specification failure;
-- input/context failure;
-- authority failure;
-- conditioning failure;
-- generative capability failure;
-- Figma design capability failure.
-
-The Figma MCP asset path requires raw image bytes to be HTTP-POSTed to short-lived upload URLs.
-
-The current execution container has no outbound network path for that POST.
-
-Firecrawl browser execution was checked as a potential network bridge but is unavailable due to exhausted credits.
-
-The assets themselves are available and materialized correctly.
-
-## Why execution stops here
-
-Substituting:
-- old P6 proxy imagery;
-- thumbnails;
-- newly generated lookalikes;
-- approximate vector reconstructions
-
-would repeat the exact failure already quarantined in `P6_STRUCTURAL_PROBE_V0`.
-
-The correct action is to bind the actual canonical files, then resume deterministic QA.
-
-## Exact unblock
-
-Bind the three canonical PNGs to:
-
-- B1 → `34:48`;
-- M1-B → `34:69`;
-- Core → `34:75`;
-
-and reuse the B1 image fill on:
-- `34:129`.
-
-After binding:
-
-1. structural read-back of all image fills;
-2. screenshot of `34:2`;
-3. visual QA for crop, hierarchy, clipping and density;
-4. at most one targeted repair for a named defect;
-5. update this evidence to `READY_FOR_HUMAN_REVIEW`;
-6. advance to `P6_HUMAN_REVIEW_GATE`.
+It was an integration limitation, not a Brand or design failure. The user placed the canonical assets into the document, after which deterministic repair and QA became possible.
 
 ## Promotion rule
 
-Current specimen is:
-`IMPLEMENTATION_IN_PROGRESS`.
+Current specimen:
+`READY_FOR_HUMAN_REVIEW`.
 
-It is not positive Brand authority yet.
+Until human PASS:
+- it is evidence, not final positive Brand authority;
+- P7 remains blocked.
+
+Human gate:
+`docs/03-brand/workbench/divinivid/evaluations/DIVINIVID_P6_HUMAN_REVIEW_GATE_V1.md`.
