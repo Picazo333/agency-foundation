@@ -458,7 +458,7 @@ Outcome:
 
 ## 9. P6 — Digital Brand Specimen
 
-**Execution status: ACTIVE / AUTHORIZED (2026-09-23).**
+**Execution status: IMPLEMENTATION COMPLETE / INTERNAL QA PASS / HUMAN REVIEW PENDING (2026-09-24).**
 
 ### Authorization condition
 R0 complete, R1 closed, R2 PASS, and the R3/R4/R5 Formalization Cluster passes the System Formalization Gate.
@@ -672,20 +672,21 @@ Stop and diagnose rather than continuing when:
 
 ## 16. Immediate next exact action
 
-`P6_DIGITAL_BRAND_SPECIMEN`.
-
-System Formalization Gate:
-`COMPLETE_PASS / HUMAN_APPROVED`.
-
-Build one integrated specimen across:
-1. homepage fragment;
-2. case-study fragment;
-3. research/editorial fragment;
-4. service/system-explanation fragment;
-5. mobile translation.
-
-Use locked R1-R5 authority.
-Do not design final Website IA, full site, production component library or v0/code.
-
-After validated P6 evidence:
 `P6_HUMAN_REVIEW_GATE`.
+
+P6 specimen:
+- implementation complete;
+- canonical assets verified;
+- structural QA PASS;
+- internal visual QA PASS;
+- Figma root `34:2`.
+
+Human decision:
+- `PASS` — close P6 and authorize P7 Application Stress;
+- `MUTATE: <specific P6 translation failure>` — bounded correction only.
+
+Do not reopen R1-R5 by default.
+Do not start Website Strategy/IA, production design system or v0/code.
+
+Gate:
+`docs/03-brand/workbench/divinivid/evaluations/DIVINIVID_P6_HUMAN_REVIEW_GATE_V1.md`.
