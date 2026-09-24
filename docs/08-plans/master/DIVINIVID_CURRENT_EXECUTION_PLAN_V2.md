@@ -311,7 +311,7 @@ No speculative component library.
 
 ## 6. R3 — Composition Grammar
 
-**Cluster status: ACTIVE (2026-09-23).**
+**Cluster status: SPECIFICATION COMPLETE / CROSS-CONSISTENCY PASS (2026-09-23).**
 
 R3 is one member of the active R3/R4/R5 Formalization Cluster. Work may interleave with R4 and R5, but this specification retains independent ownership and DoD.
 
@@ -341,6 +341,8 @@ These are modes inside one identity, not separate routes.
 ### Output
 `DIVINIVID_COMPOSITION_GRAMMAR_V1`
 
+**Execution status: SPECIFICATION COMPLETE (2026-09-23).**
+
 ### DoD
 A capable designer can produce a recognizable DIVINIVID composition from rules without copying the anchor image.
 
@@ -369,6 +371,8 @@ Formalize the visual matter already discovered into controlled families.
 
 ### Output
 `DIVINIVID_IMAGE_ILLUSTRATION_LANGUAGE_V1`
+
+**Execution status: SPECIFICATION COMPLETE (2026-09-23).**
 
 ### DoD
 Future asset generation no longer needs to rediscover what counts as native DIVINIVID matter.
@@ -401,6 +405,8 @@ and identify whether any original behavior is genuinely missing.
 ### Output
 `DIVINIVID_TEMPORAL_IDENTITY_V1`
 
+**Execution status: SPECIFICATION COMPLETE (2026-09-23).**
+
 ### DoD
 - roles and allowed contexts defined;
 - reduced-motion logic stated;
@@ -422,6 +428,11 @@ Formalize approved evidence first.
 New generation/tool execution is permitted only when a named unresolved gap cannot be closed from existing authority.
 
 ### Cross-Consistency Audit
+**Execution status: COMPLETE / PASS (2026-09-23).**
+
+Artifact:
+`docs/03-brand/workbench/divinivid/evaluations/DIVINIVID_R3_R4_R5_CROSS_CONSISTENCY_AUDIT_V1.md`.
+
 Before any of R3/R4/R5 can collectively unlock P6, test:
 - composition <-> image;
 - composition <-> motion;
@@ -430,6 +441,11 @@ Before any of R3/R4/R5 can collectively unlock P6, test:
 Record concrete incompatibilities, not taste disagreements.
 
 ### System Formalization Gate
+**Execution status: READY FOR HUMAN REVIEW (2026-09-23).**
+
+Gate artifact:
+`docs/03-brand/workbench/divinivid/evaluations/DIVINIVID_SYSTEM_FORMALIZATION_GATE_V1.md`.
+
 P6 is authorized only if:
 - R3 specification is usable;
 - R4 family contracts are usable;
@@ -654,28 +670,18 @@ Stop and diagnose rather than continuing when:
 
 ## 16. Immediate next exact action
 
-`R2B_COLOR_MAPPING_HUMAN_REVIEW`.
+`SYSTEM_FORMALIZATION_GATE_HUMAN_REVIEW`.
 
-Typography is now locked inside R2:
-- display serif: **Newsreader**;
-- operational sans: **IBM Plex Sans**.
-
-Evidence:
-- Figma comparison node `26:3`;
-- `R2B_FOUNDATIONS_FINALIST_COMPARISON_EVIDENCE_V1.md`.
-
-Review only the existing candidate production color mapping.
+Completed:
+- R3 Composition Grammar specification;
+- R4 Image / Illustration Language specification;
+- R5 Temporal Identity mapping;
+- Cross-Consistency Audit: PASS.
 
 Human gate:
-- `PASS`;
-- or identify one concrete role/token failure for bounded mutation.
+- `PASS` — authorize P6 Digital Brand Specimen;
+- or `MUTATE: <specific R3/R4/R5 contract failure>` — bounded correction only.
 
-Do not reopen typography.
-Do not generate a second aesthetic palette by default.
+P6 remains blocked until human PASS.
 
-If color passes:
-- create `DIVINIVID_FOUNDATIONS_LOCK_V1`;
-- close R2;
-- enter R3/R4/R5 Formalization Cluster.
-
-Do not start the cluster before this gate closes R2.
+Do not reopen R1/R2 or generate new visual families by default.
