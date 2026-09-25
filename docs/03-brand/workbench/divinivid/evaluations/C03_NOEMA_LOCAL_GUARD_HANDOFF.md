@@ -1,10 +1,10 @@
 # C03 — Noema visual reference local guard
 
-Status: `PARTIAL`. Baseline: `4cfb2df` on `main`. Scope is limited to this evaluations directory. P6 remains at `PENDING_HUMAN_REVIEW`; this change does not authorize P7 or a generation call.
+Status: `PARTIAL`. Baseline: `4cfb2df` on `main`. Scope is limited to this evaluations directory, `AGENTS.md` routing and `.github/workflows/noema.yml`. P6 remains at `PENDING_HUMAN_REVIEW`; this change does not authorize P7 or a generation call.
 
 ## Work order
 
-Objective: implement a local preflight check that distinguishes an approved reference being available from being attached to the actual image request. Read `AGENTS.md`, `noema.project.yaml`, the current generation state, the active Brand gate and the September 22 conditioning postmortem. Allowed writes: the guard, its synthetic tests and this handoff. Forbidden effects: generate assets, edit canon, change the generation state, issue visual approval, or promote a Noema harvest candidate.
+Objective: implement a local preflight check that distinguishes an approved reference being available from being attached to the actual image request. Read `AGENTS.md`, `noema.project.yaml`, the current generation state, the active Brand gate and the September 22 conditioning postmortem. Allowed writes: the guard, its synthetic tests, this handoff, entrypoint routing and Noema CI. Forbidden effects: generate assets, edit canon, change the generation state, issue visual approval, or promote a Noema harvest candidate.
 
 ## Evidence and checks
 

@@ -6,6 +6,7 @@ Read, in this order:
 1. this file;
 2. `noema.project.yaml`;
 3. the current task/work order.
+For image-generation calls, run the local reference-binding preflight described in `docs/03-brand/workbench/divinivid/evaluations/REFERENCE_BINDING_LOCAL_GUARD.md` before treating a request as Brand evidence.
 
 The manifest owns exact mode-to-file context routing. Do not reconstruct the project by reading the whole repository by default.
 
