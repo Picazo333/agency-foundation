@@ -235,12 +235,15 @@ Persistent lessons remain active:
 ### 5. Noema adoption
 Selective RC0 migration remains historical/current baseline until the upcoming Noema vNext transversal migration is executed.
 
-Pre-vNext migration checkpoint:
-`docs/09-handoffs/DIVINIVID_CHECKPOINT_PRE_NOEMA_VNEXT_2026-09-24.md`.
+Pre-vNext migration checkpoints:
+- state freeze: `docs/09-handoffs/DIVINIVID_CHECKPOINT_PRE_NOEMA_VNEXT_2026-09-24.md`;
+- scope clarification: `docs/09-handoffs/AGENCY_SCOPE_SPLIT_CHECKPOINT_PRE_NOEMA_VNEXT_2026-09-25.md`.
 
-Split recovery contexts:
-- General Program: `docs/09-handoffs/DIVINIVID_CONTEXT_HANDOFF_GENERAL_PROGRAM_2026-09-24.md`;
-- Visual Execution: `docs/09-handoffs/DIVINIVID_CONTEXT_HANDOFF_VISUAL_EXECUTION_P6_2026-09-24.md`.
+Active split recovery contexts:
+- Agency Ecosystem: `docs/09-handoffs/AGENCY_ECOSYSTEM_CONTEXT_HANDOFF_2026-09-25.md`;
+- Brand Identity -> Vertical Slice: `docs/09-handoffs/DIVINIVID_CONTEXT_HANDOFF_BRAND_IDENTITY_VERTICAL_SLICE_2026-09-25.md`.
+
+The narrower 2026-09-24 General Program / Visual Execution handoffs are superseded for new-conversation recovery.
 
 Noema governs context/conformance boundaries but does not own DIVINIVID visual canon.
 
