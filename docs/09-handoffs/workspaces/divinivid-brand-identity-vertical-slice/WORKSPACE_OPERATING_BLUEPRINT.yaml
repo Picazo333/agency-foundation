@@ -1,0 +1,313 @@
+version: "1.0.0"
+artifact: WORKSPACE_OPERATING_BLUEPRINT
+status: active
+created: 2026-09-25
+owner: brand
+authority: operating_scope_contract
+derived_from_skill:
+  id: workspace-operating-contract-orchestrator
+  version: "1.0.0"
+  source_repo: Picazo333/skill-foundry
+
+conversation:
+  proposed_name: "DIVINIVID · Brand Identity → Final Lock → Vertical Slice"
+  conversation_id: "AGY-BRAND-DIVINIVID-ID-VSLICE-01"
+  taxonomy:
+    portfolio: AGENCY_ECOSYSTEM
+    product_brand: DIVINIVID
+    workstream: BRAND
+    domain: BRAND_IDENTITY
+    lifecycle: PRE_LOCK_TO_PROTOTYPE
+    scope: FINAL_EXPRESSION_TO_VERTICAL_SLICE
+    mode: EXECUTION_WITH_HUMAN_GATES
+
+objective:
+  primary: >
+    Finish the DIVINIVID identity from the current P6 human gate through Final Expression Lock,
+    then build exactly one bounded high-fidelity responsive Brand Vertical Slice Prototype that
+    demonstrates the finished identity in use.
+  terminal_state:
+    - P6 human-adjudicated
+    - P7 Application Stress complete
+    - P8 Final Pre-Lock Synthesis complete
+    - Independent Brand Red Team complete
+    - Human Final Gate PASS
+    - DIVINIVID_FINAL_EXPRESSION_LOCK_V1 exists and is human-approved
+    - one high-fidelity responsive Brand Vertical Slice Prototype exists
+    - visual QA PASS
+    - structural QA PASS
+    - final handoff separates Brand canon, prototype-only decisions, unvalidated business assumptions, and downstream Agency Ecosystem dependencies
+
+workspace_classification:
+  type: bounded_brand_completion_workstream
+  duration: multi_stage
+  complexity: high
+  risk: medium
+  collaboration_pattern: human_gated_single_workstream
+  side_effect_profile: repo_documentation_plus_design_artifacts
+  external_effects: limited
+  irreversible_decisions:
+    - human promotion to DIVINIVID_FINAL_EXPRESSION_LOCK_V1
+  current_gate: P6_HUMAN_REVIEW_GATE
+
+authoritative_sources:
+  priority:
+    - docs/03-brand/workbench/divinivid/generation/CURRENT_GENERATION_STATE.yaml
+    - docs/08-plans/master/DIVINIVID_CURRENT_EXECUTION_PLAN_V2.md
+    - docs/03-brand/workbench/divinivid/BRAND_STATE.md
+    - docs/03-brand/workbench/divinivid/evaluations/DIVINIVID_P6_HUMAN_REVIEW_GATE_V1.md
+    - docs/03-brand/workbench/divinivid/generation/P6_DIGITAL_BRAND_SPECIMEN_EVIDENCE_V1.md
+    - docs/02-strategy/BRAND_BUSINESS_INTERFACE.md
+    - docs/02-strategy/WEB_BUSINESS_REQUIREMENTS.md
+    - docs/09-handoffs/AGENCY_SCOPE_SPLIT_CHECKPOINT_PRE_NOEMA_VNEXT_2026-09-25.md
+    - docs/09-handoffs/DIVINIVID_CONTEXT_HANDOFF_BRAND_IDENTITY_VERTICAL_SLICE_2026-09-25.md
+  representation_layer:
+    - PROJECT_STATE.md
+    - noema.project.yaml
+  invariant: >
+    Noema/context artifacts may represent and recover scope but do not own or supersede human-approved
+    DIVINIVID visual authority.
+
+current_state:
+  visual_cursor: P6_HUMAN_REVIEW_GATE
+  p6:
+    implementation: COMPLETE
+    canonical_assets: VERIFIED
+    structural_qa: PASS
+    internal_visual_qa: PASS
+    human_outcome: PENDING
+    figma_root: "34:2"
+  material_visual_delta_since_scope_checkpoint: NONE
+  representation_delta_since_scope_checkpoint:
+    - active Agency Ecosystem vs Brand Identity -> Vertical Slice split registered in PROJECT_STATE.md
+    - split recovery sources registered in noema.project.yaml
+
+frozen_visual_authority:
+  reopen_rule: "named material failure + explicit human authority"
+  items:
+    - Core
+    - B1
+    - B0
+    - M1-B
+    - P1
+    - P2
+    - P3
+    - P4
+    - P5
+    - R1_S-BE
+    - R2_Newsreader_plus_IBM_Plex_Sans_plus_production_color_mapping
+    - R3_Composition_Grammar
+    - R4_Image_Illustration_Language
+    - R5_Temporal_Identity
+    - Cross_Consistency_PASS
+    - System_Formalization_Gate_PASS
+
+owned_stages:
+  A:
+    name: Close P6
+    gate: HUMAN
+    allowed_outcomes:
+      - PASS
+      - "MUTATE:<one concrete P6 translation failure>"
+  B:
+    name: P7 Application Stress
+    fidelity: minimum_diagnostic
+    contexts:
+      - agency_web
+      - proposal_sales
+      - case_study_editorial
+      - social_campaign
+      - clinical_B2B_sensitive
+    stressors:
+      - ivory_light_field
+      - minimal_crimson
+      - high_information_density
+      - minimal_imagery
+      - low_quality_reproduction
+  C:
+    name: P8 Final Pre-Lock Synthesis
+    output: DIVINIVID_FINAL_EXPRESSION_SPEC_V1
+    evidence_policy: approved_evidence_only
+  D:
+    name: Independent Brand Red Team
+    attack_surfaces:
+      - generic_dark_luxury
+      - over_medievalization
+      - medical_brand_collapse
+      - hero_art_dependency
+      - dense_data_usability
+      - accessibility
+      - ES_EN_parity
+      - conservative_B2B_trust
+      - cheap_reproducibility_maintainability
+      - AI_slop_drift
+  E:
+    name: Human Final Gate
+    authority: HUMAN_OWNER_ONLY
+    output_on_pass: DIVINIVID_FINAL_EXPRESSION_LOCK_V1
+  F:
+    name: Brand Vertical Slice Prototype
+    prerequisite: DIVINIVID_FINAL_EXPRESSION_LOCK_V1
+    count: 1
+    fidelity: high_fidelity_brand_validation
+    prototype_only: true
+
+non_goals:
+  - MVS
+  - production_website
+  - final_IA
+  - validated_marketing_copy
+  - backend
+  - CRM
+  - analytics
+  - production_code
+  - full_design_system
+  - full_Figma_production_system
+  - business_model_validation
+  - ICP_freeze
+  - offer_or_pricing_freeze
+
+prototype_required_proof:
+  - final_DIVINIVID_signature
+  - plain_register
+  - expressive_full_register
+  - desktop
+  - mobile
+  - header_navigation
+  - hero_orientation
+  - method_evidence_section
+  - service_system_explanation
+  - dense_report_data_evidence_module
+  - controlled_image_matter_event
+  - prototype_CTA
+  - representative_P5_motion
+  - reduced_motion_equivalent
+  - dark_behavior
+  - ivory_behavior
+  - accessible_hierarchy
+
+truthfulness_constraints:
+  never_fake:
+    - clients
+    - testimonials
+    - outcomes
+    - validated_metrics
+    - validated_ICP_claims
+    - validated_pricing
+  provisional_copy:
+    allowed: true
+    must_be_marked_provisional: true
+
+business_interface_constraints:
+  authority: stress_input_not_brand_canon
+  requirements:
+    - rigor_before_creativity
+    - plain_and_full_registers_native
+    - dense_evidence_legible
+    - no_commissioned_imagery_dependency
+    - conservative_B2B_viability
+    - no_AI_signalling
+    - founder_maintainable
+    - ES_EN_parity
+    - accessibility_as_brand_constraint
+
+operating_needs:
+  governance:
+    route: REUSE
+    mechanism:
+      - repo_authority_order
+      - current_generation_state
+      - current_execution_plan
+      - active_handoff
+  requirements_acceptance:
+    route: REUSE
+    mechanism:
+      - DIVINIVID_P6_HUMAN_REVIEW_GATE_V1
+      - DIVINIVID_CURRENT_EXECUTION_PLAN_V2
+      - active_vertical_slice_handoff
+  human_gate_authority:
+    route: REUSE
+    mechanism:
+      - existing P6 human gate
+      - existing Final Human Gate rule
+    note: no new authority layer required
+  schemas_interfaces:
+    route: NO_SKILL
+    rationale: no new cross-system interface is required for the current gate
+  execution:
+    route: REUSE
+    mechanism:
+      - brand workstream staged plan
+      - minimum_necessary_mutation
+      - tool_execution_contracts
+  integrations_tools:
+    route: REUSE
+    verified:
+      - GitHub repository read_write access in current conversation
+      - canonical Figma artifact identity from repo evidence
+    unverified:
+      - Figma connector mutation capability in current conversation
+    rule: capability_before_executor
+  context_recovery:
+    route: REUSE
+    mechanism:
+      - active handoff
+      - PROJECT_STATE.md
+      - noema.project.yaml
+      - this workspace blueprint
+      - this workspace brief
+    escalation: checkpoint-resume-architect only if current durable recovery becomes insufficient
+  evals:
+    route: REUSE
+    mechanism:
+      - P6 human criteria
+      - P7 falsification matrix
+      - P8 integrity_viability synthesis
+      - Independent Brand Red Team
+  security:
+    route: NO_SKILL
+    rationale: no new secrets, production access, destructive mutation or privileged external action is in scope
+  observability:
+    route: REUSE
+    mechanism:
+      - repo state artifacts
+      - Figma node IDs
+      - QA evidence docs
+      - human gate outcomes
+  completion_verification:
+    route: REUSE
+    mechanism:
+      - final lock existence + human approval
+      - one-slice count invariant
+      - visual QA PASS
+      - structural QA PASS
+      - final handoff boundary audit
+
+tool_policy:
+  governing_contract: docs/03-brand/workbench/divinivid/generation/TOOL_EXECUTION_CONTRACTS_V1.md
+  deterministic_first: true
+  new_visual_generation:
+    default: prohibited_unless_named_gap
+  figma:
+    before_final_lock: deterministic_validation_only
+    after_final_lock: bounded_vertical_slice_allowed
+  production_code: prohibited
+  plan_deviation:
+    required_if_vertical_slice_before_final_lock: true
+    approval: HUMAN
+
+single_next_authorized_visual_action:
+  action: HUMAN_REVIEW_P6
+  target: "Figma root 34:2 — P6 — DIGITAL BRAND SPECIMEN V1"
+  allowed_decision:
+    - PASS
+    - "MUTATE:<one concrete translation failure>"
+  blocked_until_decision:
+    - P7_APPLICATION_STRESS
+
+stop_condition:
+  immediate: >
+    Stop visual execution at the P6 human gate until the human owner returns PASS or one bounded MUTATE reason.
+  terminal: >
+    Stop this conversation after Final Expression Lock, one high-fidelity Brand Vertical Slice Prototype,
+    QA PASS, and final boundary handoff. Do not continue into production website/system implementation.
