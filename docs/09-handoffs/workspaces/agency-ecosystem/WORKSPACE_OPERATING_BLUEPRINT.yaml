@@ -1,0 +1,575 @@
+version: "1.0.0"
+artifact: WORKSPACE_OPERATING_BLUEPRINT
+status: active
+created: 2026-09-25
+owner: meta
+authority: operating_scope_contract
+derived_from_skill:
+  id: workspace-operating-contract-orchestrator
+  version: "1.0.0"
+  source_repo: Picazo333/skill-foundry
+
+conversation:
+  proposed_name: "DIVINIVID · Agency Ecosystem · Strategy → Validation → Operations"
+  conversation_id: "AGY-ECOSYSTEM-ORCH-01"
+  taxonomy:
+    portfolio: AGENCY_ECOSYSTEM
+    product_brand: DIVINIVID
+    workstream: AGENCY_ECOSYSTEM
+    domain: BUSINESS_OPERATING_SYSTEM
+    lifecycle: PRE_EVIDENCE_TO_REPEATABLE_DELIVERY
+    scope: TRANSVERSAL_AGENCY_ORCHESTRATION
+    mode: VALIDATION_FIRST_WITH_HUMAN_GATES
+  skill_taxonomy:
+    family: cross-functional
+    capability_class: orchestrator
+    scope_class: transversal
+  taxonomy_note: >
+    Conversation taxonomy is local descriptive metadata. It reuses the existing Skill Foundry
+    cross-functional/orchestrator/transversal concepts and does not mutate Skill Foundry taxonomy.
+
+objective:
+  primary: >
+    Govern the complete agency ecosystem from current authoritative repo state, preserve the boundary
+    between canon, proposal and evidence, keep the commercial critical path anchored to external
+    reality, and coordinate Brand, validation, delivery, tooling and technical dependencies without
+    allowing parallel work to substitute for buyer contact, payment, delivery or runtime evidence.
+  current_outcome_target: >
+    Move from zero recorded buyer evidence to decision-grade market evidence with the minimum
+    credibility and operating support required to make contact safely.
+  terminal_direction:
+    - validated buyer/problem evidence
+    - paid demand evidence
+    - delivery evidence
+    - proof/case-study evidence
+    - calibrated offer/pricing/economics
+    - repeatable acquisition and delivery
+    - production business systems activated only when their gates are satisfied
+
+workspace_classification:
+  type: agency_ecosystem_control_and_execution_scope
+  duration: long_running
+  complexity: high
+  risk: medium
+  collaboration_pattern: multi_workstream_human_gated
+  side_effect_profile: repo_documentation_plus_external_commercial_actions
+  external_effects:
+    - buyer_outreach
+    - sales
+    - payments
+    - client_delivery
+    - legal_accounting
+    - production_runtime
+  current_commercial_gate: PRE_BUYER_EVIDENCE
+
+authority:
+  priority:
+    - current_authoritative_repo_state
+    - approved_ADRs_and_canon
+    - explicit_current_human_statement
+    - current_evidence
+    - migration_checkpoints
+    - workbench_and_proposals
+    - historical_chat
+  invariants:
+    - merged_proposal_is_not_automatically_agency_decision
+    - noema_governs_context_and_conformance_not_agency_domain_decisions
+    - divinivid_is_one_workstream_inside_agency_ecosystem
+    - external_evidence_outranks_further_desk_planning_when_the_question_requires_reality
+    - capability_before_executor
+    - configured_is_not_verified
+    - plan_is_not_execution
+
+authoritative_sources:
+  primary:
+    - docs/00-meta/source-of-truth.md
+    - docs/00-meta/operating-model.md
+    - docs/08-plans/master/META_PLAN.md
+    - PROJECT_STATE.md
+    - docs/07-decisions/index.md
+    - noema.project.yaml
+    - docs/09-handoffs/AGENCY_SCOPE_SPLIT_CHECKPOINT_PRE_NOEMA_VNEXT_2026-09-25.md
+    - docs/09-handoffs/AGENCY_ECOSYSTEM_CONTEXT_HANDOFF_2026-09-25.md
+  workbench_inputs:
+    - docs/08-plans/master/AGENCY_MASTER_PLAN.md
+    - docs/08-plans/master/30_60_90_180_365_ROADMAP.md
+    - docs/06-validation/FIELD_VALIDATION_PLAN.md
+    - docs/06-validation/field-kit/00_README.md
+    - docs/06-validation/field-kit/16_VALIDATION_LAUNCH_CHECKLIST.md
+    - docs/02-strategy/WEB_BUSINESS_REQUIREMENTS.md
+    - docs/04-operations/tooling/TOOLING_AUTOMATION_REQUIREMENTS.md
+  rule: >
+    Workbench artifacts can supply hypotheses, instruments and execution candidates. They do not
+    become agency decisions without the authority required by repo governance.
+
+decision_state:
+  approved_adrs:
+    - ADR-0001
+    - ADR-0002
+    - ADR-0003
+    - ADR-0004
+    - ADR-0005
+    - ADR-0011
+    - ADR-0012
+    - ADR-0013
+    - ADR-0014
+    - ADR-0015
+  proposed_adrs:
+    - ADR-0006
+    - ADR-0007
+    - ADR-0008
+    - ADR-0009
+    - ADR-0010
+  proposed_meaning:
+    ADR-0006: diagnostic_led_vertical_productized_studio_working_thesis
+    ADR-0007: two_segment_75_25_validation_portfolio
+    ADR-0008: paid_diagnostic_as_mandatory_entry_offer
+    ADR-0009: defer_pricing_freeze_until_willingness_to_pay_evidence
+    ADR-0010: AI_as_delivery_mechanism_not_category
+
+current_evidence:
+  buyer_interviews_recorded: 0
+  qualified_buyer_conversations_recorded: 0
+  target_accounts_recorded: 0
+  price_signals_recorded: 0
+  sales_attempts_recorded: 0
+  cleared_payments_recorded: 0
+  basis:
+    - docs/06-validation/interviews_contains_only_README
+    - docs/06-validation/field-kit/data/interview_index.csv_is_header_only
+    - docs/06-validation/field-kit/data/target_account_ledger.csv_is_header_only
+    - docs/06-validation/field-kit/data/price_signal_log.csv_is_header_only
+    - docs/06-validation/field-kit/data/sales_attempt_log.csv_is_header_only
+    - docs/06-validation/field-kit/data/resonance_log.csv_is_header_only
+  conclusion: >
+    Commercial uncertainty remains externally evidence-dependent. More strategic polish cannot
+    answer whether buyers volunteer the problem, will pay, or can be served repeatably.
+
+agency_ecosystem_state_map:
+  - workstream: repo_governance_and_authority
+    state: CANON_APPROVED
+    authority: canon
+    blocker: none_for_current_reconciliation
+    next_decision: none
+    evidence:
+      - docs/00-meta/source-of-truth.md
+      - docs/00-meta/operating-model.md
+      - docs/08-plans/master/META_PLAN.md
+      - docs/07-decisions/index.md
+
+  - workstream: strategy_thesis_positioning
+    state: PROPOSED_REVIEW
+    authority: workbench_plus_proposed_ADRs
+    blocker: zero_buyer_evidence
+    next_decision: >
+      Test the working hypotheses in the field before any freeze; do not promote ADR-0006 or
+      positioning claims by repetition.
+    external_dependency: buyer_conversation
+
+  - workstream: ICP_and_segments
+    state: PROPOSED_REVIEW
+    authority: workbench
+    blocker: founder_U01_U05_not_recorded_and_no_access_evidence
+    next_decision: choose_validation_sampling_not_final_ICP
+    external_dependency:
+      - founder_input
+      - buyer_access
+      - buyer_resonance
+
+  - workstream: offer_architecture
+    state: PROPOSED_REVIEW
+    authority: workbench_plus_ADR-0008_PROPOSED
+    blocker: no_buyer_problem_or_payment_evidence
+    next_decision: validate_offer_shape_without_treating_paid_diagnostic_as_canon
+    external_dependency:
+      - buyer_conversation
+      - payment
+
+  - workstream: pricing_and_economics
+    state: EXTERNAL_EVIDENCE_DEPENDENT
+    authority: workbench_plus_ADR-0009_PROPOSED
+    blocker:
+      - founder_capacity_and_runway_inputs
+      - no_price_signal
+      - no_payment
+      - no_real_delivery_hours
+    next_decision: calibrate_only_after_real_inputs_and_WTP_evidence
+    external_dependency:
+      - founder_input
+      - payment
+      - delivery
+
+  - workstream: field_validation
+    state: ACTIVE_EXECUTION
+    authority: workbench_instrumentation
+    blocker:
+      - U01_U05_unanswered_in_repo
+      - no_target_list
+      - no_external_contact_evidence
+    next_decision: complete_D0_inputs_then_start_targeting_and_contact
+    external_dependency: buyer_conversation
+    critical_path: true
+
+  - workstream: proof_and_case_studies
+    state: BLOCKED
+    authority: workbench
+    blocker: no_completed_client_delivery_or_measured_outcome
+    next_decision: capture_baseline_and_proof_from_first_real_engagement
+    external_dependency: delivery
+
+  - workstream: acquisition_and_sales
+    state: ACTIVE_EXECUTION
+    authority: workbench_instruments_ready
+    blocker:
+      - founder_inputs
+      - validation_sampling_choice
+      - target_list
+    next_decision: send_first_logged_outreach_batch
+    external_dependency: buyer_response
+    note: >
+      Existing field-kit outreach and interview instruments are executable support; their embedded
+      strategic assumptions remain proposals.
+
+  - workstream: delivery_client_lifecycle_operations_scorecard
+    state: DEFERRED
+    authority: workbench
+    blocker: no_paid_engagement
+    next_decision: activate_minimum_delivery_path_after_sale
+    external_dependency: payment
+
+  - workstream: tooling_and_automation
+    state: PROPOSED_REVIEW
+    authority: workbench_requirements
+    blocker: vendor_choices_not_recorded_or_verified_in_repo
+    next_decision: >
+      Select only tools required by an active workflow; preserve portability and avoid premature
+      vendor or production-stack lock-in.
+    verified_now:
+      - repository_as_code_and_configuration_system
+    unverified_vendor_choices:
+      - CRM
+      - automation_orchestrator
+      - analytics_vendor
+      - workspace_vendor
+      - hosting_vendor
+    note: >
+      TOOLING_AUTOMATION_REQUIREMENTS defines categories and selection criteria, not approved vendors.
+
+  - workstream: brand_DIVINIVID
+    state: ACTIVE_EXECUTION
+    authority: human_approved_brand_canon_plus_brand_workstream
+    blocker: P6_HUMAN_REVIEW_GATE
+    next_decision: human_PASS_or_bounded_MUTATE_in_brand_scope
+    owner_scope: brand_identity_to_vertical_slice
+    critical_path: false
+
+  - workstream: asset_factory
+    state: BLOCKED
+    authority: integrated_workbench_architecture
+    blocker:
+      - final_expression_identity_maturity
+      - executable_production_matrix
+      - golden_set_factory_pilot
+    next_decision: activation_gate_after_brand_prerequisites
+    note: >
+      Architecture is already integrated on main through PR #17. The open Issue #3 must not be
+      interpreted as proof that the architecture does not exist.
+
+  - workstream: neutral_technical_foundation
+    state: CANON_APPROVED
+    authority: ADR-0011_plus_integrated_foundation
+    blocker: none_for_neutral_baseline
+    next_decision: defer_production_stack_selection_until_real_implementation_requirements
+    note: >
+      Neutral foundation was integrated through PR #18. Labs are evidence, not production maturity.
+
+  - workstream: MVS
+    state: PROPOSED_REVIEW
+    authority: workbench_web_requirements
+    blocker:
+      - validation_targeting_not_resolved
+      - unvalidated_marketing_copy
+    next_decision: >
+      Build only the smallest credibility surface that materially increases buyer-contact quality;
+      do not wait for Brand V1 and do not turn it into production Website Strategy/IA.
+    relationship:
+      not_brand_vertical_slice: true
+      not_production_website: true
+
+  - workstream: brand_vertical_slice_prototype
+    state: BLOCKED
+    authority: brand_operating_scope_contract
+    blocker: DIVINIVID_FINAL_EXPRESSION_LOCK_V1_not_reached
+    next_decision: owned_by_brand_scope_after_final_lock
+    relationship:
+      not_MVS: true
+      not_production_website: true
+
+  - workstream: production_website
+    state: DEFERRED
+    authority: downstream_plan_only
+    blocker:
+      - business_validation
+      - final_brand_expression
+      - website_strategy_IA
+      - production_stack_decision
+    next_decision: activate_only_after_downstream_gates
+    relationship:
+      not_MVS: true
+      not_brand_vertical_slice: true
+
+  - workstream: noema_vnext_agency_adoption
+    state: DEFERRED
+    authority: noema_for_protocol_agency_repo_for_domain
+    blocker: repo_specific_adoption_decision_not_executed
+    next_decision: >
+      Perform a bounded agency-specific KEEP/MODIFY/ADD/DEFER assessment before any vNext mutation;
+      do not treat upstream vNext release as agency migration.
+    evidence:
+      agency_manifest: selective-rc0-migration
+      upstream_noema_registry: rc0-configured-domain-gated
+      upstream_vnext_release: released_and_post_merge_verified
+    critical_path: false
+
+  - workstream: skill_foundry_relationship
+    state: CANON_APPROVED
+    authority: external_skill_foundry_for_skill_semantics
+    blocker: none_for_current_scope_contract
+    next_decision: reuse_existing_skills_before_new_skill
+    verified_capability:
+      id: workspace-operating-contract-orchestrator
+      version: "1.0.0"
+      disposition: REUSE
+
+  - workstream: legal_and_accounting
+    state: EXTERNAL_EVIDENCE_DEPENDENT
+    authority: professional_external
+    blocker:
+      first_SOW: local_legal_review
+      first_invoice: local_accounting_tax_setup
+    next_decision: start_parallel_professional_setup_before_first_sale_requires_it
+    note: conversations_need_not_wait_unless_local_contact_rules_block_them
+
+critical_path:
+  principle: external_reality_first
+  sequence:
+    - founder_U01_U05_and_D0_constraints
+    - validation_sampling_choice_primary_plus_hedge_if_used
+    - target_account_ledger
+    - first_logged_outreach
+    - qualified_buyer_conversations
+    - problem_resonance_evidence
+    - payment_evidence
+    - first_delivery
+    - measured_outcome_and_case_study
+    - repeatability
+  stop_desk_research_when_requires:
+    - buyer_conversation
+    - payment
+    - delivery
+    - runtime
+    - legal_or_accounting_advice
+    - production_telemetry
+
+parallel_tracks:
+  - track: brand
+    allowed_now: P6_human_review_in_brand_scope
+    may_block_commercial_validation: false
+  - track: legal_accounting
+    allowed_now: jurisdiction_and_compliance_setup
+    may_block_commercial_validation: false_until_sale_or_contact_rule
+  - track: MVS_credibility_support
+    allowed_now: only_minimum_surface_if_it_unlocks_contact
+    may_block_commercial_validation: false_by_default
+  - track: neutral_technical_foundation
+    allowed_now: maintenance_only
+    may_block_commercial_validation: false
+  - track: asset_factory
+    allowed_now: no_mass_production
+    may_block_commercial_validation: false
+  - track: noema_vnext
+    allowed_now: bounded_adoption_assessment_only
+    may_block_commercial_validation: false
+
+human_external_gates:
+  - gate: founder_U01_U05
+    owner: HUMAN_FOUNDER
+    type: human_fact_input
+    can_desk_research_resolve: false
+  - gate: validation_sampling_authorization
+    owner: HUMAN_FOUNDER
+    type: reversible_targeting_choice
+    can_desk_research_resolve: partially
+  - gate: buyer_problem_resonance
+    owner: EXTERNAL_BUYERS
+    type: external_evidence
+    can_desk_research_resolve: false
+  - gate: willingness_to_pay
+    owner: EXTERNAL_BUYERS
+    type: cleared_payment
+    can_desk_research_resolve: false
+  - gate: delivery_viability
+    owner: RUNTIME_AND_CLIENT
+    type: observed_delivery
+    can_desk_research_resolve: false
+  - gate: legal_contracting
+    owner: LOCAL_COUNSEL
+    type: professional_advice
+    can_desk_research_resolve: false
+  - gate: tax_invoicing
+    owner: LOCAL_ACCOUNTANT
+    type: professional_advice
+    can_desk_research_resolve: false
+  - gate: brand_P6
+    owner: HUMAN_OWNER
+    type: brand_human_gate
+    can_desk_research_resolve: false
+
+operating_needs:
+  governance:
+    status: REQUIRED
+    disposition: REUSE
+    owner: agency_foundation
+    existing_skill_or_mechanism:
+      - repo_authority_model
+      - approved_ADRs
+      - active_handoff
+    executor_state: NOT_APPLICABLE
+    reason: current_governance_is_sufficient
+
+  requirements_acceptance:
+    status: REQUIRED
+    disposition: REUSE
+    owner: agency_foundation
+    existing_skill_or_mechanism:
+      - field_validation_gates
+      - brand_human_gates
+      - delivery_DODs_when_activated
+    executor_state: NOT_APPLICABLE
+    reason: do_not_build_parallel_acceptance_framework
+
+  schemas_interfaces:
+    status: CONDITIONAL
+    disposition: REUSE
+    owner: agency_foundation
+    existing_skill_or_mechanism:
+      - field_kit_CSV_contracts
+      - asset_factory_contracts
+      - noema_manifest
+    executor_state: NOT_APPLICABLE
+    reason: no_new_cross_system_schema_is_needed_for_first_market_contact
+
+  execution:
+    status: REQUIRED
+    disposition: REUSE
+    owner: agency_ecosystem
+    existing_skill_or_mechanism:
+      - field_validation_execution_kit
+      - minimum_necessary_mutation
+      - capability_before_executor
+    executor_state: VERIFIED
+    reason: instruments_exist_and_current_repo_access_is_verified
+    next_action: founder_inputs_then_external_contact
+
+  integrations_tools:
+    status: CONDITIONAL
+    disposition: NO_SKILL
+    owner: agency_ecosystem
+    existing_skill_or_mechanism:
+      - TOOLING_AUTOMATION_REQUIREMENTS
+      - ADR-0011
+    executor_state: UNVERIFIED
+    reason: vendor_stack_is_not_needed_to_decide_first_market_questions
+    next_action: verify_only_when_an_active_workflow_requires_a_tool
+
+  context_recovery:
+    status: REQUIRED
+    disposition: REUSE
+    owner: noema_plus_agency_local_scope
+    existing_skill_or_mechanism:
+      - agency_ecosystem_handoff
+      - noema_project_manifest
+      - this_workspace_blueprint
+      - this_workspace_brief
+    executor_state: NOT_APPLICABLE
+    reason: durable_recovery_without_chat_reconstruction
+
+  evals:
+    status: REQUIRED
+    disposition: REUSE
+    owner: domain_specific
+    existing_skill_or_mechanism:
+      - validation_gate_checklists
+      - brand_red_team_in_brand_scope
+      - delivery_QA_when_activated
+    executor_state: NOT_APPLICABLE
+    reason: evaluation_must_remain_domain_owned
+
+  security:
+    status: REQUIRED
+    disposition: REUSE
+    owner: agency_foundation
+    existing_skill_or_mechanism:
+      - ADR-0011
+      - governance_risk_security_checklist
+      - repo_hardening
+    executor_state: NOT_APPLICABLE
+    reason: first_contact_requires_basic_account_and_contact_discipline_not_new_security_architecture
+
+  observability:
+    status: REQUIRED
+    disposition: REUSE
+    owner: agency_ecosystem
+    existing_skill_or_mechanism:
+      - validation_logs
+      - agency_scorecard_workbench
+      - repo_state_artifacts
+    executor_state: NOT_APPLICABLE
+    reason: external_evidence_must_be_logged_not_remembered
+
+  completion_verification:
+    status: REQUIRED
+    disposition: REUSE
+    owner: agency_ecosystem
+    existing_skill_or_mechanism:
+      - decision_gates
+      - evidence_logs
+      - human_approval_for_canon
+    executor_state: NOT_APPLICABLE
+    reason: narrative_completion_is_not_enough
+
+highest_leverage_next_actions:
+  - priority: 1
+    action: COMPLETE_FOUNDER_D0_INPUTS
+    outcome: convert_unknown_personal_constraints_into_operating_limits
+    owner: HUMAN_FOUNDER
+    artifact: docs/06-validation/findings/FOUNDER_INPUTS_ANSWERED.md
+    stop_condition: do_not_invent_answers
+
+  - priority: 2
+    action: LAUNCH_FIRST_EXTERNAL_VALIDATION_BATCH
+    outcome: create_first_buyer_evidence
+    prerequisite:
+      - D0_constraints_recorded
+      - reversible_validation_sampling_choice
+    execution:
+      - populate_target_ledger
+      - research_first_accounts
+      - send_first_logged_outreach
+      - preserve_sealed_interview_phase
+    stop_condition: do_not_delay_for_brand_or_full_website
+
+  - priority: 3
+    action: CLOSE_BRAND_P6_IN_PARALLEL
+    outcome: remove_brand_human_gate_without_blocking_market_validation
+    owner_scope: brand_identity_to_vertical_slice
+    prerequisite: none_from_agency_scope
+    stop_condition: agency_scope_does_not_micromanage_visual_execution
+
+stop_conditions:
+  - no_more_strategy_artifact_if_it_does_not_change_a_live_decision_or_enable_contact
+  - stop_desk_research_when_the_missing_fact_requires_external_reality
+  - no_vendor_stack_buildout_without_current_workflow_need
+  - no_asset_factory_mass_production_before_activation_gate
+  - no_production_website_before_its_business_and_brand_gates
+  - no_silent_promotion_of_ADR-0006_through_ADR-0010
