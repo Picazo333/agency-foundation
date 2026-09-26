@@ -44,6 +44,29 @@ This scope does not mean every workstream is authorized to execute at once.
 
 The purpose is to maintain the **global dependency graph, critical path, decisions, evidence and next actions** for the agency.
 
+## Operating scope contract
+
+The workspace/conversation boundary is additionally formalized by:
+
+- `docs/09-handoffs/workspaces/agency-ecosystem/WORKSPACE_OPERATING_BLUEPRINT.yaml`;
+- `docs/09-handoffs/workspaces/agency-ecosystem/WORKSPACE_OPERATING_BRIEF.md`.
+
+These artifacts were produced by the `workspace-operating-contract-orchestrator` capability after
+reconciling current repo authority and evidence. They define conversation scope, state classification,
+critical-path discipline, routing, stop conditions and recovery discoverability.
+
+They do **not**:
+- promote ADR-0006 through ADR-0010;
+- replace agency canon;
+- turn workbench plans into approved strategy;
+- transfer agency domain authority to Noema or Skill Foundry.
+
+Proposed conversation identity:
+
+- **name:** `DIVINIVID · Agency Ecosystem · Strategy → Validation → Operations`;
+- **stable ID:** `AGY-ECOSYSTEM-ORCH-01`;
+- **Skill taxonomy reused:** `cross-functional / orchestrator / transversal`.
+
 ## Authority model
 
 Current repo authority is determined by:
