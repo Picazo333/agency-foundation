@@ -61,6 +61,17 @@ Important:
 - DIVINIVID visual locks/gates are authoritative only inside their own workstream.
 - Noema governs context/conformance; it does not own agency domain decisions.
 
+## Operating scope contract
+
+The workspace/conversation boundary is additionally formalized by:
+
+- `docs/09-handoffs/workspaces/agency-ecosystem/WORKSPACE_OPERATING_BLUEPRINT.yaml`;
+- `docs/09-handoffs/workspaces/agency-ecosystem/WORKSPACE_OPERATING_BRIEF.md`;
+- `docs/09-handoffs/AGENCY_ECOSYSTEM_STATE_MAP_2026-09-25.md`.
+
+These artifacts are derived from `workspace-operating-contract-orchestrator v1.0.0`. They package scope,
+routing and the dated startup reconciliation; they do not promote workbench strategy or supersede approved ADRs.
+
 ## Required startup sources
 
 Read first:

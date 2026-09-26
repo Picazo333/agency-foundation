@@ -96,6 +96,15 @@ sources_of_truth:
   agency_ecosystem_handoff:
     scheme: repo
     locator: docs/09-handoffs/AGENCY_ECOSYSTEM_CONTEXT_HANDOFF_2026-09-25.md
+  agency_ecosystem_state_map_2026_09_25:
+    scheme: repo
+    locator: docs/09-handoffs/AGENCY_ECOSYSTEM_STATE_MAP_2026-09-25.md
+  agency_ecosystem_workspace_blueprint:
+    scheme: repo
+    locator: docs/09-handoffs/workspaces/agency-ecosystem/WORKSPACE_OPERATING_BLUEPRINT.yaml
+  agency_ecosystem_workspace_brief:
+    scheme: repo
+    locator: docs/09-handoffs/workspaces/agency-ecosystem/WORKSPACE_OPERATING_BRIEF.md
   brand_vertical_slice_handoff:
     scheme: repo
     locator: docs/09-handoffs/DIVINIVID_CONTEXT_HANDOFF_BRAND_IDENTITY_VERTICAL_SLICE_2026-09-25.md
