@@ -99,6 +99,12 @@ sources_of_truth:
   brand_vertical_slice_handoff:
     scheme: repo
     locator: docs/09-handoffs/DIVINIVID_CONTEXT_HANDOFF_BRAND_IDENTITY_VERTICAL_SLICE_2026-09-25.md
+  brand_vertical_slice_workspace_blueprint:
+    scheme: repo
+    locator: docs/09-handoffs/workspaces/divinivid-brand-identity-vertical-slice/WORKSPACE_OPERATING_BLUEPRINT.yaml
+  brand_vertical_slice_workspace_brief:
+    scheme: repo
+    locator: docs/09-handoffs/workspaces/divinivid-brand-identity-vertical-slice/WORKSPACE_OPERATING_BRIEF.md
   saturation_checkpoint_20_v1:
     scheme: repo
     locator: docs/03-brand/workbench/divinivid/generation/SATURATION_CHECKPOINT_20_V1.md
