@@ -1,0 +1,308 @@
+version: "1.0.0"
+artifact: WORKSPACE_OPERATING_BLUEPRINT
+status: active
+created: 2026-09-25
+owner: meta
+authority: operating_scope_contract
+derived_from_skill:
+  id: workspace-operating-contract-orchestrator
+  version: "1.0.0"
+  source_repo: Picazo333/skill-foundry
+
+conversation:
+  proposed_name: "DIVINIVID · Agency Ecosystem — Strategy → Validation → Operating System"
+  conversation_id: "AGY-ECOSYSTEM-CORE-01"
+  taxonomy:
+    portfolio: AGENCY_ECOSYSTEM
+    product_brand: DIVINIVID
+    workstream: PROGRAM
+    domain: AGENCY_ECOSYSTEM
+    lifecycle: VALIDATION_TO_LAUNCH
+    scope: BUSINESS_SYSTEM_END_TO_END
+    mode: ORCHESTRATION_WITH_HUMAN_EXTERNAL_GATES
+
+objective:
+  primary: >
+    Govern the complete agency ecosystem from current authoritative repo state through real-world
+    validation, commercial-system convergence, delivery readiness and later launch, while preserving
+    authority boundaries and preventing Brand, tooling or technical polish from substituting for buyer,
+    payment, delivery or runtime evidence.
+  current_phase: PRE_VALIDATION_RECONCILIATION
+  terminal_state:
+    - buyer evidence drives ICP, offer and pricing decisions
+    - validated commercial path exists
+    - Brand dependencies are integrated without collapsing Brand execution into this workspace
+    - delivery, tooling, CRM, analytics and infrastructure are implemented only when justified
+    - production website is gated by validated message, Brand and runtime readiness
+    - project state remains recoverable from repo without hidden chat memory
+
+workspace_classification:
+  type: agency_ecosystem_orchestration
+  duration: long_running
+  complexity: high
+  risk: high
+  collaboration_pattern: multi_workstream_human_gated
+  side_effect_profile: repo_documentation_plus_external_business_actions
+  external_effects: material
+  irreversible_decisions:
+    - strategic ADR promotion
+    - legal/tax commitments
+    - client-facing commercial commitments
+    - production launch
+  current_gate: PRE_VALIDATION_HUMAN_INPUTS_AND_DECISION_GATE
+
+authoritative_sources:
+  priority:
+    - docs/00-meta/source-of-truth.md
+    - docs/00-meta/operating-model.md
+    - docs/08-plans/master/META_PLAN.md
+    - PROJECT_STATE.md
+    - docs/07-decisions/index.md
+    - noema.project.yaml
+    - docs/09-handoffs/AGENCY_SCOPE_SPLIT_CHECKPOINT_PRE_NOEMA_VNEXT_2026-09-25.md
+    - docs/09-handoffs/AGENCY_ECOSYSTEM_CONTEXT_HANDOFF_2026-09-25.md
+  workbench_evidence:
+    - docs/08-plans/master/AGENCY_MASTER_PLAN.md
+    - docs/08-plans/master/30_60_90_180_365_ROADMAP.md
+    - docs/06-validation/field-kit/00_README.md
+  invariant: >
+    Workbench strategy may inform execution but cannot become agency canon without explicit decision
+    authority. Noema governs context/conformance only; it does not own agency domain decisions.
+
+current_state:
+  approved_adrs:
+    - ADR-0001
+    - ADR-0002
+    - ADR-0003
+    - ADR-0004
+    - ADR-0005
+    - ADR-0011
+    - ADR-0012
+    - ADR-0013
+    - ADR-0014
+    - ADR-0015
+  proposed_adrs:
+    - ADR-0006
+    - ADR-0007
+    - ADR-0008
+    - ADR-0009
+    - ADR-0010
+  buyer_evidence:
+    qualified_conversations_logged: 0
+    cleared_payments_logged: 0
+    evidence_basis: docs/06-validation/interviews contains README only
+  commercial_critical_path: EXTERNAL_EVIDENCE
+  brand:
+    state: ACTIVE_EXECUTION
+    current_gate: P6_HUMAN_REVIEW_GATE
+    owned_elsewhere: true
+    dependency_role: parallel_business_fit_input
+  asset_factory:
+    architecture_contract: approved_workstream
+    implementation_state: REVIEW_DRAFT
+    mass_production: BLOCKED
+    blockers:
+      - final expression / mature identity specification
+      - executable production matrix
+      - golden-set factory pilot PASS
+  neutral_technical_foundation:
+    baseline: APPROVED
+    issue_4_objective: COMPLETED
+    current_role: PARALLEL_EVIDENCE_FOUNDATION
+    deferred:
+      - production framework selection
+      - production SVG sanitizer
+      - calibrated runtime performance gates
+      - final Brand token values
+  tooling_automation:
+    requirement_spec: REVIEW_WORKBENCH
+    vendor_decisions_in_repo: NONE_VERIFIED
+    policy: REQUIREMENTS_BEFORE_VENDOR
+  website:
+    mvs: PROPOSED_VALIDATION_ARTIFACT_NOT_EVIDENCED_LIVE
+    brand_vertical_slice: SEPARATE_BRAND_VALIDATION_ARTIFACT
+    production_site: DEFERRED
+  noema:
+    current_repo_protocol: "0.1.0-rc.0"
+    vnext_migration: NOT_EXECUTED_IN_AGENCY_REPO
+    pre_vnext_checkpoints_present: true
+
+owned_responsibilities:
+  - strategy_thesis_positioning
+  - field_validation_buyer_evidence
+  - ICP_segment_decisions
+  - offer_architecture
+  - pricing_economics
+  - proof_case_study_system
+  - acquisition_sales
+  - delivery_OS
+  - client_lifecycle
+  - operations_scorecard
+  - tooling_automation
+  - CRM_analytics_workspace_infrastructure
+  - Brand_business_dependencies
+  - Asset_Factory_dependencies
+  - Neutral_Technical_Foundation_dependencies
+  - MVS_and_production_website_dependencies
+  - repo_governance
+  - Noema_integration
+  - Skill_Foundry_reusable_capability_relationship
+
+non_goals:
+  - micromanage_Figma
+  - reopen_locked_DIVINIVID_visual_decisions_without_named_failure
+  - treat_Agency_Master_Plan_as_canon
+  - select_tools_without_current_requirement_and_evidence
+  - build_production_site_before_validation_gates
+  - use_AI_experimentation_as_progress_substitute
+  - infer_buyer_validation_from_brand_progress
+  - infer_runtime_readiness_from_static_prototypes
+
+critical_path:
+  binding_uncertainty: buyer_access_problem_resonance_payment
+  sequence:
+    - founder_inputs_U01_U05
+    - human_adjudication_of_proposed_strategy_ADRs
+    - target_list_and_minimum_credibility_instruments
+    - outreach
+    - qualified_conversations
+    - resonance_evidence
+    - cleared_payment
+    - first_delivery
+    - delivery_economics
+  rule: >
+    Stop desk research when the unresolved question requires buyer conversation, payment, delivery,
+    runtime, legal/accounting advice or production telemetry.
+
+parallel_tracks:
+  - Brand completion in its dedicated workspace
+  - Neutral Technical Foundation preservation and bounded experiments
+  - legal/accounting setup only where it unblocks invoicing/SOW
+  - MVS credibility artifact at minimum viable fidelity once its provisional assumptions are explicit
+  - Asset Factory architecture maintenance without mass production
+
+operating_needs:
+  governance:
+    route: REUSE
+    mechanism:
+      - repo authority order
+      - ADR index
+      - META_PLAN
+      - active Agency Ecosystem handoff
+  requirements_acceptance:
+    route: REUSE
+    mechanism:
+      - field validation gates D0/D3/D4/D5/D6
+      - convergence gates
+      - current repo DoD where applicable
+  human_gate_authority:
+    route: REUSE
+    mechanism:
+      - ADR promotion remains human
+      - founder-only U01-U05 inputs
+      - Brand human gates remain in Brand workspace
+      - legal/accounting decisions remain external-professional
+  schemas_interfaces:
+    route: REUSE
+    mechanism:
+      - existing Noema project manifest
+      - existing Asset Factory contracts
+      - existing validation logs/templates
+  execution:
+    route: REUSE
+    mechanism:
+      - field validation execution kit
+      - capability-first workstream contracts
+      - minimum necessary mutation
+  integrations_tools:
+    route: DEFER_UNTIL_TASK_JUSTIFIES
+    verified:
+      - GitHub repository read_write access in current conversation
+    unverified:
+      - CRM vendor
+      - analytics stack
+      - Workspace configuration
+      - automation/orchestration vendor
+      - production hosting stack
+    rule: capability_before_executor
+  context_recovery:
+    route: REUSE
+    mechanism:
+      - AGENCY_ECOSYSTEM_CONTEXT_HANDOFF_2026-09-25
+      - PROJECT_STATE.md
+      - noema.project.yaml
+      - this workspace blueprint
+      - this workspace brief
+      - dated Agency Ecosystem State Map
+  evals:
+    route: REUSE
+    mechanism:
+      - field-validation decision gates
+      - Brand/Business Fit Review
+      - implementation readiness
+      - launch readiness
+  security:
+    route: REUSE
+    mechanism:
+      - existing governance/security checklist
+      - ADR-0011 boundaries
+    escalation: specialist audit only when production/client data or privileged integrations enter scope
+  observability:
+    route: REUSE
+    mechanism:
+      - interview logs
+      - payment evidence
+      - scorecard
+      - delivery time/rework records
+      - runtime analytics when production exists
+  completion_verification:
+    route: REUSE
+    mechanism:
+      - evidence-backed gate outcomes
+      - explicit authority status
+      - repo state updates
+      - no false equivalence between configured and verified
+
+human_external_gates:
+  human:
+    - complete U01-U05 and D0 recalibration
+    - approve/reject/mutate ADR-0006 through ADR-0010
+    - Brand P6 and later final Brand gate
+  external:
+    - qualified buyer conversations
+    - cleared payment
+    - delivery evidence
+    - accountant advice before compliant invoicing
+    - lawyer/counsel before binding contract/legal conclusions
+    - runtime telemetry before production performance claims
+
+next_actions:
+  - order: 1
+    action: COMPLETE_FOUNDER_INPUTS_U01_U05_AND_D0_RECALIBRATION
+    owner: HUMAN_FOUNDER
+    leverage: highest
+    blocker_removed: plan_constraints_and_targeting_reality
+  - order: 2
+    action: ADJUDICATE_ADR_0006_0010_WITH_PRIORITY_ON_0006_0007_0008
+    owner: HUMAN_OWNER
+    leverage: high
+    blocker_removed: working_thesis_segment_allocation_entry_offer
+  - order: 3
+    action: LAUNCH_MINIMUM_VALIDATION_LOOP_TO_FIRST_QUALIFIED_CONVERSATIONS
+    owner: FOUNDER
+    leverage: high
+    includes:
+      - target ledger
+      - minimum method document
+      - bounded MVS/credibility surface if needed
+      - teardown
+      - outreach
+      - interview logging
+
+stop_condition:
+  immediate: >
+    Do not create additional strategic planning artifacts whose only purpose is to refine hypotheses
+    already blocked on buyer evidence.
+  workspace: >
+    Continue orchestration while maintaining one global dependency graph; split specialist execution
+    into bounded workspaces when their cursor, authority or artifact load would overload this one.
