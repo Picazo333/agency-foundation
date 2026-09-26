@@ -1,12 +1,13 @@
 ---
-status: active_handoff
+status: superseded
 owner: project
 created: 2026-09-24
 updated: 2026-09-25
-authority: recovery_cursor
+authority: historical_recovery_cursor
 scope: project_program
 prompt_version: 2
 supersedes_chat_state: true
+superseded_by: docs/09-handoffs/AGENCY_ECOSYSTEM_CONTEXT_HANDOFF_2026-09-25.md
 checkpoint: docs/09-handoffs/DIVINIVID_CHECKPOINT_PRE_NOEMA_VNEXT_2026-09-24.md
 ---
 # DIVINIVID Context Handoff — General Program — 2026-09-24
