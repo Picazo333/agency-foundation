@@ -35,6 +35,15 @@ Baseline:
 Current Figma:
 `https://www.figma.com/design/bqcKhEQHs4EEQgnn6lNU8O/?node-id=34-2`
 
+## Operating scope contract
+
+The workspace/conversation boundary is additionally formalized by:
+
+- `docs/09-handoffs/workspaces/divinivid-brand-identity-vertical-slice/WORKSPACE_OPERATING_BLUEPRINT.yaml`;
+- `docs/09-handoffs/workspaces/divinivid-brand-identity-vertical-slice/WORKSPACE_OPERATING_BRIEF.md`.
+
+These artifacts define operating scope, routing, stop conditions and recovery discoverability. They do not supersede visual canon or human gate authority.
+
 ## Visual workstream end state
 
 This conversation is complete only when:
